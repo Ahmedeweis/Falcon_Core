@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/framework.css" />
+  <link rel="stylesheet" href="../assets/css/master.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/stylesII.css">
+  <style>
+    .cell-name {
+      color: black;
+    }
+    .dropdown-select  {
+      border-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="delete-head  m-t-20">
+    <div class="container">
+      <a href="chooseII.html"><img style="width: 30px" src="../assets/imgs/right-arrow.png"></a>
+      <div class="m-r-20 justfy-c">
+        <h3 class="" style="font-size:19px; color: #008080;"> اضافة بيانات عقار مطلوب </h3>
+      </div>
+      <button id="shareButton" class="" style="background-color: transparent;">
+      </button>
+    </div>
+  </section>
+
+
+  <div class="container">
+    <div class="box-land">
+    <div class="dropdown">
+      <div class="cell-label">
+        <span class="cell-name"> نوع العقار </span>
+        <div class="star">*</div>
+      </div>
+      <select class="dropdown-select" name="Emirate_City">
+        <option value="option1" selected> قطعة ارض </option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <div class="cell-label">
+        <span class="cell-name">  المدينة </span>
+        <div class="star">*</div>
+      </div>
+      <select class="dropdown-select" name="Emirate_City">
+        <option value="option1" selected> الرياض </option>
+      </select>
+    </div>
+
+  </div>
+  <div class="dropdown">
+    <details>
+      <summary>اختر الاحياء</summary>
+      <form style="padding: 0px 0px 8px 8px;" class="summry-form">
+        <label>
+          <input type="checkbox" name="option" value="Electrical Engineering" class="summry-input"> المروج
+        </label><br>
+        <label>
+          <input type="checkbox" name="option" value="Ceramic Installation" class="summry-input"> الزهراء
+        </label><br>
+        <label>
+          <input type="checkbox" name="option" value="Ceramic Installation" class="summry-input"> حي الضاحي
+        </label><br>
+        <label>
+          <input type="checkbox" name="option" value="Ceramic Installation" class="summry-input"
+            id="otherNeighborhood"> احياء اخري
+        </label><br>
+      </form>
+    </details>
+  </div>
+
+  <div class="cell" id="textInputContainer" style="display: none;">
+    <input type="text" name="email" class="cell-entery place-tiny" placeholder="اكتب اسم الاحياء"
+      id="textInput1">
+  </div>
+
+  <script>
+    const otherNeighborhoodCheckbox = document.getElementById('otherNeighborhood');
+    const textInputContainer = document.getElementById('textInputContainer');
+
+    otherNeighborhoodCheckbox.addEventListener('change', function () {
+      if (otherNeighborhoodCheckbox.checked) {
+        textInputContainer.style.display = 'flex';
+      } else {
+        textInputContainer.style.display = 'none';
+      }
+    });
+  </script>
+
+    <div class="box-land">
+    <div class="cell coll">
+      <div class="cell-label">
+        <span class="cell-name"> سعر المتر </span>
+        <div class="star">*</div>	    
+      </div>
+      <input type="text" name="email" class="cell-entery">
+    </div>
+    <div class="cell coll">
+      <div class="cell-label">
+        <span class="cell-name"> رقم المخطط </span>
+      </div>
+      <input type="text" name="email" class="cell-entery">
+    </div>
+
+
+
+</div>
+
+<h3 class="h4-filt">المساحة</h3>
+<div class="box-land">
+  <div class="cell coll">
+    <div class="cell-label">
+      <span class="cell-name">  </span>
+    </div>
+    <input type="text" name="email" class="cell-entery" placeholder="من">
+  </div>
+  <div class="cell coll">
+    <div class="cell-label">
+      <span class="cell-name">   </span>
+    </div>
+    <input type="text" name="email" class="cell-entery"  placeholder="الي">
+  </div>
+</div>
+
+
+
+    </div>
+
+    <!-- <div class="owner-num" class="owner-flex" style="display:flex; justify-content: space-between;">
+      <button id="addOwnerButton" class="small-btn">+ اضف مالك</button>
+      <h2 id="numberOfOwners">عدد الملاك : 1</h2>
+      <button id="removeOwnerButton" class="small-btn">- احذف مالك</button>
+    </div> -->
+  </div>
+
+  <section class="rod">
+    <div class="container">
+    
+    <h2 style="margin: 0; margin-bottom:20px;">الفئة  *</h2>
+    <div class="roleForm">
+      <label class="radio-lab">
+        <input type="radio" name="land-type" value="yes" class="radio-circle">
+        سكني
+      </label>
+      <label class="radio-lab">
+        <input type="radio" name="land-type" value="yes" class="radio-circle">
+        تجاري
+      </label>
+      <label class="radio-lab">
+        <input type="radio" name="land-type" value="no" class="radio-circle">
+        سكني تجاري
+      </label>
+    </div>
+  </div>
+  </section>
+  <section class="rod">
+    <div class="container">
+    
+    <h2 style="margin: 0;">الحدود  *</h2>
+    <div class="roleForm">
+      <div class="cheky">
+        <input type="checkbox" name="Termes" class="chek">
+        <p class="acceptt">  شارع </p>
+      </div>
+      <div class="cheky">
+        <input type="checkbox" name="Termes" class="chek">
+        <p class="acceptt">  شارعين </p>
+      </div>
+      <div class="cheky">
+        <input type="checkbox" name="Termes" class="chek">
+        <p class="acceptt">   ثلاث شوارع</p>
+      </div>
+      <div class="cheky">
+        <input type="checkbox" name="Termes" class="chek">
+        <p class="acceptt">  اربع شوارع </p>
+      </div>
+      <div class="cheky">
+        <input type="checkbox" name="Termes" class="chek">
+        <p class="acceptt"> جميع الاختيارات </p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- waring let that div as it is  -->
+  <!-- <div class="cell" style="display: none;">
+    <label for="myRange9" class="range-lab" style="font-weight: bold;">عدد المُلاك:<p id="selectedValue9"
+        class="range-pp">1</p></label>
+    <input type="range" min="1" max="20" value="1" step="1" id="myRange9" class="styled-range">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="margin-top: 10px">1</div>
+      <div style="margin-top: 10px">20</div>
+    </div>
+  </div> -->
+  <!-- waring let that div as it is   -->
+
+  <div class="owner-box">
+    <div class="container">
+        <h2>بيانات المالك  </h2>
+        <div class="box-land">
+      <div class="cell coll">
+        <div class="cell-label">
+          <span class="cell-name">الاسم</span>
+          <div class="star">*</div>
+        </div>
+        <input type="text" name="email" class="cell-entery">
+      </div>
+      <div class="cell coll">
+        <div class="cell-label">
+          <span class="cell-name">رقم الهوية</span>
+          <div class="star">*</div>
+        </div>
+        <input type="text" name="email" class="cell-entery">
+      </div>
+    </div>
+      <!-- <div class="cell">
+        <div class="cell-label">
+          <span class="cell-name">نسبة التملك</span>
+          <div class="star">*</div>
+        </div>
+        <input type="text" name="email" class="cell-entery">
+      </div> -->
+      <div class="box-land">
+      <div class="cell coll">
+        <div class="cell-label">
+          <span class="cell-name">رقم الجوال</span>
+          <div class="star">*</div>
+        </div>
+        <input type="text" name="email" class="cell-entery">
+      </div>
+      <div class="cell coll">
+        <div class="cell-label">
+          <span class="cell-name">رقم الواتساب</span>
+          <div class="star">*</div>
+        </div>
+        <input type="text" name="email" class="cell-entery">
+      </div>
+</div>
+      <div class="dropdown" style="width: 100%;">
+        <div class="cell-label">
+          <span class="cell-name">الجنسية</span>
+          <div class="star">*</div>
+        </div>
+        <select class="dropdown-select" name="Emirate_City">
+          <option disabled selected>انقر للاختيار *</option>
+          <option value="option1">مصر</option>
+          <option value="option2">سوريا</option>
+          <option value="option4">السعودية</option>
+          <option value="option5">العراق</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+<!-- 
+  <script>
+    const rangeInput9 = document.getElementById("myRange9");
+    const selectedValue9 = document.getElementById("selectedValue9");
+    const sectionsContainer = document.getElementById("sectionsContainer");
+    const addOwnerButton = document.getElementById("addOwnerButton");
+    const removeOwnerButton = document.getElementById("removeOwnerButton");
+    const numberOfOwners = document.getElementById("numberOfOwners");
+    let ownerCount = 1; // Initial owner count
+  
+    rangeInput9.addEventListener("input", function () {
+      selectedValue9.textContent = rangeInput9.value;
+      updateNumberOfOwners(rangeInput9.value);
+    });
+  
+    addOwnerButton.addEventListener("click", function () {
+      generateNewSection();
+    });
+  
+    removeOwnerButton.addEventListener("click", function () {
+      if (ownerCount > 1) {
+        const lastSection = sectionsContainer.lastElementChild;
+        sectionsContainer.removeChild(lastSection);
+        ownerCount--;
+        updateNumberOfOwners(ownerCount);
+      }
+    });
+  
+    function updateNumberOfOwners(count) {
+      numberOfOwners.textContent = `عدد الملاك ${count}`;
+      ownerCount = count;
+    }
+  
+    function generateSections(count) {
+      sectionsContainer.innerHTML = "";
+  
+      for (let i = 1; i <= count; i++) {
+        generateSection(i);
+      }
+    }
+  
+    function generateSection(ownerNumber) {
+      const section = document.createElement("section");
+      section.innerHTML = `
+        <div class="container">
+          <div class="delete-flex">
+            <button class="small-btn delete-button"> حذف  </button>
+            <h2>المالك رقم ${ownerNumber}</h2>
+          </div>
+          <div class="cell">
+            <div class="cell-label">
+              <span class="cell-name">الاسم</span>
+              <div class="star">*</div>
+            </div>
+            <input type="text" name="email" class="cell-entery">
+          </div>
+          <div class="cell">
+            <div class="cell-label">
+              <span class="cell-name">رقم الهوية</span>
+              <div class="star">*</div>
+            </div>
+            <input type="text" name="email" class="cell-entery">
+          </div>
+          <div class="cell">
+            <div class="cell-label">
+              <span class="cell-name">نسبة التملك</span>
+              <div class="star">*</div>
+            </div>
+            <input type="text" name="email" class="cell-entery">
+          </div>
+          <div class="dropdown">
+            <div class="cell-label">
+              <span class="cell-name">الجنسية</span>
+              <div class="star">*</div>
+            </div>
+            <select class="dropdown-select" name="Emirate_City">
+              <option disabled selected>انقر للاختيار *</option>
+              <option value="option1">مصر</option>
+              <option value="option2">سوريا</option>
+              <option value="option4">السعودية</option>
+              <option value="option5">العراق</option>
+            </select>
+          </div>
+        </div>
+      `;
+      sectionsContainer.appendChild(section);
+  
+      const deleteButton = section.querySelector(".delete-button");
+      deleteButton.addEventListener("click", function () {
+        // Remove the corresponding section when the Delete button is clicked
+        sectionsContainer.removeChild(section);
+        ownerCount--; // Update the owner count
+        updateNumberOfOwners(ownerCount);
+      });
+    }
+  
+    function generateNewSection() {
+      ownerCount++;
+      generateSection(ownerCount);
+      updateNumberOfOwners(ownerCount);
+    }
+  </script> -->
+
+
+  <section>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; padding:30px 0;">
+        <a class="small-btn" href="succes.html">حفظ</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="../assets/js/ProjectScript.js"></script>
+</body>
+
+</html>

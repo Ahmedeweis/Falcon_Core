@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <style src="../css/ShowAutherProfile.css"></style>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/ShowAutherProfile.css">
+  <link rel="stylesheet" href="../css/Home.css" />
+  <style>
+    /* 0 Global Rules */
+    
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+      :root {
+      --xxfont: 32px;
+      --xfont: 24px;
+      --lfont: 20px;
+      --mfont: 18px;
+      --sfont: 14px;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    button {
+      text-transform: capitalize;
+    }
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Small */
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    /* Medium */
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+    /* Large */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+    
+    /* 0 Header */
+    .write-article-body {
+      min-height: 150vh;
+      position: relative;
+    }
+    
+    .write-article-body::after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: rgb(18, 22, 29);
+      background: linear-gradient(90deg, rgba(18, 22, 29, 1) 0%, rgba(9, 42, 85, 1) 84%);
+      height: 40%;
+      z-index: -1;
+    }
+    
+    .write-article-body section {
+      padding-top: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .write-article-body section .container head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .first-line {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      line-height: 1.7;
+    }
+    
+    .site-name {
+      margin-left: 10px;
+      color: white;
+      font-size: var(--lfont);
+    }
+    
+    .first-line img {
+      width: 64px;
+    }
+    
+    .second-line h1 {
+      color: white;
+      font-size: var(--xxfont);
+      line-height: 1.7;
+    }
+    
+    .third-line h3 {
+      color: white;
+      font-size: var(--sfont);
+      line-height: 1.7;
+    }
+    
+    /* write poste */
+    .infoe {
+      margin-top: 30px;
+      background-color: white;
+      padding: 24px;
+    }
+    
+    .poste {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    
+    .personal-infoo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      align-self: flex-start;
+      margin-bottom: 20px;
+      width: inherit;
+      position: relative;
+      border-bottom:solid #1772EB 2px;
+    }
+    .personal-infoo input {
+      width: inherit;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom:none;
+      padding-bottom: 10px;
+      font-size: var(--lfont);
+    }
+    
+    .personal-infoo input:focus::placeholder {
+      color: #5C6F8C;
+    }
+    
+    .personal-infoo input:focus {
+      outline: transparent;
+    }
+    
+    .personal-infoo input:focus::placeholder {
+      color: #9DA9BA;
+    }
+    .infoe  {
+      border: 2px solid rgba(221,221,221,1);
+      border-bottom:none;
+    }
+    
+    .multiline-input {
+      resize: vertical;
+      border: 1px solid #BCC5D3;
+      padding: 10px;
+      background: none;
+      width: 100%;
+      font-weight: bold;
+      font-size: 25px;
+      height:300px;
+    }
+    
+    .multiline-input:hover{
+      border: 1px solid #589AF0;
+    }
+    .multiline-input:focus{
+      border: 1px solid #589AF0;
+    }
+    
+    .publish-art-btn {
+      color:white;
+      background-color: #E60278;
+      padding:15px;
+      border:none;
+      border-radius:6px;
+      cursor: pointer;
+      font-weight:bold;
+    }
+    
+    /* End Work Steps */
+    /* 1 postes */
+    /*write poste*/
+    </style>
+      <style>
+        .nav {
+        color: white;
+        }
+    
+        .prof img {
+            width: 200px;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 20px 1px;
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+        }
+    
+        ul li {
+            padding: 1px 10px;
+        }
+    
+        nav li a {
+            color: white;
+            transition: 0.5s;
+        }
+    
+        nav li a:hover {
+            color: black;
+        }
+    
+        .L-link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    
+        .R-link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        .Title {
+            font-size: 30px;
+        }
+    
+        .icon-profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .icon-profile img {
+            width: 50px;
+            margin-right: 10px;
+        }
+    
+        /* 1 header */
+        .user-icon,
+        .notify-icon {
+            width: 32px;
+        }
+    
+        .notify-icon {
+            width: 32px;
+        }
+    
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .hover-box {
+            position: absolute;
+            right: 0;
+            background-color: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            width: 150px;
+            border: 2px solid black;
+        }
+    
+        .img-link {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+    
+        }
+    
+        .image-container:hover .hover-box {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            padding: 10px;
+        }
+    
+        .content img {
+            width: 40px;
+        }
+    
+        .content a,
+        .two-btn {
+            align-items: center;
+            display: flex;
+            padding: 3px 3px;
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+    
+        .content a:hover,
+        .two-btn {
+            color: black;
+        }
+      </style>
+    
+</head>
+
+  <body class="write-article-body" >
+    <header class="nav">
+      <div class="container">
+      <div class="handle-nav">
+          <ul class="L-link">
+            <a href="#" class="Logo-apear"><img src="../assets/logo.png" class="head-photo-width"></a>
+              <li style="padding-left:0px;" class="word-apear"><a style="color: white;" href="#" class="Title">Author Identifcation</a></li>
+              <li><a style="color: white;" href="AdminHomeUsers.html">Home</a></li>
+          </ul>
+          <ul class="R-link">
+              <li>
+                  <!-- 0 Hover that image container to get list  -->
+                  <div class="image-container">
+                      <!-- 0 link gog to profile -->
+                      <div style="cursor: pointer;">
+                          <!-- 0 profile icon -->
+                          <img src="../assets/user.svg" class="notify-icon">
+                      </div>
+                      <!-- 0 box apear when hover image container -->
+                      <div class="hover-box">
+                          <!-- 0 content of box -->
+                          <div class="content">
+                              <a href="ProfileViewAdmin.html"><img src="../assets/user.svg" alt="Your Photo"></a>  
+                              <div class="user-name" style="color: black;">Admin</div>   <!-- 0 name of user -->    
+                              <!-- 0 button + img of row -->
+                              <div class="img-link">
+                                  <img style="width:50px;" src="../assets/logout.png">
+                                  <a class="two-btn" href="log-in.html" style="font-size: 16px;">Sign Out</a>
+                              </div>
+                              <!-- 1 button + img of row -->
+                          </div>
+                          <!-- 1 content of box -->
+                      </div>
+                  <!-- 0 box apear when hover image container -->
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+    <section style="    background: linear-gradient(90deg, rgba(18, 22, 29, 1) 0%, rgba(9, 42, 85, 1) 84%); padding:50px 0px 0px 0px  ">
+        <div class="container">
+    <head>
+        <div class="first-line">
+            <img src="../assets/logo.png" alt="logo">
+            <div class="site-name">Author Identifcation</div>
+        </div>
+        <div class="second-line">
+            <h1 >TEll us what is in your mind</h1>
+        </div>
+        <div class="third-line" >
+            <h3>Identify million of Authors within minutes. View profiles, ratings,
+                 portfolios and write comment to them.
+                 all that in one site
+            </h3>
+        </div>
+    </head>
+    <!-- -->
+    <div class="infoe">
+        <!-- poste -->
+        <div class="poste">
+            <div class="personal-infoo">
+                <input placeholder="Choose a name for article" v-model="title" >
+            </div>
+            <div class="text">
+              <h2>write the Article here</h2>
+              <p><textarea id="try" name="description"
+                placeholder="Describe your Idea here..." class="multiline-input" v-model="conetnt"  ></textarea>
+              </p>
+            </div>
+        </div>
+        <!-- poste -->
+        <button class="publish-art-btn" @click.prevent="addArticle" >Publish</button>
+        </div>
+    <!-- -->
+        </div>
+    </section>
+</body>
+</template>
+
+

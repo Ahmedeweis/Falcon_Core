@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+        /* 0 Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 0 colors */
+  --main-color: #396FB5;
+  --main-color-alt: #A1C74D;
+  --back: #24252A;
+  /* 1 colors */
+
+  /* 0 standerd fonts*/
+  --big-font: 48px;
+  --large-font: 32px;
+  --Medium-font: 24px;
+  --midtower-font: 20px;
+  --small-font: 16px;
+  --tiny-font: 14px;
+  /* 1 standerd fonts */
+
+  /* 0 padds */
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --big-padding: 48px 16px;
+  --box-padding: 12px 24px;
+  --special-padding: 32px 0;
+  --full-padding: 24px;
+  --small-padding: 16px;
+  /* 1 padds */
+
+  /* 0 marg */
+  --flex-margin-top: 8px;
+  --flex-margin-bottom: 8px;
+  --flex-margin-left: 16px;
+  --flex-margin-right: 16px;
+  /* 1 marg */
+
+  /*
+  big icons
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+  */
+
+  /* animations*/
+  --transition: 0.4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+  /*  0 header */
+  .header {
+  color: black;
+  width: 100%;
+  z-index: 100;
+}
+@media only screen and (max-width: 50em) {
+  .header {
+    background-color:#396FB5;
+  }
+}
+.header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+.header .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 50em) {
+  .header .navigation ul {
+    display: none;
+  }
+}
+.header .navigation ul li:not(:last-child) {
+  padding: 0px 10px;
+  transition: background-color 0.5s;
+}
+.header .navigation ul li:not(:last-child) a {
+  color: black;
+  text-decoration: none;
+}
+
+.header .navigation ul li a {
+  font-size:var(--Medium-font);
+  color: #0000EE;
+}
+
+@media (max-width: 992px) {
+  .header .navigation ul li a {
+    font-size:16px;
+  }
+}
+.header .navigation ul li:not(:last-child) a:hover {
+  color: #0000EE;
+}
+.header .navigation .logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header .nav-icon {
+  display: none;
+  border: 1px solid black;
+  padding: 0.1rem;
+}
+@media only screen and (max-width: 50em) {
+  .header .nav-icon {
+    display: block;
+  }
+}
+.s-img {
+    width: 30px;
+    max-width: 100%;
+    display: block;
+}
+/* 1 header */
+/* Style the chat container */
+.chat-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top:50px;
+}
+
+.chat-container .container {
+    border: 3px solid #0D2B3E;
+    padding:20px 5px;
+    border-radius:5px;
+}
+/* Style the chat sidebar */
+.chat-sidebar {
+    flex: 1;
+}
+
+.chat-info h3 {
+    margin: 0;
+}
+.chat-info p {
+    margin: 0;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile {
+    text-align: center;
+}
+
+
+.chat-list  {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+ }
+.chat-list .chat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.chat-list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Style the chat content */
+.chat-content {
+    flex: 3;
+    padding: 20px;
+    background-color: #F0F0F0;
+    padding-top: 0;
+    margin-top: 15px;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+}
+
+.chat-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Style the chat input */
+.chat-input {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.header .navigation ul {
+  font-weight: 500;
+}
+/* Add more styles as needed */
+
+    </style>
+</head>
+<body>
+   <!-- HEADER -->
+   <header class="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">TRIPIT</div>
+        <ul style="display: flex; flex-direction: row-reverse;">
+          <li>
+            <a href="profile.html"><img src="../img/user.png" class="s-img"></a>
+          </li>
+          <li>
+            <a href="Trip-Preparation.html"> Trip Preparation </a>
+          </li>
+          <li>
+            <a href="Explore-all.html">Explore all</a>
+          </li>
+          <li>
+            <a href="../index.html#Community">Community</a>
+          </li>
+          <li>
+            <a href="../index.html#aboutt">About</a>
+          </li>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="login.html"> Log in </a>
+          </li>
+          <li>
+            <a href="signup.html" style="color: black;">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+    <div class="chat-container">
+        <div class="container">
+        <div class="chat-sidebar">
+            <div class="profile">
+                <img src="../img/user-2.jpg" alt="Profile Image">
+                <h2>John Doe</h2>
+            </div>
+            <div class="chat-list">
+                <div class="chat-item">
+                    <img src="../img/user-1.jpg" alt="User 1">
+                    <div class="chat-info">
+                        <h3>Ahmed</h3>
+                        <p>Hi sara i need to ask you some thing</p>
+                    </div>
+                </div>
+                <div class="chat-item" style="justify-self: flex-end;">
+                    <img src="../img/user-2.jpg" alt="User 2">
+                    <div class="chat-info">
+                        <h3>Sara</h3>
+                        <p>Hi Ahmed ask as you want</p>
+                    </div>
+                </div>
+                <!-- Add more chat items here -->
+            </div>
+        </div>
+        <div class="chat-content">
+            <div class="chat-header">
+                <img src="../img/user-1.jpg" alt="User 1">
+                <h2>You</h2>
+            </div>
+            <div class="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>newRegister</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" type="text/css" href="../NewCSS/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" type="text/css" href="../NewCSS/NewRegisterStyle.css">
+    <!-- icon of web site above -->
+    <link rel="icon" href="icons/web.png">
+    <!-- description -->
+    <meta name="description" content="description of your website. This will appear in search results.">
+</head>
+
+<body>
+    <!-- 0 land  -->
+    <section class="log-bodyy" id="reg">
+        <div class="container log-con">
+            <div class="log-body">
+                <div class="log-discrip">
+                    <div class="log-logo">
+                        <img class="RE-img" src="../imgs/web.png">
+                    </div>
+                    <h2 class="color-b h2-discrip">Welcome to Tatweer Services Company</h2>
+                    <div class="log-words">
+                        <p class="p-words f-bold">This website has been established to facilitate, accelerate and improve the experience of Tatweer’s 
+                            customers through the use of various services that have been specially prepared on the website.</p>
+                    </div>
+                    <div class="log-words"><p class="f-bold">If you are already registered in the website, please “<a href="html/log-in.html" class="color-b">Log in</a>” and enter your username and password. If you are not registered yet and you are a new user, 
+                        please create an account in the website by selecting "<a href="#signy" class="color-b">Sign up</a>" and complete the required information.</p></div>
+                    <div class="soci">
+                        <a href=""><img src="../imgs/facebook.png" class="soci-img"></a>
+                        <a href=""><img src="../imgs/Tweter.png" class="soci-img"></a>
+                        <a href=""><img src="../imgs/instagram.png" class="soci-img"></a>
+                        <a href=""><img src="../imgs/snap.png" class="soci-img"></a>
+                        <a href=""><img src="../imgs/whatsapp.png" class="soci-img"></a>
+                    </div>
+                </div>
+
+                <form class="log-form">
+                    <h2 class="form-head">Registeration</h2>
+
+                    <div class="kind">
+                        <div><a class="member-link" href="NewRegisterUser.html">Individual</a></div>
+                        <p>&nbsp;&nbsp;</p>
+                        <div><a class="company-link active" href="#reg">Company</a></div>
+                    </div>
+
+                    <div class="cell">
+                        <div class="cell-label">
+                            <span class="cell-name">Company-Name</span>
+                            <div class="star">*</div>
+                        </div>
+                        <input type="text" name="email" class="cell-entery">
+                    </div>
+
+                    <div class="cell">
+                        <div class="cell-label">
+                            <span class="cell-name">E-Mail</span>
+                            <div class="star">*</div>
+                        </div>
+                        <input type="text" name="email" class="cell-entery">
+                    </div>
+
+                    <div class="cell">
+                        <div class="cell-label">
+                            <span class="cell-name">phone</span>
+                            <div class="star">*</div>
+                        </div>
+                        <input type="text" name="email" class="cell-entery">
+                    </div>
+
+                    <div class="cell">
+                        <div class="cell-label">
+                            <span class="cell-name">Password</span>
+                            <div class="star">*</div>
+                        </div>
+                        <input type="password" name="email" class="cell-entery">
+                    </div>
+
+                    <div class="cell">
+                        <div class="cell-label">
+                            <span class="cell-name">Confirm Password</span>
+                            <div class="star">*</div>
+                        </div>
+                        <input type="password" name="email" class="cell-entery">
+                    </div>
+
+
+
+                    <!-- 0 fist down list emara  -->
+                    <div class="dropdown">
+                        <select class="dropdown-select" name="Emirate_City">
+                            <option disabled selected>Emirate / City*</option>
+                            <option value="option1">Abu Dhabi</option>
+                            <option value="option3" disabled>Al Ain</option>
+                            <option value="option2" disabled>Dubai Soon..!</option>
+                            <option value="option4" disabled>Sharjah Soon..!</option>
+                            <option value="option5" disabled>Ras Al Khaimah Soon..!</option>
+                            <option value="option6" disabled>Ajman Soon..!</option>
+                            <option value="option7" disabled>Umm Al Quwain Soon..!</option>
+                            <option value="option8" disabled>Fujairah Soon..!</option>
+                        </select>
+                    </div>
+                    <!-- 1 fist down list emara  -->
+                    <!-- 0 second down list jop  -->
+                    <div class="dropdown">
+                        <select name="Registration_Type" id="firstDropdown" class="dropdown-select"
+                            onchange="showSecondDropdown()">
+                            <option class="big" disabled selected value="option0">Registration Type*</option>
+                            <option value="option1">Consultant</option>
+                            <option value="option2">General Contractor</option>
+                            <option value="option3">Subcontractor</option>
+                            <option value="option4">Supplier</option>
+                        </select>
+                        <!-- 0 last option => departments -->
+                        <select name="specialization" id="secondDropdown" class="dropdown-select"
+                            style="display: none;">
+                            <option disabled selected value="option4">specialization *</option>
+                            <option value="option5"> Electrical Engineering</option>
+                            <option value="option6">Ceramic Installation</option>
+                            <option value="option7">Plumbing Department</option>
+                            <option value="option8">Decoration Works</option>
+                            <option value="option9">Reinforced Carpentry</option>
+                            <option value="option10">Elevator Works</option>
+                            <option value="option11">Reinforced Ironworks</option>
+                            <option value="option12">PASCO Installation</option>
+                            <option value="option13">Brick Installation</option>
+                            <option value="option15">Ornamental Ironworks</option>
+                            <option value="option16">Plastering Works</option>
+                            <option value="option17">Stone Installation</option>
+                            <option value="option18">Painting Works</option>
+                            <option value="option19">Aluminum and Glass Works</option>
+                            <option value="option20">Door Carpentry</option>
+                            <option value="option21">Air Conditioning Works</option>
+                            <option value="option22">Civil Defense Works</option>
+                            <option value="option23">Suspended Ceiling Works</option>
+                        </select>
+                        <!-- 1 last option => departments -->
+                    </div>
+                    <!-- 1 second down list jop  -->
+
+                    <div class="cell ">
+                        <div class="cell-label">
+                            <span class="cell-name">Professional License</span>
+                            <div class="star">*</div>
+                        </div>
+                        <input class="file-style" type="file" name="Professional_License">
+                    </div>
+                    <div class=" cheky">
+                        <input type="checkbox" name="Termes" class="chek">
+                        <p class="acceptt">I accept <a class="term-link" href="html/Terms-condition.html">
+                            Terms Conditions and Privacy Policy</a></p>
+                    </div>
+
+            <input type="submit" value="Sign-Up" class="log-in">
+
+            <div class="Reg-cell">
+                <p>Have An Account ?</p>
+                <a href="NewLogIN.html" class="register-link">Log-In Now</a>
+            </div>
+
+
+            </form>
+
+        </div>
+
+        </div>
+    </section>
+    <!-- 1 land -->
+
+    <!-- 0 scripts  -->
+                <script>
+                    function showSecondDropdown() {
+                        var firstDropdown = document.getElementById("firstDropdown");
+                        var secondDropdown = document.getElementById("secondDropdown");
+    
+                        var selectedOption = firstDropdown.options[firstDropdown.selectedIndex].value;
+    
+                        secondDropdown.style.display = "none";
+    
+                        if (selectedOption === "option3") {
+                            secondDropdown.style.display = "block";
+                        }
+                    }
+                </script>
+    <!-- 1 scripts  -->
+</body>
+
+</html>

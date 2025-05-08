@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <title>Tables</title>
+</head>
+<body>
+  <div class="search">
+    <h2>Search</h2>
+    <div class="search-inputs"> 
+      <div>
+        <input class="enter" type="text" placeholder="Name">
+        <input class="enter" type="text" placeholder="phone">
+        <input class="enter" type="text" placeholder="Barcode">
+      </div>
+    <!--  0 down list language  -->
+      <div class="dropdown">
+        <select class="dropdown-select">
+          <option disabled selected>Accuont name</option>
+          <option>ahmed</option>
+          <option>Mezo</option>
+        </select>
+        <button class="update-btn">Search</button>
+      </div>
+      <!-- 1 0 down list language   -->
+    </div>
+  </div>
+  <!-- start side bar -->
+  <header class="headbar">
+    <div class="catchs-uls">
+      <!-- start Ul -->
+      <ul class="catchs-a">
+        <a><img class="logo-img" src="imgs/logo.png"></a>
+      </ul>
+      <ul class="catchs-a">
+        <a class="linko" id="a" href="ships.php">Ships</a>
+        <a class="linko" id="a" href="account.php">Acoounts</a>
+        <a class="linko" id="a" href="status.php">Ship Status</a>
+        <a class="linko" id="a" href="vezeta.php">Vezeta</a>
+        <a class="linko" id="a" href="courier.php">Couriers</a>
+        <a class="linko" id="a" href="runner.php">Runner Sheet</a>
+      </ul>
+      <!-- end Ul -->
+      <!-- start Ul -->
+      <ul class="catchs-a catch-a-arrow linko">
+        <div class="big-links">Acountant</div>
+        <div class="arrow"><img class="arrow-img" src="next.png"></div>
+        <ul class="catchs-a arrow-links">
+          <a class="linko" id="a" href="courier_account.php">Courier Account</a>
+          <a class="linko" id="a" href="courier_details.php">Courier Details</a>
+          <a class="linko" id="a" href="account_data.php">Account</a>
+          <a class="linko" id="a" href="client_account.php">Client Account</a>
+          <a class="linko" id="a" href="creditor.php">Creditors</a>
+          <a class="linko" id="a" href="payment.php">Payments</a>
+          <a class="linko" id="a" href="account_payment.php">Account Payments</a>
+          <a class="linko" id="a" href="deposit.php">Deposits</a>
+          <a class="linko" id="a" href="daily_report.php">Daily Report</a>
+          <a class="linko" href="pickup.php">Pickup</a>
+          <a class="linko" href="cash.php">Cash</a>
+        </ul>
+      </ul>
+      <!-- end Ul -->
+      <!-- start Ul -->
+      <ul class="catchs-a">
+        <a class="linko" id="a" href="waybill.php">WayBill</a>
+        <a class="linko" id="a" href="report1.php">Report</a>
+        <a class="linko" id="a" href="u_report.php">Updates Report</a>
+        <a class="linko" href="orders_review.php">Review</a>
+        <a class="linko" id="a" href="import.php">Import</a>
+        <a class="linko logout-btn" id="a" href="logout.php">Log out</a>
+      </ul>
+      <!-- end Ul -->
+    </div>
+  </header>
+  <!-- end side bar -->
+  <!-- Start Projects Table -->
+  <div style="align-self: flex-end; border-top:solid 2px black; margin-top:150px;" class="projects p-20 bg-white m-20">
+    <h2 class="mt-0 mb-20">Dashboard or the name of table</h2>
+    <div class="responsive-table">
+      <!-- start table -->
+      <button class="update-btn">Add Ships</button>
+      <table class="fs-15 w-full">
+        <!--start head of table -->
+        <thead>
+          <tr>
+            <td>Ahmed</td>
+            <td>Client Name</td>
+            <td>Area</td>
+            <td>Address</td>
+            <td>Price</td>
+            <td>Weight</td>
+            <td>Total Price</td>
+            <td>Barcode</td>
+            <td>Date</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td>Update</td>
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <!-- end head of table -->
+        <tbody>
+          <!-- start row -->
+          <tr>
+            <td>Wesso</td>
+            <td>Dr-samy</td>
+            <td>Doky</td>
+            <td>99647 Tyshawn Walks Suite 111 Wisokybury, SC 13474-9253</td>
+            <td>80.61
+            </td>
+            <td>1</td>
+            <td>950</td>
+            <td>563f1580-5154-34dc</td>
+            <td>10-5-2022</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td><span class="label btn-shape bg-main c-black fw-bold ">status 2</span></td>
+            <td class="td-buttons">
+              <span class="bg-blue c-p"><img src="imgs/add.png"></span>
+              <span class="bg-orange c-p"><img src="imgs/edit.png"></span>
+              <span class="bg-red c-p"><img src="imgs/delete.png"></span>
+            </td>
+          </tr>
+          <!-- end row -->
+          <!-- start row -->
+          <tr>
+            <td>Wesso</td>
+            <td>Dr-samy</td>
+            <td>Doky</td>
+            <td>99647 Tyshawn Walks Suite 111 Wisokybury, SC 13474-9253</td>
+            <td>80.61
+            </td>
+            <td>1</td>
+            <td>950</td>
+            <td>563f1580-5154-34dc</td>
+            <td>10-5-2022</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td><span class="label btn-shape bg-main c-black fw-bold">status 2</span></td>
+            <td class="td-buttons">
+              <span class="bg-blue c-p"><img src="imgs/add.png"></span>
+              <span class="bg-orange c-p"><img src="imgs/edit.png"></span>
+              <span class="bg-red c-p"><img src="imgs/delete.png"></span>
+            </td>
+          </tr>
+          <!-- end row -->
+          <!-- start row -->
+          <tr>
+            <td>Wesso</td>
+            <td>Dr-samy</td>
+            <td>Doky</td>
+            <td>99647 Tyshawn Walks Suite 111 Wisokybury, SC 13474-9253</td>
+            <td>80.61
+            </td>
+            <td>1</td>
+            <td>950</td>
+            <td>563f1580-5154-34dc</td>
+            <td>10-5-2022</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td><span class="label btn-shape bg-main c-black fw-bold">status 2</span></td>
+            <td class="td-buttons">
+              <span class="bg-blue c-p"><img src="imgs/add.png"></span>
+              <span class="bg-orange c-p"><img src="imgs/edit.png"></span>
+              <span class="bg-red c-p"><img src="imgs/delete.png"></span>
+            </td>
+          </tr>
+          <!-- end row -->
+          <!-- start row -->
+          <tr>
+            <td>Wesso</td>
+            <td>Dr-samy</td>
+            <td>Doky</td>
+            <td>99647 Tyshawn Walks Suite 111 Wisokybury, SC 13474-9253</td>
+            <td>80.61
+            </td>
+            <td>1</td>
+            <td>950</td>
+            <td>563f1580-5154-34dc</td>
+            <td>10-5-2022</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td><span class="label btn-shape bg-main c-black fw-bold">status 2</span></td>
+            <td class="td-buttons">
+              <span class="bg-blue c-p"><img src="imgs/add.png"></span>
+              <span class="bg-orange c-p"><img src="imgs/edit.png"></span>
+              <span class="bg-red c-p"><img src="imgs/delete.png"></span>
+            </td>
+          </tr>
+          <!-- end row -->
+          <!-- start row -->
+          <tr>
+            <td>Wesso</td>
+            <td>Dr-samy</td>
+            <td>Doky</td>
+            <td>99647 Tyshawn Walks Suite 111 Wisokybury, SC 13474-9253</td>
+            <td>80.61
+            </td>
+            <td>1</td>
+            <td>950</td>
+            <td>563f1580-5154-34dc</td>
+            <td>10-5-2022</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td><span class="label btn-shape bg-main c-black fw-bold">status 2</span></td>
+            <td class="td-buttons">
+              <span class="bg-blue c-p"><img src="imgs/add.png"></span>
+              <span class="bg-orange c-p"><img src="imgs/edit.png"></span>
+              <span class="bg-red c-p"><img src="imgs/delete.png"></span>
+            </td>
+          </tr>
+          <!-- end row -->
+          <!-- start row -->
+          <tr>
+            <td>Wesso</td>
+            <td>Dr-samy</td>
+            <td>Doky</td>
+            <td>99647 Tyshawn Walks Suite 111 Wisokybury, SC 13474-9253</td>
+            <td>80.61
+            </td>
+            <td>1</td>
+            <td>950</td>
+            <td>563f1580-5154-34dc</td>
+            <td>10-5-2022</td>
+            <td>data</td>
+            <td>date II</td>
+            <td>data III</td>
+            <td><span class="label btn-shape bg-main c-black fw-bold">status 2</span></td>
+            <td class="td-buttons">
+              <span class="bg-blue c-p"><img src="imgs/add.png"></span>
+              <span class="bg-orange c-p"><img src="imgs/edit.png"></span>
+              <span class="bg-red c-p"><img src="imgs/delete.png"></span>
+            </td>
+          </tr>
+          <!-- end row -->
+        </tbody>
+      </table>
+      <!-- end table -->
+    </div>
+  </div>
+  <!-- End Projects Table -->
+</body>
+
+</html>

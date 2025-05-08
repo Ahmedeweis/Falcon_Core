@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesII.css">
+</head>
+<body class="sign-bod signin-bod">
+       	<!-- 0 header -->
+         <header class="">
+          <div class="container" id="home">
+            <nav class="navbar">
+              <div class="iconsy">
+                <a href="profile.html"><img src="../assets/imgs/man.png" class="icone-resize"></a>
+              </div>
+              <ul class="nav-list" id="navi-list">
+                      <li class="list-item"><a href="main.html">الرئيسية</a></li>
+                    <li class="list-item"><a href="opportunities.html">الفرص الاستثمارية</a></li>
+              </ul>
+              <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+              </div>
+               </nav>
+          </div>
+        </header>
+        <script src="../assets/js/nav-script.js"></script>
+      <!-- 1 header -->
+      <section class="sign-body">
+        <div class="container">
+            <form class="form-bod">
+                <!-- <div>
+                    <img class="icon-size-l" src="../assets/imgs/logo-word.png">
+                </div> -->
+                <h2 class="header-title c-h"> تغيير كلمة المرور</h2>
+                <!-- <p class="content-title c-s"> أهلا بك سعداء بعودتك مجددا </p> -->
+                <div class="cell">
+                    <div class="cell-label">
+                        <!-- <span class="cell-name">البريد الألكتروني</span> -->
+                        <!-- <div class="star">*</div>	 -->
+                    </div>				
+                    <input type="text" name="email" class="cell-entery" placeholder="كلمة المرور القديمة">
+                </div>
+                <div class="cell">
+                    <div class="cell-label">
+                        <!-- <span class="cell-name">كلمة المرور</span>
+                        <div class="star">*</div>	 -->
+                    </div>				
+                    <input type="text" name="email" class="cell-entery" placeholder="كلمة المررور الجديدة">
+                </div>
+                <div class="cell">
+                    <div class="cell-label">
+                        <!-- <span class="cell-name">كلمة المرور</span>
+                        <div class="star">*</div>	 -->
+                    </div>				
+                    <input type="text" name="email" class="cell-entery" placeholder="تأكيد المررور الجديدة">
+                </div>
+                <button class="mashrouk-btn"><a style="color: white;" class="hover-black" href="profile.html"> اعادة تعيين كلمة المرور </a></button>
+                <br>
+                <button class="mashrouk-btn "><a style="color: inherit;" href="profile.html">  الغاء </a></button>
+            </form>
+        </div>
+      </section>
+      <script>
+        const forgotLink = document.getElementById('forgot-link');
+        const note = document.querySelector('.note');
+    
+        forgotLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default behavior of the link
+            note.classList.toggle('note-active'); // Toggle the display of the note
+        });
+    </script>
+
+        <script src="../assets/js/ProjectScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+  </head>
+  <body>
+    <!-- 0 landing -->
+    <div class="landing">
+      <div class="container">
+        <div class="header">
+          <div class="head">
+            <img src="../images/icon.png">
+            <h2>Re<span style="color:#01BC9A">search</span>Gate</h2>  
+          </div>        
+          <ul>
+            <li>
+              <form asp-action="Search" asp-controller="other-profile"><button type="submit" style="color:#0DAE85; border-color:#0DAE85; margin-right:3px;">search</button><input type="search" name="search" placeholder="search">
+            </form></li>
+            <li><a style="color:#01BC9A;" href="home.html"><h3>Home</h3></a></li>
+            <li><a href="edit.html"><h3>Edite profile</h3></a></li>
+            <li><a href="AddCategory.html"><h3>Add category</h3></a></li>
+            <li><a href="../index.html"><h3>Log out</h3></a></li>
+        </ul>
+        </div>                         
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- 1 landing -->
+    <section class="blog-me pt-100 pb-100" id="reasearch">
+    <a style=" position:absolute; left:0px;  " href="other-profile.html"><img width="100px" height="141px" src="../images/profil-pic.jpg" alt=""/></a>
+      <div class="container">
+        <!-- Single paprer #1 -->
+        <div class="single-reasearch">
+          <div class="reasearch-content">
+            <div class="reasearch-title">
+              <h1><a href="#">Solo-learn: A Library of Self-supervised Methods for Visual Representation Learning "research name"</a></h1>
+            </div>
+            <fieldset>
+              <legend>Research paper</legend>     
+              <textarea rows="6" cols="60" readonl> content</textarea>
+            </fieldset>
+            <a href="show-paper.html" class="box_btn">read more</a>
+          </div>
+        </div> 
+        <!-- Single paprer #2 -->
+        <div class="single-reasearch">
+          <div class="reasearch-content">
+            <div class="reasearch-title">
+              <h1><a href="#">Bayesian Pseudo Posterior Mechanism under Asymptotic Differential Privacy
+               "research name"</a></h1>
+            </div>
+            <fieldset>
+              <legend>Research paper</legend>     
+              <textarea rows="6" cols="60" readonl> content</textarea>
+            </fieldset>
+            <a href="show-paper.html" class="box_btn">read more</a>
+          </div>
+        </div>
+        <!-- end paper -->                        
+      </div>
+    </section>
+  </body>
+</html>

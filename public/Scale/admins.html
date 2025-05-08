@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>index</title>
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/main-style.css" />
+    <!-- icon of web site above -->
+	<link rel="icon" href="imgs/statistics.png">
+</head>
+
+<body>
+	<div class="page d-flex">
+		<div class="sidebar bg-white p-20 p-relative">
+			<h3 class="p-relative txt-c mt-0">المسؤول</h3>
+			<ul>
+				<li>
+					<a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="statistics.html">
+						<i class="fa-regular fa-chart-bar fa-fw"></i>
+						<span>احصائيات</span>
+					</a>
+				</li>
+				<li>
+					<a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="users.html">
+						<i class="fa-regular fa-user fa-fw"></i>
+						<span> الطلاب</span>
+					</a>
+				</li>
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="results.html">
+						<i class="fa-regular fa-file fa-fw"></i>
+						<span>النتائج</span>
+					</a>
+				</li>
+                <li>
+                    <a class=" active d-flex align-center fs-14 c-black rad-6 p-10" href="admins.html">
+                      <i class="fa-regular fa-circle-user fa-fw"></i>
+                      <span>المستخدمين</span>
+                    </a>
+                  </li>
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+						<i class="fa-solid fa-gear fa-fw"></i>
+						<span>اعدادت المقياس</span>
+					</a>
+				</li>
+
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="loginAdmin.html">
+						<span>تسجيل الخروج</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content w-full">
+
+			<header class="firstpage">
+				<nav class="container ">
+					<ul class="header-ul">
+						<li class="website-name">مقياس الميول المهنية</li>
+						<li class="logo-li">
+							<img src="imgs/statistics.png" width="50px">
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- End Head -->
+			<h1 class="p-relative"> المستخدمين</h1>
+			<!-- Start Projects Table -->
+			<div class="projects p-20 bg-white rad-10 m-20">
+				<form class="mb-15">
+                    <ul class="pagination pagination-filt">
+                        <input class="input-auth-name" type="text" style="margin-left: 10px;" placeholder="اكتب هنا"/>
+                        <li class="listt listt-filt">
+                            <select class="pagination-dropdown">
+                                <option class="options" value="#page1" selected>المدرسة</option>
+                                <option class="options" value="#page2">الحرية</option>
+                                <option class="options" value="#page3">النهضة الجديدة</option>
+                                <!-- Add more options for additional pages -->
+                            </select>
+                        </li>
+                        <li class="listt">
+                            <select class="pagination-dropdown">
+                                <option class="options" value="#page1" selected>الصلاحيات</option>
+                                <option class="options" value="#page2">مدير مدرسة</option>
+                                <option class="options" value="#page3">مسؤول عام</option>
+                                <!-- Add more options for additional pages -->
+                            </select>
+                        </li>
+                        <button class="add-qui-btn" type="submit"  style="margin-right: 5px;"><img src="imgs/statistics.png" width="20px" > ابحث عن مستخدم</button>
+                    </ul>
+                    
+				</form>
+                <a href="SignUp.html" class="small-btn" style="margin-bottom: 200px;">+ أضف مستخدم جديد</a>
+                <div class="responsive-table">
+                    <!--  0 filter -->
+
+                    <!--  1 filter -->
+                    <!-- case if there are no requests put that div -->
+                    <!--
+					<div class="no-req">No Requests</div>
+					-->
+
+                    <!-- if there are requests -->
+                    <!-- 0 table -->
+                    <table class="data">
+                        <!-- 0 table head -->
+                        <thead>
+                            <tr>
+                                <td>الايميل</td>
+                                <td>كلمة المرور</td>
+                                <td>المدرسة</td>
+                                <td>الصلاحيات</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <!-- 1 table head -->
+                        <!-- 0 table body -->
+                        <tbody>
+                            <!-- 0 rows -->
+                            <!-- 0 row -->
+                            <tr>
+                                <td>mohamed965@gmail.com</td>
+                                <td>a0112521</td>
+                                <td>الحرية</td>
+                                <td>مدير مدرسة</td> 
+                                <td>
+                                    <!-- 0 تعديلe-del-list-for-post -->
+                                    <div class="monu">
+                                        <div class="menu-contento apearclick">
+                                            <a href="edite-user.html" class="newest-e-btn">تعديل</a>
+                                            <a href="" class="newest-e-btn">حذف</a>
+                                        </div>
+                                    </div>
+                                    <!-- 1 تعديلe-del-list-for-post -->
+                                </td>
+                            </tr>
+                            <!-- 1 row -->
+                            <!-- 0 row -->
+                            <tr>
+                                <td>ahmed@gmail.com</td>
+                                <td>gfk[pty0</td>
+                                <td>null</td>
+                                <td>مسؤول عام</td> 
+                                <td>
+                                    <!-- 0 تعديلe-del-list-for-post -->
+                                    <div class="monu">
+                                        <div class="menu-contento apearclick">
+                                            <a href="edite-user.html" class="newest-e-btn">تعديل</a>
+                                            <a href="" class="newest-e-btn">حذف</a>
+                                        </div>
+                                    </div>
+                                    <!-- 1 تعديلe-del-list-for-post -->
+                                </td>
+                            </tr>
+                            <!-- 1 row -->
+                            <!-- 1 rows -->
+                        </tbody>
+                        <!-- 1 table body -->
+                    </table>
+                    <!-- 1 table -->
+                </div>
+			</div>
+			<!-- End Projects Table -->
+			<ul class="pagination">
+				<li class="arrow-replace"><a href="#" rel="next" >&#9658;</a></li>
+				<li class="listt">
+					<select class="pagination-dropdown">
+						<option class="options" value="#page1" selected>1</option>
+						<option class="options" value="#page2">2</option>
+						<option class="options" value="#page3">3</option>
+						<!-- Add more options for additional pages -->
+					</select>
+				</li>
+				<li class="listt">
+					<select class="pagination-dropdown">
+						<option class="options" value="#page1" selected>5 / صفحة</option>
+						<option class="options" value="#page2">10 / صفحة</option>
+						<option class="options" value="#page3">50 / صفحة</option>
+						<option class="options" value="#page2">100 / صفحة</option>
+						<!-- Add more options for additional pages -->
+					</select>
+				</li>
+				<li class="arrow-replace"><a href="#" rel="prev" style="transform:rotate(180deg)">&#9658;</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+
+</html>

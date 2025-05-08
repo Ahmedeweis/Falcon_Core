@@ -1,0 +1,194 @@
+﻿
+body{
+    background-color:azure;
+}
+
+.cardProfile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 200px;
+    margin-left: 20px;
+    margin-top: 200px;
+    text-align: center;
+    background: lightblue;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.profilePhoto {
+    width:300px;
+    height:300px;
+}
+
+.about {
+
+    max-width: 500px;
+    margin: auto;
+}
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    padding-top: 50px;
+}
+
+.mb-100 {
+    margin-top:-200px;
+    text-align:center;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.section-title {
+    position: relative;
+}
+
+    .section-title p {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: 400;
+
+    }
+
+    .section-title h4 {
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: capitalize;
+        position: relative;
+        padding-bottom: 20px;
+        display: inline-block;
+    }
+
+        .section-title h4::before {
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 2px;
+            background-color: #d8d8d8;
+            bottom: 0;
+            left: 50%;
+            margin-left: -40px;
+        }
+
+        .section-title h4::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 2px;
+            background-color: #FF7200;
+            left: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -25px;
+        }
+
+.reasearch-img {
+    position: relative;
+}
+
+.reasearch-img img {
+    width: 100%;
+}
+
+.post-category a {
+    display: inline-block;
+    background-color: #FF7200;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 20px;
+}
+
+.single-reasearch:hover img {
+    opacity: .85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"
+}
+
+.post-category {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.reasearch-content {
+    padding: 30px 20px;
+}
+
+.single-reasearch {
+    border: 1px solid #eee;
+}
+
+.reasearch-title h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.AuthorName {
+    font:200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:17px;
+    color:darkblue;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    opacity: .85;
+}
+
+.reasearch-content a.box_btn {
+    display: inline-block;
+    background-color: #FF7200;
+    padding: 5px 15px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+a.box_btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #CC5B00;
+    left: -100%;
+    top: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: -1;
+}
+
+a.box_btn {
+    overflow: hidden;
+    z-index: 2;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative;
+    text-decoration: none;
+}
+
+    a.box_btn:hover::before {
+        left: 0;
+        z-index: -1;
+    }

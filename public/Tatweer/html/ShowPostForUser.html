@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>show post</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/ShowPost.css" />
+    <link rel="stylesheet" href="../css/nav-bar.css" />
+    <link rel="stylesheet" href="../css/replays.css" />
+    <style>
+        /* Styles for the pop-up */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .popup-button {
+            background-color: #003E7E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body class="write-article-body">
+    <!-- 0 finish nav -->
+    <div class="container" id="home">
+        <nav class="navbar">
+            <div style="display: flex;" class="iconsy">
+                <a href="">
+                    <img class="icon" src="../imgs/notificate.svg" />
+                </a>
+                <div class="image-container">
+                    <img class="icon" src="../imgs/profile.png" />
+                    <div class="hover-box">
+                        <div class="content">
+                            <!-- Content inside hover-box -->
+                            <a style="background-color: none;" href="profile.html"><img src="../imgs/profile.png"
+                                    alt="Your Photo" width="60px"></a>
+                            <div>Ahmed</div>
+                            <div class="img-link">
+                                <img src="../imgs/logout.png">
+                                <a class="two-btn" href="../html/log-in.html">log out</a>
+                            </div>
+                            <!-- Content inside hover-box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-list" id="navi-list">
+                <li class="list-item"><a>Tatweer</a></li>
+                <li class="list-item"><a href="#home">Home</a></li>
+            </ul>
+            <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+        <script>
+            const toggleButton = document.getElementById('toggle-button');
+            const naviList = document.getElementById('navi-list');
+
+            toggleButton.addEventListener('click', () => {
+                naviList.classList.toggle('active');
+            })
+        </script>
+    </div>
+    <!-- 1 finish nav -->
+
+    <section class="fix">
+        <div class="container">
+
+            <!-- -->
+            <div class="info">
+                <!-- post -->
+                <div class="post">
+                    <div class="personal-info">
+                        <div class="personal-info-child">
+                            <!--  
+                            <a href="profile.html"><img style="width:100px" src="../imgs/profil-pic.jpg" alt="" /></a>
+                            <div class="name-company">
+                                <h1>Ali</h1>
+                                <h4></h4>
+                            </div>
+-->
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2>Pesonal-House</h2>
+                        <p> Subject: Request for Engineering Assistance in Building a House on Small Ground
+
+                            Dear [Engineer's Name],
+
+                            I hope this email finds you well. I am reaching out to you because I am in need of
+                            professional engineering expertise for a house construction project. I recently acquired a
+                            small plot of land and I am eager to build a house on it. After researching your impressive
+                            background and experience, I believe you would be the ideal person to guide me through this
+                            process.
+
+                            I have a few specific concerns and questions regarding this project. First and foremost, I
+                            would appreciate your assistance in assessing the feasibility of building a house on this
+                            particular plot of land. The small size of the ground raises some challenges, and I am
+                            seeking expert advice on how to optimize the use of space while ensuring structural
+                            integrity.
+
+                            Additionally, I would like your input on architectural design considerations for small
+                            spaces. Maximizing functionality and creating a comfortable living environment within
+                            limited square footage is crucial to me. I am open to innovative design solutions that can
+                            make the most of the available area.
+
+                            Furthermore, I am interested in exploring sustainable and energy-efficient building
+                            practices for this project. If you have experience in incorporating environmentally friendly
+                            features into house construction, I would greatly appreciate your guidance in this regard.
+
+                            In terms of timelines and budgets, I am looking for an estimation of the project duration
+                            and cost. As a first-time homeowner and builder, I would greatly benefit from your expertise
+                            in creating a realistic budget plan and outlining the various stages of the construction
+                            process.
+
+                            If you are available for a consultation or a site visit, I would be more than happy to
+                            arrange a meeting at your convenience. Your professional advice and insights would be
+                            invaluable to me as I embark on this exciting journey of building my own house.
+
+                            Thank you for considering my request. I am eagerly looking forward to your response. Please
+                            let me know if there are any additional details or information you may require from me.
+
+                            Best regards,
+                        </p>
+                    </div>
+                    <div class="attach">
+                        <div>
+                            <Button><img class="imge" src="../imgs/pdf.svg"><span class="span-of-attach"> Attached
+                                    file</span> </Button>
+                            <p>attached file that might support</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- post -->
+                <!-- 0 Comments -->
+                <div class="commentos-container">
+                    <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">Bosta-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div></div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->                            
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->
+                    <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-III.png" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">ACM Company-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-III.png" alt="Profile Picture"
+                                        class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">ACM Company-John Doe</span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-III.png" alt="Profile Picture"
+                                        class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">ACM Company-John Doe</span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->
+                                       <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">Bosta-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div></div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->
+                                       <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">Bosta-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div></div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->
+                                       <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">Bosta-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div></div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->
+                                       <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">Bosta-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div></div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->                   <!-- 0 commento -->
+                    <div class="commento">
+                        <div class="commento-header">
+                            <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                            <div>
+                                <span class="commento-author">Bosta-John Doe</span>
+                            </div>
+                        </div>
+                        <div class="commento-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div></div>
+                        <button class="reply-button">Reply</button>
+                        <!-- 0 replays -->
+                        <div class="replies-container">
+                            <!-- 0 commento enter -->
+                            <div class="text write-area">
+                                <p class="commento-flex">
+                                    <textarea id="try" name="description" placeholder="write comment"
+                                        class="multiline-inputo"></textarea>
+                                    <span class="commento-icon"></span>
+                                    <input type="file" id="fileInput" class="file-input" />
+                                    <label for="fileInput" class="file-label">
+                                        <span class="file-icon"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <!-- 1 commento enter -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profil-pic.jpg" alt="Profile Picture" class="profile-picture">
+                                    <span class="reply-author">Jane Smith</span>
+                                </div>
+                                <div class="reply-content">
+                                    <p> hi pro i will build it to you i world i want to watch sea and i wanna build
+                                        house and villa for me and my pro i need to go to army too</p>
+                                </div>
+                            </div>
+                            <!-- 1 replay -->
+                            <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                                                        <!-- 0 replay -->
+                            <div class="reply">
+                                <div class="reply-header">
+                                    <img src="../imgs/profile-pic-II.jpg" alt="Profile Picture" class="profile-picture">
+                                    <div>
+                                        <span class="commento-author">Bosta-John Doe</span>
+                                        <span class="commento-author"></span>
+                                    </div>
+                                </div>
+                                <div class="reply-content">
+                                    <p>Reply to the commento.</p>
+                                </div>
+                                <!-- 0 attach to comment -->
+                                <div>
+                                    <button class="pdf"><img src="../imgs/pdf.svg " width="20px"
+                                            style="margin-right: 5px;">file</button>
+                                </div>
+                                <!-- 1 attach to comment -->
+                            </div>
+                            <!-- 1 replay -->
+                        </div>
+                        <!-- 1 replays -->
+                    </div>
+                    <!-- 1 commento -->
+
+                </div>
+ 
+
+                <script>
+                    // Add an event listener to the file input
+                    const fileInput = document.getElementById('fileInput');
+                    fileInput.addEventListener('change', handleFileUpload);
+
+                    // Function to handle the file upload
+                    function handleFileUpload(event) {
+                        const file = event.target.files[0];
+                        if (file) {
+                            // Display a pop-up message indicating a successful upload
+                            const popup = document.createElement('div');
+                            popup.classList.add('popup');
+                            const popupContent = document.createElement('p');
+                            popupContent.classList.add('popup-content');
+                            popupContent.textContent = 'File uploaded successfully!';
+                            const popupButton = document.createElement('button');
+                            popupButton.classList.add('popup-button');
+                            popupButton.textContent = 'Close';
+                            popupButton.addEventListener('click', function () {
+                                document.body.removeChild(popup);
+                            });
+                            popup.appendChild(popupContent);
+                            popup.appendChild(popupButton);
+                            document.body.appendChild(popup);
+
+                            // Display the file name below the reply box
+                            const uploadedFileName = document.getElementById('uploadedFileName');
+                            uploadedFileName.textContent = 'Uploaded File: ' + file.name;
+                        }
+                    }
+                </script>
+                <script type="text/javascript">
+                    var replyButtons = document.querySelectorAll('.reply-button');
+                    replyButtons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                            var repliesContainer = button.nextElementSibling;
+                            repliesContainer.classList.toggle('show-replies');
+                        });
+                    });
+                </script>
+                <!-- 1 Comments -->
+
+            </div>
+            <!-- -->
+            <div class="about-client">
+                <h2 class="h-about">About the client</h2>
+                <div class="infu-boxv">
+                    <div class="catch-photo">
+                        <img src="../imgs/profil-pic.jpg">
+                    </div>
+                    <div class="data-infu">
+                        <div class="infu">Name: Ali</div>
+                        <div class="infu">Email:<span>Ali@gmail.com</span></div>
+                        <div class="infu">Emirate/City:<span>Dubai</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+        </div>
+    </section>
+
+</body>
+
+</html>

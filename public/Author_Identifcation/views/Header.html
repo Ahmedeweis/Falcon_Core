@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="standerd.css" />
+</head>
+<!-- start header style -->
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px 1px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+
+    ul li {
+        padding: 1px 10px;
+    }
+
+    nav li a {
+        color: black;
+        transition: 0.5s;
+    }
+
+    nav li a:hover {
+        color: black;
+    }
+
+    .L-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .R-link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .Title {
+        font-size: 30px;
+    }
+
+    .icon-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-profile img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    /* 1 header */
+    .user-icon,
+    .notify-icon {
+        width: 32px;
+    }
+
+    .notify-icon {
+        width: 32px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .hover-box {
+        position: absolute;
+        right:0;
+        background-color:white;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        width: 150px;
+        border: 2px solid black;
+    }
+
+    .img-link {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+
+    .image-container:hover .hover-box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .content img {
+        width: 40px;
+    }
+
+    .content a,
+    .two-btn {
+        align-items: center;
+        display: flex;
+        padding: 3px 3px;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .content a:hover,
+    .two-btn {
+        color: black;
+    }
+</style>
+
+<!-- End header style -->
+
+<body>
+    <header class="nav">
+        <nav class="container">
+
+            <ul class="L-link">
+                <li style="padding-left:0px;"><a href="" class="Title">LiteraryFingerprint</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">skills</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+
+            <ul class="R-link">
+                <li>
+                    <!-- 0 Hover that image container to get list  -->
+                    <div class="image-container">
+                        <!-- 0 link gog to profile -->
+                        <a href="profile.html">
+                            <!-- 0 profile icon -->
+                            <img src="../imgs/user.svg" class="notify-icon">
+                        </a>
+                        <!-- 0 box apear when hover image container -->
+                        <div class="hover-box">
+                            <!-- 0 content of box -->
+                            <div class="content">
+                                <a href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"></a>  <!-- 0 profile icon + link -->   
+                                <div class="user-name">Ahmed</div>   <!-- 0 name of user -->    
+                                <!-- 0 button + img of row -->
+                                <div class="img-link">
+                                    <img style="width:50px;" src="../imgs/logout.png">
+                                    <a class="two-btn" href="../html/log-in.html">log out</a>
+                                </div>
+                                <!-- 1 button + img of row -->
+                            </div>
+                            <!-- 1 content of box -->
+                        </div>
+                    <!-- 0 box apear when hover image container -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/WriteArticle.css">
+    <style>
+        .handle-nav ul li a {
+           
+            transition: 0.5s;
+        }
+        .nav {
+            background-color: white;
+        }
+    </style>
+</head>
+<header class="nav">
+    <div class="container">
+        <div class="handle-nav">
+            <ul class="L-link">
+                <a href="#" class="Logo-apear"><img src="../assets/logo.png" class="head-photo-width"></a>
+                <li style="padding-left:0px;" class="word-apear"><a href="#" class="Title">Author Identifcation</a></li>
+                <li><a href="DashboardView.html">Home</a></li>
+                <li><a href="AuthorsUserView.html">Authors</a></li>
+            </ul>
+            <ul class="R-link">
+                <li>
+                    <!-- 0 Hover that image container to get list  -->
+                    <div class="image-container">
+                        <!-- 0 link gog to profile -->
+                        <div style="cursor: pointer;">
+                            <!-- 0 profile icon -->
+                            <img src="../assets/user.svg" class="notify-icon">
+                        </div>
+                        <!-- 0 box apear when hover image container -->
+                        <div class="hover-box">
+                            <!-- 0 content of box -->
+                            <div class="content">
+                                <a href="ProfileView.html"><img src="../assets/user.svg" alt="Your Photo"></a>
+                                <div class="user-name">Ahmed</div> <!-- 0 name of user -->
+                                <!-- 0 button + img of row -->
+                                <div class="img-link">
+                                    <img style="width:50px;" src="../assets/logout.png">
+                                    <a class="two-btn" href="log-in.html" style="font-size: 16px; color: black;">Sign
+                                        Out</a>
+                                </div>
+                                <!-- 1 button + img of row -->
+                            </div>
+                            <!-- 1 content of box -->
+                        </div>
+                        <!-- 0 box apear when hover image container -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body class="write-article-body">
+    <header>
+        <!-- Include your headNav component here (if it's not Vue.js specific) -->
+    </header>
+    <section>
+        <div class="container">
+            <header>
+                <div class="first-line">
+                    <img src="../assets/logo.png">
+                    <div class="site-name">Author Identification</div>
+                </div>
+                <div class="second-line">
+                    <h1>The name of author is Brad Doefman</h1>
+                </div>
+                <div class="third-line">
+                    <!-- Remove any Vue.js-specific code here -->
+                </div>
+            </header>
+        </div>
+    </section>
+    <section style="padding-top: 10px;">
+        <div class="container">
+            <div class="info">
+                <!-- 0 post -->
+                <div class="post" style="width: 100%; flex-direction: column; background-color: white; border: none;">
+                    <div class="personal-info2" style="width: 100%;">
+                        <div class="personal-info2-child" style="justify-content: space-between;">
+                            <!-- Remove {{authorName}} -->
+                            &nbsp;
+                            <h2 class="company name" style="margin-bottom: 10px;">Brad Doefman</h2>
+                        </div>
+                        <div style="justify-self: flex-end;">
+                            <!-- Remove any Vue.js-specific code here -->
+                        </div>
+                        <div class="text" style="width: 100%;">
+                            <textarea style="resize: none;"
+                                placeholder="Best Buy Co Inc. is the first of many retailers that will report falling margins as merchants reluctantly cling to steep discounts to draw consumers in this holiday season Author of the article: Reuters Frederic J. Brown/AFP/Getty Images Article content By Brad Dorfman and Jessica Wohl Advertisement Story continues below This advertisement has not loaded yet, but your article continues below. Article content Best Buy Co Inc."
+                                class="multiline-input"></textarea>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+
+                    <!-- 0 content Comment -->
+                    <div class="bottom-chat speic">
+                        <div class="container">
+                            <div class="cell">
+                                <textarea name="email" disabled class="auto-expand-textarea multiline-input-b border"
+                                    placeholder="I've read all your novels, and they are great."
+                                    oninput="autoExpand(this)"></textarea>
+                                <label for="profile-image-input" class="file-input-label">
+                                    <input id="profile-image-input" type="file" name="profile_image" disabled>
+                                    <span class="camera-icon">
+                                        <img width="30px" src="../assets/trash.png" class="attach-icon">
+                                    </span>
+                                </label>
+                            </div>
+                            <h3 href="" class="sent-icone">
+                                Ali
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Repeat the structure for other articles -->
+
+                    <!-- 0 content Comment -->
+                    <div class="bottom-chat speic ">
+                        <div class="container">
+                            <div class="cell">
+                                <textarea name="email" disabled class="auto-expand-textarea multiline-input-b border"
+                                    placeholder="I've read all your novels, and they are great."
+                                    oninput="autoExpand(this)"></textarea>
+                                <label for="profile-image-input" class="file-input-label">
+                                    <input id="profile-image-input" type="file" name="profile_image" disabled>
+                                    <span class="camera-icon">
+                                        <img width="30px" src="../assets/trash.png" class="attach-icon">
+                                    </span>
+                                </label>
+                            </div>
+                            <h3 href="" class="sent-icone">
+                                Ahmed
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Repeat the structure for other articles -->
+
+                </div>
+                <!-- 0 write Comment -->
+                <div class="bottom-chat ">
+                    <div class="container">
+                        <div class="cell">
+                            <textarea name="email" class="auto-expand-textarea" placeholder="your comment here"
+                                oninput="autoExpand(this)"></textarea>
+                        </div>
+                        <a href="" class="sent-icone">
+                            <img src="../assets/communication.png" style=" margin-top:10px; transform: translateX(180deg);"
+                                width="30px;" class="nav-bar-img active-bottom-link">
+                        </a>
+                    </div>
+                </div>
+                <!-- 1 write Comment -->
+    </section>
+    <section style="padding-top: 10px;">
+        <div class="container">
+            <div class="info">
+                <!-- 0 post -->
+                <div class="post" style="width: 100%; flex-direction: column; background-color: white; border: none;">
+                    <div class="personal-info2" style="width: 100%;">
+                        <div class="personal-info2-child" style="justify-content: space-between;">
+                            <!-- Remove {{authorName}} -->
+                            &nbsp;
+                            <h2 class="company name" style="margin-bottom: 10px;">Brad Doefman</h2>
+                        </div>
+                        <div style="justify-self: flex-end;">
+                            <!-- Remove any Vue.js-specific code here -->
+                        </div>
+                        <div class="text" style="width: 100%;">
+                            <textarea style="resize: none;"
+placeholder="At the heart of this world lies the concept of authorial excellence Its a realm where individuals are not just writers but artists of language. They possess the skill to weave intricate narratives, create vivid characters, and evoke emotions with the stroke of a pen or the tap of a keyboard."
+                                class="multiline-input"></textarea>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+
+                    <!-- 0 content Comment -->
+                    <div class="bottom-chat speic">
+                        <div class="container">
+                            <div class="cell">
+                                <textarea name="email" disabled class="auto-expand-textarea multiline-input-b border"
+                                    placeholder="I've read all your novels, and they are great."
+                                    oninput="autoExpand(this)"></textarea>
+                                <label for="profile-image-input" class="file-input-label">
+                                    <input id="profile-image-input" type="file" name="profile_image" disabled>
+                                    <span class="camera-icon">
+                                        <img width="30px" src="../assets/trash.png" class="attach-icon">
+                                    </span>
+                                </label>
+                            </div>
+                            <h3 href="" class="sent-icone">
+                                Ali
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Repeat the structure for other articles -->
+
+                    <!-- 0 content Comment -->
+                    <div class="bottom-chat speic ">
+                        <div class="container">
+                            <div class="cell">
+                                <textarea name="email" disabled class="auto-expand-textarea multiline-input-b border"
+                                    placeholder="I've read all your novels, and they are great."
+                                    oninput="autoExpand(this)"></textarea>
+                                <label for="profile-image-input" class="file-input-label">
+                                    <input id="profile-image-input" type="file" name="profile_image" disabled>
+                                    <span class="camera-icon">
+                                        <img width="30px" src="../assets/trash.png" class="attach-icon">
+                                    </span>
+                                </label>
+                            </div>
+                            <h3 href="" class="sent-icone">
+                                Ahmed
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Repeat the structure for other articles -->
+
+                </div>
+                <!-- 0 write Comment -->
+                <div class="bottom-chat ">
+                    <div class="container">
+                        <div class="cell">
+                            <textarea name="email" class="auto-expand-textarea" placeholder="your comment here"
+                                oninput="autoExpand(this)"></textarea>
+                        </div>
+                        <a href="" class="sent-icone">
+                            <img src="../assets/communication.png" style=" margin-top:10px; transform: translateX(180deg);"
+                                width="30px;" class="nav-bar-img active-bottom-link">
+                        </a>
+                    </div>
+                </div>
+                <!-- 1 write Comment -->
+    </section>
+</body>
+
+</html>

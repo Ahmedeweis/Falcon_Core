@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign-up-users</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="sign-up-body flexx">
+	<div class="translate">
+		<a href=""><span> العربية </span></a>
+		<img src="imgs/arabic.png">
+	</div>
+
+	<section id="box" class="box">
+		<form action="submit" method="get" name="User_reg" target="_blank" enctype="multipart/form-data" >
+			 <!-- 
+			<div class="icon">
+			<span class="ar-logo">تطوير للخدمات الإلكترونية</span>
+			<br>
+			<span class="en-logo">TATWEER ELECTRONIC SERVICES COMPANY</span>
+			<img src="imgs/web.png">
+			</div>
+		-->
+			<h2>Get Started Now !</h2>
+			<h2 style="font-size:18px;">Registration</h2>
+			<div class="kind">
+				<div> <a class="member-link active " href="#box"> Individual </a></div>
+				<p>&nbsp;&nbsp;</p>
+				<div><a class="company-link " href="company.html"> company </a></div>
+			</div>
+			<div class="user-section">
+			</div>
+			<div class="input-box first">
+				<input type="text" name="Name" value="" id="signy" required>
+				<span>Name*</span>
+				<i></i>
+			</div>
+			<div class="input-box">
+				<input type="email" name="e-mail"  required >
+				<span>e-mail*</span>
+				<i></i>
+			</div>
+			<div class="input-box">
+				<input type="password" name="password" required >
+				<span>password*</span>
+				<i></i>
+			</div>
+			<div class="input-box">
+				<input type="password" name="password" required >
+				<span>confirm password*</span>
+				<i></i>
+			</div>
+			<div class="input-box">
+				<input type="text" name="phone"  required  >
+				<span>Phone*</span>
+				<i></i>
+			</div>
+			<div class="dropdown">
+				<select class="dropdown-select" name="Nationality">
+					<option value="option0" disabled selected >Nationality</option>
+					<option value="option1">Afghanistan</option>
+					<option value="option2">Albania</option>
+					<option value="option3">Algeria</option>
+					<option value="option4">Andorra</option>
+					<option value="option5">Angola</option>
+					<option value="option6">Antigua and Barbuda</option>
+					<option value="option7">Argentina</option>
+					<option value="option8">Armenia</option>
+					<option value="option9">Australia</option>
+					<option value="option10">Austria</option>
+					<option value="option11">Azerbaijan</option>
+					<option value="option12">Bahamas</option>
+					<option value="option13">Bahrain</option>
+					<option value="option14">Bangladesh</option>
+					<option value="option15">Barbados</option>
+					<option value="option16">Belarus</option>
+					<option value="option17">Belgium</option>
+					<option value="option18">Belize</option>
+					<option value="option19">Benin</option>
+					<option value="option20">Bhutan</option>
+					<option value="option21">Bolivia</option>
+					<option value="option22">Bosnia and Herzegovina</option>
+					<option value="option23">Botswana</option>
+					<option value="option24">Brazil</option>
+					<option value="option25">Brunei</option>
+					<option value="option26">Bulgaria</option>
+					<option value="option27">Burkina Faso</option>
+					<option value="option28">Burundi</option>
+					<option value="option29">Cambodia</option>
+					<option value="option30">Cameroon</option>
+					<option value="option31">Canada</option>
+					<option value="option32">Cape Verde</option>
+					<option value="option33">Central African Republic</option>
+					<option value="option34">Chad</option>
+					<option value="option35">Chile</option>
+					<option value="option36">China</option>
+					<option value="option37">Colombia</option>
+					<option value="option38">Comoros</option>
+					<option value="option39">Congo, Democratic Republic of</option>
+					<option value="option40">Congo, Republic of the</option>
+					<option value="option41">Costa Rica</option>
+					<option value="option42">Côte d'Ivoire (Ivory Coast)</option>
+					<option value="option43">Croatia</option>
+					<option value="option44">Cuba</option>
+					<option value="option45">Cyprus</option>
+					<option value="option46">Czech Republic (Czechia)</option>
+					<option value="option47">Denmark</option>
+					<option value="option48">Djibouti</option>
+					<option value="option49">Dominica</option>
+					<option value="option50">Dominican Republic</option>
+					<option value="option51">East Timor</option>
+					<option value="option52">Ecuador</option>
+					<option value="option53">Egypt</option>
+					<option value="option54">El Salvador</option>
+					<option value="option55">England</option>
+					<option value="option56">Equatorial Guinea</option>
+					<option value="option57">Eritrea</option>
+					<option value="option58">Estonia</option>
+					<option value="option59">Eswatini (Swaziland)</option>
+					<option value="option60">Ethiopia</option>
+					<option value="option61">Federated States of Micronesia</option>
+					<option value="option62">Fiji</option>
+					<option value="option63">Finland</option>
+					<option value="option64">France</option>
+					<option value="option65">Gabon</option>
+					<option value="option66">Gambia</option>
+					<option value="option67">Georgia</option>
+					<option value="option68">Germany</option>
+					<option value="option69">Ghana</option>
+					<option value="option70">Greece</option>
+					<option value="option71">Grenada</option>
+					<option value="option72">Guatemala</option>
+					<option value="option73">Guinea</option>
+					<option value="option74">Guinea-Bissau</option>
+					<option value="option75">Guyana</option>
+					<option value="option76">Haiti</option>
+					<option value="option77">Honduras</option>
+					<option value="option78">Hungary</option>
+					<option value="option79">Iceland</option>
+					<option value="option80">India</option>
+					<option value="option81">Indonesia</option>
+					<option value="option82">Iran</option>
+					<option value="option83">Iraq</option>
+					<option value="option84">Ireland</option>
+					<option value="option85">Palestine</option>
+					<option value="option86">Italy</option>
+					<option value="option87">Jamaica</option>
+					<option value="option88">Japan</option>
+					<option value="option89">Jordan</option>
+					<option value="option90">Kazakhstan</option>
+					<option value="option91">Kenya</option>
+					<option value="option92">Kiribati</option>
+					<option value="option93">Kosovo</option>
+					<option value="option94">Kuwait</option>
+					<option value="option95">Kyrgyzstan</option>
+					<option value="option96">Laos</option>
+					<option value="option97">Latvia</option>
+					<option value="option98">Lebanon</option>
+					<option value="option99">Lesotho</option>
+					<option value="option100">Liberia</option>
+					<option value="option101">Libya</option>
+					<option value="option102">Liechtenstein</option>
+					<option value="option103">Lithuania</option>
+					<option value="option104">Luxembourg</option>
+					<option value="option105">Madagascar</option>
+					<option value="option106">Malawi</option>
+					<option value="option107">Malaysia</option>
+					<option value="option108">Maldives</option>
+					<option value="option109">Mali</option>
+					<option value="option110">Malta</option>
+					<option value="option111">Marshall Islands</option>
+					<option value="option112">Mauritania</option>
+					<option value="option113">Mauritius</option>
+					<option value="option114">Mexico</option>
+					<option value="option115">Moldova</option>
+					<option value="option116">Monaco</option>
+					<option value="option117">Mongolia</option>
+					<option value="option118">Montenegro</option>
+					<option value="option119">Morocco</option>
+					<option value="option120">Mozambique</option>
+					<option value="option121">Myanmar (Burma)</option>
+					<option value="option122">Namibia</option>
+					<option value="option123">Nauru</option>
+					<option value="option124">Nepal</option>
+					<option value="option125">Netherlands</option>
+					<option value="option126">New Zealand</option>
+					<option value="option127">Nicaragua</option>
+					<option value="option128">Niger</option>
+					<option value="option129">Nigeria</option>
+					<option value="option130">North Korea</option>
+					<option value="option131">North Macedonia (Macedonia)</option>
+					<option value="option132">Northern Ireland</option>
+					<option value="option133">Norway</option>
+					<option value="option134">Oman</option>
+					<option value="option135">Pakistan</option>
+					<option value="option136">Palau</option>
+					<option value="option137">Panama</option>
+					<option value="option138">Papua New Guinea</option>
+					<option value="option139">Paraguay</option>
+					<option value="option140">Peru</option>
+					<option value="option141">Philippines</option>
+					<option value="option142">Poland</option>
+					<option value="option143">Portugal</option>
+					<option value="option144">Qatar</option>
+					<option value="option145">Romania</option>
+					<option value="option146">Russia</option>
+					<option value="option147">Rwanda</option>
+					<option value="option148">Saint Kitts and Nevis</option>
+					<option value="option149">Saint Lucia</option>
+					<option value="option150">Saint Vincent and the Grenadines</option>
+					<option value="option151">Samoa</option>
+					<option value="option152">San Marino</option>
+					<option value="option153">Sao Tome and Principe</option>
+					<option value="option154">Saudi Arabia</option>
+					<option value="option155">Scotland</option>
+					<option value="option156">Senegal</option>
+					<option value="option157">Serbia</option>
+					<option value="option158">Seychelles</option>
+					<option value="option159">Sierra Leone</option>
+					<option value="option160">Singapore</option>
+					<option value="option161">Slovakia</option>
+					<option value="option162">Slovenia</option>
+					<option value="option163">Solomon Islands</option>
+					<option value="option164">Somalia</option>
+					<option value="option165">South Africa</option>
+					<option value="option166">South Korea</option>
+					<option value="option167">South Sudan</option>
+					<option value="option168">Spain</option>
+					<option value="option169">Sri Lanka</option>
+					<option value="option170">Sudan</option>
+					<option value="option171">Suriname</option>
+					<option value="option172">Sweden</option>
+					<option value="option173">Switzerland</option>
+					<option value="option174">Syria</option>
+					<option value="option175">Taiwan</option>
+					<option value="option176">Tajikistan</option>
+					<option value="option177">Tanzania</option>
+					<option value="option178">Thailand</option>
+					<option value="option179">Togo</option>
+					<option value="option180">Tonga</option>
+					<option value="option181">Trinidad and Tobago</option>
+					<option value="option182">Tunisia</option>
+					<option value="option183">Turkey</option>
+					<option value="option184">Turkmenistan</option>
+					<option value="option185">Tuvalu</option>
+					<option value="option186">Uganda</option>
+					<option value="option187">Ukraine</option>
+					<option value="option188">United Arab Emirates</option>
+					<option value="option189">United Kingdom</option>
+					<option value="option190">United States</option>
+					<option value="option191">Uruguay</option>
+					<option value="option192">Uzbekistan</option>
+					<option value="option193">Vanuatu</option>
+					<option value="option194">Vatican City (Holy See)</option>
+					<option value="option195">Venezuela</option>
+					<option value="option196">Vietnam</option>
+					<option value="option197">Wales</option>
+					<option value="option198">Yemen</option>
+					<option value="option199">Zambia</option>
+					<option value="option200">Zimbabwe</option>
+				</select>
+			</div>
+			<!-- 0 0 down list language  -->
+			<!--  
+			<div class="dropdown">
+				<select class="dropdown-select" name="Language">
+					<option disabled selected> Language </option>
+					<option value="option1"> English </option>
+					<option value="option2"> العربية </option>
+				</select>
+			</div>
+			-->
+			<!-- 1 0 down list language   -->
+			<div class="custom-input-box">
+				<label style="font-size:19px;">Birth Date</label>
+				<input class="custom-date-input" type="date" name="Date"  >
+			</div>
+			<!-- 0 fist down list emara  -->
+			<div class="dropdown">
+				<select class="dropdown-select"  name="Emirate_City">
+					<option disabled selected>Emirate / City*</option>
+					<option value="option1">Abu Dhabi</option>
+					<option value="option3" >Al Ain</option>
+					<option value="option2" disabled>Dubai Soon..!</option>
+					<option value="option4" disabled>Sharjah Soon..!</option>
+					<option value="option5" disabled>Ras Al Khaimah Soon..!</option>
+					<option value="option6" disabled>Ajman Soon..!</option>
+					<option value="option7" disabled>Umm Al Quwain Soon..!</option>
+					<option value="option8" disabled>Fujairah Soon..!</option>
+				</select>
+			</div>
+			<!-- 1 fist down list emara  -->
+			<div class="input-file-box">
+				<span class="input-file">Identity card*</span>
+				<p>&nbsp;</p>
+				<input type="file" name="Identity_card"  >
+				<i></i>
+			</div>
+			<div class="remember-forget">
+				<div><input type="checkbox" name="Termes" class="chek">
+					<p class="acceptt">I accept <a class="term-link" href="html/Terms-condition.html">Terms Conditions and Privacy Policy</a></p>
+				</div>
+			</div>
+			<input type="submit" value="Sign-Up"   name="submit">
+			<div class="transfare"><a href="html/log-in.html"> have an acount ? Log-In now</div>
+		</form>
+	</section>
+	<section class="additions">
+		<div class="icon">
+			<span class="ar-logo">تطوير للخدمات الإلكترونية</span>
+			<br>
+			<span class="en-logo">TATWEER ELECTRONIC SERVICES COMPANY</span>
+			<img src="imgs/web.png">
+		</div>
+			<div><h2 class="color-b">Welcome to Tatweer Services Company</h2></div>
+			<div><p class="f-bold">This website has been established to facilitate, accelerate and improve the experience of Tatweer’s 
+				customers through the use of various services that have been specially prepared on the website.</p></div>
+			<div><p class="f-bold">If you are already registered in the website, please “<a href="html/log-in.html" class="color-b">Log in</a>” and enter your username and password. If you are not registered yet and you are a new user, 
+				please create an account in the website by selecting "<a href="#signy" class="color-b">Sign up</a>" and complete the required information.</p></div>
+			<div><h2 class="color-b">Let’s start and enjoy! ............ </h2></div>
+			<div class="soci">
+				<img src="imgs/facebook.png">
+				<img src="imgs/Tweter.png">
+				<img src="imgs/instagram.png">
+				<img src="imgs/snap.png">
+				<img src="imgs/whatsapp.png">
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

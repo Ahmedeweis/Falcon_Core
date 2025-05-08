@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!-- <html lang="ar" dir="rtl"> -->
+<!-- <html> -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body style="background-color: #f1f1f1;">
+    <!-- 0 finish nav -->
+    <section class="page-links" id="home">
+        <div class="container">
+            <nav class="navbar">
+                <div class="iconsy">
+                    <a href="log-in.html" class="special special-act " style="font-size: 16px;">Log-In</a>
+                    <a href="../user.html" class="special " style="font-size: 16px;">Register</a>
+                </div>
+                <ul class="nav-list" id="navi-list">
+                    <li class="list-item"><a href="#land">Tatweer</a></li>
+                    <li class="list-item"><a href="#land">Home</a></li>
+                    <li class="list-item"><a href="#services">Services</a></li>
+                    <li class="list-item"><a href="#features">Features</a></li>
+                    <li class="list-item"><a href="#about-us">About Us</a></li>
+                    <li class="list-item"><a href="#contact-us">Contact Us</a></li>
+                </ul>
+                <div class="menu" id="toggle-button">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </nav>
+            <script>
+                const toggleButton = document.getElementById('toggle-button');
+                const naviList = document.getElementById('navi-list');
+
+                toggleButton.addEventListener('click', () => {
+                    naviList.classList.toggle('active');
+                })
+            </script>
+        </div>
+        <!-- 1 finish nav -->
+    </section>
+    <!-- 0 land -->
+    <div class="slideshow-container" id="land">
+        <div class="mySlides fade">
+            <div class="numbertext">
+                <h1 class="title-h">
+                    Save Money ..
+                </h1>
+                <p class="content-p">Unlock exclusive benefits, gain access to premium features,<br> discover exciting
+                    opportunities, and experience a world of possibilities.</p>
+                <button class="register-btn"><a href="" class="register-link">Register</a></button>
+            </div>
+            <img src="../imgs/img1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">
+                <h1 class="title-h">
+                    Save Time
+                </h1>
+                <p class="content-p">Save time by joining our vibrant community of like-minded individuals,<br>
+                    connecting with experts in your field, and embarking on a journey of growth and collaboration.</p>
+                <button class="register-btn"><a href="" class="register-link">Register</a></button>
+            </div>
+            <img src="../imgs/img4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">
+                <h1 class="title-h">
+                    Improve Your
+                    <br> Business..!
+                </h1>
+                <p class="content-p">Join our vibrant community of like-minded individuals,<br> connect with experts in
+                    your field, and embark on a journey of growth and collaboration.</p>
+                <button class="register-btn"><a href="" class="register-link">Register</a></button>
+            </div>
+            <img src="../imgs/img2.jpg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="numbertext">
+                <h1 class="title-h">
+                    Reduce Effort.
+                </h1>
+                <p class="content-p">Don't miss out on exclusive updates, special promotions, and insider insights.<br>
+                    Register today and stay one step ahead in the ever-evolving world.</p>
+                <button class="register-btn"><a href="" class="register-link">Register</a></button>
+            </div>
+            <img src="../imgs/img3.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <div style="text-align:center; margin-top:5px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!-- 1 land -->
+    <!-- 0 about us -->
+    <section class="about-s" id="about-us">
+        <div class="main-heading">
+            <h2>About us</h2>
+        </div>
+        <div class="container">
+            <div class="about-text">
+                <h2 class="about-h">About us</h2>
+                <p class="about-p">
+                    <!--  
+                    Welcome to our website! We are a dedicated team of professionals committed to providing exceptional
+                    service .. Our goal is to assist and collaborate with individuals and businesses to achieve their
+                    project objectives seamlessly<br>
+                    With our extensive expertise and industry experience, we offer comprehensive solutions to meet your
+                    specific needs.
+                    -->
+                    We are <a style="color: #0070C0;">(TATWEER SERVICES COMPANY) </a> which registered in the United
+                    Arab Emirates, Al Ain city and was
+                    established in May 2023.
+                    <br>
+                    <br>
+                    This website has been established to facilitate, accelerate and improve the experience of Tatweer’s
+                    customers through the use of various services that have been specially prepared on the website.
+                    <br>
+                    <br>
+                    We are the third party between the customers and the companies providing the services such as:
+                </p>
+                <div>
+                    <button class="learn-more-btn">Learn more</button>
+                    <button class="watch-vid-btn">Watch Video<img src="../imgs/play.png" class="play-photo"></button>
+                </div>
+            </div>
+            <div class="about-numbers">
+                <!-- #1 box-num  -->
+                <div class="num-box light-box ever">
+                    <div class="num">1000+</div>
+                    <span class="text-span">Compelete<br>Projects</span>
+                </div>
+                <!-- #1 box-num -->
+                <!-- #2 box-num  -->
+                <div class="num-box">
+                    <div class="num">500+</div>
+                    <span class="text-span">Happy<br>Clients</span>
+                </div>
+                <!-- #2 box-num -->
+                <!-- #3 box-num  -->
+                <div class="num-box d-b">
+                    <div class="num">250+</div>
+                    <span class="text-span">On Going<br>Projects</span>
+                </div>
+                <!-- #3 box-num -->
+                <!-- #4 box-num  -->
+                <div class="num-box f-b">
+                    <div class="num">25+</div>
+                    <span class="text-span">Official<br>Companies</span>
+                </div>
+                <!-- #4 box-num -->
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $(".num-box").hover(
+                        function () {
+                            $(".light-box").removeClass("light-box");
+                            $(this).addClass("light-box");
+                        },
+                        function () {
+                            $(this).removeClass("light-box");
+                        }
+                    );
+                });
+            </script>
+        </div>
+    </section>
+    <!-- 1 about us -->
+    <!-- 0 services -->
+    <section class="services" id="services">
+        <div class="main-heading">
+            <h2>Services</h2>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <!--  -->
+                    <!-- Card 1 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image ">
+                                <img src="../imgs/serv1.jpeg" alt="" class="card-img ">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">1-CONSTRUCTIONS</h2>
+                            <p class=" description"> Professional construction companies that undertake building
+                                projects,
+                                including residential, commercial, and infrastructure developments.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv2.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">2-SPORTS CENTER</h2>
+                            <p class="description"> Facilities that provide a range of sports activities, equipment,
+                                and training programs to promote fitness and active lifestyles.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv3.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">3-PEST CONTROL</h2>
+                            <p class="description">Expert services that eliminate and prevent the infestation of pests,
+                                such as insects, rodents, and termites.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv4.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">4-REAL STATE</h2>
+                            <p class="description"> Industry that deals with the buying, selling,
+                                and renting of properties, including homes, apartments, and commercial spaces.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content filt">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../imgs/serv5.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">5-INSURANCE</h2>
+                            <p class="description"> Companies that offer protection and coverage against various risks,
+                                providing financial security and peace of mind.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content filt">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../imgs/serv6.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">6-SPA CENTER</h2>
+                            <p class="description">Relaxing establishments that offer rejuvenating spa treatments,
+                                including massages, facials, and body therapies.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content filt">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../imgs/serv7.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">7-CAR RENT</h2>
+                            <p class="description"> Services that provide temporary access to vehicles
+                                for individuals who require transportation for a specific period..</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv8.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">8-CLEANING</h2>
+                            <p class="description">Professional cleaning services that ensure cleanliness and hygiene in
+                                homes,
+                                offices, and other environments.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv9.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">9-SECURITY</h2>
+                            <p class="description">Companies that offer security solutions, including surveillance,
+                                alarm systems, and trained personnel, to protect individuals and properties.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv10.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">10-CARPETS CLEANING</h2>
+                            <p class="description"> Professional service that removes dirt and stains from carpets,
+                                leaving them fresh and revitalized.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 11 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv11.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">11-DRIVING TEACHING</h2>
+                            <p class="description">Certified instructors who provide comprehensive driving lessons and
+                                training to
+                                help learners acquire driving skills and obtain licenses.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv12.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">12-WATER DELIVERY</h2>
+                            <p class="description">Convenient service that delivers
+                                fresh and clean drinking water directly to homes or businesses.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 13 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv13.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">13-BEAUTY CENTER</h2>
+                            <p class="description">A place where individuals can receive a variety of beauty treatments,
+                                such as hairstyling, manicures, pedicures, and facials.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <!-- Card 14 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv14.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">14-SHIPPING COMPANIES</h2>
+                            <p class="description"> Companies that offer reliable transportation services for
+                                shipping goods and packages locally or internationally.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <!-- Card 15 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv15.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">15-TOURISM COMPANIES</h2>
+                            <p class="description">Organizations that provide travel and tour services,
+                                offering memorable experiences and guidance for exploring different destinations.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <!-- Card 16 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv16.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">16-DOMESTIC WORKERS</h2>
+                            <p class="description">Skilled professionals who assist with household chores,
+                                such as cleaning, cooking, and maintaining a tidy living environment.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <!-- Card 17 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv17.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">17-FURNITURE MOVING</h2>
+                            <p class="description">Expert movers who handle the safe and efficient
+                                transportation of furniture from one location to another.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <!-- Card 18 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image filt">
+                                <img src="../imgs/serv18.JPEg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">18-LANGUAGES CENTER</h2>
+                            <p class="description">Educational institution that offers language courses to
+                                help individuals develop proficiency in different languages.</p>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <!-- 1 services -->
+    <!-- 0 graphic design -->
+    <section class="features" id="features">
+        <div class="main-heading">
+            <h2>features</h2>
+        </div>
+        <div class="graphic container" id="work together">
+            <div class="photo-box">
+                <div class="photoo"><img src="../imgs/features-01.png"></div>
+            </div>
+            <div class="contact">
+                <h1>Why Do You <br>Use Tatweer ?</h1>
+                <p class="contact-p">We understand the unique challenges and requirements of the industry, and we
+                    leverage our knowledge and resources to provide innovative solutions that drive success. Customer
+                    service is at the core of our values, and we take pride in delivering results that exceed
+                    expectations..</p>
+                <div class="whyss">
+                    <div class="whys ">
+                        <div class="why"><img src="../imgs/checkbox.png" class="right-photo"><span
+                                class="contact-span">High Privacy</span></div>
+                        <div class="why"><img src="../imgs/checkbox.png" class="right-photo"><span
+                                class="contact-span">Frindly Prices</span></div>
+                        <div class="why"><img src="../imgs/checkbox.png" class="right-photo"><span
+                                class="contact-span">High quality work</span></div>
+                    </div>
+                    <div class="whys whyu">
+                        <div class="why"><img src="../imgs/checkbox.png" class="right-photo"><span
+                                class="contact-span">High Performance</span></div>
+                        <div class="why"><img src="../imgs/checkbox.png" class="right-photo"><span
+                                class="contact-span">easy to use</span></div>
+                        <div class="why"><img src="../imgs/checkbox.png" class="right-photo"><span
+                                class="contact-span">for all devices</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1 graphic design -->
+
+
+    <!-- 0 How It Work -->
+    <!--  
+    <section class="how" id="">
+        <div class="main-heading">
+            <h2>How It Work</h2>
+        </div>
+        <div class="container">
+        </div>
+    </section>
+    -->
+    <!-- 1 How It Work-->
+    <!-- Video -->
+    <!--  
+    <section class="vid" id="">
+            <div class="vid-con">
+            <video class="video" src="../imgs/vid.mp4" autoplay loop muted>
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </section>
+    -->
+    <!-- Video -->
+    <!-- Companies -->
+    <section class="companies" id="">
+        <div class="main-heading">
+            <h2>Companies</h2>
+        </div>
+        <div class="container">
+            <div class="comp">
+                <div class="bag">
+                    <img src="../imgs/company1.jpg" alt="Image 1">
+                </div>
+                <div class="bag">
+                    <img src="../imgs/company2.png" alt="Image 2">
+                </div>
+                <div class="bag">
+                    <img src="../imgs/company3.jpg" alt="Image 3">
+                </div>
+                <div class="bag">
+                    <img src="../imgs/company4.png" alt="Image 4">
+                </div>
+            </div>
+    </section>
+    <!-- Companies -->
+
+    <!-- 0 contact us -->
+    <section class="contact-us" id="contact-us">
+        <div class="main-heading">
+            <h2>Contact us</h2>
+        </div>
+        <div class="container">
+            <!-- -->
+            <form class="infop">
+                <!-- poste -->
+                <div class="postep">
+                    <div class="personal-infoop">
+                        <input placeholder="Name :">
+                    </div>
+                    <div class="personal-infoop">
+                        <input placeholder="E-mail:">
+                    </div>
+                    <div class="personal-infoop">
+                        <input placeholder="Subject :">
+                    </div>
+                    <div class="textp">
+                        <h2>Message</h2>
+                        <p><textarea id="try" name="description" placeholder="Write Your Message Here..."
+                                class="multiline-inputp"></textarea>
+                        </p>
+                    </div>
+                </div>
+                <!-- poste -->
+                <button class="publish-art-btnp">send</button>
+            </form>
+            <!-- -->
+        </div>
+    </section>
+    <!-- 1 contact us -->
+
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>Tatweer</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <style>
+                                    svg {
+                                        font-size: 40px;
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">emirates , Dubai</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours:24 Hours</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+971537892963</span>
+                        <span>+971153161437</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright"> © 2023 Tatweer All Right Reserved</p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Swiper JS -->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../js/scriptII.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

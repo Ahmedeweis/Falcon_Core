@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>show paper </title>
+	<link rel="stylesheet" type="text/css" href="../css/show-paper.css">
+      <style>
+        #increment, #decrement {
+           background-color:#18e0e7;
+           border:1px solid black ;
+           box-shadow: 2px red; 
+           margin: 3px;
+           padding:5px;                     
+        }
+
+        #increment:hover , #decrement:hover {
+            background-color:#14e68e;
+        }
+    </style>
+  </head>
+  <body>
+  	<div class="landing">
+      <div class="container">
+      	<div class="header">
+      		<div class="head">
+      		  <img src="../images/icon.png">
+      		  <h2>Re<span style="color:#01BC9A">search</span>Gate</h2>	
+      		</div>    		
+	        <ul>
+		      <li><a style="color:#01BC9A;" href="home.html"><h3>Home</h3></a></li>
+		      <li><a href="edit.html"><h3>Edite profile</h3></a></li>
+		      <li><a href="AddCategory.html"><h3>Add category</h3></a></li>
+		      <li><a href="../index.html"><h3>Log out</h3></a></li>
+		    </ul>
+      	</div>
+      </div>
+    </div>
+    <!-- 1 paper -->
+    <div class="papersec">
+      <div class="container">
+        <div class="details">
+        	<div class="paper">
+        		<h1>header</h1>
+        		<fieldset>
+			      <legend>Research paper</legend>			
+		          <textarea rows="19" cols="71" readonl> content</textarea>
+			    </fieldset>
+			    <div  class="info" >
+			      <h2>Catagory:</h2>
+			      <p>publish in<time>:2008-02-14</time></p>
+         <div id="number">5</div>
+         <button class="red" id="increment">Like</button>
+         <button class="blue" id="decrement">dislike</button>			    
+			    </div>
+			    <!-- start comments -->
+                <div class="comments">
+                  <div class="subscribe">
+                    <form action="">
+                      <input type="text" name="comment" placeholder="Type comment here"/ required>
+                      <input type="submit" name="submit" value="Add comment" />
+                    </form>
+                  </div>           
+                </div>
+            <!-- end comments -->
+            	<div class="comments">
+            		<h3>cmoment1</h3>
+            		<h3>cmoment1</h3>
+            		<h3>cmoment1</h3>
+            		<h3></h3>
+            	</div>
+        	</div>
+        	<!-- end paper -->
+        	<div class="boxes">
+        	  <div class="box">
+                <a href="profile.html"><img width="100px" height="141px" src="../images/profil-pic.jpg" alt="" /></a>
+                <h3>@Session["Name"]</h3>
+                <span class="title">@Session["email"]</span>
+                <p>
+                   hi i'm tomy :
+                   i'm in @Session["university"] university see my research
+                   i'm in department  @Session["department"] 
+                </p>
+              </div>
+              <!-- 2rd second box --> 
+              <div class="box">
+                <a href="profile.html"><img width="100px" height="141px" src="../images/profil-pic.jpg" alt="" /></a>
+                <h3>@["Name"]</h3>
+                <span class="title">@Session["email"]</span>
+                <p>
+                   hi i'm tomy :
+                   i'm in @["university"] university see my research
+                   i'm in department  @["department"]  
+                </p>
+              </div>
+              <!-- 3rd box --> 
+              <div class="box">
+                <a href="profile.html"><img width="100px" height="141px" src="../images/profil-pic.jpg" alt="" /></a>
+                <h3>@["Name"]</h3>
+                <span class="title"> @["email"]</span>
+                <p>
+                   hi i'm tomy :
+                   i'm in @["university"] university see my research
+                   i'm in department  @["department"]               
+                </p>
+              </div>
+            </div>       
+        </div>
+      </div>
+    </div>
+<script>
+        let add = document.getElementById('increment');
+   let remove = document.getElementById('decrement');
+   
+   let int = document.getElementById('number');
+   let integer =5;
+   add.addEventListener('click',function(){
+    if(integer==5){
+       integer+=1;
+       int.innerHTML = integer;
+    }
+
+   })
+   
+   remove.addEventListener('click',function(){
+    if(integer==6){
+       integer -=1;
+       int.innerHTML = integer;
+     }
+   })
+   /*---------------------------------*/
+   document.querySelector('.info').addEventListener('click',function change(e) {
+  if(e.target.className == "red"){
+    document.querySelector('.red').style.backgroundColor = "#14e68e";
+     document.querySelector('.blue').style.backgroundColor = "#18E0E7";
+  }
+
+  if(e.target.className == "blue"){
+    document.querySelector('.blue').style.backgroundColor = "#14e68e";
+     document.querySelector('.red').style.backgroundColor = "#18E0E7";
+  }
+})
+    </script>
+  </body>
+</html>

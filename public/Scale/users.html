@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>index</title>
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/main-style.css" />
+	<!-- icon of web site above -->
+	<link rel="icon" href="imgs/statistics.png">
+</head>
+
+<body>
+	<div class="page d-flex">
+		<div class="sidebar bg-white p-20 p-relative">
+			<h3 class="p-relative txt-c mt-0">المسؤول</h3>
+			<ul>
+				<li>
+					<a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="statistics.html">
+						<i class="fa-regular fa-chart-bar fa-fw"></i>
+						<span>احصائيات</span>
+					</a>
+				</li>
+				<li>
+					<a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="users.html">
+						<i class="fa-regular fa-user fa-fw"></i>
+						<span> الطلاب</span>
+					</a>
+				</li>
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="results.html">
+						<i class="fa-regular fa-file fa-fw"></i>
+						<span>النتائج</span>
+					</a>
+				</li>
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="admins.html">
+					  <i class="fa-regular fa-circle-user fa-fw"></i>
+					  <span>المستخدمين</span>
+					</a>
+				  </li>
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+						<i class="fa-solid fa-gear fa-fw"></i>
+						<span>اعدادت المقياس</span>
+					</a>
+				</li>
+
+				<li>
+					<a class="d-flex align-center fs-14 c-black rad-6 p-10" href="loginAdmin.html">
+						<span>تسجيل الخروج</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content w-full">
+
+			<header class="firstpage">
+				<nav class="container ">
+					<ul class="header-ul">
+						<li class="website-name">مقياس الميول المهنية</li>
+						<li class="logo-li">
+							<img src="imgs/statistics.png" width="50px">
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- End Head -->
+			<h1 class="p-relative"> الطلاب</h1>
+			<!-- Start Projects Table -->
+			<div class="projects p-20 bg-white rad-10 m-20">
+				<form class="mb-15">
+                    <ul class="pagination pagination-filt">
+                        <input class="input-auth-name" type="text" style="margin-left: 10px;" placeholder="اكتب هنا"/>
+                        <li class="listt listt-filt">
+                            <select class="pagination-dropdown">
+                                <option class="options" value="#page1" selected>المدرسة</option>
+                                <option class="options" value="#page2">الحرية</option>
+                                <option class="options" value="#page3">النهضة الجديدة</option>
+                                <!-- Add more options for additional pages -->
+                            </select>
+                        </li>
+                        <li class="listt">
+                            <select class="pagination-dropdown">
+                                <option class="options" value="#page1" selected>التخصص المبدئي</option>
+								<option value="option1">علمي (فيزياء - رياضيات)</option>
+								<option value="option2">علمي (أحياء - كيمياء)</option>
+								<option value="option3">أدبي</option>
+								<option value="option4">تجاري</option>
+                            </select>
+                        </li>
+                        <button class="add-qui-btn" type="submit"  style="margin-right: 5px;"><img src="imgs/statistics.png" width="20px" > ابحث عن مستخدم</button>
+                    </ul>
+                    
+				</form>
+				<div class="responsive-table">
+					<table class="fs-15 w-full">
+						<thead>
+							<tr>
+								<td>الأسم</td>
+								<td>الصف</td>
+								<td>النوع</td>
+								<td>التخصص المختار</td>
+								<td>التخصص المبدئي</td>
+								<td>المدرسة</td>
+								<td>النتيجة</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>محمد زين</td>
+								<td>الخامس</td>
+								<td>ذكر</td>								
+								<td>
+									<span class="label btn-shape bg-orange c-white"> علمي (أحياء - كيمياء) </span>
+								</td>
+								<td>
+									<span class="label btn-shape bg-blue c-white">أدبي</span>
+								</td>
+								<td>الحرية</td>
+								<td><button class="show-btn"><a href="resultForAdmin.html">عرض</a></button>
+								</td>
+							</tr>
+							<tr>
+								<td>خالد محيي</td>
+								<td>التاسع</td>
+								<td>ذكر</td>
+								<td>
+									<span class="label btn-shape bg-green c-white">علمي (فيزياء - رياضيات)</span>
+								</td>
+								<td>
+									<span class="label btn-shape bg-red c-white">تجاري</span>
+								</td>
+								<td>عمر بن عبد العزيز</td>
+								<td><button class="show-btn"><a href="resultForAdmin.html">عرض</a></button>
+								</td>
+							</tr>
+							<tr>
+								<td>يسرا زين</td>
+								<td>العاشر</td>
+								<td>انثي</td>
+								<td>
+									<span class="label btn-shape bg-red c-white">تجاري</span>
+								</td>
+
+								<td>
+									<span class="label btn-shape bg-blue c-white">أدبي</span>
+								</td>
+								<td>جمال حسين</td>
+								<td>
+									<button class="show-btn"><a href="resultForAdmin.html">عرض</a></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- End Projects Table -->
+			<ul class="pagination">
+				<li class="arrow-replace"><a href="#" rel="next" >&#9658;</a></li>
+				<li class="listt">
+					<select class="pagination-dropdown">
+						<option class="options" value="#page1" selected>1</option>
+						<option class="options" value="#page2">2</option>
+						<option class="options" value="#page3">3</option>
+						<!-- Add more options for additional pages -->
+					</select>
+				</li>
+				<li class="listt">
+					<select class="pagination-dropdown">
+						<option class="options" value="#page1" selected>5 / صفحة</option>
+						<option class="options" value="#page2">10 / صفحة</option>
+						<option class="options" value="#page3">50 / صفحة</option>
+						<option class="options" value="#page2">100 / صفحة</option>
+						<!-- Add more options for additional pages -->
+					</select>
+				</li>
+				<li class="arrow-replace"><a href="#" rel="prev" style="transform:rotate(180deg)">&#9658;</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+
+</html>

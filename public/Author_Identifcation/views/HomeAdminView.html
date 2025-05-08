@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/AdminHomeUsers.css" />
+  <link rel="stylesheet" href="../css/Home.css" />
+  <link rel="stylesheet" href="../css/AdminHome.css" />
+
+  <style>
+    .search {
+      position: relative;
+      padding-right: 10px;
+    }
+
+    .search button {
+      padding: 3px;
+      margin-left: 9px;
+      position: absolute;
+      top: 7px;
+      border: none;
+      background-color: transparent;
+    }
+
+    .search button img {
+      width: 20px;
+    }
+
+    .search input {
+      padding: 10px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-left: 5px;
+      padding-left: 30px;
+      width: 400px;
+      transition: width 0.3s;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .search input {
+        width: 200px;
+      }
+    }
+
+    .second-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .info {
+      border: 2px solid #ddd;
+      padding: 20px 10px 10px 10px;
+    }
+
+    .tap {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body class="AdminHomeBody">
+  <header class="nav">
+    <div class="container">
+      <div class="handle-nav">
+        <ul class="L-link">
+          <a href="#" class="Logo-apear"><img src="../assets/logo.png" class="head-photo-width"></a>
+          <li style="padding-left:0px;" class="word-apear"><a href="#" class="Title">Author Identifcation</a></li>
+          <li><a href="AdminHomeUsers.html">Home</a></li>
+        </ul>
+        <ul class="R-link">
+          <li>
+            <!-- 0 Hover that image container to get list  -->
+            <div class="image-container">
+              <!-- 0 link gog to profile -->
+              <div style="cursor: pointer;">
+                <!-- 0 profile icon -->
+                <img src="../assets/user.svg" class="notify-icon">
+              </div>
+              <!-- 0 box apear when hover image container -->
+              <div class="hover-box">
+                <!-- 0 content of box -->
+                <div class="content">
+                  <a href="ProfileViewAdmin.html"><img src="../assets/user.svg" alt="Your Photo"></a>
+                  <div class="user-name">Admin</div> <!-- 0 name of user -->
+                  <!-- 0 button + img of row -->
+                  <div class="img-link">
+                    <img style="width:50px;" src="../assets/logout.png">
+                    <a class="two-btn" href="log-in.html" style="font-size: 16px;">Sign Out</a>
+                  </div>
+                  <!-- 1 button + img of row -->
+                </div>
+                <!-- 1 content of box -->
+              </div>
+              <!-- 0 box apear when hover image container -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <header class="header-II">
+    <div class="container">
+      <ul class="second-nav">
+        <div class="tap">
+          <li class="active"><a href="HomeAdminView.html">Authors</a></li>
+          <li><a href="AdminHomeUsers.html">users</a></li>
+        </div>
+        <div class="sear">
+          <form class="search">
+            <button><img src="../assets/search.png"></button>
+            <input type="search" placeholder="Search" v-model="searchQuery" />
+          </form>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <section class="posts work-steps">
+    <div class="container">
+      <div class="info">
+        <button class="add-btn" @click.prevent="addAuthor"><img src="../assets/add.png" /> Add Author</button>
+        <input class="input-auth-name" type="text" placeholder="write author name" v-model="name" />
+        <!-- post -->
+        <div class="fle" v-if="filteredAuthors.length  > 0">
+          <div class="post" v-for="author in filteredAuthors" :key="author.id">
+            <div class="personal-info">
+              <span class="auth-id">1</span>
+              <a href="admin-auther-profile.html" @click.prevent="clickAuthor(author.id)"><img src="../assets/writer.png" alt="" /></a>
+              <h2>Brad Doefman</h2>
+            </div>
+            <div class="articles-numbers">
+              <h2>Articles : <span>89</span></h2>
+            </div>
+            <div class="box-buttons">
+              <button class="delete-btn" @click="deleteAuthor(author.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+        <!-- post -->
+        <div v-else>
+          <!-- post -->
+          <div class="post" v-for="author in authors" :key="author.id">
+            <div class="personal-info">
+              <span class="auth-id">2</span>
+              <a href="admin-auther-profile.html" @click.prevent="clickAuthor(author.id)"><img src="../assets/writer.png" alt="" /></a>
+              <h2>Simon Cowill</h2>
+            </div>
+            <div class="articles-numbers">
+              <h2>Articles : <span>56</span></h2>
+            </div>
+            <div class="box-buttons">
+              <button class="delete-btn" @click="deleteAuthor(author.id)">delete</button>
+            </div>
+          </div>
+          <!-- post -->
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

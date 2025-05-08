@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="../NewCss/ForgetPass.css"/>
+</head>
+<body>
+  <div class="main-content">
+    <h2>Forgot Password</h2>
+    <p>Please enter your email address:</p>
+    <input type="email" class="email" placeholder="Your Email" required>
+    <button class="submit-btn buttons" onclick="sendCode()">Submit</button>
+
+    <!-- Box to enter the received code -->
+    <div class="code-box">
+      <p>Enter the 6-digit code sent to your email:</p>
+      <button class="resend-btn" onclick="resendCode()">Resend Code</button>
+      <input type="text" class="code" >
+      <button class="verify-btn buttons" onclick="verifyCode()">Verify Code</button>
+    </div>
+
+    <!-- Box to enter a new password -->
+    <div class="new-password-box">
+      <p>Enter your new password:</p>
+      <input type="password" class="new-password" required>
+      <p>Confirm your new password:</p>
+      <input type="password" class="confirm-password" required>
+      <button class="save-btn buttons" onclick="savePassword()">Save Password</button>
+    </div>
+
+    <p class="status-message"></p>
+  </div>
+
+<script type="text/javascript" src="../js/ForgetPass.js"></script>
+</body>
+</html>

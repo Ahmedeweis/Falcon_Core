@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+
+<body>
+           	<!-- 0 header -->
+ 		<header class="">
+            <div class="container" id="home">
+              <nav class="navbar">
+                <div class="iconsy">
+                  <a href="profile.html"><img src="../assets/imgs/man.png" class="icone-resize"></a>
+                </div>
+                <ul class="nav-list" id="navi-list">
+                        <li class="list-item"><a href="main.html">الرئيسية</a></li>
+                      <li class="list-item"><a href="opportunities.html">الفرص الاستثمارية</a></li>
+                </ul>
+                <div class="menu" id="toggle-button">
+                  <div class="menu-line"></div>
+                  <div class="menu-line"></div>
+                  <div class="menu-line"></div>
+                </div>
+                 </nav>
+            </div>
+          </header>
+          <script src="../assets/js/nav-script.js"></script>
+        <!-- 1 header -->
+    <section class="delete-head  m-t-20">
+        <div class="container">
+            <a href="myrequests.html"><img style="width: 30px" src="../assets/imgs/XVector.svg"></a>
+            <div class="m-r-20 justfy-c">
+                <h3 class="" style="font-size:19px; color: #396FB5;">طلب رقم (10009)</h3>
+            </div>
+            <button id="shareButton" class="" style="background-color: transparent;">
+                <img src="../assets/imgs/shareing.png" alt="Share" style="width: 30px">
+            </button>
+        </div>
+    </section>
+
+    <script>
+        // Get the button element by its ID
+        const shareButton = document.getElementById('shareButton');
+
+        // Add a click event listener to the button
+        shareButton.addEventListener('click', () => {
+            // Get the current page's URL
+            const currentPageUrl = window.location.href;
+
+            // Copy the current page's URL to the clipboard
+            navigator.clipboard.writeText(currentPageUrl).then(() => {
+                alert(' تم نسخ الرابط: ' + currentPageUrl);
+            }).catch((error) => {
+                console.error('فشل في نسخ الرابط: ' + error);
+            });
+        });
+    </script>
+    <section class="slider-sec">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="../assets/imgs/1.png" alt="Image 1" class="slider-img"></div>
+                    <div class="slide"><img src="../assets/imgs/2.png" alt="Image 2" class="slider-img"></div>
+                    <div class="slide"><img src="../assets/imgs/3.png" alt="Image 3" class="slider-img"></div>
+                    <div class="slide"><img src="../assets/imgs/4.png" alt="Image 4" class="slider-img"></div>
+                    <div class="slide"><img src="../assets/imgs/5.png" alt="Image 5" class="slider-img"></div>
+                </div>
+                <button class="prev"><img src="">❯</button>
+                <button class="next"><img src="">❮</button>
+                <div class="slider-nav"></div>
+            </div>
+        </div>
+    </section>
+    <section class="Request-info">
+        <div class="container">
+
+            <div class="info-header">
+                <h2 class="info-head"> عمارة ( شقق مفرزة )</h2>
+
+                <!-- <div class="filed-data">
+                        <img src="../assets/imgs/to-do-list.png" class="icone-resize">
+                        <h2 class="data-lable"> &nbsp;رقم الطلب &nbsp;:&nbsp;</h2>
+                        <h3 class="data-value">10009&nbsp;</h3>
+                        <p class="Request-num min-Request-num">(استثمار)</p>  
+                    </div> -->
+                <div class="Request-box">
+                    <img src="../assets/imgs/to-do-list.png" class="icone-resize" style="margin-left: 5px;">
+                    <p class="Request-label">رقم الطلب : </p>
+                    <p class="Request-num">10009</p>
+                </div>
+
+            </div>
+
+            <div class="owner-name-header">
+                <div class="owner-name-head">
+                    <div class="owner-name"> سلطان العتيبي </div>
+                    <!-- <div class="owner-prop"> ( وسيط عقاري )</div> -->
+                </div>
+                <div class="stars">
+                    <img src="../assets/imgs/full-star.png" class="star-photo">
+                    <img src="../assets/imgs/full-star.png" class="star-photo">
+                    <img src="../assets/imgs/full-star.png" class="star-photo">
+                    <img src="../assets/imgs/full-star.png" class="star-photo">
+                    <img src="../assets/imgs/empaty-star.png" class="star-photo">
+                </div>
+            </div>
+
+            <div class="client-num">
+                <div class="client-box">
+                    <img src="../assets/imgs/AvatarPurbile.svg" class="client-image">
+                    <img src="../assets/imgs/AvatarPurbile.svg" class="client-image">
+                    <img src="../assets/imgs/AvatarPurbile.svg" class="client-image">
+                    <img src="../assets/imgs/Avatar.svg" class="client-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details-sections">
+        <div class="container">
+            <header class="data-head">
+                <div class="link link-active ">تفاصيل الشراكة</div>
+                <div class="link">تفاصيل العقار</div>
+                <!-- <div class="link">الميزات</div> -->
+            </header>
+
+            <div class="data-catcher">
+
+                <div class="ad-details">
+
+                    <!-- <div class="data-filed">
+                        <h2 class="data-lable">صفة المعلن</h2>
+                        <h3 class="data-value">وسيط</h3>
+                    </div> -->
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/calendar.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">تاريخ إضافة الطلب</h2>
+                        </div>
+                        <h3 class="data-value">2022/11/22</h3>
+                    </div>
+                    <!-- 
+                    <div class="data-filed">
+                        <h2 class="data-lable">الغرض</h2>
+                        <h3 class="data-value">سكني</h3>
+                    </div> -->
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/money.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">مبلغ الشراكة </h2>
+                            <div class="talk"> ( لكل شريك)</div>
+                        </div>
+                        <div class="data-value">
+                            <h3 class="value">200,000 ريال</h3>
+                            <div class="talk">قابل للتفاوض</div>
+                        </div>
+                    </div>
+
+                    <div class="general-chat-handle">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/team.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عدد الشركاء الحاليين</h2>
+                            <div class="talk">3/4</div>
+                        </div>
+                        <!-- <a href="payment.html" class="nav-link" style="text-align: center;">
+                            <img src="../assets/imgs/chat-box.png" class="" width="50px">
+                            <h3 class="bottom-nav-word" style="color: #396FB5;"> فتح الدردشة</h3>
+                        </a> -->
+                    </div>
+                    <!--  -->
+
+
+                </div>
+
+                <div class="aqar-details">
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/location.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">المدينة</h2>
+                        </div>
+                        <h3 class="data-value">الرياض</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/location.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">الحي</h2>
+                        </div>
+                        <h3 class="data-value">المروج</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/house.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">النوع</h2>
+                        </div>
+                        <h3 class="data-value">عمارة شقق سكنية</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/sign.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">رقم المخطط</h2>
+                        </div>
+                        <h3 class="data-value">1418/817هـ/ع/1</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/tag.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">رقم القطعة</h2>
+                        </div>
+                        <h3 class="data-value">265896</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/area.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">المساحة</h2>
+                        </div>
+                        <h3 class="data-value">100000 متر مربع</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/hourglass.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عمر العقار</h2>
+                        </div>
+                        <h3 class="data-value">1 سنة</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/building.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عدد الادوار</h2>
+                        </div>
+                        <h3 class="data-value"> 3 دور</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/apartment.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عدد الشقق</h2>
+                        </div>
+                        <h3 class="data-value"> 10 شقق</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/store.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عدد المحلات</h2>
+                        </div>
+                        <h3 class="data-value"> 5 محلات </h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/workspace.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عدد المكاتب</h2>
+                        </div>
+                        <h3 class="data-value"> 7 مكاتب</h3>
+                    </div>
+
+
+                    <!-- 
+                    <div class="data-filed">
+                        <h2 class="data-lable">الطول</h2>
+                        <h3 class="data-value">30 م</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">العرض</h2>
+                        <h3 class="data-value">30 م</h3>
+                    </div> -->
+
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/work-tools.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable">عرض الشارع</h2>
+                        </div>
+                        <h3 class="data-value">7 م</h3>
+                    </div>
+                    <div class="data-filed">
+                        <div class="filed-flex">
+                            <img src="../assets/imgs/cubeI.png" class="icone-resize marg-l-5">
+                            <h2 class="data-lable"> الواجهة</h2>
+                        </div>
+                        <h3 class="data-value">شرق</h3>
+                    </div>
+
+                    <!-- 
+                    
+                    <div class="data-filed">
+                        <h2 class="data-lable">عمر العقار</h2>
+                        <h3 class="data-value">5 سنين</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">سعر الدور الاول</h2>
+                        <h3 class="data-value">300 الف ريال</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">سعر الدور الثاني</h2>
+                        <h3 class="data-value">300 الف ريال</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">عدد غرف الدور الاول</h2>
+                        <h3 class="data-value">8</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">عدد غرف الدور الثاني</h2>
+                        <h3 class="data-value">8</h3>
+                    </div>
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">عدد دورات المياه في الدور الاول</h2>
+                        <h3 class="data-value">4</h3>
+                    </div>
+                    
+                    <div class="data-filed">
+                        <h2 class="data-lable">عدد دورات المياه في الدور الثاني</h2>
+                        <h3 class="data-value">4</h3>
+                    </div> -->
+
+                    <!-- <div class="data-filed">
+                        <h2 class="data-lable">رابط خرائط جوجل</h2>
+                        <h3 class="data-value"><a href="https://www.google.com/maps/@30.1321,31.4094,12z?entry=ttu">اضغط لرؤية الموقع</a></h3>
+                    </div> -->
+
+                    <div class="data-filed">
+                        <h2 class="data-lable">الموقع علي الخريطة</h2>
+                        <img src="../assets/imgs/1000x500.png" class="map-photo">
+                    </div>
+
+                </div>
+
+
+                <!-- <div class="aqar-Advantages">
+
+                    <div class="data-filed">
+                        <div class="Advantages-filed">
+                            <h2 class="data-lable">كراج السيارة</h2>
+                            <img src="../assets/imgs/Vector.svg" class="right-photo">
+                        </div>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="Advantages-filed">
+                            <h2 class="data-lable">مسبح</h2>
+                            <img src="../assets/imgs/Vector.svg" class="right-photo">
+                        </div>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="Advantages-filed">
+                            <h2 class="data-lable">غرفة خدم</h2>
+                            <img src="../assets/imgs/Vector.svg" class="right-photo">
+                        </div>
+                    </div>
+
+                    <div class="data-filed">
+                        <div class="Advantages-filed">
+                            <h2 class="data-lable">مؤثثة</h2>
+                            <img src="../assets/imgs/Vector.svg" class="right-photo">
+                        </div>
+                    </div>
+
+                </div> -->
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <div class="container">                      
+    <div style="display: flex; justify-content: space-between; padding:30px 0;">
+        <a class="small-btn" href="succes.html">حفظ</a>
+        <a class="small-btn" href="land.html"style="background-color:transparent; color:var(--main-color); border:none;">رجوع</a>
+    </div>
+    </div> -->
+
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; padding:30px 0;">
+            <a class="small-btn" href="myrequests.html">حسنا</a>
+            <!-- <a class="small-btn" href="land.html"style="background-color:transparent; color:var(--main-color); border:none;">رجوع</a> -->
+        </div>
+    </div>
+
+
+    <script src="../assets/js/ProjectScript.js"></script>
+    <script>
+        // Get references to the tab links and content divs
+        const tabLinks = document.querySelectorAll(".data-head .link");
+        const contentDivs = document.querySelectorAll(".data-catcher > div");
+
+        // Show the initial default content (ad-details) and hide the others
+        contentDivs[0].style.display = "block";
+        for (let i = 1; i < contentDivs.length; i++) {
+            contentDivs[i].style.display = "none";
+        }
+        tabLinks[0].classList.add("link-active");
+
+        // Add click event listeners to the tab links
+        tabLinks.forEach((tabLink, index) => {
+            tabLink.addEventListener("click", () => {
+                // Hide all content divs
+                contentDivs.forEach(contentDiv => {
+                    contentDiv.style.display = "none";
+                });
+
+                // Show the clicked content div
+                contentDivs[index].style.display = "block";
+
+                // Remove active class from all tab links
+                tabLinks.forEach(link => {
+                    link.classList.remove("link-active");
+                });
+
+                // Add active class to the clicked tab link
+                tabLink.classList.add("link-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

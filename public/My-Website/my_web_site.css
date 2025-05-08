@@ -1,0 +1,273 @@
+/* start body */
+body
+{
+	height:2600px;
+}
+
+.container
+{
+	width:1000px;
+	margin:auto;
+}
+
+.clearfix
+{
+	clear:both;
+}
+/*End body */
+
+/* start header */
+
+.slider
+{
+	background-color:#EEE;
+	height:500px;
+}
+
+.header .slider .intro
+{ 
+	background-image:url('images/Header.jpg'); 
+	height:500px;
+	width:1000px;
+	text-align:center;
+	color:#F02913;
+	background-size:cover; 
+
+}
+
+.header .slider .intro h2
+{
+	border-bottom:4px solid #080812;  
+	padding-top:200px;
+	margin:auto;
+	font-size:50px;
+	width:700px;
+}
+
+.header .slider .intro button
+{
+	color:#F02913;
+	background:none; 
+	margin-top:30px; 
+	font-size:20px;
+	border:1px solid #080812;
+	font-weight:bold;
+	padding:10px 30px; 
+}
+.header .navbar
+{
+	background-color:#252F31;
+	color:#FFF;
+	overflow:hidden;
+}
+
+.navbar h2
+{
+	float:left;
+	text-transform:uppercase;
+}
+
+ul
+{
+	list-style:none;
+	padding-left:0px; 
+	overflow:hidden;
+	float:right;
+}
+
+li {float:left; padding:10px;}
+
+li a
+{
+	color:#FFF;
+	text-decoration:none;
+}
+li a:hover
+{
+	color:#30B576;
+}
+
+h2 span {color:#2ecc71;}
+
+/* End header */
+
+/* start feature */
+.features
+{
+	overflow:hidden;
+	padding-top:40px;
+	padding-bottom:50px;
+}
+
+.features .feat
+{
+	float:left;
+	width:33.33333%;
+	height:150px;
+	background-color:#DDD;
+}
+
+.feat h2
+{
+text-transform:uppercase;
+color:#555; 
+}
+
+.features .feat p
+{
+	line-height:1.6;
+	color:#888;
+
+}
+/* end feature */
+
+/* start about me */
+.about_me
+{
+	background-color:#F2F2F2;
+	overflow:hidden;
+}
+
+.about_me img
+{
+	float:left;
+	width:40%;
+}
+
+.about_me .info
+{
+	float:left;
+	width:60%;
+
+}
+
+.hobbies
+{
+	overflow:hidden;
+	margin:20px;
+}
+
+.hobbies > div
+{
+	float:left;
+	width:50%;
+	min-height:100px;
+}
+/* End about me */
+
+/* start my skills */
+.my_skills
+{
+	padding-top:30px;
+	padding-bottom:30px;
+	overflow:hidden;
+}
+
+.skills ,.progress
+{
+	width:50%;
+	float:left;
+}
+/* End my skills */
+
+/* start resume */
+.resume
+{
+	background-color:#F2F2F2;
+	padding-top:40px;
+	padding-bottom:40px;
+	text-align:center;
+}
+/* End resume */
+
+/* start my education  */
+.my_education
+{
+	padding-top:30px;
+	padding-bottom:30px;
+	overflow:hidden;
+}
+
+.my-education .main , .my-education .exp
+{
+	width:50%;
+	float:left;
+}
+/* End my education */
+
+/* start Testimonials  */
+.Testimonials 
+{
+	background-color:#F2F2F2;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+}
+/* End Testimonials  */
+
+/* start potfolio */
+
+.Portfolio
+{
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+}
+
+.our_work
+{
+	overflow:hidden;
+}
+
+.our_work > div
+{
+	float:left;
+	width:33.33333%;
+	margin-bottom:10px;
+}
+
+.our_work > div img
+{
+	width:92%;
+	margin:10px;
+}
+
+/* end start potfolio */
+
+/* start contact me */
+
+.contact
+{
+	background-color:#252f31;
+	overflow:hidden;
+}
+
+.contact h2
+{
+	color:#FFF;
+}
+
+.contact p
+{ 
+	color:#6A6E71;
+}
+
+.contact .infoo , .contact .form
+{
+	width:50%;
+	float:left
+}
+/* end contact me */
+
+/* start footer */
+
+.footer
+{
+	background-color:#191E22;
+	color:#6A6E71;
+	padding:20px ;
+	text-align:center;
+}
+
+/* End footer */
+

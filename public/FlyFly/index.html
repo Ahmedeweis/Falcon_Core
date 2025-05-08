@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Kaushan+Script&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" />
+  <link rel="stylesheet" href="css/styleI.css" />
+  <title>Turismo - Explore the world</title>
+  <style>
+           .slider-containerr {
+            max-width: 449px;
+            position: relative;
+            min-height: 600px;
+            max-height: 600px;
+            background-color: #78C1E9;
+            
+        }
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            position: relative;
+            text-align: center;
+        }
+
+        .slide {
+            flex: 0 0 449px;
+            /* Set the fixed width of each slide */
+            height: 600px;
+            /* Set the fixed height of each slide */
+            position: relative;
+            text-align: center;
+
+        }
+
+        .iimg {
+            width: 100%;
+            height: auto;           
+        }
+        .iimg:hover {
+          transform: scale(1.0);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .slider-controls {
+            text-align: center;
+        }
+
+        .slider-controls button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .slider-dots {
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 14px 19px 14px 6px;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        .dot:hover {
+          background-color: #78BFE0;
+            color: white;
+        }
+
+        .dot.active {
+            background-color: #78BFE0;
+            color: white;
+        }
+
+        .slider-controls {
+            justify-content: space-between;
+            display: flex;
+    justify-content: space-between;
+        }
+
+        .slider-controls button {
+            padding: 10px 13px 12px 15px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            font-size: 20px;
+            border-radius: 50%;
+            background-color: #78C1E9;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">TRIPIT</div>
+        <ul style="display: flex; flex-direction: row-reverse;">
+          <li>
+            <a href="html/profile.html"><img src="img/user.png" class="s-img"></a>
+          </li>
+          <li>
+            <a href="html/Trip-Preparation.html"> Trip Preparation </a>
+          </li>
+          <li>
+            <a href="html/Explore-all.html">Explore all</a>
+          </li>
+          <li>
+            <a href="#Community">Community</a>
+          </li>
+          <li>
+            <a href="#aboutt">About</a>
+          </li>
+          <li>
+            <a href="index.html" class="color-blue">Home</a>
+          </li>
+          <li>
+            <a href="html/login.html"> Log in </a>
+          </li>
+          <li>
+            <a href="html/signup.html" style="color:black;"> Sign Up </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- About -->
+
+  <section class="slider" style="height: 700px; padding: 20px 0; background-color: #0D2B3E;">
+    <div class="container" style="display: flex; justify-content: space-between; padding: 7px 0px;">
+      <div class="slider-containerr">
+        <div class="slider">
+            <a href="html/Explore-all.html" class="slide">
+                <img src="img/1.png" alt="Image 1" class="iimg">
+                <div class="caption">Saudi Arabia</div>
+            </a>
+            <a href="html/Explore-all.html" class="slide">
+                <img src="img/2.png" alt="Image 2" class="iimg">
+                <div class="caption">United Arab Emirates (UAE)</div>
+            </a>
+            <a href="html/Explore-all.html" class="slide">
+                <img src="img/3.png" alt="Image 3" class="iimg">
+                <div class="caption">Qatar</div>
+            </a>
+            <a href="html/Explore-all.html" class="slide">
+                <img src="img/4.png" alt="Image 4" class="iimg">
+                <div class="caption">Kuwait</div>
+            </a>
+            <a href="html/Explore-all.html" class="slide">
+                <img src="img/5.png" alt="Image 5" class="iimg">
+                <div class="caption">Oman</div>
+            </a>
+            <a href="html/Explore-all.html" class="slide">
+                <img src="img/6.png" alt="Image 6" class="iimg">
+                <div class="caption">Bahrain</div>
+            </a>
+        </div>
+        <div class="slider-controls">
+            <button id="prevBtn" onclick="prevSlide()" style="transform:rotate(180deg); margin-left: 0;">&#10148;</button>
+            <div class="slider-dots">
+                <span class="dot" onclick="goToSlide(0)">1</span>
+                <span class="dot" onclick="goToSlide(1)">2</span>
+                <span class="dot" onclick="goToSlide(2)">3</span>
+                <span class="dot" onclick="goToSlide(3)">4</span>
+                <span class="dot" onclick="goToSlide(4)">5</span>
+                <span class="dot" onclick="goToSlide(5)">6</span>
+            </div>
+            <button id="nextBtn" onclick="nextSlide()" style=" margin-right: 0;">&#10148;</button>
+        </div>
+    </div>
+    <div class="about-details" style="justify-content: center;">
+      <h1 style="color: white; text-align: start;">Journey to All Worlds Corners</h1>
+      <div style="color:white;">
+        <p class="words-p">Unlock the wonders of the world. Your personalized dream trip</p>
+        <br>
+        <a href="html/Trip-Preparation.html" class="book-button">Book a Trip</a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- <section id="about">
+    <div class="container">
+      <div class="title">
+        <div class="line"></div>
+      </div>
+      <br>
+      <div id="about_us">
+        <div class="boxx">
+          <div class="containerx" style="display: flex; justify-content: center; flex-direction: column;">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+              <label class="cardt" for="item-1" id="col-img-1">
+                <img src="./img/carousel-img1.jpg" class="img-about">
+                <div>Saudi Arabia</div>
+              </label>
+              <label class="cardt" for="item-2" id="col-img-2">
+                <img src="./img/carousel-img2.jpg" class="img-about">
+                <div>The United Arab Emirates</div>
+              </label>
+              <label class="cardt" for="item-3" id="col-img-3">
+                <img src="./img/carousel-img3.jpg" class="img-about">
+                <div>Bahrain</div>
+              </label>
+            </div>
+          </div>
+          <div class="left-countries">
+            <h1 style="font-size: 36px; margin-top: 50px;">Journey to all world center</h1>
+            <p>Embark on an adventure to discover all six countries, each with its unique charm and beauty. Create
+              memories that will last a lifetime as you explore diverse cultures and landscapes.</p>
+            <a href="html/Explore-all.html" class="countreis-a">Explore all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- About -->
+
+  <section class="ideas" id="Community">
+    <h2 style="text-align: center; color: white; font-size: 32px;">Community</h2>
+    <div class="container d-f">
+      <div class="left-side">
+        <div class="info-head">
+          <div class="data-bod">
+            <img src="img/calendar.png" class="s-img">
+            <div>20/9/2023</div>
+          </div>
+          <div class="data-bod special">
+            <img src="img/happiness.png" class="s-img ">
+            <div>Ahmed</div>
+          </div>
+          <div class="data-bod">
+            <img src="img/planet-earth.png" class="s-img">
+            <div>Saudi Arabia</div>
+          </div>
+        </div>
+        <div>
+          <p>"On this new trip, with a heart full of curiosity and a spirit ready for adventure, explore the beauty of
+            different cultures, taste new flavors, and create memories that will last a lifetime. Safe travels, and may
+            your trip in Saudi Arabia be everything you dreamed of!"</p>
+          <p>"Exploring Saudi Arabia is an opportunity to immerse yourself in a land of rich history, stunning
+            landscapes, and warm hospitality. From the bustling markets to the serene desert, every step of your trip
+            will be filled with awe and wonder. As you navigate this diverse country, may your experiences be
+            unforgettable, and may your memories be cherished forever."</p>
+        </div>
+        <div class="actios-country">
+          <div class="act">
+            <a href="html/favorate.html"><img src="img/add (1).png" class="s-img"></a>
+            <a href="html/comments.html"><img src="img/comment.png" class="s-img"></a>
+            <a href="html/chat.html"><img src="img/chat.png" class="s-img"></a>
+          </div>
+          <a href="html/update-community.html" style=" font-size:20px; font-weight: bold; color: yellow;">Show more</a>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="center-sec">
+          <div><img src="img/img3.png" class="b-img"></div>
+          <div><img src="img/img4.png" class="b-img"></div>
+        </div>
+        <div class="center-sec">
+          <div><img src="img/img5.png" class="b-img"></div>
+          <div><img src="img/img6.png" class="b-img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="aboutt">
+    <div class="container">
+      <div class="iframe">
+        <iframe  src="https://www.youtube.com/embed/Xj4E0Zry6K4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="about-details">
+        <h1 style="color: white;">About Us</h1>
+        <div>
+          <p class="words-p">We, the female students of Adham University College affiliated with Umm Al-Qura University, in our graduation project have chosen to create a website specialized in culture and tourism for the six Gulf Cooperation Council countries, with a focus on the development taking place in the Kingdom of Saudi Arabia as a result of Vision 2030 and its efforts to promote tourism. The website aims to enhance cultural awareness and promote unique tourism experiences in these wonderful countries. .</p>
+          <br>
+          <p class="words-p"> "We provide comprehensive content covering history and heritage, arts, attractions, festivals and cultural events, and practical information about travel, accommodation, shopping, and entertainment in those countries."</p>
+          <br>
+          <p class="words-p">"Join us on a unique expedition to explore the beauty and diversity of Gulf cultures."</p>
+        </div>
+        <div class="small-box-container">
+          <!--  -->
+          <div class="small-box">
+            <div class="icone-imgy">
+              <img src="img/shield.png" class="m-img" style="    margin-right: 10px;">
+            </div>
+            <div class="s-box-info">
+              <h3>Safety</h3>
+              <p>Prioritizing safety for every traveler.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box">
+            <div class="icone-imgy">
+              <img src="img/clock.png" class="m-img " style="    margin-right: 10px;">
+            </div>
+            <div class="s-box-info">
+              <h3>Support</h3>
+              <p>Available 24 to support you.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box">
+            <div class="icone-imgy">
+              <img src="img/dollar.png" class="m-img " style="    margin-right: 10px;">
+            </div>
+            <div class="s-box-info">
+              <h3>Value</h3>
+              <p>Experience our website for free.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Destinations" id="Destinationn">
+    <div class="container ">
+      <h1 class="h1-style destination-h">Destinations</h1>
+      <div class="border-box">
+        <div class="countries-head">
+          <div class="country">UAE</div>
+          <div class="country">Bahrain </div>
+          <div class="country">Saudi Arabia</div>
+          <div class="country active-country" >Oman</div>
+          <div class="country">Qatar </div>
+          <div class="country">Kuwait</div>
+        </div>
+      </div>
+      <div class="border-boxII"></div>
+      <div class="Tourist-Attractions">
+
+        <div class="Milestones">
+          <h1 class="Milestones-h">Main reasons to visit the city</h1>
+
+          <div class="Milestones-box">
+            <h2 class="milestons-h"><span class="yellow">Overview</span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+            <div class="diamond diamond-right">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">             
+            </div>
+          </div>
+          
+
+          <div class="Milestones-box">
+            <div class="diamond">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">
+            </div>
+            <h2 class="milestons-h"><span class="yellow">Tourist Attractions</span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+          </div>
+
+          <div class="Milestones-box">
+            <h2 class="milestons-h"><span class="yellow">food</span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+            <div class="diamond diamond-right">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">
+            </div>
+          </div>
+
+
+          <div class="Milestones-box">
+            <div class="diamond">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">
+            </div>
+            <h2 class="milestons-h"><span class="yellow">transportation </span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+          </div>
+
+          <div class="Milestones-box">
+            <h2 class="milestons-h"><span class="yellow">locations</span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+            <div class="diamond diamond-right">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">
+            </div>
+          </div>
+
+
+          <div class="Milestones-box">
+            <div class="diamond">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">
+            </div>
+            <h2 class="milestons-h"><span class="yellow">wethere</span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+          </div>
+
+          <div class="Milestones-box">
+            <h2 class="milestons-h"><span class="yellow">Restaurants</span>Rech cultural heritage explore the history, art, and architecture of some of the world's oldest and most fascinating civilizations in Asia from ancient temples in Cambodia to the majestic Taj Mahal in India.</h2>
+            <div class="diamond diamond-right">
+              <img src="img/carousel-img1.jpg" alt="Your Image" class="diamond-img">
+            </div>
+          </div>
+
+        </div>
+        <div class="Attractions" style="display: flex;
+        flex-direction: column;
+        width: 25%;">
+          <img src="img/oman.png">
+          <img src="img/oman.png">
+        </div>
+      </div>
+
+      <a href="html/Explore-all.html" class="book-button">Show more</a>
+    </div>
+  </section>
+
+
+  <section class="about-us" style="background-color: #0D2B3E; margin-top: 0; color: white;" id="EXCLUSIVE-TOURR" >
+    <div class="container">
+      <div class="">
+        <div><img src="img/many.png" style="max-width: 92%;"></div>
+      </div>
+      <div class="about-details">
+        <h1 style="color: white;">Exclusive Tour</h1>
+        <div>
+          <p class="words-p">unforgettable treven experiences. That's why we carefully choose th Exclusive tour avany months, nung that we offer the most citing and up-to-date actions for our clients</p>
+          <br>
+          <p class="words-p"> "Check out our galleries to see the breathtaking photos and experiences from these excuse tours. And stay tuned for our upcoming tours that we will be adding every month"</p>
+          <br>
+          <p class="words-p">"Check out our exclusive gallery tours showcasing our pest offerings"</p>
+        </div>
+        <div class="small-box-container conII">
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII">
+              <p>Prioritizing safety for every traveler.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII">
+              <p>Exploring the ancient ruins of Mechu Picchu in Bahrain</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII">
+              <p>Safari adventure in Saudi Arabia
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII">
+              <p>Island hopping in the Qatar</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Cape-Town">
+    <div class="container">
+      <h1 class="h1-style destination-h cape" style="text-align: center; align-self: center;">Cape Town</h1>
+      <h2 style="text-align: center;">Discover the wonders of Saudi Arabia</h2>
+
+      <div class="plan">
+        <div class="bulletss">
+          <div class="circlee active-circlee ">1</div>
+          <div class="circlee">2</div>
+          <div class="circlee">3</div>
+          <div class="circlee">4</div>
+          <div class="circlee">5</div>
+        </div>
+        <div class="day">
+          <h2>Day 1</h2>
+          <h2 style="margin: 5px 0; color: yellow;">Arrival in cape town</h2>
+          <p>Arrive in Cape Town, check-in to your
+            accommodation, and rest after your journey
+            Take a le surely stroll along the V&A Waterfront.
+            a bustling harbor area with shops, restaurants, and entertainment options Visit the Two Oceans Aquarium, where you can
+            on a variety of marine life, including sharks, penguins, and turtles</p>
+        </div>
+        <div class="img-box">
+          <div class="big-img">
+            <img src="img/bg.png">
+          </div>
+          <div class="two-s-img">
+            <img src="img/itally.jpg">
+            <img src="img/india.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="table">
+      <!-- 0 colomn  -->
+        <div class="small-box-container conII conIII border">
+          <h1>Incusions</h1>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII styleIII">
+              <p>Prioritizing safety for every traveler.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII styleIII">
+              <p>Exploring the ancient ruins of Mechu Picchu in Bahrain</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII styleIII">
+              <p>Safari adventure in Saudi Arabia
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII styleIII">
+              <p>Island hopping in the Qatar</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!-- 1 colomn  -->
+
+              <!-- 0 colomn  -->
+              <div class="small-box-container conII conIII border">
+                <h1>Pricing</h1>
+                <!--  -->
+                <div class="small-box SII">
+                  <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+                  border-radius: 50%; margin-right: 10px;">
+                  </div>
+                  <div class="s-box-info styleII styleIII">
+                    <p>$1200 per person</p>                   
+                  </div>
+                </div>
+                <!--  -->
+                <div class="small-box SII">
+                  <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+                  border-radius: 50%; margin-right: 10px;">
+                  </div>
+                  <div class="s-box-info styleII styleIII">
+                    <p>(excluding airfare)</p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <!-- 1 colomn  -->
+
+                    <!-- 0 colomn  -->
+        <div class="small-box-container conII conIII border">
+          <h1>Durations</h1>
+          <!--  -->
+          <div class="small-box SII">
+            <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+            border-radius: 50%; margin-right: 10px;">
+            </div>
+            <div class="s-box-info styleII styleIII">
+              <p>5 Days</p>
+            </div>
+          </div>
+          <!--  -->
+
+        </div>
+        <!-- 1 colomn  -->
+
+
+              <!-- 0 colomn  -->
+              <div class="small-box-container conII conIII  ">
+                <h1>Group Size</h1>
+                <!--  -->
+                <div class="small-box SII">
+                  <div class="icone-imgy" style="background-color: #6EAAD3; width: 10px; height:10px;
+                  border-radius: 50%; margin-right: 10px;">
+                  </div>
+                  <div class="s-box-info styleII styleIII">
+                    <p>Maxmun 12 Travelers</p>
+                  </div>
+                </div>
+                <!--  -->
+
+              </div>
+              <!-- 1 colomn  -->
+      </div>
+      <div class="actios-country">
+        <div class="act" style="margin-top: 10px;">
+          <a href="html/Trip-Preparation.html" class="book-button">Book a Trip</a>
+        </div>
+        <a href="html/Explore-all.html" style=" font-size:20px; font-weight: bold; color: white;">Show more</a>
+      </div>
+    </div>
+  </section>
+
+        <!-- SECTION REVIEW -->
+        <section class="section-review" id="Reviewss">
+          <div class="container review-box" data-aos="fade-up">
+            <header class="review-header">
+              <h1 style="color: white; font-size: 60px; margin: 0; ">Reviews</h1>
+              <h2 class="heading heading--2">What the people say about us</h2>
+            </header>
+  
+            <article class="review-cards">
+              <div class="r-card">
+                <img
+                  src="img/user.png"
+                  alt=""
+                  class="r-card__img"
+                  width="90"
+                  height="90"
+                  style="background-color: white;
+                  padding: 5px;"
+                />
+                <div class="r-card__name">ANDROW</div>
+                <span class="quot">&#8223;</span>
+                <div class="r-card__description">
+                  sudia is good place to visited
+                </div>
+                <div class="r-card__rating">
+                  <img
+                    src="img/star-grp.svg"
+                    alt="star"
+                    width="100"
+                    height="30"
+                  />
+                </div>
+              </div>
+  
+              <div class="r-card">
+                <img
+                  src="img/user.png"
+                  alt=""
+                  class="r-card__img"
+                  width="90"
+                  height="90"
+                  style="background-color: white;
+                  padding: 5px;"
+                />
+                <div class="r-card__name">LINA</div>
+                <span class="quot">&#8223;</span>
+                <div class="r-card__description">
+                  Hi Qatar is best country
+                </div>
+                <div class="r-card__rating">
+                  <img
+                    src="img/star-grp.svg"
+                    alt="star"
+                    width="100"
+                    height="30"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+            <!-- contact -->
+    <section id="contact">
+      <div class="container">
+      <div class="title">
+          <h1 class="font-color">Contact Us</h1>
+          <div class="line"></div>
+      </div>
+      <div class="contact_us">
+          <form class="cform" action="" method="post">
+              <div class="crow-message">
+                  <h1 class="color">Send us a message</h1>
+                  <div></div>
+              </div>
+              <div class="crow-in">
+                      <input type="text" id="name" name="name" placeholder="Your name">
+                      <input type="text" id="email" name="email" placeholder="Your Email id">
+              </div>
+              <div class="crow">
+                  <div class="ccol-left">
+                      <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....." style="height: 150px;"></textarea>
+                  </div>
+              </div>
+              <input class="crow-s" type="submit" value="Submit">
+          </form>
+          <div class="cbox">
+              <div>
+                  <p class="cbox-message">Prefer some other way ?<br>Reach us by using the details given below</p>
+              <div class="cbox-line"></div>
+              </div>
+              <div class="c_boxx">
+                  <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i>
+                      Mail: tourism@adventure.com
+                  </a>
+              </div>
+              <div class="c_boxx">
+                  <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i>
+                      Phone: (+91) 12345-67890
+                  </a>
+              </div>
+              <div class="c_boxx">
+                  <a href="#"><i class="fa fa-map-marker"></i>
+                      Location: Kolkata,West Bengal,India
+                  </a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact  -->
+
+  <section class="foot" style="color:white; background-color: #0D2B3E; " >
+    <div class="container" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+      <div style="    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;">
+        <h1 style="margin: 0;">TRIPIT</h1>
+        <p style="margin:0px; margin-top: 5px;">descover the world with TRIPIT</p>
+        <br>
+        <p style="margin:0px; margin-top: -20px;">your Ultimate Travel Compation! </p>
+        <br>
+      </div>
+      <div style="display: flex; justify-content: space-around; align-items: center; width: 100%;
+      border-top: solid #6EAAD3; padding-top: 20px;">
+        <div><a href="#aboutt" style="text-transform: uppercase; color: white;">About</a></div>
+        <div><a href="#Destinationn" style="text-transform: uppercase; color: white; ">Destination</a></div>
+        <div><a href="#EXCLUSIVE-TOURR" style="text-transform: uppercase; color: white;">Exclusive Tour</a></div>
+        <div><a href="#Reviewss" style="text-transform: uppercase;color: white;">Reviews</a></div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; width: 100%; align-items: center; font-weight: bold;">
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <p style="color: white;">phone&nbsp;:&nbsp;</p>
+          <p style="color: white;">+1-123-456-7890</p>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <p style="color: white;" >Email&nbsp;:&nbsp;</p>
+          <p style="color: white;">info@TRIPIT.com</p>
+        </div>
+      </div>
+      <div style="margin: 30px 0;">
+        all Rights reserved c 2023
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- SCRIPT -->
+  <script src="index.js"></script>
+  <script src="js/script.js"></script>
+        <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                    dots[i].classList.add('active');
+                } else {
+                    slide.style.display = 'none';
+                    dots[i].classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+
+
+    </script>
+</body>
+
+</html>

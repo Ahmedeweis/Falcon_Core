@@ -1,0 +1,88 @@
+
+/* Start Global Rules */
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color:black;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+/* 0 Logo */
+/* 0 Logo style */
+.logo {
+  position:relative;
+  display:flex;
+}
+@media (max-width: 767px) {
+  .logo {
+   display:none;
+  }
+}
+.logo .circle1 {
+  position:relative;
+  width:50px;
+  height:50px;
+  border:8px solid #333;
+  border-radius: 50%;
+}
+
+.logo .circle1::before {
+ content:" ";
+ position:absolute;
+ inset:-8px;
+ border:8px solid transparent;
+ border-top:8px solid #333;
+ border-right:8px solid #333;
+ border-radius:50%;
+ z-index:100;
+ transform: rotate(-45deg);
+}
+
+.logo .circle2 {
+  position:relative;
+  width:50px;
+  height:50px;
+  border:8px solid #f00;
+  border-radius: 50%;
+  left:-25px;
+}
+/* 1 Logo style */
+
+
+  /* End Global Rules */ 
+/* */

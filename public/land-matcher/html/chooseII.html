@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/stylesII.css">
+</head>
+<body>
+       	<!-- 0 header -->
+         <header class="">
+          <div class="container" id="home">
+            <nav class="navbar">
+              <div class="iconsy">
+                <a href="profile.html"><img src="../assets/imgs/man.png" class="icone-resize"></a>
+              </div>
+              <ul class="nav-list" id="navi-list">
+                      <li class="list-item"><a href="main.html">الرئيسية</a></li>
+                    <li class="list-item"><a href="opportunities.html">الفرص الاستثمارية</a></li>
+              </ul>
+              <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+              </div>
+               </nav>
+          </div>
+        </header>
+        <script src="../assets/js/nav-script.js"></script>
+      <!-- 1 header -->
+  <section class="delete-head  m-t-20">
+    <div class="container">
+      <a href="main.html"><img style="width: 30px" src="../assets/imgs/right-arrow.png"></a>
+      <div class="m-r-20 justfy-c">
+        <h3 class="" style="font-size:19px; color: #008080;"> اضافة تفاصيل عقار  </h3>
+      </div>
+      <button id="shareButton" class="" style="background-color: transparent;">
+      </button>
+    </div>
+  </section>
+    <div class="container choose-body">
+        <h1 class="chooseII-h">من فضلك اختر فئة العقار </h1>
+        <div class="image-container">
+            <a href="Land.html" class="image-box" onclick="selectOption('Option 1')">
+                <img src="../assets/imgs/beg.png" alt="Image 1">
+                <p>عقار مطلوب </p>
+            </a>
+            <a href="LandShown.html" class="image-box" onclick="selectOption('Option 2')">
+                <img src="../assets/imgs/requirement.png" alt="Image 2">
+                <p>عقار معروض</p>
+            </a>
+        </div>
+    </div>
+    
+    <!-- <script>
+        let selectedOption = null;
+        let previousSelectedBox = null;
+    
+        function selectOption(option) {
+            if (previousSelectedBox) {
+                previousSelectedBox.classList.remove('selected');
+            }
+            selectedOption = option;
+            const currentBox = event.currentTarget;
+            currentBox.classList.add('selected');
+            previousSelectedBox = currentBox;
+    
+            // Update the href based on the selected option
+            if (selectedOption === 'Option 1') {
+                window.location.href = 'Land.html'; // Navigate to Land.html
+            } else if (selectedOption === 'Option 2') {
+                window.location.href = 'LandII.html'; // Navigate to LandII.html
+            } else {
+                // If no option is selected, do nothing
+            }
+        }
+    
+        function addSelectedOption() {
+            if (!selectedOption) {
+                alert('من فضلك اختر نوع الشريك.');
+            }
+        }
+    </script> -->
+
+</body>
+</html>

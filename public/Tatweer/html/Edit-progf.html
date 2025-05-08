@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>prof user</title>
+    <link rel="stylesheet" type="text/css" href="../css/edit-pro.css">
+    <link rel="stylesheet" href="../css/nav-bar.css" />
+</head>
+
+<body>
+        <!-- 0 finish nav -->
+  <div class="container" id="home">
+    <nav class="navbar">
+      <div class="iconsy">
+        <a href="">
+          <img class="icon" src="../imgs/notificate.svg" />
+        </a>
+        <div class="image-container">
+          <img class="icon" src="../imgs/profile.png" />
+          <div class="hover-box">
+            <div class="content">
+              <!-- Content inside hover-box -->
+              <a style="background-color: none;" href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"
+                  width="60px"></a>
+              <div>Ali</div>
+              <div class="img-link">
+                <img src="../imgs/logout.png">
+                <a class="two-btn" href="../html/log-in.html">log out</a>
+              </div>
+              <!-- Content inside hover-box -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a>Tatweer</a></li>
+        <li class="list-item"><a href="#home">Home</a></li>
+ 
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
+  </div>
+  <!-- 1 finish nav -->
+    <section class="proff-hiss">
+        <div class="container ">
+            <!-- 0 card of user -->
+            <div class="userr-cardd">
+                <!-- 0 first line -->
+                <div class="picc-cardd">
+                    <div class="picc">
+                        <img src="../imgs/profil-pic.jpg" class="picc-imagg">
+                        <label for="file-input" class="file-input-label">
+                            <input id="file-input" type="file">
+                            <span class="camera-icon" ><img width="30px" src="../imgs/camera.png"></span>
+                        </label>
+                    </div>
+                    <div class="divv-userr-namee">
+                        <h2 class="hh-userr-namee" >Emad</h2>
+                    </div>
+                </div>
+                <!-- 1 first line -->
+                <!-- 0 second line -->
+                <div class="editt-fieldss">
+                    <h3 class="my-data-titlee">Edit personal info below</h3>
+                </div>
+                <!-- 1 second line -->
+                <!-- 0 third line -->
+                <div class="userr-fieldss">
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa disabledd"  disabled placeholder="Emad" />
+                            <span class="spann-dataa">Name:</span>
+                        </h2>
+                    </div>
+
+                    
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="email" class="userr-dataa disabledd" disabled placeholder="Emad@gmail.com" />
+                            <span class="spann-dataa">Email:</span>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="password" class="userr-dataa" placeholder="k&eshav12G3" />
+                            <span class="spann-dataa">Password:</span>
+                        </h2>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="password" class="userr-dataa" placeholder="k&eshav12G3" />
+                            <span class="spann-dataa">Confirm Password:</span>
+                        </h2>
+                    </div>
+
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa" placeholder="+971123456789" />
+                            <span class="spann-dataa">phone:</span>
+                        </h2>
+                    </div>
+
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <!-- 0 0 down list language  -->
+                            <div class="dropdown">
+                                <select class="dropdown-select  disabledd"  style="cursor: not-allowed;" disabled name="Nationality">
+                                    <option value="option0" disabled >Nationality</option>
+                                    <option value="option1">Afghanistan</option>
+                                    <option value="option2">Albania</option>
+                                    <option value="option3">Algeria</option>
+                                    <option value="option4">Andorra</option>
+                                    <option value="option5">Angola</option>
+                                    <option value="option6">Antigua and Barbuda</option>
+                                    <option value="option7">Argentina</option>
+                                    <option value="option8">Armenia</option>
+                                    <option value="option9">Australia</option>
+                                    <option value="option10">Austria</option>
+                                    <option value="option11">Azerbaijan</option>
+                                    <option value="option12">Bahamas</option>
+                                    <option value="option13">Bahrain</option>
+                                    <option value="option14">Bangladesh</option>
+                                    <option value="option15">Barbados</option>
+                                    <option value="option16">Belarus</option>
+                                    <option value="option17">Belgium</option>
+                                    <option value="option18">Belize</option>
+                                    <option value="option19">Benin</option>
+                                    <option value="option20">Bhutan</option>
+                                    <option value="option21">Bolivia</option>
+                                    <option value="option22">Bosnia and Herzegovina</option>
+                                    <option value="option23">Botswana</option>
+                                    <option value="option24">Brazil</option>
+                                    <option value="option25">Brunei</option>
+                                    <option value="option26">Bulgaria</option>
+                                    <option value="option27">Burkina Faso</option>
+                                    <option value="option28">Burundi</option>
+                                    <option value="option29">Cambodia</option>
+                                    <option value="option30">Cameroon</option>
+                                    <option value="option31">Canada</option>
+                                    <option value="option32">Cape Verde</option>
+                                    <option value="option33">Central African Republic</option>
+                                    <option value="option34">Chad</option>
+                                    <option value="option35">Chile</option>
+                                    <option value="option36">China</option>
+                                    <option value="option37">Colombia</option>
+                                    <option value="option38">Comoros</option>
+                                    <option value="option39">Congo, Democratic Republic of</option>
+                                    <option value="option40">Congo, Republic of the</option>
+                                    <option value="option41">Costa Rica</option>
+                                    <option value="option42">Côte d'Ivoire (Ivory Coast)</option>
+                                    <option value="option43">Croatia</option>
+                                    <option value="option44">Cuba</option>
+                                    <option value="option45">Cyprus</option>
+                                    <option value="option46">Czech Republic (Czechia)</option>
+                                    <option value="option47">Denmark</option>
+                                    <option value="option48">Djibouti</option>
+                                    <option value="option49">Dominica</option>
+                                    <option value="option50">Dominican Republic</option>
+                                    <option value="option51">East Timor</option>
+                                    <option value="option52">Ecuador</option>
+                                    <option value="option53" selected>Egypt</option>
+                                    <option value="option54">El Salvador</option>
+                                    <option value="option55">England</option>
+                                    <option value="option56">Equatorial Guinea</option>
+                                    <option value="option57">Eritrea</option>
+                                    <option value="option58">Estonia</option>
+                                    <option value="option59">Eswatini (Swaziland)</option>
+                                    <option value="option60">Ethiopia</option>
+                                    <option value="option61">Federated States of Micronesia</option>
+                                    <option value="option62">Fiji</option>
+                                    <option value="option63">Finland</option>
+                                    <option value="option64">France</option>
+                                    <option value="option65">Gabon</option>
+                                    <option value="option66">Gambia</option>
+                                    <option value="option67">Georgia</option>
+                                    <option value="option68">Germany</option>
+                                    <option value="option69">Ghana</option>
+                                    <option value="option70">Greece</option>
+                                    <option value="option71">Grenada</option>
+                                    <option value="option72">Guatemala</option>
+                                    <option value="option73">Guinea</option>
+                                    <option value="option74">Guinea-Bissau</option>
+                                    <option value="option75">Guyana</option>
+                                    <option value="option76">Haiti</option>
+                                    <option value="option77">Honduras</option>
+                                    <option value="option78">Hungary</option>
+                                    <option value="option79">Iceland</option>
+                                    <option value="option80">India</option>
+                                    <option value="option81">Indonesia</option>
+                                    <option value="option82">Iran</option>
+                                    <option value="option83">Iraq</option>
+                                    <option value="option84">Ireland</option>
+                                    <option value="option85">Palestine</option>
+                                    <option value="option86">Italy</option>
+                                    <option value="option87">Jamaica</option>
+                                    <option value="option88">Japan</option>
+                                    <option value="option89">Jordan</option>
+                                    <option value="option90">Kazakhstan</option>
+                                    <option value="option91">Kenya</option>
+                                    <option value="option92">Kiribati</option>
+                                    <option value="option93">Kosovo</option>
+                                    <option value="option94">Kuwait</option>
+                                    <option value="option95">Kyrgyzstan</option>
+                                    <option value="option96">Laos</option>
+                                    <option value="option97">Latvia</option>
+                                    <option value="option98">Lebanon</option>
+                                    <option value="option99">Lesotho</option>
+                                    <option value="option100">Liberia</option>
+                                    <option value="option101">Libya</option>
+                                    <option value="option102">Liechtenstein</option>
+                                    <option value="option103">Lithuania</option>
+                                    <option value="option104">Luxembourg</option>
+                                    <option value="option105">Madagascar</option>
+                                    <option value="option106">Malawi</option>
+                                    <option value="option107">Malaysia</option>
+                                    <option value="option108">Maldives</option>
+                                    <option value="option109">Mali</option>
+                                    <option value="option110">Malta</option>
+                                    <option value="option111">Marshall Islands</option>
+                                    <option value="option112">Mauritania</option>
+                                    <option value="option113">Mauritius</option>
+                                    <option value="option114">Mexico</option>
+                                    <option value="option115">Moldova</option>
+                                    <option value="option116">Monaco</option>
+                                    <option value="option117">Mongolia</option>
+                                    <option value="option118">Montenegro</option>
+                                    <option value="option119">Morocco</option>
+                                    <option value="option120">Mozambique</option>
+                                    <option value="option121">Myanmar (Burma)</option>
+                                    <option value="option122">Namibia</option>
+                                    <option value="option123">Nauru</option>
+                                    <option value="option124">Nepal</option>
+                                    <option value="option125">Netherlands</option>
+                                    <option value="option126">New Zealand</option>
+                                    <option value="option127">Nicaragua</option>
+                                    <option value="option128">Niger</option>
+                                    <option value="option129">Nigeria</option>
+                                    <option value="option130">North Korea</option>
+                                    <option value="option131">North Macedonia (Macedonia)</option>
+                                    <option value="option132">Northern Ireland</option>
+                                    <option value="option133">Norway</option>
+                                    <option value="option134">Oman</option>
+                                    <option value="option135">Pakistan</option>
+                                    <option value="option136">Palau</option>
+                                    <option value="option137">Panama</option>
+                                    <option value="option138">Papua New Guinea</option>
+                                    <option value="option139">Paraguay</option>
+                                    <option value="option140">Peru</option>
+                                    <option value="option141">Philippines</option>
+                                    <option value="option142">Poland</option>
+                                    <option value="option143">Portugal</option>
+                                    <option value="option144">Qatar</option>
+                                    <option value="option145">Romania</option>
+                                    <option value="option146">Russia</option>
+                                    <option value="option147">Rwanda</option>
+                                    <option value="option148">Saint Kitts and Nevis</option>
+                                    <option value="option149">Saint Lucia</option>
+                                    <option value="option150">Saint Vincent and the Grenadines</option>
+                                    <option value="option151">Samoa</option>
+                                    <option value="option152">San Marino</option>
+                                    <option value="option153">Sao Tome and Principe</option>
+                                    <option value="option154">Saudi Arabia</option>
+                                    <option value="option155">Scotland</option>
+                                    <option value="option156">Senegal</option>
+                                    <option value="option157">Serbia</option>
+                                    <option value="option158">Seychelles</option>
+                                    <option value="option159">Sierra Leone</option>
+                                    <option value="option160">Singapore</option>
+                                    <option value="option161">Slovakia</option>
+                                    <option value="option162">Slovenia</option>
+                                    <option value="option163">Solomon Islands</option>
+                                    <option value="option164">Somalia</option>
+                                    <option value="option165">South Africa</option>
+                                    <option value="option166">South Korea</option>
+                                    <option value="option167">South Sudan</option>
+                                    <option value="option168">Spain</option>
+                                    <option value="option169">Sri Lanka</option>
+                                    <option value="option170">Sudan</option>
+                                    <option value="option171">Suriname</option>
+                                    <option value="option172">Sweden</option>
+                                    <option value="option173">Switzerland</option>
+                                    <option value="option174">Syria</option>
+                                    <option value="option175">Taiwan</option>
+                                    <option value="option176">Tajikistan</option>
+                                    <option value="option177">Tanzania</option>
+                                    <option value="option178">Thailand</option>
+                                    <option value="option179">Togo</option>
+                                    <option value="option180">Tonga</option>
+                                    <option value="option181">Trinidad and Tobago</option>
+                                    <option value="option182">Tunisia</option>
+                                    <option value="option183">Turkey</option>
+                                    <option value="option184">Turkmenistan</option>
+                                    <option value="option185">Tuvalu</option>
+                                    <option value="option186">Uganda</option>
+                                    <option value="option187">Ukraine</option>
+                                    <option value="option188">United Arab Emirates</option>
+                                    <option value="option189">United Kingdom</option>
+                                    <option value="option190">United States</option>
+                                    <option value="option191">Uruguay</option>
+                                    <option value="option192">Uzbekistan</option>
+                                    <option value="option193">Vanuatu</option>
+                                    <option value="option194">Vatican City (Holy See)</option>
+                                    <option value="option195">Venezuela</option>
+                                    <option value="option196">Vietnam</option>
+                                    <option value="option197">Wales</option>
+                                    <option value="option198">Yemen</option>
+                                    <option value="option199">Zambia</option>
+                                    <option value="option200">Zimbabwe</option>
+                                </select>
+                            </div>
+                            <!-- 1 0 down list language   -->
+                            <span class="spann-dataa">Nationality:</span>
+                        </h2>
+                    </div>
+
+
+                    
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <!-- 0 0 down list language  -->
+                            <div class="dropdown">
+                                <select class="dropdown-select" name="Language">
+                                    <option disabled> Language </option>
+                                    <option selected> English </option>
+                                    <option> العربية </option>
+                                </select>
+                            </div>
+                            <!-- 1 0 down list language   -->
+                            <span class="spann-dataa">Language:</span>
+                        </h2>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <!-- 0 fist down list emara  -->
+                            <div class="dropdown">
+                                <select class="dropdown-select disabledd" disabled style="cursor: not-allowed;"  name="Emirate_City">
+                                    <option disabled selected>Emirate / City*</option>
+                                    <option value="option1" selected>Abu Dhabi</option>
+                                    <option value="option3" >Al Ain</option>
+                                    <option value="option2" disabled>Dubai Soon..!</option>
+                                    <option value="option4" disabled>Sharjah Soon..!</option>
+                                    <option value="option5" disabled>Ras Al Khaimah Soon..!</option>
+                                    <option value="option6" disabled>Ajman Soon..!</option>
+                                    <option value="option7" disabled>Umm Al Quwain Soon..!</option>
+                                    <option value="option8" disabled>Fujairah Soon..!</option>
+                                </select>
+                            </div>
+                            <!-- 1 fist down list emara  -->
+                            <span class="spann-dataa">Emirate / City:</span>
+                        </h2>
+                    </div>
+
+
+<!--  
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa" placeholder="Mr/Ali" />
+                            <span class="spann-dataa">Responsible person:</span>
+                        </h2>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa" placeholder="manager" />
+                            <span class="spann-dataa">Role/Job:</span>
+                        </h2>
+                    </div>
+
+
+
+  -->
+
+                    <!-- 
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                             -->
+                            <!-- 0 fist down list emara  -->
+                            <!--  
+                            <div class="dropdown">
+                                <select disabled class="dropdown-select" name="Emirate_City">
+                                    <option disabled >Emirate / City*</option>
+                                    <option value="option1" selected>Abu Dhabi</option>
+                                    <option value="option3" >Al Ain</option>
+                                    <option value="option2" disabled>Dubai Soon..!</option>
+                                    <option value="option4" disabled>Sharjah Soon..!</option>
+                                    <option value="option5" disabled>Ras Al Khaimah Soon..!</option>
+                                    <option value="option6" disabled>Ajman Soon..!</option>
+                                    <option value="option7" disabled>Umm Al Quwain Soon..!</option>
+                                    <option value="option8" disabled>Fujairah Soon..!</option>
+                                </select>
+                            </div>
+                            -->
+                            <!-- 1 fist down list emara  -->
+                            <!-- 
+                        </h2>
+                    </div>
+ -->
+                    <div class="divv-battonn-submitt">
+                        <button class="battonn-submitt">update</button>
+                    </div>
+                </div>
+                <!-- 1 third line -->
+            </div>
+            <!-- 1 card of user -->
+        </div>
+        <!-- 1 card of history -->
+        </div>
+    </section>
+</body>
+
+</html>

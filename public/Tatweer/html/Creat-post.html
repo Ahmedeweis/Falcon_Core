@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create post</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/WriteArticle.css" />
+    <link rel="stylesheet" href="../css/nav-bar.css" />
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var allCheckbox = document.getElementById('all');
+            var checkboxes = document.querySelectorAll('.choices input[type="checkbox"]');
+            
+            allCheckbox.addEventListener('change', function() {
+                var isChecked = allCheckbox.checked;
+                
+                checkboxes.forEach(function(checkbox) {
+                    checkbox.checked = isChecked;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body class="write-article-body">
+      <!-- 0 finish nav -->
+  <div class="container" id="home">
+    <nav class="navbar">
+      <div class="iconsy">
+        <a href="">
+          <img class="icon" src="../imgs/notificate.svg" />
+        </a>
+        <div class="image-container">
+          <img class="icon" src="../imgs/profile.png" />
+          <div class="hover-box">
+            <div class="content">
+              <!-- Content inside hover-box -->
+              <a style="background-color: none;" href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"
+                  width="60px"></a>
+              <div>Ali</div>
+              <div class="img-link">
+                <img src="../imgs/logout.png">
+                <a class="two-btn" href="../html/log-in.html">log out</a>
+              </div>
+              <!-- Content inside hover-box -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a>Tatweer</a></li>
+        <li class="list-item"><a href="#home">Home</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
+  </div>
+  <!-- 1 finish nav -->
+    <section class="write-sec">
+        <div class="container">
+            <head>
+                <div class="first-line">
+                    <h1 class="site-name">Tatweer</h1>
+                </div>
+                <div class="second-line">
+                    <h1>Tell us what you need</h1>
+                </div>
+            </head>
+            <!-- -->
+            <div class="info">
+                <!-- poste -->
+                <div class="poste">
+                    <div class="personal-infoo">
+                        <input placeholder="Subject :">
+                    </div>
+                    <div class="text">
+                        <h2>Description</h2>
+                        <p><textarea id="try" name="description" placeholder="Describe here ..."
+                                class="multiline-input"></textarea>
+                        </p>
+                    </div>
+                    <div class="attach">
+                        <div>
+                            <div class="input-file-box">
+                                <span class="input-file"><img src="../imgs/attachment.png">
+                                    <p>Attach files</p>
+                                </span>
+                                <p>&nbsp;</p>
+                                <input class="file-style" type="file" name="" required>
+                                <i></i>
+                            </div>
+                            <p class="drag">Choose any images or documents that might support your description
+                                (Max file size: 25 MB).</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- poste -->
+                <p class="title">Who you would like to see your post</p>
+                <hr class="line">
+                <div class="choices">
+                    <label for="all"><input type="checkbox" id="all" name="choices" value="all">All</label>
+                    <label for="Consultant"><input type="checkbox" id="Consultant" name="choices"
+                            value="Consultant">Consultants</label>
+                    <label for="gc"><input type="checkbox" id="gc" name="choices" value="gc"> General Contractors</label>
+                    <label for="sub"><input type="checkbox" id="supplier" name="choices" value="supplier">
+                         Suppliers</label>
+                    <label for="sub"><input type="checkbox" id="supplier" name="choices" value="supplier"> All
+                        Subcontractors</label>
+                    <!-- 0 second down list jop  -->
+                    <div class="dropdown">
+                        <details>
+                            <summary>Select Subcontractor</summary>
+                            <form style="padding: 0px 0px 8px 8px;"> 
+                            <label>
+                                <input type="checkbox" name="option" value="Electrical Engineering"> Electrical Engineering
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Ceramic Installation"> Ceramic Installation
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Plumbing Department"> Plumbing Department
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Decoration Works"> Decoration Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Reinforced Carpentry"> Reinforced Carpentry
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Elevator Works"> Elevator Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Reinforced Ironworks"> Reinforced Ironworks
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="PASCO Installation"> PASCO Installation
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Brick Installation"> Brick Installation
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Ornamental Ironworks"> Ornamental Ironworks
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Plastering Works"> Plastering Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Stone Installation"> Stone Installation
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Painting Works"> Painting Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Aluminum and Glass Works"> Aluminum and Glass Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Door Carpentry"> Door Carpentry
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Air Conditioning Works"> Air Conditioning Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Civil Defense Works"> Civil Defense Works
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="option" value="Suspended Ceiling Works"> Suspended Ceiling Works
+                            </label><br>
+                            </form>
+                        </details>
+                    </div>
+                    <!-- 1 second down list jop  -->
+                </div>
+                <button class="publish-art-btn">Publish</button>
+            </div>
+            <!-- -->
+        </div>
+    </section>
+</body>
+
+</html>

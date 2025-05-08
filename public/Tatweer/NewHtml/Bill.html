@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill Info</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" type="text/css" href="../NewCss/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" type="text/css" href="../NewCss/pay-design.css">
+    <!-- icon of web site above -->
+    <link rel="icon" href="icons/web.png">
+    <!-- description -->
+    <meta name="description" content="description of your website. This will appear in search results.">
+</head>
+
+<body>
+    <section class="page">
+            <!-- Start Projects Table -->
+                <form class="bill-box">                 
+                        <div class="pay-bills">
+                            <div class="part-head">
+                                <img src="../imgs/credit-card.png" class="bill-imgs">
+                                <h1 class="h-head"> Payment methods</h1>
+                            </div>
+                            <!-- start cases area -->
+                            <!-- start case #1st didn't "pay" or "late"  this div apear -->                           
+                            <div class="part-body">
+                                <p class="pay-p">How do you want to pay?</p>
+                                <div class="pay-methods">
+                                    <div class="white-box">
+                                        <input type="radio" name="payment-method" id="method1" value="google">
+                                        <label for="method1" class="bank-body">
+                                            <img src="../imgs/credit-card.png" alt="Image">
+                                            <h2>Credit&nbsp;/&nbsp;Debit</h2>
+                                        </label>
+                                    </div>
+                                    <div class="white-box">
+                                        <input type="radio" name="payment-method" id="method2" value="youtube">
+                                        <label for="method2" class="bank-body">
+                                            <img src="../imgs/paypal.png" alt="Image">
+                                            <h2>Paypal</h2>
+                                        </label>
+                                    </div>
+                                    <div class="white-box">
+                                        <input type="radio" name="payment-method" id="method3" value="youtube">
+                                        <label for="method2" class="bank-body">
+                                            <img src="../imgs/cash-counter.png" alt="Image">
+                                            <h2>Cash</h2>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="roport-btn"><a href="" id="payment-link" class="pay-a">Pay Now</a></button>
+                            </div>                          
+                        </div>
+                </form>
+    </section>
+    <!-- 0 scripts  -->
+    <!-- 0 link of methon of pay -->
+    <script>
+        // Get the radio buttons and the payment link
+        const method1Radio = document.getElementById('method1');
+        const method2Radio = document.getElementById('method2');
+        const method3Radio = document.getElementById('method3');
+        const paymentLink = document.getElementById('payment-link');
+
+        // Add event listeners to the radio buttons
+        method1Radio.addEventListener('change', updatePaymentLink);
+        method2Radio.addEventListener('change', updatePaymentLink);
+        method3Radio.addEventListener('change', updatePaymentLink);
+
+        // Function to update the payment link based on the selected radio button
+        function updatePaymentLink() {
+            if (method1Radio.checked) {
+                paymentLink.href = 'pay-bank.html';
+            } else if (method2Radio.checked) {
+                paymentLink.href = 'pay-papal.html';
+            } else if(method3Radio.checked) {
+                paymentLink.href = 'cash.html';
+            }
+        }
+
+        // Initial update of the payment link
+        updatePaymentLink();
+    </script>
+    <!-- 1 link of methon of pay -->
+    <!-- 1 scripts  -->
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/editeForm.css">
+<style type="text/css">
+  .sign-up-body .box form .input-box i {
+      width: 97%
+}
+.sign-up-body .box form input[type="submit"] {
+  width: 101%;
+}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      color: #333;
+      width: 100%;
+    }
+    
+    .dropdown-select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 98%;
+      margin-top:10pxs;
+      background-color:#05D661;
+      color:black;
+    }
+    
+   .dropdown-select option {
+    margin:10px;
+    background-color:#05D661;
+    color:black;
+    font-size:20px;
+   }
+</style>
+</head>
+
+  <body class="sign-up-body">
+    <section id="elzero-app" class="box">
+      <form>
+        <div class="icon">
+          <img src="../assets/identification.png" alt="">
+        </div>
+        <h2>Hallo {{ahmed}}</h2>
+        <p>Edite the user info from here</p>
+        <div class="input-box">
+          <label for="name">
+          <input type="text" name="" v-model="name"  id="name" placeholder="" required>
+          <span>Name</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="password">
+          <input type="password" name="" v-model="password" id="password" placeholder="" required>
+          <span>Password</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="email">
+          <input type="email" name="" v-model="email" id="email" placeholder="" required>
+          <span>E-mail</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="age">
+          <input type="number" name="" v-model="age" id="age" placeholder="" required min="18" max="60">
+          <span>Age</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+        <!-- 0 fist down list emara  -->
+        <div class="dropdown">
+          <select class="dropdown-select">
+            <option disabled selected>Role</option>
+            <option>User</option>
+            <option>Admin</option>
+          </select>
+        </div>
+        <!-- 1 fist down list emara  -->
+        </div>
+        <input @click="signUp" type="submit" value="Edite" required>
+      </form>
+    </section>
+  </body>
+
+</html>
+
+
+
+<script>
+import HelloWorld from '@/components/HelloWorld.vue';
+import axios from 'axios';
+
+export default {
+  name: 'HomeView',
+  data() {
+    return {
+      name: '',
+      email: '',
+      password: '',
+      age: '',
+    };
+  },
+  methods: {
+    async signUp() {
+      if (!this.name || !this.email || !this.password || !this.age) {
+        console.log('Please fill in all fields.');
+        return;
+      }
+      const user = {
+        name: this.name,
+        email: this.email,
+        password: this.password,
+        age: this.age,
+      };
+      try {
+        const response = await axios.post('http://localhost:8888/user/addUser', user);
+        console.log('User registered successfully!', response.data);
+        alert('Sign up is done');
+      } catch (error) {
+        console.error('An error occurred during registration:', error);
+      }
+    },
+  },
+  components: {
+    HelloWorld,
+  },
+};
+</script>
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+  .sign-up-body .box form .input-box i {
+      width: 97%
+}
+.sign-up-body .box form input[type="submit"] {
+  width: 101%;
+}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      color: #333;
+      width: 100%;
+    }
+    .dropdown-select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 98%;
+      margin-top:10pxs;
+      background-color:#05D661;
+      color:black;
+    }
+   .dropdown-select option {
+    margin:10px;
+    background-color:#a0f5c3;
+    color:black;
+    font-size:20px;
+   }
+</style>
+    </style>
+    </head>
+  <body class="sign-up-body">
+    <section id="elzero-app" class="box">
+      <form>
+        <div class="icon">
+          <img src="../assets/identification.png" alt="">
+        </div>
+        <h2>Hello admin</h2>
+        <p style="font-weight:bold;">Add the user info from here</p>
+        <div class="input-box">
+          <label for="name">
+          <input type="text" name=""   v-model="name" id="name"  required>
+          <span>Name</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="password">
+          <input type="password" name="" v-model="password"   id="password"  required>
+          <span>Password</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="email">
+          <input type="email" name="" v-model="email"    id="email" required>
+          <span>E-mail</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="age">
+          <input type="number" name="" v-model="age" required min="18" max="60">
+          <span>Age</span>
+          <i></i>
+          </label>
+        </div>
+        <div class="input-box">
+        <!-- 0 fist down list emara  -->
+        <div class="dropdown">
+          <select class="dropdown-select" v-model="selected_role">
+            <option >User</option>
+            <option>Admin</option>
+          </select>
+        </div>
+        <!-- 1 fist down list emara  -->
+        </div>
+        <input type="submit" value="Add" required @click.prevent="Update(this.selected_role)">
+      </form>
+    </section>
+  </body>
+</html>
+
+

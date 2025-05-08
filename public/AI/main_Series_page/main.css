@@ -1,0 +1,243 @@
+body
+{
+	 height:1000px;
+}
+.main
+{
+	position:absolute;
+	background-color:#ddd;
+	margin-left: 300px;
+	height: 3000px;
+	width: 920px;
+}
+
+.Head{position:absolute;}
+
+.Family{color: blue;}
+
+.Cinema{color:white;}
+/* .cinema{color:black; font-weight:bold; } */ 
+
+.SERIES
+{
+	position:absolute;
+}
+.List1
+{ 
+    list-style: none;
+    padding-left:0;
+    float:left; 
+    background-color:#252F3a /* #9660A9 */;
+    position:absolute;
+    width:920px;
+    top:500px; 
+}
+
+.li1
+{
+ 	float: left; 
+	padding:10px;
+	list-style: none;
+	color:white;
+}
+
+a
+{
+	color:white;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color:#5fb98b;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.Con
+{
+	overflow: hidden;
+	width:900px;
+	margin-left:10px
+}
+
+.Con .Content
+{
+	float:left;
+	width:33.33333%;
+	height:150px;
+	background-color:#ddd;
+}
+
+h2
+{
+	text-transform:uppercase;
+}
+
+p
+{
+	top:618px;
+	margin: auto;
+	font-weight: bold;
+	position: absolute;
+	width:280px;
+}
+
+.article
+{
+ 	position:absolute;
+ 	top:720px;
+ 	left:510px;
+ 	color:#454739;
+ 	border-style:solid;
+ 	margin-left: 2px;
+ 	padding:3px;
+ 	font-size:25px;
+}
+
+h3
+{
+	color:#555;
+	margin-bottom: -1px;
+}
+
+h4
+{
+	margin-top:2px;
+}
+
+.prog
+{
+	background-color:#f2f2f2;
+	height: 25px;
+	width: 400px;
+}
+
+.spa
+{
+	background-color:#2DCC70;
+	height:25px;
+	display:block;
+	line-height:25px;
+	text-align: right;
+	color:white;
+	font-weight: bold;
+}
+
+.tech
+{
+	position:absolute;
+	top:900px;
+	margin-left:56%;
+}
+
+.dis
+{
+	color:white;
+	font-size:50px;
+	position:absolute;
+	top:980px;
+	margin-left:100px;
+}
+
+button
+{
+	display:block;
+	background-color:#032AB0;
+	color:white;
+	border-style:groove;
+}
+
+.section
+{
+	font-size:50px;
+	margin-top:50px;
+}
+
+.Actionseries
+{
+	background-color:#252F31;;
+	height:500px;
+	margin-top: -19px;
+}
+
+.ul2
+{
+	list-style:none;
+	overflow:hidden;  
+    background-color:#252F31;
+}
+
+.li2
+{
+	color:white;
+ 	float: left; 
+	padding:20px;
+}
+
+.color2
+{
+	top:1250px;
+	color:orange;
+	text-decoration: underline;
+	left:7px;
+}
+
+.li3
+{
+	color:white;
+ 	float: left; 
+	padding:15px;
+}
+
+.color3
+{
+	color:white;
+	top:1250px;
+	left: 47.5%;
+	text-decoration: underline;
+}
+
+.li4
+{
+	color:white;
+ 	float: left; 
+	padding:20px;
+}
+
+.color4
+{
+	color:white;
+	top:1250px;
+	left:89%;
+	text-decoration: underline;
+}
+
+.part4 , .BEYOND ,.WATCHER {float:right; border-style:inset;margin-right:8px;}
+
+.more { color:red; position:absolute; margin-top: 420px; margin-left: 46%; }
+
+.color5
+{
+	top:1855px;
+	color:orange;
+	text-decoration: underline;
+	left:7px;
+}
+
+.color6
+{
+	color:white;
+	top:1855px;
+	left: 47.5%;
+	text-decoration: underline;
+}
+
+.Q
+{
+	position:absolute;
+	top:1855px;
+	font-size: 15px;
+	left:87%;
+	text-decoration: underline;
+}

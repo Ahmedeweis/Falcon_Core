@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>profile</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/profile.css" />
+  <link rel="stylesheet" href="../css/nav-bar.css" />
+</head>
+
+<body style="background-color:#111926;">
+
+  <div class="container">
+    <!-- 0 finish nav -->
+  <div id="home">
+    <nav class="navbar">
+      <div class="iconsy" style="display: flex;" >
+        <a href="">
+          <img class="icon" src="../imgs/notificate.svg" />
+        </a>
+        <div class="image-container">
+          <img class="icon" src="../imgs/profile.png" />
+          <div class="hover-box">
+            <div class="content">
+              <!-- Content inside hover-box -->
+              <a style="background-color: none;" href="profile.html"><img  src="../imgs/profile.png" alt="Your Photo"
+                  width="60px"></a>
+              <div>Ahmed</div>
+              <div class="img-link">
+                <img src="../imgs/logout.png">
+                <a class="two-btn" href="../html/log-in.html">log out</a>
+              </div>
+              <!-- Content inside hover-box -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a>Tatweer</a></li>
+        <li class="list-item"><a href="#home">Home</a></li>
+ 
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
+  </div>
+  <!-- 1 finish nav -->
+</div>
+  <section class="page">
+    <div class="container">
+      <div class="prof">
+        <!-- -->
+        <div class="l-gird">
+          <img class="pers-photo" src="../imgs/profil-pic.jpg" />
+        </div>
+        <!-- -->
+        <!-- 0 t-grid -->
+        <div class="t-grid">
+          <div class="name-edit">
+
+            <div id="o" class="date line flex-a-edite">
+              <a class="edit-a" href="#o"></a>
+              <div class="head">Name&nbsp;:&nbsp;<span>Ali</span></div>
+            </div>
+          </div>
+<!--  
+          <div class="date">
+            <div class="">Contact number&nbsp;:&nbsp;<span>+971123456789</span></div>
+          </div>
+-->
+          <div class="date">
+            <div class="">Email&nbsp;:&nbsp;<span>monir159@gmail.com</span></div>
+          </div>
+          <div class="date">
+            <div class="">Emirate/City&nbsp;:&nbsp;<span>Dubai</span></div>
+          </div>
+        </div>
+        <!-- 1 t-grid -->
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>show post</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/ShowAutherProfile.css" />
+
+    <Style>
+        .nav {
+            background-color: white;
+        }
+
+        .prof img {
+            width: 200px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 20px 1px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+        }
+
+        ul li {
+            padding: 1px 10px;
+        }
+
+        nav li a {
+            color: black;
+            transition: 0.5s;
+        }
+
+        nav li a:hover {
+            color: black;
+        }
+
+        .L-link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .R-link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .Title {
+            font-size: 30px;
+        }
+
+        .icon-profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-profile img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        /* 1 header */
+        .user-icon,
+        .notify-icon {
+            width: 32px;
+        }
+
+        .notify-icon {
+            width: 32px;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-box {
+            position: absolute;
+            right: 0;
+            background-color: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            width: 150px;
+            border: 2px solid black;
+        }
+
+        .img-link {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+
+        }
+
+        .image-container:hover .hover-box {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .content img {
+            width: 40px;
+        }
+
+        .content a,
+        .two-btn {
+            align-items: center;
+            display: flex;
+            padding: 3px 3px;
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .content a:hover,
+        .two-btn {
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="write-article-body">
+    <header class="nav" background-color: white;>
+        <nav class="container">
+
+            <ul class="L-link">
+                <li style="padding-left:0px;"><a href="" class="Title">LiteraryFingerprint</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">skills</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+
+            <ul class="R-link">
+                <li>
+                    <!-- 0 Hover that image container to get list  -->
+                    <div class="image-container">
+                        <!-- 0 link gog to profile -->
+                        <a href="profile.html">
+                            <!-- 0 profile icon -->
+                            <img src="../imgs/user.svg" class="notify-icon">
+                        </a>
+                        <!-- 0 box apear when hover image container -->
+                        <div class="hover-box">
+                            <!-- 0 content of box -->
+                            <div class="content">
+                                <a href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"></a>
+                                <!-- 0 profile icon + link -->
+                                <div class="user-name">Ahmed</div> <!-- 0 name of user -->
+                                <!-- 0 button + img of row -->
+                                <div class="img-link">
+                                    <img style="width:50px;" src="../imgs/logout.png">
+                                    <a class="two-btn" href="../html/log-in.html">log out</a>
+                                </div>
+                                <!-- 1 button + img of row -->
+                            </div>
+                            <!-- 1 content of box -->
+                        </div>
+                        <!-- 0 box apear when hover image container -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+
+            <head>
+                <div class="first-line">
+                    <img src="../assets/logo.png">
+                    <div class="site-name">Author Identifcation</div>
+                </div>
+                <div class="second-line">
+                    <h1>The name of auther is chekspear</h1>
+                </div>
+                <div class="third-line">
+                    <button class="add-comment" style="background-color: white; color: black; margin-left:0px;">Add-article</button>
+                </div>
+            </head>
+        </div>
+    </section>
+
+    <section style="padding-top:10px;">
+        <div class="container">
+            <!-- 0 article -->
+            <div class="info">
+ <!-- 0 post -->
+            <div class="post" >
+                <div class="personal-info">
+                    <div class="personal-info-child">
+                        <!-- <a href=""><img style="width:100px" src="../assets/user.png" alt="" /></a> -->
+                        <h1>chekspear</h1>
+                        &nbsp;
+                        <h2 class="company name"></h2>
+                    </div>
+                    <div>
+                        <button class="add-comment">Edit article</button>
+                        <button class="add-comment">Delete</button>
+                    </div>
+                </div>
+                <div class="text">
+                  <!-- {{article.content}} -->
+                    <p >Hello admin</p>
+                </div>
+            </div>
+            <!-- 1 post -->
+                <!-- 0 write Comment -->
+                <div class="text">
+                    <p class="comment-flex"><textarea id="try" name="description" placeholder="write comment"
+                            class="multiline-input"></textarea>
+                        <button class="add-comment">comment</button>
+                    </p>
+                </div>
+                <!-- 1 write Comment -->
+                <!-- 0 content Comment -->
+                <div class="comment">
+                    <div class="personal-info-child" style="justify-content: space-between;">
+                    <h2>eweis</h2>
+                     <button  class="add-comment">Delete</button>
+                    </div>
+                    <div class="text">
+                        <p class="comment-txt">Hi I will build your house</p>
+                    </div>
+                </div>
+                <!-- 1 content Comment -->
+                <!-- 0 content Comment -->
+                <div class="comment">
+                    <div class="personal-info-child" style="justify-content: space-between;">
+                    <h2>eweis</h2>
+                     <button  class="add-comment">Delete</button>
+                    </div>
+                    <div class="text">
+                        <p class="comment-txt">Hi I will build your house</p>
+                    </div>
+                </div>
+                <!-- 1 content Comment -->
+            </div>
+            <!-- 1 article -->
+            <!-- 0 article -->
+            <div class="info">
+                <!-- 0 post -->
+                <div class="post">
+                    <div class="personal-info">
+                        <div class="personal-info-child">
+                            <a href="profile.html"><img style="width:100px" src="../imgs/profil-pic.jpg" alt="" /></a>
+                            <h1>chekspear</h1>
+                            &nbsp;
+                            <h2 class="company name"></h2>
+                        </div>
+                        <div>
+                            <button class="add-comment">Edite article</button>
+                            <button class="add-comment">Delete</button>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p> Subject: Request for Engineering Assistance in Building a House on Small Ground
+
+                            Dear [Engineer's Name],
+
+                            I hope this email finds you well. I am reaching out to you because I am in need of
+                            professional engineering expertise for a house construction project. I recently acquired a
+                            small plot of land and I am eager to build a house on it. After researching your impressive
+                            background and experience, I believe you would be the ideal person to guide me through this
+                            process.
+
+                            I have a few specific concerns and questions regarding this project. First and foremost, I
+                            would appreciate your assistance in assessing the feasibility of building a house on this
+                            particular plot of land. The small size of the ground raises some challenges, and I am
+                            seeking expert advice on how to optimize the use of space while ensuring structural
+                            integrity.
+
+                            Additionally, I would like your input on architectural design considerations for small
+                            spaces. Maximizing functionality and creating a comfortable living environment within
+                            limited square footage is crucial to me. I am open to innovative design solutions that can
+                            make the most of the available area.
+
+                            Furthermore, I am interested in exploring sustainable and energy-efficient building
+                            practices for this project. If you have experience in incorporating environmentally friendly
+                            features into house construction, I would greatly appreciate your guidance in this regard.
+
+                            In terms of timelines and budgets, I am looking for an estimation of the project duration
+                            and cost. As a first-time homeowner and builder, I would greatly benefit from your expertise
+                            in creating a realistic budget plan and outlining the various stages of the construction
+                            process.
+
+                            If you are available for a consultation or a site visit, I would be more than happy to
+                            arrange a meeting at your convenience. Your professional advice and insights would be
+                            invaluable to me as I embark on this exciting journey of building my own house.
+
+                            Thank you for considering my request. I am eagerly looking forward to your response. Please
+                            let me know if there are any additional details or information you may require from me.
+
+                            Best regards,
+                        </p>
+                    </div>
+                </div>
+                <!-- 1 post -->
+                <!-- 0 write Comment -->
+                <div class="text">
+                    <p class="comment-flex"><textarea id="try" name="description" placeholder="write comment"
+                            class="multiline-input"></textarea>
+                        <button class="add-comment">comment</button>
+                    </p>
+                </div>
+                <!-- 1 write Comment -->
+                <!-- 0 content Comment -->
+                <div class="comment">
+                    <div class="personal-info-child" style="justify-content: space-between;">
+                    <h2>eweis</h2>
+                     <button  class="add-comment">Delete</button>
+                    </div>
+                    <div class="text">
+                        <p class="comment-txt">Hi I will build your house</p>
+                    </div>
+                </div>
+                <!-- 1 content Comment -->
+                <!-- 0 content Comment -->
+                <div class="comment">
+                    <div class="personal-info-child" style="justify-content: space-between;">
+                    <h2>eweis</h2>
+                     <button  class="add-comment">Delete</button>
+                    </div>
+                    <div class="text">
+                        <p class="comment-txt">Hi I will build your house</p>
+                    </div>
+                </div>
+                <!-- 1 content Comment -->
+            </div>
+            <!-- 1 article -->
+ 
+        </div>
+    </section>
+
+</body>
+
+</html>

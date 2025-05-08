@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/Home.css" />
+  <link rel="stylesheet" href="../css/nav-bar.css" />
+  <link rel="stylesheet" href="../css/filter-style.css" />
+</head>
+
+<body>
+  <!-- 0 finish nav -->
+  <div class="container" id="home">
+    <nav class="navbar">
+      <div style="display: flex;" class="iconsy">
+        <a href="">
+          <img class="icon" src="../imgs/notificate.svg" />
+        </a>
+        <div class="image-container">
+          <img class="icon" src="../imgs/profile.png" />
+          <div class="hover-box">
+            <div class="content">
+              <!-- Content inside hover-box -->
+              <a style="background-color: none;" href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"
+                  width="60px"></a>
+              <div>Ali</div>
+              <div class="img-link">
+                <img src="../imgs/logout.png">
+                <a class="two-btn" href="../html/log-in.html">log out</a>
+              </div>
+              <!-- Content inside hover-box -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a>Tatweer</a></li>
+        <li class="list-item"><a href="#home">Home</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
+  </div>
+  <!-- 1 finish nav -->
+
+  <!--  0 sec header  -->
+  <header class="header-II">
+    <div class="container">
+      <!-- 0 second down list jop  -->
+      <ul class="second-nav  second-navv">
+        <li class="li-1200"><a href=""> Consultant </a></li>
+        <li class="li-1200"><a href=""> General Contractor     </a></li>
+        <li class="li-1200"><a href="">  Subcontractor  </a></li>
+        <li class="li-1200 activy"><a href="">  Supplier</a></li>
+    </ul>
+       
+      <div class="dropdown">
+        <select name="Registration_Type" id="firstDropdown" class="dropdown-select" onchange="showSecondDropdown()">
+          <option class="big" disabled selected value="option0">Services</option>
+          <option value="option1">Consultant</option>
+          <option value="option2">General Contractor</option>
+          <option value="option3">Subcontractor</option>
+          <option value="option4">Supplier</option>
+        </select>    
+        <!-- 0 last option => departments -->   
+      </div>
+
+      <ul class="second-nav">
+        <li class="sec-li"><a href="#home" class="a-ady">My Posts</a></li>
+        <li class="sec-li-2"><a href="Creat-post.html" class="a-ady"> New Post</a></li>
+      </ul>
+  </header>
+  <!--  1 sec header  -->
+  <!-- 0 list companys -->
+  <div class="container">
+    <div class="fixed-box">
+      <div class="scrollable-linkk">
+        <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a>
+        <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a>
+        <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a>
+        <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a>
+        <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a>
+        <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a> <a href="#" class="linkk">Al Naboodah</a>
+        <a href="#" class="linkk">NASGC</a>
+        <a href="#" class="linkk">McLaren</a>
+        <a href="#" class="linkk">bosta</a>
+
+        <!-- Add more linkk divs as needed -->
+      </div>
+    </div>
+  </div>
+  <!-- 1 list companys  -->
+  <section class="posts work-steps">
+   <!-- 1 filter -->
+   
+  <div class="filter">
+    <h1>Filter</h1>
+    <div class="dropdowne">
+      <details class=" listo">
+        <summary >Date</summary>
+        <form style="margin-left: -7px;">
+          <div class="flter-div">
+              <input type="radio" id="rad" name="num" value="day">
+              <label class="lab" for="html">day</label><br>  
+          </div>
+          <div class="flter-div">
+              <input type="radio" id="rad" name="num" value="week">
+              <label class="lab" for="css">week</label><br>
+          </div>
+          <div class="flter-div">
+              <input type="radio" id="rad" name="num" value="month">
+              <label class="lab" for="css">month</label><br>
+          </div>
+          <div class="flter-div">
+              <input type="radio" id="rad" name="num" value="year">
+              <label class="lab" for="css">year</label><br>
+          </div>
+          <div class="date-range-filter">
+            <div class="con">
+              <label for="start-date">Start Date:</label>
+              <input type="date" id="start-date">
+            </div>
+            <div class="con">
+              <label for="end-date">End Date&nbsp;&nbsp;:</label>
+              <input type="date" id="end-date">
+            </div>
+          </div>
+        </form>
+      </details>
+    </div>
+    <!-- 0 second down list jop  -->
+    <!--  
+    <div class="dropdowne listo">
+      <details>
+        <summary >Subcontractor</summary>
+        <form>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Electrical Engineering" class="Cheky"> Electrical Engineering
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Ceramic Installation" class="Cheky"> Ceramic Installation
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Plumbing Department" class="Cheky"> Plumbing Department
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Decoration Works" class="Cheky"> Decoration Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Reinforced Carpentry" class="Cheky"> Reinforced Carpentry
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Elevator Works" class="Cheky"> Elevator Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Reinforced Ironworks" class="Cheky"> Reinforced Ironworks
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="PASCO Installation" class="Cheky"> PASCO Installation
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Brick Installation" class="Cheky"> Brick Installation
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Ornamental Ironworks" class="Cheky"> Ornamental Ironworks
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Plastering Works" class="Cheky"> Plastering Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Stone Installation" class="Cheky"> Stone Installation
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Painting Works" class="Cheky"> Painting Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Aluminum and Glass Works" class="Cheky"> Aluminum and Glass Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Door Carpentry" class="Cheky"> Door Carpentry
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Air Conditioning Works" class="Cheky"> Air Conditioning Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Civil Defense Works" class="Cheky"> Civil Defense Works
+          </label><br><br>
+          <label class="lab">
+            <input type="checkbox" name="option" value="Suspended Ceiling Works" class="Cheky"> Suspended Ceiling Works
+          </label><br><br>
+        </form>
+      </details>
+    </div>
+  -->
+    <!-- 1 second down list jop  -->
+    <!-- 0 second down list jop  -->
+
+    <button class="resulte">show result</button>
+  </div>
+  <!-- 1 filter -->
+    <div class="container">
+      <div class="info">
+        <!-- post -->
+        <div class="post">
+          <div class="personal-info">
+            <div class="personal-info-child">
+              <a href="profile.html"><img style="width:50px" src="../imgs/profil-pic.jpg" alt="" /></a>
+              <div class="name-company">
+                <h2>Ali</h2>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <h2>Villa</h2>
+            <p>
+              I am reaching out to you because I am in need of professional engineering expertise for a house
+              construction project. I recently acquired a small plot of land and I am eager to build a house on it.
+              After researching your impressive background and experience, I believe you would be the ideal person to
+              guide me through this process ..
+            </p>
+            <button class="more-btn"><a href="ShowPost.html" class="moryy">More</a></button>
+          </div>
+          <div class="attach">
+            <div>
+              <Button><img width="32" src="../imgs/attachment.png"><span>file</span> </Button>
+            </div>
+            <p>attached file that might support</p>
+          </div>
+        </div>
+        <!-- post -->
+                <!-- post -->
+                <div class="post">
+                  <div class="personal-info">
+                    <div class="personal-info-child">
+                      <a href="profile.html"><img style="width:50px" src="../imgs/profil-pic.jpg" alt="" /></a>
+                      <div class="name-company">
+                        <h2>Ali</h2>
+                        <h4></h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h2>Villa</h2>
+                    <p>
+                      I am reaching out to you because I am in need of professional engineering expertise for a house
+                      construction project. I recently acquired a small plot of land and I am eager to build a house on it.
+                      After researching your impressive background and experience, I believe you would be the ideal person to
+                      guide me through this process ..
+                    </p>
+                    <button class="more-btn"><a href="ShowPost.html" class="moryy">More</a></button>
+                  </div>
+                  <div class="attach">
+                    <div>
+                      <Button><img width="32" src="../imgs/attachment.png"><span>file</span> </Button>
+                    </div>
+                    <p>attached file that might support</p>
+                  </div>
+                </div>
+                <!-- post -->
+      </div>
+    </div>
+    </div>
+    <div class="catch-company">
+      <!--  0 data -->
+      <div class="about-client">
+        <h2 class="h-about">Companies</h2>
+        <div class="infu-boxv">
+          <div class="catch-photo">
+            <img src="../imgs/profile-pic-II.jpg">
+          </div>
+          <div class="data-infu">
+            <div class="infu">ASGC-ahmed</div>
+          </div>
+        </div>
+      </div>
+      <!-- 1 data  -->
+      <!--  0 data -->
+      <div class="about-client">
+        <div class="infu-boxv">
+          <div class="catch-photo">
+            <img src="../imgs/profile-pic-IIIII.png">
+          </div>
+          <div class="data-infu">
+            <div class="infu">McLaren-Ali</div>
+          </div>
+        </div>
+      </div>
+      <!-- 1 data  -->
+            <!--  0 data -->
+            <div class="about-client">
+              <div class="infu-boxv">
+                <div class="catch-photo">
+                  <img src="../imgs/profile-pic-IIII.png">
+                </div>
+                <div class="data-infu">
+                  <div class="infu">Al Naboodah-salwa</div>
+                </div>
+              </div>
+            </div>
+            <!-- 1 data  -->
+                  <!--  0 data -->
+      <div class="about-client">
+        <div class="infu-boxv">
+          <div class="catch-photo">
+            <img src="../imgs/profile-pic-III.png">
+          </div>
+          <div class="data-infu">
+            <div class="infu">bosta-omer</div>
+          </div>
+        </div>
+      </div>
+      <!-- 1 data  -->
+    </div>
+    <!-- 1 catch company -->
+  </section>
+</body>
+
+</html>

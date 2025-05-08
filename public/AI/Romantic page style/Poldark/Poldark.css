@@ -1,0 +1,192 @@
+ body
+{
+	background-color:/*#4a4a51*/ #19181B;
+	height:1700px;
+}
+
+.head
+{	
+
+	color:white;
+	font-size:20px;
+	position:absolute;
+	top:10px;
+	margin-right: 10px;
+	font-style:bold;
+	right:5px;
+	letter-spacing:4px;
+
+}
+
+a
+{
+	background-color: #19181B;
+	color:white;
+}
+
+.b1
+{
+	background-color: white;
+	position:absolute;
+	top:30px;
+	margin-left: 35px;
+}
+
+.homeicon
+{
+	position:absolute;
+	top:70px;
+	right:85px;
+}
+
+.cover
+{
+	position:absolute;
+	top:126px;
+	right:1%;
+}
+
+.photo
+{
+	position:absolute;
+	top:215px;
+	right:50%;
+	border-style:solid;
+	border-color:white;
+}
+
+.buttons
+{
+	background-color:#19181B;
+	position:absolute;
+	top:170px;
+	left:130px;
+}
+
+button
+{
+	display:block;
+	color:white;
+	border-radius:15px;
+	padding-right:30px;
+	margin-top:30px;
+}
+
+/*p
+{
+	color:white;
+}*/
+
+.info
+{
+	position:absolute;
+	top:160px;
+	right:4%;
+	font-size:40px;
+	color:white;
+}
+
+.tech
+{
+	position:absolute;
+	top:899px;
+	margin-left:24.25%;
+}
+
+.prog
+{
+	background-color:#2DCC70;
+	height: 25px;
+	width: 1000px;
+}
+.spa
+{
+	background-color:#2DCC70;
+	height:25px;
+	display:block;
+	line-height:25px;
+	text-align: right;
+	/*color:white;*/
+	font-weight: bold;
+}
+
+.story
+{
+	position:absolute;
+	top:950px;
+	color:white;
+	font-weight: bold;
+	text-align:left;
+	line-height:25px;
+	font-size:22px;
+	left:330px;
+	width:1000px;
+	height:30px;
+}
+
+.span
+{
+	border-radius:15px;
+	background-color:white;
+	margin-left:10px;
+	padding:3px;
+}
+
+.kind
+{
+	position:absolute;
+	top:870px;
+	right:817px; 
+}
+
+video
+{
+	position:absolute;
+	top:1150px;
+	right:20px;
+}
+
+.photos
+{
+	position:absolute;
+	top:1172px;
+	width:220px;
+	height:180px; 
+	margin-right:10px;
+	border:solid white 4px;
+}
+
+.Actors
+{
+	position:absolute;
+	top:1430px;
+	width:220px;
+	height:200px; 
+	margin-right:10px;
+	border:solid white 10px;
+}
+
+.Footer
+{
+	position:absolute;
+	top:1720px;
+	right:41%;
+	color: white;
+}
+
+li
+{
+	 display:inline-block;
+}
+
+.box
+{
+	width:1195px ;
+	height:80px ;
+	background-color:#DDD;
+	position:absolute;
+	top:1660px;
+	left:138.5px;
+
+
+}

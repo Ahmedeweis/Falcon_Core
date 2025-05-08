@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill Info</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" type="text/css" href="../css/design.css">
+    <!-- icon of web site above -->
+    <link rel="icon" href="icons/web.png">
+    <!-- description -->
+    <meta name="description" content="description of your website. This will appear in search results.">
+</head>
+
+<body>
+    <section class="page">
+  		<!--  0 sidebar  -->
+          <sidebar>
+			<aside>
+				<h3 class="title">
+					<span>electricity power </span>
+					<span class="show-phone">power</span>
+				</h3>
+				<ul>
+					<li>
+						<a class="active" href="BillsTable.html">
+							<img src="../imgs/payment.png">
+							<span>View bills</span>
+						</a>
+					</li>
+					<li class="catch-a-arrow linko">
+						<a class="special">
+							<img src="../imgs/electric-panel.png">
+							<span>Mater</span>
+						</a>
+						<div class="arrow"><img class="arrow-img" src="../imgs/next.png"></div>
+						<ul class="catchs-a arrow-links">
+							<a class="linko" id="a" href="Add-mated.html"><img src="../imgs/plus.png"> Add Mater</a>
+							<a class="linko" id="a" href="transfare-mater.html"><img
+									src="../imgs/data-transfer.png">Transfere mater</a>
+							<a class="linko" id="a" href="Cancel-mater.html"><img src="../imgs/cancel.png">Cancellation
+								Mater</a>
+						</ul>
+					</li>
+					<li>
+						<a class="" href="Requests.html">
+							<img src="../imgs/it.png">
+							<span>My Request's</span>
+						</a>
+					</li>
+					<li>
+						<a class="" href="fault-reportrs.html">
+							<img src="../imgs/problems.png">
+							<span>fault reports</span>
+						</a>
+					</li>
+                    <li>
+						<a class="" href="payment-history.html">
+							<img src="../imgs/statement.png">
+							<span>Payment History</span>
+						</a>
+					</li>  
+				</ul>
+			</aside>
+		</sidebar>
+		<!--  1 sidebar  -->
+        <div class="content">
+            <!-- Start Head -->
+            <div class="head ">
+                <div class="icons d-flex align-center">
+                    <img src="../imgs/logo.png" alt="" />
+                </div>
+                <a class="out" href="land.html">
+                    <img src="../imgs/log-out.png" style="width: 30px;">
+                </a>
+                </button>
+            </div>
+            <!-- End Head -->
+            <!-- Start Projects Table -->
+            <div class="Bills">
+                <h2 class="">Bill Informations</h2>
+                <form class="bill-box">
+                    <div class="bill-actions">
+                        <div class="Report">
+                            <div class="part-head">
+                                <img src="../imgs/alert.png" class="bill-imgs">
+                                <h3 class="h-head">Report a problem</h3>
+                            </div>
+                            <div class="part-body">
+                                <button class="roport-btn"><a href="make-report.html" class="pay-a" style="font-size:20px;">Report ..!</a></button>
+                            </div>
+                        </div>
+                        <div class="pay-bills">
+                            <div class="part-head">
+                                <img src="../imgs/credit-card.png" class="bill-imgs">
+                                <h3 class="h-head">Pay Bill</h3>
+                            </div>
+                            <!-- start cases area -->
+                            <!-- start case #1st didn't "pay" or "late"  this div apear -->                           
+                            <div class="part-body">
+                                <p class="pay-p">How do you want to pay?</p>
+                                <div class="pay-methods">
+                                    <div class="white-box">
+                                        <input type="radio" name="payment-method" id="method1" value="google">
+                                        <label for="method1" class="bank-body">
+                                            <img src="../imgs/credit-card.png" alt="Image">
+                                            <h2>Credit&nbsp;/&nbsp;Debit</h2>
+                                        </label>
+                                    </div>
+                                    <div class="white-box">
+                                        <input type="radio" name="payment-method" id="method2" value="youtube">
+                                        <label for="method2" class="bank-body">
+                                            <img src="../imgs/paypal.png" alt="Image">
+                                            <h2>Paypal</h2>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="roport-btn"><a href="" id="payment-link" class="pay-a">Pay Now</a></button>
+                            </div>                          
+                            <!-- end case #1st didn't "pay" or "late"  this div apear -->
+                            <!-- start case #2nd didn't payed  this div apear --> 
+                            <!--  
+                            <div class="part-body">        
+                                <div class="pay-methods f-start">
+                                    <img src="../imgs/check.png" class="bill-s-imgs">
+                                    <p class="pay-p">Has been payed successfully </p>
+                                </div>                    
+                            </div>  
+                            -->                      
+                            <!-- end case #2nd didn't payed  this div apear -->
+                            <!-- start case #3nd under consumption  this div apear -->  
+                            <!-- 
+                            <div class="part-body">        
+                                <div class="pay-methods f-start">
+                                    <img src="../imgs/gauge.png" class="bill-s-imgs">
+                                    <p class="pay-p">Under Consumption</p>
+                                </div>                    
+                            </div>    
+                            -->                    
+                            <!-- end case #3nd  under consumption this div apear -->                               
+                            <!-- end cases area -->
+                        </div>
+                    </div>
+                    <div class="bill-info">
+                        <div class="part-head p-l-20">
+                            <img src="../imgs/bill.png" class="bill-imgs">
+                            <h3 class="h-head">Bill Details</h3>
+                        </div>
+                        <div class="part-body p-l-20">
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">Owner's Name:&nbsp;</div>
+                                <div class="data-value">Zain</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">Address:&nbsp;</div>
+                                <div class="data-value">Al-Khalaija district, Mecca</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">Meter Number:&nbsp;</div>
+                                <div class="data-value">156830</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">Bill number:&nbsp;</div>
+                                <div class="data-value">03 23</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">current reading :&nbsp;</div>
+                                <div class="data-value">36546</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">consumption:&nbsp;</div>
+                                <div class="data-value">1461400</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">number of days:&nbsp;</div>
+                                <div class="data-value">31</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 date data field  -->
+                            <div class="bill-data">
+                                <div class="date-range-filter">
+                                    <div class="con">
+                                        <label for="start-date" class="data-lab">Start Date:</label>
+                                        <input type="date" id="start-date" value="2023-02-01" disabled>
+                                    </div>
+                                    <div class="con">
+                                        <label for="end-date" class="data-lab">End Date&nbsp;&nbsp;:</label>
+                                        <input type="date" id="end-date" value="2023-03-01" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 date data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">Bill Deadline:&nbsp;</div>
+                                <div class="data-value">31/5/2023</div>
+                            </div>
+                            <!-- 1 data field  -->
+                            <!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">value:&nbsp;</div>
+                                <div class="data-value">700&nbsp;SAR</div>
+                            </div>
+                            <!-- 1 data field  --><!-- 0 data field  -->
+                            <div class="bill-data">
+                                <div class="data-lab">Status:&nbsp;</div>
+                                <div class="data-value">UnPayed</div>
+                                <!-- 0 others statuse   -->
+                                <!--  
+                                <div class="data-value">Payed</div>
+                                <div class="data-value">Current</div>
+                                -->
+                                <!-- 1 others statuse  -->
+                            </div>
+                            <!-- 1 data field  -->
+                        </div>
+                    </div>
+                </form>
+                <div class="comp-logo"><img src="../imgs/logo.png"></div>
+            </div>
+    </section>
+    <!-- 0 scripts  -->
+    <!-- 0 link of methon of pay -->
+    <script>
+        // Get the radio buttons and the payment link
+        const method1Radio = document.getElementById('method1');
+        const method2Radio = document.getElementById('method2');
+        const paymentLink = document.getElementById('payment-link');
+
+        // Add event listeners to the radio buttons
+        method1Radio.addEventListener('change', updatePaymentLink);
+        method2Radio.addEventListener('change', updatePaymentLink);
+
+        // Function to update the payment link based on the selected radio button
+        function updatePaymentLink() {
+            if (method1Radio.checked) {
+                paymentLink.href = 'pay-bank.html';
+            } else if (method2Radio.checked) {
+                paymentLink.href = 'pay-papal.html';
+            }
+        }
+
+        // Initial update of the payment link
+        updatePaymentLink();
+    </script>
+    <!-- 1 link of methon of pay -->
+    <!-- 1 scripts  -->
+</body>
+
+</html>

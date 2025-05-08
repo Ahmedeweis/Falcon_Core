@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign-up</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/Home.css">
+  <link rel="stylesheet" href="../css/WriteArticle.css">
+  <link rel="stylesheet" src="../css/profile.css">
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --xxxfont: 32px;
+      --xxfont: 25px;
+      --xfont: 20px;
+      --lfont: 18px;
+      --mfont: 14px;
+    }
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Small */
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+
+    /* Medium */
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+
+    /* Large */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+
+    .proff-hiss .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @media (max-width:1100px) {
+      .proff-hiss .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    /* 0 start card of user */
+    .userr-cardd {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 6px;
+      flex: 1.6;
+      height: fit-content;
+      padding-bottom: 20px;
+      border: 5px solid black;
+      width: 100%;
+    }
+
+    .picc-cardd {
+      background-color: #007BFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 60px;
+    }
+
+    .picc {
+      padding: 10px;
+      background-color: white;
+      border: 5px solid #ccc;
+    }
+
+    .picc-imagg {
+      width: 200px;
+    }
+
+    .hh-userr-namee {
+      color: white;
+      font-size: var(--xxxfont);
+      margin: 20px 0px;
+    }
+
+    .userr-namee {
+      border: none;
+    }
+
+    .editt-fieldss {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      font-size: var(--xx);
+      margin-top: 10px;
+    }
+
+    .my-data-titlee {
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: var(--xxfont);
+    }
+
+    .battonn-editt {
+      color: white;
+      background-color: #28A745;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: var(--xfont);
+    }
+
+    .userr-fieldss {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px 0px;
+    }
+
+    .firstt-fieldd {
+      border-top: 3px solid #EBEBEB;
+      border-right: 3px solid #EBEBEB;
+      border-left: 3px solid #EBEBEB;
+      width: 100%;
+    }
+
+    .lastt-fieldd {
+      border-bottom: 3px solid #EBEBEB;
+    }
+
+    .hh-userr-data {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      padding: 1px 60px;
+    }
+
+    .userr-dataa {
+      width: inherit;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      padding: 3px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: var(--xxfont);
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .userr-dataa:focus::placeholder {
+      color: #5C6F8C;
+    }
+
+    .userr-dataa::placeholder {
+      color: black;
+    }
+
+    .userr-dataa:focus {
+      outline: transparent;
+      border-bottom: 2px #1772EB solid;
+    }
+
+    .spann-dataa {
+      color: #959294;
+      font-weight: bold;
+      margin: 10px 0px;
+    }
+
+    .battonn-submitt {
+      color: white;
+      background-color: #E60278;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: var(--xfont);
+    }
+
+    /* 1 card of user */
+    /* 0 card of his */
+
+    .historyy-partt {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      border-radius: 6px;
+      height: fit-content;
+      padding-bottom: 20px;
+      border: 5px solid black;
+      flex: 2;
+      margin-left: 30px;
+      width: 100%;
+    }
+
+    @media (max-width:1100px) {
+      .historyy-partt {
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+    }
+
+    .hitorry-containerr {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .historyy-titlee {
+      border-bottom: 2px solid black;
+      width: calc(100% - 25px);
+      padding-bottom: 7px;
+      font-size: var(--xxxfont);
+
+    }
+
+    .Activityy-titlee {
+      background-color: #27AE61;
+      color: white;
+      padding: 5px 0px 5px 10px;
+      width: calc(100% - 25px);
+      font-size: var(--xxxfont);
+      margin: 10px 0px;
+    }
+
+    .historyy-activities {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: calc(100% - 25px);
+      flex-direction: column-reverse;
+      padding: 30px 0px;
+    }
+
+    .historyy-activities>div:nth-child(even) {
+      background-color: white;
+    }
+
+    .historyy-activities>div:nth-child(odd) {
+      background-color: white;
+    }
+
+    .onee-activityy {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+      margin: 10px 0px;
+      padding: 15px 0px;
+    }
+
+    .activityy-headd {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      border-bottom: 2px solid black;
+      margin-left: 6px;
+    }
+
+    .rightt-photoo {
+      width: 30px;
+      margin-right: 5px;
+    }
+
+    .activityy-namee {
+      width: 100%;
+      font-size: var(--xxfont);
+      padding-bottom: 10px;
+    }
+
+    .hh-timee-detielss {
+      padding: 0px 8px;
+      margin: 10px 0px;
+      font-size: var(--xxfont);
+    }
+
+    .datee-boxx {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .datee-infoo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0px 8px;
+      margin: 10px 0px;
+    }
+
+    .titt-fieldd {
+      justify-self: flex-start;
+      flex: 1;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 8px 0px;
+      color: #78787b;
+      font-size: var(--xxfont);
+    }
+
+    .datee-valuee {
+      justify-self: center;
+      flex: 1;
+      font-weight: bold;
+      font-size: 20px;
+      font-size: var(--xfont);
+    }
+
+    .statee-boxx {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0px 8px;
+    }
+
+    .statee-fieldd {
+      justify-self: flex-start;
+      flex: 1;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 8px 0px;
+    }
+
+    .statee-spann {
+      color: white;
+      background-color: #F59E0B;
+      padding: 8px 10px;
+      padding-left: 5px;
+      margin-left: -5px;
+      border-radius: 6px;
+      font-size: 30px;
+    }
+
+    .statee-valuee {
+      justify-self: center;
+      flex: 1;
+      font-weight: bold;
+      font-size: 20px;
+      font-size: 30px;
+      color: #F59E0B;
+    }
+
+    .dell-battonn {
+      color: white;
+      background-color: #d50000;
+      padding: 8px 10px;
+      margin-left: 4px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: var(--lfont);
+    }
+
+    /* 1 card of his */
+    .ifCond {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="handle-nav">
+        <ul class="L-link">
+          <a href="#" class="Logo-apear"><img src="../assets/logo.png" class="head-photo-width"></a>
+          <li style="padding-left:0px;" class="word-apear"><a href="#" class="Title">Author Identifcation</a></li>
+          <li><a href="DashboardView.html">Home</a></li>
+          <li><a href="AuthorsUserView.html">Authors</a></li>
+        </ul>
+        <ul class="R-link">
+          <li>
+            <!-- 0 Hover that image container to get list  -->
+            <div class="image-container">
+              <!-- 0 link gog to profile -->
+              <div style="cursor: pointer;">
+                <!-- 0 profile icon -->
+                <img src="../assets/user.svg" class="notify-icon">
+              </div>
+              <!-- 0 box apear when hover image container -->
+              <div class="hover-box">
+                <!-- 0 content of box -->
+                <div class="content">
+                  <a href="ProfileView.html"><img src="../assets/user.svg" alt="Your Photo"></a>
+                  <div class="user-name">Ahmed</div> <!-- 0 name of user -->
+                  <!-- 0 button + img of row -->
+                  <div class="img-link">
+                    <img style="width:50px;" src="../assets/logout.png">
+                    <a class="two-btn" href="log-in.html" style="font-size: 16px; color: black;">Sign
+                      Out</a>
+                  </div>
+                  <!-- 1 button + img of row -->
+                </div>
+                <!-- 1 content of box -->
+              </div>
+              <!-- 0 box apear when hover image container -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="proff-hiss">
+    <div class="container">
+      <!-- 0 card of user -->
+      <div class="userr-cardd">
+        <!-- 0 first line -->
+        <div class="picc-cardd">
+          <div class="picc">
+            <img src="../assets/user-pic.png" class="picc-imagg">
+          </div>
+          <div class="divv-userr-namee">
+            <h2 class="hh-userr-namee">Ali</h2>
+          </div>
+        </div>
+        <!-- 1 first line -->
+        <!-- 0 second line -->
+        <div class="editt-fieldss">
+          <h3 class="my-data-titlee">personal info</h3>
+          <button class="battonn-editt" @click.prevent="enableInputs">Edit</button>
+        </div>
+        <!-- 1 second line -->
+        <!-- 0 third line -->
+        <div class="userr-fieldss">
+          <div class="firstt-fieldd">
+            <h2 class="hh-userr-data">
+              <input type="text" class="userr-dataa" :disabled="isDisabled" placeholder="22" id="ageInput"
+                v-model="age" />
+              <span class="spann-dataa">Age</span>
+            </h2>
+          </div>
+          <div class="firstt-fieldd">
+            <h2 class="hh-userr-data">
+              <input type="text" class="userr-dataa" placeholder="Ali" :disabled="isDisabled" id="nameInput"
+                v-model="name" />
+              <span class="spann-dataa">Name</span>
+            </h2>
+          </div>
+          <div class="firstt-fieldd">
+            <h2 class="hh-userr-data">
+              <input type="email" class="userr-dataa" id="emailInput" placeholder="Eweis@gmail.com"
+                :disabled="isDisabled" v-model="email" />
+              <span class="spann-dataa">Email</span>
+            </h2>
+          </div>
+          <div class="firstt-fieldd lastt-fieldd">
+            <h2 class="hh-userr-data">
+              <input type="password" class="userr-dataa" :disabled="isDisabled" placeholder="****" id="passwordInput"
+                v-model="password" />
+              <span class="spann-dataa">password</span>
+            </h2>
+          </div>
+          <div class="divv-battonn-submitt">
+            <button class="battonn-submitt" @click.prevent="Update" :disabled="isDisabled">update</button>
+          </div>
+        </div>
+        <!-- 1 third line -->
+        <!-- 0 forth line -->
+
+        <!-- 1 forth line -->
+      </div>
+      <!-- 1 card of user -->
+      <!-- 0  card of history -->
+      <div class="historyy-partt">
+        <!-- 0 container history -->
+        <div class="hitorry-containerr">
+          <h2 class="historyy-titlee">History</h2>
+          <h2 class="Activityy-titlee">Recent Activity</h2>
+          <!-- 0 all activity -->
+          <div class="historyy-activities">
+            <!-- 0 one activity -->
+            <div class="onee-activityy" v-for="histor in History" :key="histor.id">
+              <div class="activityy-headd">
+                <img class="rightt-photoo" src="../assets/checkmark.png">
+                <h2 class="activityy-namee">Sign In</h2>
+              </div>
+              <div class="datee-boxx">
+                <div class="datee-infoo">
+                  <h2 class="titt-fieldd">Date</h2>
+                  <date class="datee-valuee">06/12/2023</date>
+                  <div></div>
+                </div>
+                <div class="datee-infoo">
+                  <h2 class="titt-fieldd">Time</h2>
+                  <date class="datee-valuee">02:01:55 AM</date>
+                  <div></div>
+                </div>
+              </div>
+              <div class="statee-boxx">
+                <h2 class="statee-fieldd">Status</h2>
+                <span class="statee-valuee">Succeful</span>
+              </div>
+              <button class="dell-battonn" @click.prevent="deleteAcrivity(histor.id)">Delete Activity</button>
+            </div>
+            <!-- 1 one activity -->
+            <!-- 0 one activity -->
+            <div class="onee-activityy" v-for="histor in History" :key="histor.id">
+              <div class="activityy-headd">
+                <img class="rightt-photoo" src="../assets/checkmark.png">
+                <h2 class="activityy-namee">Search Auther</h2>
+              </div>
+              <div class="datee-boxx">
+                <div class="datee-infoo">
+                  <h2 class="titt-fieldd">Date</h2>
+                  <date class="datee-valuee">06/12/2023</date>
+                  <div></div>
+                </div>
+                <div class="datee-infoo">
+                  <h2 class="titt-fieldd">Time</h2>
+                  <date class="datee-valuee">02:01:55 AM</date>
+                  <div></div>
+                </div>
+              </div>
+              <div class="statee-boxx">
+                <h2 class="statee-fieldd">Status</h2>
+                <span class="statee-valuee">Succeful</span>
+              </div>
+              <button class="dell-battonn" @click.prevent="deleteAcrivity(histor.id)">Delete Activity</button>
+            </div>
+            <!-- 1 one activity -->
+            <!-- 0 one activity -->
+            <div class="onee-activityy" v-for="histor in History" :key="histor.id">
+              <div class="activityy-headd">
+                <img class="rightt-photoo" src="../assets/checkmark.png">
+                <h2 class="activityy-namee">View Profile</h2>
+              </div>
+              <div class="datee-boxx">
+                <div class="datee-infoo">
+                  <h2 class="titt-fieldd">Date</h2>
+                  <date class="datee-valuee">06/12/2023</date>
+                  <div></div>
+                </div>
+                <div class="datee-infoo">
+                  <h2 class="titt-fieldd">Time</h2>
+                  <date class="datee-valuee">02:01:55 AM</date>
+                  <div></div>
+                </div>
+              </div>
+              <div class="statee-boxx">
+                <h2 class="statee-fieldd">Status</h2>
+                <span class="statee-valuee">Succeful</span>
+              </div>
+              <button class="dell-battonn" @click.prevent="deleteAcrivity(histor.id)">Delete Activity</button>
+            </div>
+            <!-- 1 one activity -->
+          </div>
+          <!-- 1 all activity -->
+        </div>
+        <!-- 1 container history -->
+      </div>
+      <!-- 1 card of history -->
+    </div>
+  </section>
+</body>
+
+</html>

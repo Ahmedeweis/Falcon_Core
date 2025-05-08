@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <style src="../css/ShowAutherProfile.css"></style>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/ShowAutherProfile.css">
+  <link rel="stylesheet" href="../css/Home.css" />
+  <style>
+    .nav {
+        background-color: white;
+    }
+
+    .prof img {
+        width: 200px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px 1px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+
+    ul li {
+        padding: 1px 10px;
+    }
+
+    nav li a {
+        color: black;
+        transition: 0.5s;
+    }
+
+    nav li a:hover {
+        color: black;
+    }
+
+    .L-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .R-link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .Title {
+        font-size: 30px;
+    }
+
+    .icon-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-profile img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    /* 1 header */
+    .user-icon,
+    .notify-icon {
+        width: 32px;
+    }
+
+    .notify-icon {
+        width: 32px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .hover-box {
+        position: absolute;
+        right: 0;
+        background-color: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        width: 150px;
+        border: 2px solid black;
+    }
+
+    .img-link {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+
+    .image-container:hover .hover-box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .content img {
+        width: 40px;
+    }
+
+    .content a,
+    .two-btn {
+        align-items: center;
+        display: flex;
+        padding: 3px 3px;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .content a:hover,
+    .two-btn {
+        color: black;
+    }
+  </style>
+    <style>
+      .search {
+        position: relative;
+        padding-right: 10px;
+      }
+  
+      .search button {
+        padding: 3px;
+        margin-left: 9px;
+        position: absolute;
+        top: 7px;
+        border: none;
+        background-color: transparent;
+      }
+  
+      .search button img {
+        width: 20px;
+      }
+  
+      .search input {
+        padding: 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 5px;
+        padding-left: 30px;
+        width: 400px;
+        transition: width 0.3s;
+        color: black;
+      }
+  
+      @media (max-width: 768px) {
+        .search input {
+          width: 200px;
+        }
+      }
+  
+      .second-nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      .info {
+          border: 2px solid #ddd;
+          padding: 20px 10px 10px 10px;
+      }
+    </style>
+</head>
+<body class="write-article-body">
+  <header class="nav">
+    <div class="container">
+    <div class="handle-nav">
+        <ul class="L-link">
+          <a href="#" class="Logo-apear"><img src="../assets/logo.png" class="head-photo-width"></a>
+            <li style="padding-left:0px;" class="word-apear"><a href="#" class="Title">Author Identifcation</a></li>
+            <li><a href="AdminHomeUsers.html">Home</a></li>
+        </ul>
+        <ul class="R-link">
+            <li>
+                <!-- 0 Hover that image container to get list  -->
+                <div class="image-container">
+                    <!-- 0 link gog to profile -->
+                    <div style="cursor: pointer;">
+                        <!-- 0 profile icon -->
+                        <img src="../assets/user.svg" class="notify-icon">
+                    </div>
+                    <!-- 0 box apear when hover image container -->
+                    <div class="hover-box">
+                        <!-- 0 content of box -->
+                        <div class="content">
+                            <a href="ProfileViewAdmin.html"><img src="../assets/user.svg" alt="Your Photo"></a>  
+                            <div class="user-name">Admin</div>   <!-- 0 name of user -->    
+                            <!-- 0 button + img of row -->
+                            <div class="img-link">
+                                <img style="width:50px;" src="../assets/logout.png">
+                                <a class="two-btn" href="log-in.html" style="font-size: 16px;">Sign Out</a>
+                            </div>
+                            <!-- 1 button + img of row -->
+                        </div>
+                        <!-- 1 content of box -->
+                    </div>
+                <!-- 0 box apear when hover image container -->
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+</header>
+<section>
+  <div class="container">
+      <head>
+          <div class="first-line">
+              <img src="../assets/logo.png">
+              <div class="site-name">Author Identifcation</div>
+          </div>
+          <div class="second-line">
+              <h1></h1>
+          </div>
+          <div class="third-line" style="text-align: center;">
+              <a href="AddArticleView.html" class="add-comment" style=" background-color: white; color: black; margin-left:0px;" @click.prevent="addArticle()">Add-article</a>
+          </div>
+      </head>
+  </div>
+</section>
+<section style="padding-top:10px;">
+    <div class="container">
+        <!-- 0 article -->
+        <div class="info" v-for=" article in articles" :key="article.id">
+            <!-- 0 post -->
+            <div class="post" style="width:100%;flex-direction:column; background-color:white; border:none;" >
+                <div class="personal-info2" style=" width:100%;">
+                    <div class="personal-info2-child" style="justify-content:space-between;">
+                        <!-- <a href=""><img style="width:100px" src="../assets/user.png" alt="" /></a> -->
+                        <h1>Brad Doefman</h1>
+                        &nbsp;
+                        <h2 class="company name"></h2>
+                    </div>
+                  <div style="justfy-self:flex-end;">
+                    <button class="add-comment" @click.prevent="enableInputs()" >Edit article</button>
+                    <button class="add-comment" @click.prevent="updateArticle(article.id , article.content)">Sumbit</button>
+                    <button class="add-comment" @click.prevent="deleteArticle(article.id)" >Delete</button>
+                </div>
+                </div>
+                <div class="text" style="width:100%">
+                  <textarea style="height: 300px; resize: none; font-size: 20px;"
+                  placeholder="At the heart of this world lies the concept of authorial excellence Its a realm where individuals are not just writers but artists of language. They possess the skill to weave intricate narratives, create vivid characters, and evoke emotions with the stroke of a pen or the tap of a keyboard."
+               class="multiline-input"></textarea>
+                </div>
+            </div>
+            <!-- 1 post -->
+            <!-- 0 write Comment -->
+            <div class="text">
+                <p class="comment-flex"><textarea id="try" name="description" placeholder="write comment"
+                        class="multiline-input" v-model="commentContent[article.id]" ></textarea>
+                        <button class="add-comment" @click.prevent="addComment(article.id,commentContent[article.id])">comment</button>
+                </p>
+            </div>
+            <!-- 1 write Comment -->
+            <!-- 0 content Comment -->
+            <div class="comment" v-for="comment in article.comments">
+              <div class="personal-info2-child" style="justify-content: space-between;">
+              <h2>Ahmed</h2>
+              <div class="viff" v-if="comment.user_id === id" >
+              <button  class="add-comment" @click.prevent="deleteComment(comment.id)" >Delete</button>
+              </div>
+              </div>
+              <div class="text">
+                  <p class="comment-txt">Great .. i love it</p>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+
+
+ 

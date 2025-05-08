@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign-up-company</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="sign-up-body flexx">
+  <div class="translate">
+    <a href=""><span>  العربية   </span></a>
+    <img src="imgs/arabic.png">
+  </div>
+  <section id="box" class="box">
+    <form action="submit" method="get" name="company_reg" target="_blank" enctype="multipart/form-data">
+      <h2>Get Started Now !</h2>
+      <h2 style="font-size:18px;">Registration</h2>
+      <div class="kind">
+        <div> <a class="member-link" href="user.html">Individual</a></div>
+        <p>&nbsp;&nbsp;</p>
+        <div><a class="company-link active" href="#box">Company</a></div>
+      </div>
+      <div class="user-section">
+      </div>
+      <div class="input-box">
+        <input type="text" name="company-name" id="signy" required>
+        <span>Company-Name*</span>
+        <i></i>
+      </div>
+      <div class="input-box">
+        <input type="email" name="e-mail" required >
+        <span>E-Mail*</span>
+        <i></i>
+      </div>
+      <!--  
+      <div class="input-box first">
+        <input type="text" name="Responsible_person" required>
+        <span>Responsible person</span>
+        <i></i>
+      </div>
+      -->
+      <!--  
+      <div class="input-box">
+        <input type="text" name="Role_Job" required>
+        <span>Role/Job</span>
+        <i></i>
+      </div>
+      -->
+      <div class="input-box">
+				<input type="text" name="phone"  >
+				<span>Phone*</span>
+				<i></i>
+			</div>
+      <div class="input-box">
+        <input type="password" name="password" required>
+        <span>Password*</span>
+        <i></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="con-password" required>
+        <span>Confirm Password*</span>
+        <i></i>
+      </div>
+      <!-- 0 0 down list language  -->
+      <!-- 
+      <div class="dropdown">
+        <select class="dropdown-select" name="Language">
+          <option disabled selected> Language </option>
+          <option> English </option>
+          <option> العربية </option>
+        </select>
+      </div>
+    -->
+      <!-- 1 0 down list language   -->
+
+      <!-- 0 fist down list emara  -->
+      <div class="dropdown">
+        <select class="dropdown-select" name="Emirate_City">
+          <option disabled selected>Emirate / City*</option>
+          <option value="option1">Abu Dhabi</option>
+          <option value="option3" disabled>Al Ain</option>
+          <option value="option2" disabled>Dubai Soon..!</option>
+          <option value="option4" disabled>Sharjah Soon..!</option>
+          <option value="option5" disabled>Ras Al Khaimah Soon..!</option>
+          <option value="option6" disabled>Ajman Soon..!</option>
+          <option value="option7" disabled>Umm Al Quwain Soon..!</option>
+          <option value="option8" disabled>Fujairah Soon..!</option>
+        </select>
+      </div>
+      <!-- 1 fist down list emara  -->
+      <!-- 0 second down list jop  -->
+      <div class="dropdown">
+        <select name="Registration_Type" id="firstDropdown" class="dropdown-select" onchange="showSecondDropdown()">
+          <option class="big" disabled selected value="option0">Registration Type*</option>
+          <option value="option1">Consultant</option>
+          <option value="option2">General Contractor</option>
+          <option value="option3">Subcontractor</option>
+          <option value="option4">Supplier</option>
+        </select>
+        <!-- 0 last option => departments -->
+        <select name="specialization"  id="secondDropdown" class="dropdown-select" style="display: none;">
+          <option disabled selected value="option4">specialization *</option>
+          <option value="option5"> Electrical Engineering</option>
+          <option value="option6">Ceramic Installation</option>
+          <option value="option7">Plumbing Department</option>
+          <option value="option8">Decoration Works</option>
+          <option value="option9">Reinforced Carpentry</option>
+          <option value="option10">Elevator Works</option>
+          <option value="option11">Reinforced Ironworks</option>
+          <option value="option12">PASCO Installation</option>
+          <option value="option13">Brick Installation</option>
+          <option value="option15">Ornamental Ironworks</option>
+          <option value="option16">Plastering Works</option>
+          <option value="option17">Stone Installation</option>
+          <option value="option18">Painting Works</option>
+          <option value="option19">Aluminum and Glass Works</option>
+          <option value="option20">Door Carpentry</option>
+          <option value="option21">Air Conditioning Works</option>
+          <option value="option22">Civil Defense Works</option>
+          <option value="option23">Suspended Ceiling Works</option>
+        </select>
+        <!-- 1 last option => departments -->
+      </div>
+      <!-- 1 second down list jop  -->
+      </div>
+      
+        <script>
+        function showSecondDropdown() {
+          var firstDropdown = document.getElementById("firstDropdown");
+          var secondDropdown = document.getElementById("secondDropdown");
+
+          var selectedOption = firstDropdown.options[firstDropdown.selectedIndex].value;
+
+          secondDropdown.style.display = "none";
+
+          if (selectedOption === "option3") {
+            secondDropdown.style.display = "block";
+          }
+        }
+      </script>
+
+      <div class="input-file-box">
+        <span class="input-file">Professional License*</span>
+        <p>&nbsp;</p>
+        <input class="file-style" type="file" name="Professional_License">
+        <i></i>
+      </div>
+      <div class="remember-forget">
+				<div><input type="checkbox" name="Termes" class="chek">
+					<p class="acceptt">I accept <a class="term-link" href="html/Terms-condition.html">Terms Conditions and Privacy Policy</a></p>
+				</div>
+			</div>
+      <input type="submit" value="Sign-Up" name="submit">
+      <div class="transfare"><a href="html/log-in.html">have an acount ? Log-In now</div>
+    </form>
+  </section>
+  <section class="additions">
+		<div class="icon">
+			<span class="ar-logo">تطوير للخدمات الإلكترونية</span>
+			<br>
+			<span class="en-logo">TATWEER ELECTRONIC SERVICES COMPANY</span>
+			<img src="imgs/web.png">
+		</div>
+			<div><h2 class="color-b">Welcome to Tatweer Services Company</h2></div>
+			<div><p class="f-bold">This website has been established to facilitate, accelerate and improve the experience of Tatweer’s 
+				customers through the use of various services that have been specially prepared on the website.</p></div>
+			<div><p class="f-bold">If you are already registered in the website, please “<a href="html/log-in.html" class="color-b">Log in</a>” and enter your username and password. If you are not registered yet and you are a new user, 
+				please create an account in the website by selecting "<a href="#signy" class="color-b">Sign up</a>" and complete the required information.</p></div>
+			<div><h2 class="color-b">Let’s start and enjoy! ............ </h2></div>
+			<div class="soci">
+				<img src="imgs/facebook.png">
+				<img src="imgs/Tweter.png">
+				<img src="imgs/instagram.png">
+				<img src="imgs/snap.png">
+				<img src="imgs/whatsapp.png">
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>prof user</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/edit-pro.css">
+    <link rel="stylesheet" href="../css/nav-bar.css" />
+</head>
+
+<body>
+     <!-- 0 finish nav -->
+  <div class="container" id="home">
+    <nav class="navbar">
+      <div class="iconsy">
+        <a href="">
+          <img class="icon" src="../imgs/notificate.svg" />
+        </a>
+        <div class="image-container">
+          <img class="icon" src="../imgs/profile.png" />
+          <div class="hover-box">
+            <div class="content">
+              <!-- Content inside hover-box -->
+              <a style="background-color: none;" href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"
+                  width="60px"></a>
+              <div>Ali</div>
+              <div class="img-link">
+                <img src="../imgs/logout.png">
+                <a class="two-btn" href="../html/log-in.html">log out</a>
+              </div>
+              <!-- Content inside hover-box -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a>Tatweer</a></li>
+        <li class="list-item"><a href="#home">Home</a></li>
+ 
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
+  </div>
+  <!-- 1 finish nav -->
+    <section class="proff-hiss">
+        <div class="container ">
+            <!-- 0 card of user -->
+            <div class="userr-cardd">
+                <!-- 0 first line -->
+                <div class="picc-cardd">
+                    <div class="picc">
+                        <img src="../imgs/profil-pic.jpg" class="picc-imagg">
+                        <label for="file-input" class="file-input-label">
+                            <input id="file-input" type="file">
+                            <span class="camera-icon" ><img width="30px" src="../imgs/camera.png"></span>
+                        </label>
+                    </div>
+                    <div class="divv-userr-namee">
+                        <h2 class="hh-userr-namee" >Mr/Ali</h2>
+                    </div>
+                </div>
+                <!-- 1 first line -->
+                <!-- 0 second line -->
+                <div class="editt-fieldss">
+                    <h3 class="my-data-titlee">Edit personal info below</h3>
+                </div>
+                <!-- 1 second line -->
+                <!-- 0 third line -->
+                <div class="userr-fieldss">
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa disabledd"  placeholder="Bosta" disabled />
+                            <span class="spann-dataa ">Company-Name:</span>
+                        </h2>
+                    </div>
+
+                    
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="email" class="userr-dataa disabledd" disabled placeholder="Bosta@gmail.com" />
+                            <span class="spann-dataa">Email:</span>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa" placeholder="Mr/Ali" />
+                            <span class="spann-dataa">Responsible person:</span>
+                        </h2>
+                    </div>
+
+
+                    
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa" placeholder="Manager" />
+                            <span class="spann-dataa">Role/Job:</span>
+                        </h2>
+                    </div>
+
+                    
+                    <div class="firstt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="text" class="userr-dataa" placeholder="+971123456789" />
+                            <span class="spann-dataa">phone:</span>
+                        </h2>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="password" class="userr-dataa" placeholder="k&eshav12G3" />
+                            <span class="spann-dataa">Password:</span>
+                        </h2>
+                    </div>
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <input type="password" class="userr-dataa" placeholder="k&eshav12G3" />
+                            <span class="spann-dataa">Confirm Password:</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <!-- 0 0 down list language  -->
+                            <div class="dropdown">
+                                <select class="dropdown-select" name="Language">
+                                    <option disabled> Language </option>
+                                    <option selected> English </option>
+                                    <option> العربية </option>
+                                </select>
+                            </div>
+                            <!-- 1 0 down list language   -->
+                            <span class="spann-dataa">Language:</span>
+                        </h2>
+                    </div>
+
+                    <div class="firstt-fieldd lastt-fieldd">
+                        <h2 class="hh-userr-data">
+                            <!-- 0 fist down list emara  -->
+                            <div class="dropdown ">
+                                <select disabled  class="dropdown-select " style="cursor: not-allowed;"  name="Emirate_City">
+                                    <option disabled >Emirate / City*</option>
+                                    <option value="option1" selected>Abu Dhabi</option>
+                                    <option value="option3" >Al Ain</option>
+                                    <option value="option2" disabled>Dubai Soon..!</option>
+                                    <option value="option4" disabled>Sharjah Soon..!</option>
+                                    <option value="option5" disabled>Ras Al Khaimah Soon..!</option>
+                                    <option value="option6" disabled>Ajman Soon..!</option>
+                                    <option value="option7" disabled>Umm Al Quwain Soon..!</option>
+                                    <option value="option8" disabled>Fujairah Soon..!</option>
+                                </select>
+                            </div>
+                            <!-- 1 fist down list emara  -->
+                            <span class="spann-dataa">Emirate / City:</span>
+                        </h2>
+                    </div>
+
+
+                    <div class="divv-battonn-submitt">
+                        <button class="battonn-submitt">update</button>
+                    </div>
+                </div>
+                <!-- 1 third line -->
+            </div>
+            <!-- 1 card of user -->
+        </div>
+        <!-- 1 card of history -->
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<!-- <html lang="ar" dir="rtl"> -->
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>newLogIn</title>
+	<!-- Render All Elements Normally -->
+	<link rel="stylesheet" type="text/css" href="../NewCSS/normalize.css">
+	<!-- main css file -->
+	<link rel="stylesheet" type="text/css" href="../NewCSS/LogInStyle.css">
+	<!-- icon of web site above -->
+	<link rel="icon" href="icons/web.png">
+	<!-- description -->
+	<meta name="description" content="description of your website. This will appear in search results.">
+  </head>
+  <body>
+  	<!-- 0 land  -->
+  	<section class="log-bodyy">
+  		<div class="container log-con">
+
+			<div class="log-head">
+				<img src="../imgs/web.png" width="300px"> 
+			</div>
+
+			<div class="log-body">
+				<div class="log-discrip">
+					<div class="log-words">
+						<p class="p-words">Welcome to our electronic services website that allows our valuable customers to view and use many online services in an easy way.</p>
+					</div>
+					<div class="log-logo">
+						<img src="../imgs/single-logo.png">
+					</div>
+					<div class="soci">
+						<a href=""><img src="../imgs/facebook.png" class="soci-img"></a>
+						<a href=""><img src="../imgs/Tweter.png" class="soci-img"></a>
+						<a href=""><img src="../imgs/instagram.png" class="soci-img"></a>
+						<a href=""><img src="../imgs/snap.png" class="soci-img"></a>
+						<a href=""><img src="../imgs/whatsapp.png" class="soci-img"></a>
+					</div>
+				</div>
+
+				<form class="log-form">
+					<h2 class="form-head">Log In</h2>
+
+					<div class="cell">
+						<div class="cell-label">
+							<span class="cell-name">E-Mail</span>
+							<div class="star">*</div>	
+						</div>				
+						<input type="text" name="email" class="cell-entery">
+					</div>
+
+					<div class="cell">
+						<div class="cell-label">
+							<span class="cell-name">Password</span>
+							<div class="star">*</div>
+						</div>
+						<input type="password" name="email" class="cell-entery">
+					</div>
+
+
+					<div class="cell-actions">
+
+						<div class="forgit">
+							<a href="#" class="fo">Forgot password?</a>
+						</div>
+<!-- 0 Rememmber me -->
+<!--  
+						<div class="Rememmber-me">
+							<input type="checkbox" name="remember" class="chek-tir">
+							<p class="Re">Rememmber-me</p>
+						</div>
+-->						
+<!-- 1 Rememmber me  -->
+					</div>
+
+
+					<input type="submit" value="Log In" class="log-in">
+
+					<div class="Reg-cell">
+						<p>Don't Have An Account ?</p>
+						<a href="" class="register-link">Sign-Up Now</a>
+					</div>
+
+				</form>
+
+			</div>
+
+  		</div>
+  	</section>
+  	<!-- 1 land -->
+ 	
+  	<!-- 0 scripts  -->
+  	  <script >
+		const toggleButton = document.getElementById("toggle-button");
+const naviList = document.getElementById("navi-list");
+toggleButton.addEventListener("click", () => {
+  naviList.classList.toggle("active");
+});
+
+	  </script>
+  	<!-- 1 scripts  -->
+  </body>
+</html>

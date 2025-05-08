@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/stylesII.css">
+  <style>
+    .sec-nav-style {
+    padding: 30px 0px 30px 0px;
+    background-color: var(--back);
+    }
+    .filters select,
+    .filters input[type="date"],
+    .filters input[type="text"] {
+      padding: 6px 4px;
+    }
+    .filters {
+      display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .search-btn {
+    align-self: initial;
+    }
+    .filter .container {
+      padding: 14px;
+    }
+    .search-filed  {
+      cursor: text;
+    }
+    .fill-filter {
+      width: -webkit-fill-available;
+    }
+  </style>
+</head>
+
+<body >
+  <!-- <header class="sec-nav-style">
+    <div class="container" id="home">
+      <nav class="navbar">
+        <div class="iconsy">
+          <div class="left-nav">
+            <div style="display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;">
+              <span class="logo-span"> مُنسق الأراضي</span>
+
+            </div>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <a href="main.html" class=""><img src="../assets/imgs/home.png" class="icone-resize"> </a>
+          <a href="profile.html" class=""><img src="../assets/imgs/man.png" class="icone-resize"> </a>
+
+        </ul>
+
+      </nav>
+    </div>
+  </header> -->
+   	<!-- 0 header -->
+ 		<header class="">
+  		<div class="container" id="home">
+  		  <nav class="navbar">
+		      <div class="iconsy">
+		        <a href="profile.html"><img src="../assets/imgs/man.png" class="icone-resize"></a>
+		      </div>
+		      <ul class="nav-list" id="navi-list">
+		      		<li class="list-item"><a href="main.html">الرئيسية</a></li>
+		        	<li class="list-item"><a href="opportunities.html">الفرص الاستثمارية</a></li>
+		      </ul>
+		      <div class="menu" id="toggle-button">
+		        <div class="menu-line"></div>
+		        <div class="menu-line"></div>
+		        <div class="menu-line"></div>
+		      </div>
+   			</nav>
+  		</div>
+		</header>
+  	<!-- 1 header -->
+
+  <section class="General-buttons">
+    <div class="container">
+      <a href="chooseII.html" class="small-btn">+ أضف عقار</a>
+      <div class="search-container fullwidth">
+        <img src="../assets/imgs/search.png" class="search-icon">
+        <input type="text" class="search-input" placeholder="ابحث هنا">
+        <button class="search-button">ابحث</button>
+      </div>
+    </div>
+    <form class="filter">
+      <div class="container">
+        <div class="filters">
+<!--  -->
+          <div class="filt-part">
+            <div class="range-box">
+              <h4 class="h4-filt">المساحة</h4>
+              <div class="range-flex">
+                <input type="text" class="search-filed dropII small-input" placeholder="من">
+                <input type="text" class="search-filed dropII small-input" placeholder="الي">
+              </div>
+            </div>
+
+            <div class="range-box">
+              <h4 class="h4-filt">السعر</h4>
+              <div class="range-flex">
+                <input type="text" class="search-filed dropII small-input" placeholder="من">
+                <input type="text" class="search-filed dropII small-input" placeholder="الي">
+              </div>
+            </div>
+
+
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="filt-part" style="margin-top: 18px;">
+            <select id="type" class="dropII">
+              <option value="" disabled selected>النوع</option>
+              <option value="new Mater">أرض معروضة</option>
+              <option value="Transfare-mater">أرض مطلوبة</option>
+            </select>
+            <select id="type" class="dropII">
+              <option value="" disabled selected>الفئة</option>
+              <option value="new Mater">سكني</option>
+              <option value="Transfare-mater">تجاري</option>
+              <option value="Transfare-mater">كلاهما</option>
+            </select>
+            <select id="status" class="dropII">
+              <option disabled selected> الحي </option>
+              <option value="option1">المروج</option>
+              <option value="option2">الزهراء</option>
+              <option value="option3">حي السويس</option>
+              <option value="option4">غير ذلك</option>
+            </select>
+            <div class="range-box">
+              <div class="range-flex" style="margin-top: 19px;">
+                <input type="text" class="search-filed dropII " placeholder="اسم المالك">
+                <input type="text" class="search-filed dropII " placeholder="عدد الملاك">
+                <input type="text" class="search-filed dropII " placeholder="عدد الشوارع">
+              </div>
+
+            </div>
+
+
+
+
+            <!-- <div class="range-box">
+              <h4 class="h4-filt">تاريخ الوثيقة</h4>
+              <h3 style="margin: 0;">من</h3>
+              <input type="date" class="dropII ">
+              <h3 style="margin: 0;">الي</h3>
+              <input type="date" class="dropII ">
+            </div> -->
+
+
+          </div>
+          <div class="range-flex fill-filter" style="margin-top: 19px;">
+            <a href="" class="small-btn search-btn fill-filter">ابحث</a>
+          </div>
+          </div>
+<!--  -->
+          <!--  -->
+
+
+        </div>
+
+      </div>
+    </form>
+  </section>
+  <section class="main-body">
+    <div class="main-lands">
+
+      <!-- 0 manshor   -->
+      <a href="Details.html">
+        <div class="mainn">      
+          <div class="imagee">
+            <img src="../assets/imgs/msan.jpg" alt="">
+          </div>      
+          <!--  -->
+          <div class="card-contentt">     
+            <div class="card-headerr">
+              <p class="pricee small-font ">820,000ج.م</p>
+              <div class="another-acrions">
+                <a href="EditeLandShown.html" class=" main-req-button m-r">
+                  <img src="../assets/imgs/edity.png" class="main-req-button-img">
+                </a>
+                <a href="" class=" main-req-button m-r">
+                  <img src="../assets/imgs/DeleteFilled.svg" class="main-req-button-img">
+                </a>
+              </div>
+            </div>
+      
+            <a href="Details.html" class="card-contactt" style="color: black;">
+              <div class="card-locationn">
+                <h2 class="card-h2 small-font ">أرض بمدينة الرياض للبيع واجهة شمالية</h2>
+                <p class="location card-p small-font ">مدينة بدر, الفاهره.منذ 9 ساعات</p>
+              </div>
+              <div class="informations-iconseI">
+                <div class="informations-iconse">
+                  <div class="icone-infoo">
+                    <img src="../assets/imgs/area.png" class="small-iconn">
+                    <p>&nbsp;20&nbsp;</p>
+                  </div>
+                  <div class="icone-infoo">
+                    <img src="../assets/imgs/tag.png" class="small-iconn">
+                    <p>&nbsp;معروضة&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--  -->
+        </div>
+      </a>
+      
+      <!-- 1 manshor   -->
+            <!-- 0 manshor   -->
+            <a href="Details.html">
+              <div class="mainn">      
+                <div class="imagee">
+                  <img src="../assets/imgs/msan.jpg" alt="">
+                </div>      
+                <!--  -->
+                <div class="card-contentt">     
+                  <div class="card-headerr">
+                    <p class="pricee small-font ">820,000ج.م</p>
+                    <div class="another-acrions">
+                      <a href="EditeLandShown.html" class=" main-req-button m-r">
+                        <img src="../assets/imgs/edity.png" class="main-req-button-img">
+                      </a>
+                      <a href="" class=" main-req-button m-r">
+                        <img src="../assets/imgs/DeleteFilled.svg" class="main-req-button-img">
+                      </a>
+                    </div>
+                  </div>
+            
+                  <a href="Details.html" class="card-contactt" style="color: black;">
+                    <div class="card-locationn">
+                      <h2 class="card-h2 small-font ">أرض بمدينة الرياض للبيع واجهة شمالية</h2>
+                      <p class="location card-p small-font ">مدينة بدر, الفاهره.منذ 9 ساعات</p>
+                    </div>
+                    <div class="informations-iconseI">
+                      <div class="informations-iconse">
+                        <div class="icone-infoo">
+                          <img src="../assets/imgs/area.png" class="small-iconn">
+                          <p>&nbsp;20&nbsp;</p>
+                        </div>
+                        <div class="icone-infoo">
+                          <img src="../assets/imgs/tag.png" class="small-iconn">
+                          <p>&nbsp;معروضة&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!--  -->
+              </div>
+            </a>
+            
+            <!-- 1 manshor   -->
+
+    </div>
+
+
+  </section>
+<script src="../assets/js/nav-script.js"></script>
+</body>
+
+</html>

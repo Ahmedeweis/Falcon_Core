@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/framework.css" />
+  <link rel="stylesheet" href="../assets/css/master.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <style>
+    /*  0 header */
+    .header {
+  color: black;
+  width: 100%;
+  z-index: 100;
+}
+@media only screen and (max-width: 50em) {
+  .header {
+    background-color:#396FB5;
+  }
+}
+.header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+.header .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 50em) {
+  .header .navigation ul {
+    display: none;
+  }
+}
+.header .navigation ul li:not(:last-child) {
+  padding:0px 10px;
+  transition: background-color 0.5s;
+}
+.header .navigation ul li:not(:last-child) a {
+  color: black;
+  text-decoration: none;
+}
+
+.header .navigation ul li a {
+  font-size:var(--Medium-font);
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .header .navigation ul li a {
+    font-size:16px;
+  }
+}
+.header .navigation ul li:not(:last-child) a:hover {
+  color: #0000EE;
+}
+.header .navigation .logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header .nav-icon {
+  display: none;
+  border: 1px solid black;
+  padding: 0.1rem;
+}
+@media only screen and (max-width: 50em) {
+  .header .nav-icon {
+    display: block;
+  }
+}
+.s-img {
+    width: 30px;
+    max-width: 100%;
+    display: block;
+}
+/* 1 header */
+.custom-input-box {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    .custom-date-input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width:100%;
+    }
+    .header .navigation ul {
+  font-weight: 500;
+}
+  </style>
+</head>
+<body>
+
+   <!-- HEADER -->
+   <header class="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">TRIPIT</div>
+        <ul style="display: flex; flex-direction: row-reverse;">
+          <li>
+            <a href="profile.html"><img src="../img/user.png" class="s-img"></a>
+          </li>
+          <li>
+            <a href=""> Trip Preparation </a>
+          </li>
+          <li>
+            <a href="Explore-all.html">Explore all</a>
+          </li>
+          <li>
+            <a href="../index.html#Community">Community</a>
+          </li>
+          <li>
+            <a href="../index.html#aboutt">About</a>
+          </li>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="login.html"> Log in </a>
+          </li>
+          <li>
+            <a href="signup.html" style="color: black;">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <h1 style="text-align: center;">
+    Create Trip 
+  </h1>
+  <section class="rod">
+    <form class="container" style="display: flex; flex-direction: column;">
+
+        <div class="cell">
+            <div class="cell-label absolut" id="absolutLabel2">
+              <span class="cell-name">First day</span>
+              <div class="star"></div>
+            </div>
+            <input type="text" name="email" class="cell-entery place-tiny" placeholder="First day" id="textInput2">
+        </div>
+
+        <div class="text">
+          <h2>Plan For First day</h2>
+          <p><textarea id="try" name="description" placeholder="Write plan day 1 here ..."class="multiline-input"></textarea></p>
+      </div>
+
+      <div class="cell">
+        <div class="cell-label absolut" id="absolutLabel2">
+          <span class="cell-name">Second day</span>
+          <div class="star"></div>
+        </div>
+        <input type="text" name="email" class="cell-entery place-tiny" placeholder="second day" id="textInput2">
+    </div>
+
+    <div class="text">
+      <h2>Plan For second day</h2>
+      <p><textarea id="try" name="description" placeholder="Write plan day 2 here ..."class="multiline-input"></textarea></p>
+  </div>
+
+  <div class="cell">
+    <div class="cell-label absolut" id="absolutLabel2">
+      <span class="cell-name">Third day</span>
+      <div class="star"></div>
+    </div>
+    <input type="text" name="email" class="cell-entery place-tiny" placeholder="Third day" id="textInput2">
+</div>
+
+<div class="text">
+  <h2>Plan For Third day</h2>
+  <p><textarea id="try" name="description" placeholder="Write plan day 3 here ..."class="multiline-input"></textarea></p>
+</div>
+
+<div class="cell">
+  <div class="cell-label absolut" id="absolutLabel2">
+    <span class="cell-name">Fourth day</span>
+    <div class="star"></div>
+  </div>
+  <input type="text" name="email" class="cell-entery place-tiny" placeholder="Fourth day" id="textInput2">
+</div>
+
+<div class="text">
+<h2>Plan For Fourth day</h2>
+<p><textarea id="try" name="description" placeholder="Write plan day 4 here ..."class="multiline-input"></textarea></p>
+</div>
+
+<div class="cell">
+  <div class="cell-label absolut" id="absolutLabel2">
+    <span class="cell-name">Fifth day</span>
+    <div class="star"></div>
+  </div>
+  <input type="text" name="email" class="cell-entery place-tiny" placeholder="Fifth day" id="textInput2">
+</div>
+
+<div class="text">
+<h2>Plan For Fifth day</h2>
+<p><textarea id="try" name="description" placeholder="Write plan day 5 here ..."class="multiline-input"></textarea></p>
+</div>
+
+<div class="text">
+  <h2>Inclusions</h2>
+  <p><textarea id="try" name="description" placeholder="Write Inclusions here "class="multiline-input"></textarea></p>
+</div>
+
+<div class="cell">
+  <div class="cell-label absolut" id="absolutLabel2">
+      <span class="cell-name">Pricing</span>
+      <div class="star"></div>	
+  </div>				
+  <input type="text" name="email" class="cell-entery place-tiny" placeholder="Pricing" id="textInput2">
+</div>
+
+<div class="cell">
+  <div class="cell-label absolut" id="absolutLabel2">
+      <span class="cell-name">Duration</span>
+      <div class="star"></div>	
+  </div>				
+  <input type="text" name="email" class="cell-entery place-tiny" placeholder="Duration" id="textInput2">
+</div>
+
+<div class="cell">
+  <div class="cell-label absolut" id="absolutLabel2">
+      <span class="cell-name">Grpoup Sizing</span>
+      <div class="star"></div>	
+  </div>				
+  <input type="text" name="email" class="cell-entery place-tiny" placeholder="Grpoup Sizing" id="textInput2">
+</div>
+
+
+
+          <div class="dropdown">
+            <select class="dropdown-select" name="Emirate_City">
+              <option disabled selected>Choose Countries*</option>
+              <option value="option1">UAE</option>
+              <option value="option2">Bahrain</option>
+              <option value="option4">Oman</option>
+              <option value="option5">Qatar</option>
+              <option value="option6">Kuwait</option>
+              <option value="option7"> Saudi Arabia</option>
+            </select>
+        </div>
+
+        <div class="text">
+            <h2>Description</h2>
+            <p><textarea id="try" name="description" placeholder="Write discriptions here ..."class="multiline-input"></textarea></p>
+        </div>
+
+        <h2>Choose one photo or more</h2>
+        <div class="photos-flex">
+          <div class="photos-flex">
+            <!-- حقل إدخال الصورة الأول -->
+            <div class="upload-box">
+              <input type="file" class="file-input" accept="image/*" id="fileInput11">
+              <label for="fileInput11" class="upload-label">
+                <div class="file-preview">
+                  <span class="delete-icon">&times;</span>
+                </div>
+              </label>
+            </div>
+
+            <!-- حقل إدخال الصورة الثاني -->
+            <div class="upload-box">
+              <input type="file" class="file-input" accept="image/*" id="fileInput22">
+              <label for="fileInput22" class="upload-label">
+                <div class="file-preview">
+                  <span class="delete-icon">&times;</span>
+                </div>
+              </label>
+            </div>
+
+            <!-- حقل إدخال الصورة الثالث -->
+            <div class="upload-box">
+              <input type="file" class="file-input" accept="image/*" id="fileInput33">
+              <label for="fileInput33" class="upload-label">
+                <div class="file-preview">
+                  <span class="delete-icon">&times;</span>
+                </div>
+              </label>
+            </div>
+
+          </div>
+            <input type="submit" id="submitButton" value="Submit" style="margin: 20px; border-radius:4px; border: none; background-color: #396FB5; color: white; cursor: pointer;">       
+        </form>
+        </section>
+
+   <script src="../assets/js/ProjectScript.js"></script>
+
+</body>
+
+</html>

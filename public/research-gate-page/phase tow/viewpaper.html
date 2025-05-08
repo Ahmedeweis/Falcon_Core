@@ -1,0 +1,172 @@
+@model ResearchGateProject.Models.Paper
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>show paper </title>
+        <link href="~/Content/Designs/Viewpaper.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="viewpaper.css">
+
+        <style>
+            #increment, #decrement {
+                background-color: #18e0e7;
+                border: 1px solid black;
+                box-shadow: 2px red;
+                margin: 3px;
+                padding: 5px;
+            }
+
+                #increment:hover, #decrement:hover {
+                    background-color: #14e68e;
+                }
+
+                .comments {
+
+}
+
+
+
+.comments .subscribe {
+    width: 100%;
+    margin-top: 20px;
+}
+
+    .comments .subscribe form {
+        width: 600px;
+        margin: 5px auto;
+        padding: 17px 20px;
+        background-color: #1A0924;
+        border-radius: 50px;
+        display: flex;
+        gap: 20px;
+
+    }
+
+
+
+            .comments .subscribe form input[type="submit"]:hover {
+                background-color:white;
+                color:#5C3565;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="landing">
+            <div class="container">
+                <div class="header">
+                    <div class="head">
+                        <img src="../images/icon.png">
+                        <h2>Re<span style="color:#01BC9A">search</span>Gate</h2>
+                    </div>
+                    <ul>
+                        <li><a style="color:#01BC9A;" href="home.html"><h3>Home</h3></a></li>
+                        <li><a href="edit.html"><h3>Edite profile</h3></a></li>
+                        <li><a href="AddCategory.html"><h3>Add category</h3></a></li>
+                        <li><a href="../index.html"><h3>Log out</h3></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 1 paper -->
+        <div class="papersec">
+            <div class="container">
+                <div class="details">
+                    <div class="paper">
+                        <h1>@Model.header</h1>
+                        <fieldset>
+                            <legend>Research paper</legend>
+                            <textarea rows="19" cols="71" readonl>@Model.content</textarea>
+                        </fieldset>
+                        <div class="info">
+                            <h2>Catagory:@Model.catagory</h2>
+                            <p>publish in<time>:@Model.Date</time></p>
+                            <div id="number">0</div>
+                            <button class="red" id="increment">Like</button>
+                            <button class="blue" id="decrement">dislike</button>
+                        </div>
+                        <!-- start comments -->
+                        @using (Html.BeginForm("AddComment", "Comment", FormMethod.Post))
+                        {
+                            <div class="comments">
+                                <div class="subscribe">
+                                    <form action="post">
+                                        <input type="hidden" name="paperID" value="@Model.ID">
+                                        <input type="text" name="content" placeholder="Type comment here" required>
+                                        <input type="submit" name="submit">
+                                    </form>
+                                </div>
+                            </div>
+                        }
+
+                        <!-- end comments -->
+                        @foreach(var item in ViewBag.comments)
+                        {
+                            <div style="    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;" class="comments">
+                                <h3>@item.content</h3>
+                            </div>
+                        }
+                    </div>
+                    <!-- end paper -->
+                    <div class="boxes">
+                        <div class="box">
+                            <a href="profile.html"><img width="100px" height="141px" src="../images/profil-pic.jpg" alt="" /></a>
+                            <h3>@Session["Name"]</h3>
+                            <span class="title">@Session["email"]</span>
+                            <p>
+                                hi i'm :@Session["Name"]
+                                i'm in @Session["university"] university department of @Session["department"]
+                            </p>
+                        </div>
+                        <!-- #2st box -->
+                        <div class="box">
+                            <a href="profile.html"><img width="100px" height="141px" src="../images/profil-pic.jpg" alt="" /></a>
+                            <h3>Ahmed</h3>
+                            <span class="title">@Session["email"]</span>
+                            <p>
+                                hi i'm :@ahmed["Name"]
+                                i'm in @hewan["university"] university department of @IT["department"]
+                            </p>
+                        </div>                        
+                        <!-- end box -->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let add = document.getElementById('increment');
+            let remove = document.getElementById('decrement');
+
+            let int = document.getElementById('number');
+            let integer = 0;
+            add.addEventListener('click', function () {
+                integer += 1;
+                int.innerHTML = integer;
+            })
+
+            remove.addEventListener('click', function () {
+                integer -= 1;
+                int.innerHTML = integer;
+            })
+            /*---------------------------------*/
+            document.querySelector('.info').addEventListener('click', function change(e) {
+                if (e.target.className == "red") {
+                    document.querySelector('.red').style.backgroundColor = "#14e68e";
+                    document.querySelector('.blue').style.backgroundColor = "#18E0E7";
+                }
+
+                if (e.target.className == "blue") {
+                    document.querySelector('.blue').style.backgroundColor = "#14e68e";
+                    document.querySelector('.red').style.backgroundColor = "#18E0E7";
+                }
+            })
+        </script>
+    </body>
+</html>
+

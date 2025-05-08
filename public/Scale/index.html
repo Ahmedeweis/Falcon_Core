@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/main-style.css" />
+  	<!-- icon of web site above -->
+	<link rel="icon" href="imgs/statistics.png">
+  
+</head>
+
+<body>
+  <header class="firstpage">
+    <nav class="container ">
+      <ul class="header-ul">
+        <li class="website-name">مقياس الميول المهنية</li>
+        <li class="logo-li">
+          <img src="imgs/statistics.png" width="50px">
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article class="alt-head">
+    <div class="container">
+
+      <div class="content-words">
+        <h2 class="content-h2">مقياس الميول المهنية</h2>
+        <p class="content-p">مقياس لنمط الشخصية الموافقة لأنواع متعددة من المهن وبيئات العمل.</p>
+      </div>
+
+      <div class="alt-head-img">
+        <img src="imgs/exams_srv_icon.svg" class="alt-head-img-src">
+      </div>
+
+    </div>
+  </article>
+  <section class="parbuse">
+    <div class="container">
+      <ul class="buttons-list">
+        <li class="button-li">
+          <button class="parbuse-button active-sec" onclick="toggleSection('fund1', this); toggleActive(this);" >
+            <i class="fs-2 fa-regular fa-circle-dot " id="acti1"></i>
+            الأهداف
+          </button>
+        </li>
+        <li class="button-li">
+          <button class="parbuse-button" onclick="toggleSection('fund2', this); toggleActive(this);" >
+            <i class="fs-2 fa-solid fa-user-group" id="acti2"  ></i>
+            الفئات المستهدفة
+          </button>
+        </li>
+        <li class="button-li">
+          <button class="parbuse-button" onclick="toggleSection('fund3', this); toggleActive(this);" >
+            <i class="fs-2 fa-solid fa-circle-exclamation" id="acti3"></i>
+            ملاحظات
+          </button>
+        </li>
+        <li class="button-li">
+          <button class="parbuse-button" onclick="toggleSection('fund4', this); toggleActive(this);">
+            <i class="fs-2 fa-regular fa-message" id="acti4" ></i>
+            تعليمات
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script>
+    function toggleActive(button) {
+      // Remove the active-sec class from all buttons and their corresponding icons
+      const buttons = document.querySelectorAll(".parbuse-button");
+
+      buttons.forEach((btn) => {
+        btn.classList.remove("active-sec");
+      });
+
+      // Add the active-sec class to the clicked button and its corresponding icon
+      button.classList.add("active-sec");
+    }
+  </script>
+
+
+
+  <section class="explains" id="fund1" style="display: flex;">
+    <div class="container">
+      <article class="parpuse-box">
+        <div class="pear-img-head">
+          <img src="imgs/PGATE-Search.svg" class="icon-size">
+          <h2 class="pear-head">الأهداف</h2>
+        </div>
+        <div class="pear-list">
+          <span class="pear-num">1</span>
+          <p class="pear-p">الكشف عن نمط الشخصية الغالب لدى الفرد وما يناسبه من مهن حيث تتضمن الأسئلة التي يحتويها
+            المقياس المرفق ما تفضل القيام به من أساليب النشاط المختلفة في الحياة، وترغب أن تعمل به وتتخده مهنة لك في
+            المستقبل.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="explain" id="fund2" style="display: none;">
+    <div class="container conII">
+      <article class="parpuse-box">
+        <div class="pear-img-head pear-img-headII">
+          <img src="imgs/PGATE-Target.svg" class="icon-size">
+          <h2 class="pear-head pear-headII">الفئات المستهدفة</h2>
+        </div>
+        <div class="pear-list pear-listII">
+          <p class="pear-p pear-pII">الطلاب في اي مرحلة تعليمية</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="explain" id="fund3" style="display: none;">
+    <div class="container">
+      <article class="parpuse-box parpuse-boxIII">
+        <div class="info-boxs">
+          <h2 class="pear-head pear-headII pear-headIII ">عدد الاسئلة</h2>
+          <p class="content-p content-p-II">216</p>
+        </div>
+        <div class="info-boxs">
+          <h2 class="pear-head pear-headII pear-headIII ">عدد الفرص</h2>
+          <p class="content-p content-p-II">غير مقيد</p>
+        </div>
+        <div class="info-boxs">
+          <h2 class="pear-head pear-headII pear-headIII ">مدة الاختبار</h2>
+          <p class="content-p content-p-II">بدون وقت </p>
+        </div>
+        <div class="info-boxs">
+          <h2 class="pear-head pear-headII pear-headIII ">لغة الاختبار</h2>
+          <p class="content-p content-p-II">عربي</p>
+        </div>
+        <div class="info-boxs">
+          <h2 class="pear-head pear-headII pear-headIII ">موعد النتيجة</h2>
+          <p class="content-p content-p-II">فور الانتهاء من الاختبار</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="explain" id="fund4" style="display: none;">
+    <div class="container">
+      <article class="parpuse-box f-c">
+        <h2 class="pear-head" style="margin: 10px 0;">تعليمات</h2>
+        <div class="instractions">
+          <div class="instractions-row">
+            1.&nbsp;&nbsp;يتكون الأختبار من 216 سؤال
+          </div>
+          <div class="instractions-row">
+            2.&nbsp;&nbsp;امام كل سؤال 3 اختيارات (أفضله - أفضله إلى حد ما - لا أفضله)
+          </div>
+          <div class="instractions-row">
+            3.&nbsp;&nbsp;اختر الاجابة التي تعبر عن ميلك بشكل صحيح
+          </div>
+          <div class="instractions-row">
+            4.&nbsp;&nbsp;حاول الاجابة عن كل اسئلة الاختبار وعدم ترك اي سؤال دون اجابة
+          </div>
+          <div class="instractions-row">
+            5.&nbsp;&nbsp;تذكر أنه ليس هناك إجابة صحيحة وأخرى خاطئة لأسئلة المقياس ، فالإجابة الصحيحة هي التي تعبر بصدق
+            عن النشاط الذي تحب القيام به </div>
+          <div class="instractions-row">
+            6.&nbsp;&nbsp;الإجابة عن المقياس لا علاقة لها بتحصيلك الدراسي ، وأدائك في المدرسة
+          </div>
+          <div class="instractions-row">
+            7.&nbsp;&nbsp;إذا كانت تعليمات الإجابة واضحة يمكنك الإجابة عن المقياس، وإذا كان لديك سؤال أو استفسار أطلب
+            المساعدة من المشرف على عملية التطبيق
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="person-info">
+    <div class="container">
+      <a href="info-form.html" class="mashrok-link">املئ بياناتك</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p><a href="#">كل حقوق البرمجة والتصميم محفوظة</a> &copy; 2023</p>
+    </div>
+  </footer>
+  <script>
+    function toggleSection(sectionId) {
+      // Hide all sections
+      document.getElementById('fund1').style.display = 'none';
+      document.getElementById('fund2').style.display = 'none';
+      document.getElementById('fund3').style.display = 'none';
+      document.getElementById('fund4').style.display = 'none';
+
+      // Show the selected section
+      document.getElementById(sectionId).style.display = 'flex';
+
+    }
+  </script>
+
+</body>
+
+</html>

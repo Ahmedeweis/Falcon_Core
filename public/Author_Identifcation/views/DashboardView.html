@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign-up</title>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/Home.css">
+</head>
+    <header class="nav">
+      <div class="container">
+      <div class="handle-nav">
+          <ul class="L-link">
+            <a href="#" class="Logo-apear"><img src="../assets/logo.png" class="head-photo-width"></a>
+              <li style="padding-left:0px;" class="word-apear"><a href="#" class="Title">Author Identifcation</a></li>
+              <li><a href="DashboardView.html">Home</a></li>
+              <li><a href="AuthorsUserView.html">Authors</a></li>
+          </ul>
+          <ul class="R-link">
+              <li>
+                  <!-- 0 Hover that image container to get list  -->
+                  <div class="image-container">
+                      <!-- 0 link gog to profile -->
+                      <div style="cursor: pointer;">
+                          <!-- 0 profile icon -->
+                          <img src="../assets/user.svg" class="notify-icon">
+                      </div>
+                      <!-- 0 box apear when hover image container -->
+                      <div class="hover-box">
+                          <!-- 0 content of box -->
+                          <div class="content">
+                              <a href="ProfileView.html"><img src="../assets/user.svg" alt="Your Photo"></a>  
+                              <div class="user-name">Ahmed</div>   <!-- 0 name of user -->    
+                              <!-- 0 button + img of row -->
+                              <div class="img-link">
+                                  <img style="width:50px;" src="../assets/logout.png">
+                                  <a class="two-btn" href="log-in.html" style="font-size: 16px;">Sign Out</a>
+                              </div>
+                              <!-- 1 button + img of row -->
+                          </div>
+                          <!-- 1 content of box -->
+                      </div>
+                  <!-- 0 box apear when hover image container -->
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+    <section class="page" id="newSection" >
+      <div class="content">
+        <div class="upload">
+          <form>
+            <div class="in">
+              <img src="../assets/pdf.svg" alt="" />
+              <h2>choose the file pdf only</h2>
+              <button id="uploadButton" onclick="document.getElementById('fileInput').click()">Select Documents</button>
+              <span>Or Drag & drop</span>
+            </div>
+            <label for="file">
+              <input type="file"  name="uploads" accept=".pdf" id="fileInput" onchange="showPopup()">
+            </label>
+            <a href="AuthorProfileViewUser.html" type="submit" class="last-btn" v-on:click.prevent="submitForm">search</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <p class="popup-content">File uploaded successfully!</p>
+      <button class="popup-button " onclick="hidePopup()">Close</button>
+  </div>
+    <script>
+      function showPopup() {
+          const popup = document.getElementById("popup");
+          popup.style.display = "block";
+      }
+
+      function hidePopup() {
+          const popup = document.getElementById("popup");
+          popup.style.display = "none";
+      }
+  </script>
+      <script>
+        // Add an event listener to the file input to listen for changes
+        document.getElementById('fileInput').addEventListener('change', function() {
+            // Get the selected file
+            var selectedFile = this.files[0];
+
+            // Check if a file was selected
+            if (selectedFile) {
+                // Update the button text with the file name
+                document.getElementById('uploadButton').textContent = selectedFile.name;
+            } else {
+                // If no file is selected, reset the button text
+                document.getElementById('uploadButton').textContent = "Select Documents";
+            }
+        });
+    </script>
+  </body>
+  </html>
+

@@ -1,0 +1,240 @@
+body
+{
+	/*background-color:#DDf;*/
+	background-image: url('c.jpg'); 
+	height: 1900PX;
+}
+
+.l
+{
+	top:10px;
+	right: 10px;
+	padding: 5px;
+	color: #FFF;
+	background:red;
+	position:fixed;
+	border-style:groove;
+    border-color: black;
+}
+
+.poster
+{
+	margin-top:-87px;
+	border:6px;
+	border-style:inset;
+	border-color:white;
+}
+
+.welcome 
+{
+	background-color:red;
+ 	color:white; 
+ 	top:2px;
+    padding:7px; 
+    width:300px;
+    border-style:groove;
+    border-color: black;
+
+}
+
+.container
+{
+	width: 1170px;
+	margin: auto;
+}
+
+ .header .navbar
+{ 
+	background-color:red;
+    color:white; 
+    overflow:hidden;
+}
+
+h2 
+{
+	float: left;
+	text-transform: uppercase;
+}
+
+.w { color:blue; }
+
+span { color:red; }
+
+ul
+{ 
+	list-style:none;
+    overflow:hidden;
+    padding-left:0; 
+    float:left; 
+    background-color:#252F31;
+}
+
+li
+{
+	color:white;
+ 	float: left; 
+	padding: 10px;
+}
+
+.head
+{
+	color:white;
+	padding:60PX;
+	border-width: 3px;
+	border-color: #676767 ;
+}
+
+a
+{
+	color:white;
+	font-size:17px;
+}
+.series
+{
+	color: red;
+	text-align: center;
+}
+
+.casa .papel { color: white; }
+
+.casa  { color: white; }
+
+.papel { color: white; }
+
+.video
+{
+	position:absolute;
+	top:500px;
+	left:100px;
+}
+.art
+{
+	position: absolute;
+	top:600px;
+	left:600px;
+	color: white;
+	font-weight:bold;
+}
+
+.mark { color:red; }
+
+.pargraph
+{
+	position: absolute;
+	color:white;
+	/*font-weight:bold;*/
+	top:720px;
+	left:600px;
+}
+
+.link
+{
+	position: absolute;
+	top:920px;
+	right:189px;
+	text-underline-position:;
+	background-color:#DDD;
+	color:white;
+	height: 30px;
+	font-weight: bold;
+	font-size:20px;
+}
+
+.button1
+{
+	background-color:red;
+	color:black;
+	position: absolute;
+	top:920px;
+	left: 320px;
+	width:200px;
+}
+
+.button2
+{
+	background-color:green;
+	color:white;
+	position: absolute;
+	top:920px;
+	left:100px;
+	width:200px;
+}
+
+.table1
+{
+	background-color:white;
+	position:absolute;
+	top:920px;
+	right:1px;
+}
+
+.table2
+{
+	background-color:white;
+	position:absolute;
+	top:950px;
+	right:1px;
+}
+
+.a
+{
+	color:white;
+}
+
+.b { color:red; }
+
+.table
+{
+	position: absolute;
+	top:950px;
+	color:black;
+	right:20px;
+	border-style:inset;
+	border-color:#DDD;
+	font-size:30px;
+}
+
+.Actor
+{
+	position:absolute;
+	top:990px;
+	left:180px;
+	color: orange;
+}
+
+.Ramy	   { position:absolute; top:1100px; border:6px; border-style:inset; border-color:white; }
+.poshya    { position:absolute; top:1100px; border:6px; border-style:inset; border-color:white; left:230px; }
+.marten    { position:absolute; top:1320px; border:6px; border-style:inset; border-color:white; left:8px;}
+.stephanie { position:absolute; top:1320px; border:6px; border-style:inset; border-color:white; left:230px;}
+.Boby      { position:absolute; top:1540px; border:6px; border-style:inset; border-color:white; left:230px;}
+.Grees	   { position:absolute; top:1540px; border:6px; border-style:inset; border-color:white; left:8px;}
+
+.part1{position:absolute; top:1320px; border:6px; border-style:inset; border-color:white; right:20px;}
+.part2{position:absolute; top:1320px; border:6px; border-style:inset; border-color:white; right:400px;}
+.part3{position:absolute; top:1540px; border:6px; border-style:inset; border-color:white; right:20px;}
+.part4{position:absolute; top:1540px; border:6px; border-style:inset; border-color:white; right:400px;}
+
+.b1{position:absolute; top:1320px; border:6px; border-style:inset; border-color:white; right:250px; width:100px; height:50px; 
+background: red;}
+.b2{position:absolute; top:1385px; border:6px; border-style:inset; border-color:white; right:250px; width:100px; height:50px; 
+background: green;}
+.b3{position:absolute; top:1540px; border:6px; border-style:inset; border-color:white; right:250px; width:100px; height:50px; 
+background: red;}
+.b4{position:absolute; top:1605px; border:6px; border-style:inset; border-color:white; right:250px; width:100px; height:50px; 
+background: green;}
+.b5{position:absolute; top:1320px; border:6px; border-style:inset; border-color:white; right:645px; width:100px; height:50px; 
+background: red;}
+.b6{position:absolute; top:1385px; border:6px; border-style:inset; border-color:white; right:645px; width:100px; height:50px; 
+background: green;}
+.b7{position:absolute; top:1540px; border:6px; border-style:inset; border-color:white; right:645px; width:100px; height:50px; 
+background: red;}
+.b8{position:absolute; top:1605px; border:6px; border-style:inset; border-color:white; right:645px; width:100px; height:50px; 
+background: green;}
+
+.Footer
+{
+	position:absolute;
+	top:1800px;
+	right:40%;
+	color: white;
+}

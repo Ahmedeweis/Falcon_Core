@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fault-reportrs</title>
+	<!-- Render All Elements Normally -->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<!-- main css file -->
+	<link rel="stylesheet" type="text/css" href="../css/design.css">
+	<!-- icon of web site above -->
+	<link rel="icon" href="icons/web.png">
+	<!-- description -->
+	<meta name="description" content="description of your website. This will appear in search results.">
+</head>
+
+<body>
+	<section class="page" id="fult">
+		<!--  0 sidebar  -->
+		<sidebar>
+			<aside>
+				<h3 class="title">
+					<span>electricity power </span>
+					<span class="show-phone">power</span>
+				</h3>
+				<ul>
+					<li>
+						<a class="active" href="BillsTable.html">
+							<img src="../imgs/payment.png">
+							<span>View bills</span>
+						</a>
+					</li>
+					<li class="catch-a-arrow linko">
+						<a class="special">
+							<img src="../imgs/electric-panel.png">
+							<span>Mater</span>
+						</a>
+						<div class="arrow"><img class="arrow-img" src="../imgs/next.png"></div>
+						<ul class="catchs-a arrow-links">
+							<a class="linko" id="a" href="Add-mated.html"><img src="../imgs/plus.png"> Add Mater</a>
+							<a class="linko" id="a" href="transfare-mater.html"><img
+									src="../imgs/data-transfer.png">Transfere mater</a>
+							<a class="linko" id="a" href="Cancel-mater.html"><img src="../imgs/cancel.png">Cancellation
+								Mater</a>
+						</ul>
+					</li>
+					<li>
+						<a class="" href="Requests.html">
+							<img src="../imgs/it.png">
+							<span>My Request's</span>
+						</a>
+					</li>
+					<li>
+						<a class="active" href="fault-reportrs.html">
+							<img src="../imgs/problems.png">
+							<span>fault reports</span>
+						</a>
+					</li>
+                    <li>
+						<a class="" href="payment-history.html">
+							<img src="../imgs/statement.png">
+							<span>Payment History</span>
+						</a>
+					</li>  
+				</ul>
+			</aside>
+		</sidebar>
+		<!--  1 sidebar  -->
+		<div class="content">
+			<!-- Start Head -->
+			<div class="head ">
+				<div class="icons d-flex align-center">
+					<img src="../imgs/logo.png" alt="" />
+				</div>
+					<a class="out" href="land.html">
+						<img src="../imgs/log-out.png" style="width: 30px;">
+					</a>
+				</button>
+			</div>
+			<!-- End Head -->
+			<!-- Start Projects Table -->
+			<div class="Bills">
+				<h2 class="">Reports</h2>
+				<div class="responsive-table">
+
+                    <!-- case if is no Reports put that div -->
+                    <!--  
+                    <div class="no-req" >No Reports</div>
+                    -->
+
+                    <!-- if is it is Reports -->                   
+					<!-- 0 table -->
+					<table class="data">
+						<!-- 0 table head -->
+						<thead>
+							<tr>
+								<td>Report Number</td>
+								<td>Mater number</td>
+								<td>Bill number</td>
+                                <td>Descriptions</td>
+								<td>status</td>
+								<td>actions</td>
+							</tr>
+						</thead>
+						<!-- 1 table head -->
+						<!-- 0 table body -->
+						<tbody>
+							<!-- 0 rows -->
+							<!-- 0 row -->
+							<tr>
+								<td>23694559</td>
+								<td>465566</td>
+								<td>455465</td>
+								<td>Too high bill</td>
+								<td>Solved</td>
+                                <td>
+                                    <button style="background-color: transparent;"><a href="make-report.html" class=""><img src="../imgs/edit.png" class="icon-im"></a></button>
+                                    <button style="background-color: transparent;"><a href="#fult" class=""><img src="../imgs/delete.png"  class="icon-im"></a></button>
+                                </td>
+							</tr>
+							<!-- 1 row -->
+							<!-- 0 row -->
+							<tr>
+								<td>23694560</td>
+								<td>465566</td>
+								<td>455465</td>
+								<td>I bay it but it never updated at system</td>
+								<td>Waiting</td>
+                                <td>
+                                    <button style="background-color: transparent;"><a href="make-report.html" class=""><img src="../imgs/edit.png" class="icon-im"></a></button>
+                                    <button style="background-color: transparent;"><a href="#fult" class=""><img src="../imgs/delete.png"  class="icon-im"></a></button>
+                                </td>
+							</tr>
+							<!-- 1 row -->						
+						</tbody>
+						<!-- 1 table body -->
+					</table>
+					<!-- 1 table -->
+				</div>
+			</div>
+			<!-- End Projects Table -->
+		</div>
+	</section>
+	<!-- 0 scripts  -->
+	<!-- 1 scripts  -->
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>اضف مسستخدم</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/design.css">
+    <!-- icon of web site above -->
+    <link rel="icon" href="icons/web.png">
+    <!-- description -->
+    <meta name="description" content="description of your website. This will appear in search results.">
+    <style>
+header {
+  background-color: #23262a;
+}
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  flex-direction: row-reverse;
+  padding-bottom: 6px;
+}
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .iconsy {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding: 5px 5px 0 0;
+  }
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list .list-item {
+  padding: 20px 10px;
+  margin-left: 15px;
+  padding-left:0px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .navbar a {
+    font-size: 20px;
+  }
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color:white;
+  margin-bottom: 4px;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+  }
+
+  .nav-list {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    align-items: flex-start;
+    align-self: flex-start;
+    background-color: transparent;
+  }
+}
+.call-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.sec-flex {
+  display: flex;
+  align-items: center;
+}
+.sec-flex span{
+  font-weight: bold;
+  color: black;
+  font-size:20px;
+}
+.m-l-5 {
+  margin-left: 15px;
+
+}
+.icone-resize {
+    width: 40px;
+}
+/* 1 Header */
+    </style>
+</head>
+
+<body>
+       	<!-- 0 header -->
+ 		<header class="">
+            <div class="container" id="home">
+              <nav class="navbar">
+                <div class="iconsy">
+                  <a href="profile.html"><img src="../assets/imgs/man.png" class="icone-resize"></a>
+                </div>
+                <ul class="nav-list" id="navi-list">
+                        <li class="list-item"><a href="main.html">الرئيسية</a></li>
+                      <li class="list-item"><a href="opportunities.html">الفرص الاستثمارية</a></li>
+                </ul>
+                <div class="menu" id="toggle-button">
+                  <div class="menu-line"></div>
+                  <div class="menu-line"></div>
+                  <div class="menu-line"></div>
+                </div>
+                 </nav>
+            </div>
+          </header>
+          <script src="../assets/js/nav-script.js"></script>
+        <!-- 1 header -->
+    <section class="delete-head  m-t-20">
+        <div class="container">
+          <a href="main.html"><img style="width: 30px" src="../assets/imgs/right-arrow.png"></a>
+          <div class="m-r-20 justfy-c">
+            <h1 class="" style=" color: #008080;">لوحة التحكم</h1>
+          </div>
+        </div>
+      </section>
+    <section class="page" id="req">
+        <div class="content">
+
+            <!-- Start Projects Table -->
+            <div class="Bills">
+                <h2 style="text-align: center;">جدول المستخدمين</h2>
+                <a href="SignUp.html" class="small-btn">+ أضف مستخدم جديد</a>
+                <div class="responsive-table">
+                    <!--  0 filter -->
+
+                    <!--  1 filter -->
+                    <!-- case if there are no requests put that div -->
+                    <!--
+					<div class="no-req">No Requests</div>
+					-->
+
+                    <!-- if there are requests -->
+                    <!-- 0 table -->
+                    <table class="data">
+                        <!-- 0 table head -->
+                        <thead>
+                            <tr>
+                                <td>الايميل</td>
+                                <td>اسم المستخدم</td>
+                                <td>تاريخ الانضمام</td>
+                                <td>كلمة المرور</td>
+                                <td>رقم الجوال</td>
+                                <td>النوع</td>
+                                <td>المدينه</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <!-- 1 table head -->
+                        <!-- 0 table body -->
+                        <tbody>
+                            <!-- 0 rows -->
+                            <!-- 0 row -->
+                            <tr>
+                                <td>mohamed965@gmail.com</td>
+                                <td>محمد</td>
+                                <td>31/5/2023</td>
+                                <td>03256159</td>
+                                <td> 0112521</td>
+                                <td>كيان</td>
+                                <td>الرياض</td>
+                                <td>
+                                    <!-- 0 تعديلe-del-list-for-post -->
+                                    <div class="monu">
+                                        <div class="menu-contento apearclick">
+                                            <a href="SignUp.html" class="newest-e-btn">تعديل</a>
+                                            <a href="" class="newest-e-btn">حذف</a>
+                                        </div>
+                                    </div>
+                                    <!-- 1 تعديلe-del-list-for-post -->
+                                </td>
+                            </tr>
+                            <!-- 1 row -->
+                            <!-- 0 row -->
+                            <tr>
+                                <td>ahmed@gmail.com</td>
+                                <td>أحمد</td>
+                                <td>1/6/2023</td>
+                                <td>gfk[pty0</td>
+                                <td> 0112521</td>
+                                <td>فرد</td>
+                                <td>الرياض</td>
+                                <td>
+                                    <!-- 0 تعديلe-del-list-for-post -->
+                                    <div class="monu">
+                                        <div class="menu-contento apearclick">
+                                            <a href="SignUp.html" class="newest-e-btn">تعديل</a>
+                                            <a href="" class="newest-e-btn">حذف</a>
+                                        </div>
+                                    </div>
+                                    <!-- 1 تعديلe-del-list-for-post -->
+                                </td>
+                            </tr>
+                            <!-- 1 row -->
+                            <!-- 0 row -->
+                            <tr>
+                                <td>Ali2565685@gmail.com</td>
+                                <td>علي</td>
+                                <td>3/6/2023</td>
+                                <td>02345795</td>
+                                <td> 0112521</td>
+                                <td>مدخل بيانات</td>
+                                <td>الرياض</td>
+                                <td>
+                                    <div class="monu">
+                                        <div class="menu-contento apearclick">
+                                            <a href="SignUp.html" class="newest-e-btn">تعديل</a>
+                                            <a href="" class="newest-e-btn">حذف</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 1 row -->
+                            <!-- 1 rows -->
+                        </tbody>
+                        <!-- 1 table body -->
+                    </table>
+                    <!-- 1 table -->
+                </div>
+            </div>
+            <!-- End Projects Table -->
+        </div>
+    </section>
+<!-- 
+    <script>
+        // Get all elements with class 'dotsign'
+        const dotsigns = document.querySelectorAll('.dotsign');
+
+        // Iterate over the 'dotsign' elements
+        dotsigns.forEach(dotsign => {
+            dotsign.addEventListener('click', () => {
+                const apearclick = dotsign.nextElementSibling;
+                apearclick.classList.toggle('menu-contento');
+                apearclick.classList.toggle('menu-visible');
+            });
+        });
+
+
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المزايا</title>
+  <!-- Reset Elements  -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- main css file -->
+  <link rel="stylesheet" href="../css/Terms-condition.css" />
+  <link rel="stylesheet" href="../css/nav-bar.css" />
+</head>
+<body>
+<!-- 0 finish nav -->
+  <div class="container" id="home">
+    <nav class="navbar">
+      <div class="iconsy">
+        <a href="">
+          <img class="icon" src="../imgs/notificate.svg" />
+        </a>
+        <div class="image-container">
+          <img class="icon" src="../imgs/profile.png" />
+          <div class="hover-box">
+            <div class="content">
+              <!-- Content inside hover-box -->
+              <a style="background-color: none;" href="profile.html"><img src="../imgs/profile.png" alt="Your Photo"
+                  width="60px"></a>
+              <div>Ali</div>
+              <div class="img-link">
+                <img src="../imgs/logout.png">
+                <a class="two-btn" href="../html/log-in.html">log out</a>
+              </div>
+              <!-- Content inside hover-box -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a>Tatweer</a></li>
+        <li class="list-item"><a href="#home">Home</a></li>
+ 
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
+  </div>
+  <!-- 1 finish nav -->
+  <section class="adv-land">
+    <div class="container">
+      <div class="features">
+        <h2> Terms Conditions and Privacy Policy</h2>
+        <div class="conditions-and-img">
+          <div>
+            <!-- first feature-->
+            <div class="feature">
+              <span>1</span>
+              <p>First Policy Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis doloribus
+                exercitationem nam dolore officiis reiciendis ducimus soluta explicabo ipsam ab sed cum distinctio non!
+              </p>
+            </div>
+            <div class="feature">
+              <span>2</span>
+              <p>second Policy Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis doloribus
+                exercitationem nam dolore officiis reiciendis ducimus soluta explicabo ipsam ab sed cum distinctio non!
+              </p>
+            </div>
+            <!-- last feature-->
+            <div class="feature">
+              <span>3</span>
+              <p>third Policy Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis doloribus
+                exercitationem nam dolore officiis reiciendis ducimus soluta explicabo ipsam ab sed cum distinctio non!
+              </p>
+            </div>
+            <!-- last feature-->
+          </div>
+          <div class="land-img"><img src="../imgs/polci.svg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
