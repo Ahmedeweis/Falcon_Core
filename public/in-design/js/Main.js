@@ -38,25 +38,25 @@ const projects = [
     class: "kitcheno",
     title: "Kitchen",
     count: "75 projects",
-    url: "../img/project1.jpg",
+    url: "img/project1.jpg",
   },
   {
     class: "commercialo",
     title: "Commercial",
     count: "49 projects",
-    url: "../img/project2.jpg",
+    url: "img/project2.jpg",
   },
   {
     class: "bathroomo",
     title: "Bathroom",
     count: "30 projects",
-    url: "../img/banner1.jpg",
+    url: "img/banner1.jpg",
   },
   {
     class: "officeo",
     title: "Office",
     count: "22 projects",
-    url: "../img/banner2.jpg",
+    url: "img/banner2.jpg",
   },
 ];
 let currentIndexCompanies = 0;
