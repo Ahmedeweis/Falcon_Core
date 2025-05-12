@@ -882,7 +882,7 @@ export default {
       testimonials: [
   {
     id: 1,
-    name: "Mahmoud Abdelrahman",
+    name: "Nada Abdelrahman",
     details: "Working with the team was excellent. Their commitment to deadlines and the quality of work exceeded expectations. I highly recommend them.",
     position: "Business Development Manager",
     company: "Future Tech",
@@ -898,7 +898,7 @@ export default {
   },
   {
     id: 3,
-    name: "Ahmed Samir",
+    name: "Norhan Samir",
     details: "The team is smart and flexible. They worked with us step by step until the project was completed exactly as we envisioned.",
     position: "Software Engineer",
     company: "Smart Solutions",
