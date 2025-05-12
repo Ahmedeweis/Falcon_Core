@@ -746,7 +746,7 @@
               </h4>
               <ul class="socila-icons">
                 <li class="li-item">
-                  <a href="#" class="youtube-link">
+                  <a href="https://www.instagram.com/ahmed_eweis0/" class="youtube-link">
                     <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                       <path
                         d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
@@ -754,7 +754,7 @@
                   </a>
                 </li>
                 <li class="li-item">
-                  <a href="#" class="youtube-link">
+                  <a href="https://www.facebook.com/profile.php?id=61562998633761" class="youtube-link">
                     <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                       <path
                         d="M279.14 288l14.22-92.66h-88.91V140.62c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.61 0 225.36 0C141.09 0 89.09 54.42 89.09 143.39V195.3H0v92.66h89.09V512h107.78V288z" />
@@ -762,7 +762,7 @@
                   </a>
                 </li>
                 <li class="li-item">
-                  <a href="#" class="youtube-link">
+                  <a href="https://x.com/ahmed_eweis0" class="youtube-link">
                     <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                       <path
                         d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.975 12.995 1.624 20.167 1.624 9.421 0 18.843-1.299 27.614-3.573-48.081-9.747-84.143-51.98-84.143-103.001v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.502 46.782-104.283 104.281-104.283 30.214 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.502 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
@@ -770,7 +770,7 @@
                   </a>
                 </li>
                 <li class="li-item">
-                  <a href="#" class="youtube-link">
+                  <a href="https://api.whatsapp.com/send/?phone=201153161437&text&type=phone_number&app_absent=0" class="youtube-link">
                     <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                       <path
                         d="M380.9 97.1c-92.8-92.8-243.5-92.8-336.3 0-89.2 89.2-92.6 231.1-10.3 325.1L7.1 507.7c-9.3 9.3-2.7 25.1 10.4 25.1h.3l96.6-23.9c92 59.3 213.1 47.6 292.9-32.2 92.8-92.8 92.8-243.5 0-336.3zm-51.3 285c-6.5 18.2-37.5 33.5-52.1 34.4-13.3.8-30.8 1.6-98.2-30.6-82.2-38.3-135.6-132.4-139.8-138.6-4.1-6.2-33.5-44.5-33.5-84.7s21.3-59.7 30.4-68.1c6.7-6.4 17.9-9.2 28.5-6.1s71.2 32.9 83.2 38.1c11.2 5 18.7 8.3 20.8 13.8 2.6 6.7 2.6 15.4 1.8 19.6-4.8 23.2-16.2 39.4-31.1 52.3-5.2 4.5-11.3 12.1-16.2 16.2-5.4 4.4-10.9 9.1-4.7 18.2 6 9 26.6 43.7 57.1 70.8 39.4 34.4 72.8 45.3 82.7 50.1 8.1 4.1 18.1 3.6 24.1-2.2 7.5-6.4 16.7-21.9 26.3-32.2 6.6-7.2 15-8.1 24.8-5.3 9.8 2.8 61.8 29.1 72.4 34.3 10.6 5.2 17.7 7.9 20.3 12.5 2.5 4.6 2.5 26.6-3.7 44.8z" />
@@ -997,91 +997,91 @@ export default {
           title: 'Land Matcher',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-13.png', import.meta.url).href,
-          link: '/land-matcher/index.html'
+          link: '/Bondi/index.html'
         },
         {
           title: 'IA Research',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-15.png', import.meta.url).href,
-          link: '/research-gate-page/index.html'
+          link: '/Bakery/index.html'
         },
         {
           title: 'Color',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-14.png', import.meta.url).href,
-          link: '/Light-Online/index.html'
+          link: '/Agency/index.html'
         },
         {
           title: 'Tourist',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-11.png', import.meta.url).href,
-          link: '/FlyFly/index.html'
+          link: '/ecommerce/index.html'
         },
         {
           title: 'Electrcity',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-10.png', import.meta.url).href,
-          link: '/electricity-power/asset.html'
+          link: '/Nike/index.html'
         },
         {
           title: 'Company',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-09.png', import.meta.url).href,
-          link: '/Construction-Company/index.html'
+          link: '/dashboard/index.html'
         },
         {
           title: 'Lava',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-07.png', import.meta.url).href,
-          link: '/Lava/index.html'
+          link: '/Pixer/index.html'
         },
         {
           title: 'Corpo Link',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-05.png', import.meta.url).href,
-          link: '/Corpo-link/index.html'
+          link: '/SoundCloud/index.html'
         },
         {
           title: 'Mallory',
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-06.png', import.meta.url).href,
-          link: '/Mallory/index.html'
+          link: '/vite_portfolio/index.html'
         },
         {
           title: 'Resturent',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-18.png', import.meta.url).href,
-          link: '/luch/index.html'
+          link: '/NewDash/index.html'
         },
         {
           title: 'E-commerce',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-17.png', import.meta.url).href,
-          link: '/E-Commerce/index.html'
+          link: '/NFT/index.html'
         },
         {
           title: 'Logo Generation',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-19.png', import.meta.url).href,
-          link: '/Logo-generator/authentication.html'
+          link: '/Digital_agency/index.html'
         },
         {
           title: 'My Web site',
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-21.png', import.meta.url).href,
-          link: '/My-Website/my_web_site.html'
+          link: '/gpa_calc/index.html'
         },
         {
           title: 'AI Movies',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-08.png', import.meta.url).href,
-          link: '/AI/main_Series_page/main.html'
+          link: '/tasks_vue/dist/index.html'
         },
         {
           title: 'Masafat',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-20.png', import.meta.url).href,
-          link: '/Masafat/index.html'
+          link: '/todo_vue/dist/index.html'
         }
       ],
       currentTestimonialIndex: 0,
