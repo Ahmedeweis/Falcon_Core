@@ -861,6 +861,7 @@
 <script>
 import ScrollToTop from '@/components/ScrollToTop.vue';
 export default {
+  name: 'FalconeCore',
   data() {
     return {
       shows: "0",
@@ -938,6 +939,12 @@ export default {
 ],
       mainProjects: [
         {
+          title: 'IN Desgin',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-25.png', import.meta.url).href,
+          link: 'In.design/index.html'
+        },
+        {
           title: 'Fashoin',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-01.png', import.meta.url).href,
@@ -961,14 +968,14 @@ export default {
           img: new URL('../assets/img/imgs/gallery-03.png', import.meta.url).href,
           link: '/Scale/asset.html'
         },
-        {
+      ],
+      extraProjects: [
+                {
           title: 'Author Identification',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-12.png', import.meta.url).href,
           link: '/Author_Identifcation/index.html'
-        }
-      ],
-      extraProjects: [
+        },
         {
           title: 'Mashrouk',
           stars: 5,
