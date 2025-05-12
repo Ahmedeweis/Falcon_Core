@@ -231,7 +231,7 @@
             <h2></h2>
           </div>
           <div class="image flexe">
-            <h1>+19 More</h1>
+            <h1>+20 More</h1>
             <button>View</button>
           </div>
         </span>
