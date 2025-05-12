@@ -1004,91 +1004,91 @@ export default {
           title: 'Land Matcher',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-13.png', import.meta.url).href,
-          link: '/Bondi/index.html'
+          link: '/land-matcher/index.html'
         },
         {
           title: 'IA Research',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-15.png', import.meta.url).href,
-          link: '/Bakery/index.html'
+          link: '/research-gate-page/index.html'
         },
         {
           title: 'Color',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-14.png', import.meta.url).href,
-          link: '/Agency/index.html'
+          link: '/Light-Online/index.html'
         },
         {
-          title: 'Tourist',
+          title: 'Tourist FlyFly',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-11.png', import.meta.url).href,
-          link: '/ecommerce/index.html'
+          link: '/FlyFly/index.html'
         },
         {
           title: 'Electrcity',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-10.png', import.meta.url).href,
-          link: '/Nike/index.html'
+          link: '/electricity-power/asset.html'
         },
         {
           title: 'Company',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-09.png', import.meta.url).href,
-          link: '/dashboard/index.html'
+          link: '/Construction-Company/index.html'
         },
         {
           title: 'Lava',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-07.png', import.meta.url).href,
-          link: '/Pixer/index.html'
+          link: '/Lava/index.html'
         },
         {
           title: 'Corpo Link',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-05.png', import.meta.url).href,
-          link: '/SoundCloud/index.html'
+          link: '/Corpo-link/index.html'
         },
         {
           title: 'Mallory',
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-06.png', import.meta.url).href,
-          link: '/vite_portfolio/index.html'
+          link: '/Mallory/index.html'
         },
         {
           title: 'Resturent',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-18.png', import.meta.url).href,
-          link: '/NewDash/index.html'
+          link: '/luch/index.html'
         },
         {
           title: 'E-commerce',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-17.png', import.meta.url).href,
-          link: '/NFT/index.html'
+          link: '/E-Commerce/index.html'
         },
         {
           title: 'Logo Generation',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-19.png', import.meta.url).href,
-          link: '/Digital_agency/index.html'
+          link: '/Logo-generator/index.html'
         },
         {
           title: 'My Web site',
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-21.png', import.meta.url).href,
-          link: '/gpa_calc/index.html'
+          link: '/My-Website/my_web_site.html'
         },
         {
           title: 'AI Movies',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-08.png', import.meta.url).href,
-          link: '/tasks_vue/dist/index.html'
+          link: '/AI/main_Series_page/main.html'
         },
         {
           title: 'Masafat',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-20.png', import.meta.url).href,
-          link: '/todo_vue/dist/index.html'
+          link: '/Masafat/index.html'
         }
       ],
       currentTestimonialIndex: 0,
