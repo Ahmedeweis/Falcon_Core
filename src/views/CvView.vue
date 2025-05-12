@@ -930,7 +930,7 @@ export default {
   },
   {
     id: 7,
-    name: "Amr Tawfik",
+    name: "Omnia Tawfik",
     details: "Highly committed team with truly innovative solutions. I’ve worked with them on multiple projects, and they impress me every time.",
     position: "Technical Director",
     company: "EG Coders",
