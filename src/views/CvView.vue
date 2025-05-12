@@ -942,7 +942,7 @@ export default {
           title: 'IN Desgin',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-25.png', import.meta.url).href,
-          link: '/In.design/index.html'
+          link: '/in-design/index.html'
         },
         {
           title: 'Fashoin',
