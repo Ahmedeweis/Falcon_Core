@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <!-- icon of web site above -->
+    <link rel="icon" href="img/logo.svg">
+    <meta name="description" content="description of your website. This will appear in search results.">
+    <link href="https://fonts.googleapis.com/css2?family=Zain&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Zain', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-contact font-[Zain]">
+    <header class="container mx-auto p-4">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="img/logo.svg" alt="Logo" />
+            </div>
+            <nav class="hidden md:flex gap-4 text-2xl items-center">
+                <a href="index.html" class="text-peach mx-2">الرئيسية</a>
+                <a href="HowItWork.html" class="text-peach hover:text-coffee mx-2">آلية العمل</a>
+                <a href="contact.html" class="text-coffee hover:text-coffee mx-2">تواصل معنا</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="https://falcon-core.vercel.app/" target="_blank"
+                    class="px-6 py-2.5 w-[137px] h-[48px] bg-gradient-to-t from-peach to-coffee text-white rounded-lg">
+                    تواصل معنا
+                </a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-coffee focus:outline-none" aria-label="Toggle menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col gap-4 mt-4 text-center">
+            <div class="flex-col flex">
+                <a href="index.html" class="text-coffee text-xl py-2">الرئيسية</a>
+                <a href="HowItWork.html" class="text-peach hover:text-coffee text-xl py-2">آلية العمل</a>
+                <a href="contact.html" class="text-peach hover:text-coffee text-xl py-2">تواصل معنا</a>
+            </div>
+            <button class="mt-2 px-6 py-2.5 w-full bg-gradient-to-t from-peach to-coffee text-white rounded-lg">
+                <a href="https://falcon-core.vercel.app/" class="flex justify-center" target="_blank">تواصل معنا</a>
+            </button>
+        </div>
+    </header>
+    <!-- 1 header -->
+    <!-- 0 Land -->
+    <section class="relative h-[300px]  flex items-center justify-center text-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-[url('con-land.png')] bg-cover bg-center bg-no-repeat z-0"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-coffee opacity-50 z-10"></div>
+        <!-- Content -->
+        <div class="container relative z-20 px-4 sm:px-6 md:px-8">
+            <div class="text-center w-full sm:w-3/4 md:w-2/3 mx-auto">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 leading-tight">
+                    تواصل معنا لأي مساعدة أو استفسارات.
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- 1 Land -->
+    <!-- 0 contact -->
+    <section class="container mx-auto py-16 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+            <!-- Left Side -->
+            <div id="animatedSection" class="flex flex-col  text-coffee justify-center items-start text-right">
+                <h2 class="text-3xl text-coffee font-semibold mb-4">تابعنا على وسائل التواصل الاجتماعي</h2>
+                <p class="text-lg text-coffee leading-loose mb-6">
+                    ابق على تواصل مع أرحب من خلال قنوات التواصل الاجتماعي الخاصة بنا للحصول على آخر الأخبار
+                    والتحديثات.
+                </p>
+                <h3 class="text-xl text-coffee mb-4"></h3>
+                <div class="flex gap-4 flex-wrap">
+                    <!-- Social Icons -->
+                    <a href="#" aria-label="تويتر"
+                        class="rounded-lg shadow-md w-10 h-10 flex items-center justify-center">
+                        <img src="img/twitter-c.svg" class="w-7" alt="Twitter/X" />
+                    </a>
+                    <a href="#" aria-label="سناب شات"
+                        class="rounded-lg shadow-md w-10 h-10 flex items-center justify-center">
+                        <img src="img/snap-c.svg" class="w-7" alt="Snapchat" />
+                    </a>
+                    <a href="#" aria-label="واتساب"
+                        class="rounded-lg shadow-md w-10 h-10 flex items-center justify-center">
+                        <img src="img/WhatsApp-c.svg" class="w-7" alt="WhatsApp" />
+                    </a>
+                    <a href="#" aria-label="تيك توك"
+                        class="rounded-lg shadow-md w-10 h-10 flex items-center justify-center">
+                        <img src="img/tiktok-c.svg" class="w-6" alt="TikTok" />
+                    </a>
+                    <a href="#" aria-label="انستغرام"
+                        class="rounded-lg shadow-md w-10 h-10 flex items-center justify-center">
+                        <img src="img/ins-c.svg" class="w-7" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div id="animatedSection"
+                class="text-coffee rounded-lg shadow-md p-6 justify-self-end max-[768px]:justify-self-auto w-fit">
+                <h2 class="mb-6 text-2xl font-semibold">معلومات التواصل</h2>
+                <ul class="flex flex-col gap-3 text-xl">
+                    <li class="flex items-center">
+                        <img src="img/phone-c.svg" class="ml-4" alt="Phone Icon" />
+                        <span>الهاتف: 01153161437</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="img/mail-c.svg" class="ml-4" alt="Mail Icon" />
+                        <span>البريد الإلكتروني: info@gmail.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <button
+                            class="mt-2 px-6 py-2.5 w-full bg-gradient-to-t from-peach to-coffee text-white rounded-lg">
+                            <a href="Error.html" class="flex justify-center" target="_blank">موقعنا القديم</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 1 contact -->
+    <!-- 0 footer -->
+    <footer class="flex items-start justify-center py-10 w-full bg-coffee text-white text-right">
+        <div class="container px-4">
+            <div>
+                <!-- Logo -->
+                <div class="pb-6">
+                    <img src="img/logow.svg" alt="أرحب Logo" />
+                </div>
+                <!-- Main Footer Content -->
+                <div
+                    class="flex flex-col md:flex-row items-start justify-between border-y-4 border-white w-full py-9 gap-10">
+                    <!-- Description + Social -->
+                    <div class="flex-1 w-full">
+                        <p class="mb-4 text-xl leading-loose">
+                            أرحب هو مشروع سعودي يقدم حلول تقنية لتنظيم دخول الضيوف في المناسبات. نحن نصنع تجربة ترحيب
+                            راقية تعكس قيمة
+                            المناسبة، ويعمل فريقنا بخبرة ليوفر تنظيمًا احترافيًا.
+                        </p>
+                        <h3 class="text-3xl mb-4">تابعنا</h3>
+                        <div class="flex gap-4 flex-wrap">
+                            <a href="https://wa.me/201153161437" target="_blank" aria-label="واتساب"
+                                class="rounded-full w-10 h-10 bg-white flex items-center justify-center">
+                                <img src="img/WhatsApp.svg" class="w-7" alt="WhatsApp" />
+                            </a>
+                            <a href="https://x.com/ahmed_eweis0" target="_blank" aria-label="تويتر"
+                                class="rounded-full w-10 h-10 bg-white flex items-center justify-center">
+                                <img src="img/x.svg" class="w-7" alt="Twitter/X" />
+                            </a>
+                            <a href="https://www.instagram.com/ahmed_eweis0" target="_blank" aria-label="انستغرام"
+                                class="rounded-full w-10 h-10 bg-white flex items-center justify-center">
+                                <img src="img/instagram.svg" class="w-7" alt="Instagram" />
+                            </a>
+                            <a href="" aria-label="سناب شات"
+                                class="rounded-full w-10 h-10 bg-white flex items-center justify-center">
+                                <img src="img/snapshat.svg" class="w-7" alt="Snapchat" />
+                            </a>
+                            <a href="https://www.tiktok.com/@ahmed_eweis0" target="_blank" aria-label="تيك توك"
+                                class="rounded-full w-10 h-10 bg-white flex items-center justify-center">
+                                <img src="img/tiktok.svg" class="w-7" alt="TikTok" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Links -->
+                    <div class="flex-1 text-center md:text-center  sm:text-right">
+                        <h2 class="mb-6 text-2xl font-semibold">الصفحات</h2>
+                        <ul class="flex flex-col gap-3 text-xl">
+                            <li><a href="index.html" class="hover:underline">الرئيسية</a></li>
+                            <li><a href="HowItWork.html" class="hover:underline">آلية العمل</a></li>
+                            <li><a href="contact.html" class="hover:underline">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="flex-1">
+                        <h2 class="mb-6 text-2xl font-semibold">معلومات التواصل</h2>
+                        <ul class="flex flex-col gap-3 text-xl">
+                            <li class="flex items-center">
+                                <img src="img/phone.svg" class="ml-4" alt="Phone Icon" />
+                                <span>الهاتف: 01153161437</span>
+                            </li>
+                            <li class="flex items-center">
+                                <img src="img/mail.svg" class="ml-4" alt="Mail Icon" />
+                                <span>البريد الإلكتروني: Ahmed.eweiis@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center text-white pt-8 text-lg">
+                    © حقوق النشر 2025، جميع الحقوق محفوظة لشركة أرحب
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn"
+        class="fixed bottom-8 right-8 bg-coffee rounded-md p-2 flex items-center justify-center cursor-pointer shadow-lg opacity-0 scale-0 hover:scale-110 hover:bg-gray-800 transition-transform transition-opacity z-50"
+        aria-label="Scroll to top" style="transform-origin: center;">
+        <img src="img/right-arrow.png" alt="Up" class="w-6 h-6 rotate-[-90deg] filter brightness-0 invert" />
+    </button>
+    <!-- 1  -->
+    <!-- Script to Toggle Mobile Menu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
