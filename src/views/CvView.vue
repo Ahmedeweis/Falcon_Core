@@ -231,7 +231,7 @@
             <h2></h2>
           </div>
           <div class="image flexe">
-            <h1>+20 More</h1>
+            <h1>+21 More</h1>
             <button>View</button>
           </div>
         </span>
@@ -586,13 +586,13 @@
       <div class="container">
         <div class="fact">
           <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
-          <h2 class="number">24</h2>
+          <h2 class="number">26</h2>
           <h3>Projects Completed</h3>
         </div>
         <div class="fact">
           <img src="../assets/img/reputation.png" class="icon2-m"
             alt="Reputation icon representing satisfied clients" />
-          <h2 class="number">10</h2>
+          <h2 class="number">11</h2>
           <h3>Satisfied Clients</h3>
         </div>
         <div class="fact">
@@ -939,6 +939,12 @@ export default {
 ],
       mainProjects: [
         {
+          title: 'Orahep',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
+          link: '/tailwind_project/src/index.html'
+        },
+        {
           title: 'IN Desgin',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-25.png', import.meta.url).href,
@@ -962,14 +968,14 @@ export default {
           img: new URL('../assets/img/imgs/gallery-02.png', import.meta.url).href,
           link: 'aqart/index.html'
         },
-        {
+      ],
+      extraProjects: [
+              {
           title: 'Scale',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-03.png', import.meta.url).href,
           link: '/Scale/asset.html'
         },
-      ],
-      extraProjects: [
                 {
           title: 'Author Identification',
           stars: 9,
