@@ -830,7 +830,7 @@
           </div>
           <div class="photoos">
             <div>
-              <div class="backgrond">
+              <div class="backgrond" style="background-color: #FFF7ED;">
                 <a :href="mainProjects[0].link" target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
               </div>
               <div class="backgrond">
