@@ -215,7 +215,14 @@
     </div>
     <div class="gallery" id="gallery">
       <div class="container">
-        <a v-for="(project, index) in mainProjects" :key="index" :href="project.link" class="box" target="_blank">
+      <a
+  v-for="(project, index) in mainProjects"
+  :key="index"
+  :href="project.link"
+  :style="project.title === 'Orahep' ? 'background-color: #FFF7ED;' : ''"
+  class="box"
+  target="_blank"
+>
           <div class="infoo">
             <!-- <div class="bozo">  {{index +1}}</div> -->
             <h2>{{ project.title }}</h2>
@@ -830,8 +837,8 @@
           </div>
           <div class="photoos">
             <div>
-              <div class="backgrond" style="background-color: #FFF7ED;">
-                <a :href="mainProjects[0].link" target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
+              <div class="backgrond" >
+                <a :href="mainProjects[0].link"  target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
               </div>
               <div class="backgrond">
                 <a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
