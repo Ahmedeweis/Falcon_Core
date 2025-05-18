@@ -485,7 +485,7 @@
             <div class="look-content">
               <span>Subject</span>
               <input type="text" class="look-field" name="subject" required />
-              <div>form new upload</div>
+              <div>Not's</div>
             </div>
             <textarea class="styled-textarea" name="message" placeholder="Enter your text here..." required></textarea>
           </div>
