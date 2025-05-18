@@ -953,7 +953,7 @@ export default {
           title: 'Soon',
           stars: 9,
           img: new URL('../assets/img/imgs/Soon.png', import.meta.url).href,
-          link: ''
+          // link: ''
         },
         // {
         //   title: 'Orahep',
