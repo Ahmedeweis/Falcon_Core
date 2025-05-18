@@ -950,11 +950,17 @@ export default {
 ],
       mainProjects: [
         {
-          title: 'Orahep',
+          title: 'Soon',
           stars: 9,
-          img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
-          link: '/tailwind_project/src/index.html'
+          img: new URL('../assets/img/imgs/Soon.png', import.meta.url).href,
+          link: ''
         },
+        // {
+        //   title: 'Orahep',
+        //   stars: 9,
+        //   img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
+        //   link: '/tailwind_project/src/index.html'
+        // },
         {
           title: 'IN Desgin',
           stars: 9,
