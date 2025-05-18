@@ -121,7 +121,7 @@
           </p>
           <span>With 2+ years of experience</span>
           <div class="hot-buttons">
-            <a class="cotact-me" href="https://drive.google.com/uc?export=download&id=1fE20ABdQccxiMaG14sy6mvklFJ7I87hK"
+            <a class="cotact-me" href="Ahmed_Mahmoud_Frontend_CV.pdf" target="_blank"
               title="Download CV in PDF format">
               Download CV
             </a>
@@ -138,7 +138,7 @@
                 aria-label="Instagram">
                 <img src="../assets/img/icon1.png" alt="Instagram icon" />
               </a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedeweiso@gmail.com" class="social-icon"
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.eweiis@gmail.com" class="social-icon"
                 target="_blank" rel="noopener" aria-label="Send email">
                 <img src="../assets/img/icon2.png" alt="Email icon" />
               </a>
@@ -501,7 +501,7 @@
           <div class="col">
             <div class="min-col">
               <img class="icon2-m" />
-              <h2>Front-End</h2>
+              <h2>Languages</h2>
             </div>
             <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/Html.png" />
@@ -515,21 +515,25 @@
               <img class="icon2-m" src="../assets/img/skills/js.png" />
               <h3>JS</h3>
             </div>
-            <div class="min-col">
-              <img class="icon2-m" src="../assets/img/skills/vue.png" />
-              <h3>Vue Js</h3>
-            </div>
           </div>
           <div class="col">
             <div class="min-col">
               <img class="icon2-m" />
-              <h2>Back-End</h2>
+              <h2>FrameWork</h2>
             </div>
             <!-- <div class="min-col">
               <img class="icon2-m" />
               <h3>Php</h3>
             </div> -->
-            <div class="min-col">
+                         <div class="min-col">
+              <img class="icon2-m" src="../assets/img/skills/vue.png" />
+              <h3>Vue Js</h3>
+            </div>
+              <div class="min-col">
+              <img class="icon2-m" src="../assets/img/skills/tailwind.png" />
+              <h3>Tailwint</h3>
+            </div>
+                        <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/nodejs.png" />
               <h3>Node Js</h3>
             </div>
