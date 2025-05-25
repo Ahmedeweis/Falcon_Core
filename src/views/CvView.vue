@@ -953,6 +953,7 @@ export default {
           title: 'Orahep',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
+          link: '/tailwind_project/src/index.html'
         },
         // {
         //   title: 'Orahep',
