@@ -950,10 +950,9 @@ export default {
 ],
       mainProjects: [
         {
-          title: 'Soon',
+          title: 'Orahep',
           stars: 9,
           img: new URL('../assets/img/imgs/Soon.png', import.meta.url).href,
-          // link: ''
         },
         // {
         //   title: 'Orahep',
