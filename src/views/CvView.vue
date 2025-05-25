@@ -844,9 +844,9 @@
               <div class="backgrond" >
                 <a :href="mainProjects[0].link"  target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
               </div>
-              <div class="backgrond">
+              <!-- <div class="backgrond">
                 <a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
-              </div>
+              </div> -->
             </div>
             <div>
               <div class="backgrond">
@@ -952,7 +952,7 @@ export default {
         {
           title: 'Orahep',
           stars: 9,
-          img: new URL('../assets/img/imgs/Soon.png', import.meta.url).href,
+          img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
         },
         // {
         //   title: 'Orahep',
