@@ -844,9 +844,9 @@
               <div class="backgrond" >
                 <a :href="mainProjects[0].link"  target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
               </div>
-              <!-- <div class="backgrond">
-                <a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
-              </div> -->
+              <div class="backgrond">
+                <a :href="mainProjects[2].link" target="_blank"><img :src="mainProjects[2].img" class="icon2-L" /></a>
+              </div>
             </div>
             <div>
               <div class="backgrond">
