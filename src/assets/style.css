@@ -568,6 +568,11 @@ button:hover{
     margin-right: 10px;
     margin-top: 10px;
 }
+@media (max-width: 767px) {
+.cotact-me {
+    font-size: 13px;
+}
+}
 .cotact-me:hover {
     background-color: #555;
 }
@@ -578,6 +583,13 @@ button:hover{
     text-align: start;
     padding: 20px;
     align-items: baseline;
+}
+@media (max-width: 767px) {
+    .right {
+    flex-direction: row;
+     padding: 0px;
+     margin-bottom:20px;
+}
 }
 .photo-container {
     display: flex;
@@ -659,7 +671,7 @@ button:hover{
 @media (max-width: 408px) {
     .hot-buttons {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-self: center;
     }
 }
@@ -1756,6 +1768,11 @@ input[type="email"]:focus {
 .left-top, .left-center, .left-bottom {
     position: absolute;
     z-index: 10;
+}
+@media (max-width: 767px) {
+    .left h1 {
+font-size: 24px;
+}
 }
 .left-top {
     top: 50%;
