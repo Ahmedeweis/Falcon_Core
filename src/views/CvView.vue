@@ -597,7 +597,7 @@
       <div class="container">
         <div class="fact">
           <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
-          <h2 class="number">26</h2>
+          <h2 class="number">30</h2>
           <h3>Projects Completed</h3>
         </div>
         <div class="fact">
@@ -860,7 +860,7 @@
         </div>
         <div class="down-footer">
           <div class="fr-d">F.design</div>
-          <div>© 2025 All Rights Reserved | Design by Ahmed Eweis</div>
+          <div>©  {{ currentYear }} All Rights Reserved | Design by Ahmed Eweis</div>
           <div>Privacy Policy . Terms and Conditions</div>
         </div>
       </div>
@@ -875,6 +875,7 @@ export default {
   name: 'FalconeCore',
   data() {
     return {
+      currentYear: new Date().getFullYear(),
       shows: "0",
       images: [
         require("@/assets/certifcate/cer1.png"),
