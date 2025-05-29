@@ -954,7 +954,7 @@ export default {
           title: 'Spider Man',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-27.png', import.meta.url).href,
-          link: '/SpiderMan/index.html'
+          link: '/SPidy/index.html'
         },
         {
           title: 'Orahep',
