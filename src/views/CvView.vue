@@ -950,18 +950,18 @@ export default {
   },
 ],
       mainProjects: [
+                {
+          title: 'Spider Man',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-27.png', import.meta.url).href,
+          link: '/SpiderMan/index.html'
+        },
         {
           title: 'Orahep',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
           link: '/tailwind_project/src/index.html'
         },
-        // {
-        //   title: 'Orahep',
-        //   stars: 9,
-        //   img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
-        //   link: '/tailwind_project/src/index.html'
-        // },
         {
           title: 'IN Desgin',
           stars: 9,
@@ -980,15 +980,15 @@ export default {
           img: new URL('../assets/img/imgs/gallery-04.png', import.meta.url).href,
           link: 'furniture/index.html'
         },
-        {
+      ],
+      extraProjects: [
+                {
           title: 'Aqar Bot',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-02.png', import.meta.url).href,
           link: 'aqart/index.html'
         },
-      ],
-      extraProjects: [
-              {
+        {
           title: 'Scale',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-03.png', import.meta.url).href,
