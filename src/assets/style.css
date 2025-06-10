@@ -582,7 +582,7 @@ button:hover{
     flex-direction: column;
     text-align: start;
     padding: 20px;
-    align-items: baseline;
+    /* align-items: baseline; */
 }
 @media (max-width: 767px) {
     .right {
