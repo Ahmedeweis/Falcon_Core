@@ -11,7 +11,6 @@
   --main--color-third:#FC5E37;
   --back-color:#333333;
   /* 1 colors */
-
   /* 0 standerd fonts*/
   --big-font:48px;
   --large-font:32px;
@@ -20,7 +19,6 @@
   --small-font:16px;
   --tiny-font:14px;
   /* 1 standerd fonts */
-
   /* 0 padds */
   --main-padding-top: 60px;
   --main-padding-bottom: 60px;
@@ -30,14 +28,12 @@
   --full-padding:24px;
   --small-padding:16px;
   /* 1 padds */
-
   /* 0 marg */
   --flex-margin-top:8px;
   --flex-margin-bottom:8px;
   --flex-margin-left: 16px;
   --flex-margin-right: 16px;
   /* 1 marg */
-
   /*
   big icons
     display: block;
@@ -62,7 +58,7 @@ ul {
 }
 input {
   font-weight: bold;
-  font-size: var(--midtower-font); 
+  font-size: var(--midtower-font);
 }
 input:focus {
   outline: transparent;
@@ -84,7 +80,6 @@ input:focus::placeholder {
 button {
   padding:10px 20px;
   border:none;
-  
 }
 .container {
   padding-left: 15px;
@@ -112,7 +107,6 @@ button {
 }
 /* 1 Global Rules */
 /* 0 Header */
-
 .navbar {
   color: black;
   display: flex;
@@ -127,8 +121,6 @@ button {
     flex-direction: column;
   }
 }
-
-
 @media (max-width: 480px) {
   .iconsy {
     justify-self: flex-end;
@@ -140,13 +132,11 @@ button {
     align-self:flex-start ;
   }
 }
-
 .nav-list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
-
 .nav-list .list-item {
   padding: 20px 30px;
   margin-left: 0px;
@@ -166,18 +156,17 @@ button {
 .list-item:hover:before {
   width: 75%;
   left:0px;
-} 
+}
 .list-item a {
   text-transform: capitalize;
   font-weight: bold;
 }
-
 .specilal-list-item-a {
   background-color: #019179;
   padding: 11px 16px;
   color: white !important;
   border: 2px solid #019179;
-} 
+}
 .specilal-list-item-a:hover {
   color: black !important;
   background-color: white !important;
@@ -188,12 +177,10 @@ button {
   text-decoration: none;
   font-size: 18px;
 }
-
 .navbar a:hover {
   color: #F50A43;
   cursor: pointer;
 }
-
 @media (max-width: 991px) {
   .navbar a {
     font-size: 17px;
@@ -205,7 +192,6 @@ button {
     margin-left: 0px;
     padding-left:0px;
   }
-  
     .navbar a {
         font-size: 12px;
     }
@@ -216,11 +202,9 @@ button {
   background-color:black;
   margin-bottom: 4px;
 }
-
 .menu {
   display: none;
 }
-
 @media (max-width: 480px) {
   .menu {
     display: block;
@@ -228,9 +212,7 @@ button {
  /* left: 15px;  english + go to iconsy 480 align-self: flex-end + go to active 480 align-self: flex-start;  */
     left: 15px;
     top: 15px;
-
   }
-
   .nav-list {
     list-style-type: none;
     text-align: center;
@@ -238,7 +220,6 @@ button {
     display: none;
     overflow: hidden;
   }
-  
   .active {
     display: flex;
     flex-direction: column;
@@ -262,14 +243,12 @@ button {
 }
 /* 1 Header */
 /* 0 Landing */
-
 .Blinder-land  .container {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
 }
-
 @media (max-width: 992px) {
   .Blinder-land  .container {
     flex-direction:column-reverse;
@@ -288,7 +267,6 @@ button {
   font-weight: bold;
   flex-basis:50%;
 }
-
 .small-head {
   font-size: var(--small-font);
   color: var(--main--color-third);
@@ -297,30 +275,25 @@ button {
   color: #F1B327;
   letter-spacing: 1.2px;
 }
-
 .land-head {
   font-size: var(--big-font);
   margin:8px 0px;
 }
-
 .land-speci {
   color: var(--main-color-alt);
 }
-
 .land-describe {
   letter-spacing: 1px;
   line-height: 1.6;
   color: #777;
 }
-
 .tec {
   display: flex;
-  justify-content:flex-start; 
+  justify-content:flex-start;
   width: 100%;
   font-size:var(--midtower-font);
   margin:0;
 }
-
 .UI,.UX {
   display:flex;
   justify-content: center;
@@ -338,7 +311,7 @@ button {
 }
 .UX {
   margin-left: var(--flex-margin-left);
-} 
+}
 .offer-bold {
   font-weight: bold;
   font-size: 1.1em;
@@ -353,24 +326,20 @@ button {
   width:100%;
   border-radius:3px;
 }
-
 .look-content {
   display: flex;
   justify-content: center;
   align-items:center;
   width: 100%;
 }
-
 .look-img {
   width: 33px;
 }
-
 .look-field {
   border: none;
   margin-left:8px;
   width: inherit;
 }
-
 .look-submit {
   background-color: var(--main-color);
   color:white;
@@ -393,7 +362,6 @@ button {
 }
 @media (max-width: 992px) {
   /* .land-show {
-
   } */
   .demo-area {
     display: none;
@@ -415,8 +383,7 @@ button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
   /*
   position: absolute;
- 
-  display:flex; 
+  display:flex;
   justify-content: center;
   align-items: center;
   right: -22px;
@@ -435,13 +402,12 @@ button {
   }
 }
 .demo-bord {
-  display:flex; 
+  display:flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   position: relative;
   z-index: 999;
 }
-
 .demo-bord::after {
   content:" ";
   position: absolute;
@@ -452,7 +418,6 @@ button {
   right: -3px;
   animation: rotate 6s linear infinite; /* Adjust the animation duration and timing as needed */
 }
-
 .demo-word {
   margin:0;
   color:black;
@@ -476,10 +441,9 @@ button {
   border-top-right-radius: 50px; /* Adjust the radius as needed */
 }
 .land-img:hover {
-  filter: drop-shadow(0 0 10.75rem #019179 ) grayscale(0%);
+  filter: drop-shadow(0 0 10.75rem #902934) grayscale(0%);
   scale:1.05;
 }
-
 @media (max-width: 992px) {
   .land-img{
     width:100%;
@@ -488,7 +452,7 @@ button {
 .star-area {
   position: absolute;
   background-color: white;
-  display:flex; 
+  display:flex;
   justify-content: center;
   align-items: center;
   right: -22px;
@@ -521,16 +485,12 @@ button {
   margin:0;
 }
 /* 1 Landing */
-
-
 /* 0 companies */
-
 .companies {
   padding-top: 50px;
     padding-bottom: 50px;
     background-color: #F9FBFF;
   }
-  
   .all-compnies {
     display: flex;
     justify-content: center;
@@ -569,7 +529,6 @@ button {
   color: #1B9FD9;
 }
 /* 1 companies  */
-
 /* 0  copy of land */
 .over-write-land .container  {
   flex-direction: row-reverse;
@@ -597,7 +556,6 @@ button {
   flex-basis: 100%;
 }
 /* 1 copy of land */
-
 /* 0 fashion design  */
 .fashion-design {
   margin-bottom: 50px;
@@ -635,12 +593,10 @@ button {
   width:450px;
   transition: 0.4s;
 }
-
 .third-sec-img:hover {
   filter: drop-shadow(0 0 10.75rem #019179 ) grayscale(0%);
   scale:1.05;
 }
-
 @media (max-width: 992px) {
   .third-sec-img{
     width:100%;
@@ -674,7 +630,6 @@ button {
   left: -85px;
 }
 /* 1 fashion design  */
-
 /* 0 interstes */
 .interstes {
   padding-top: var(--main-padding-top);
@@ -708,7 +663,6 @@ button {
   letter-spacing: 1px;
 }
 /* 1 interstes  */
-
 /* 0 Footer */
 .footer {
   margin: 50px 0 0 0;
@@ -721,7 +675,6 @@ button {
 }
 .small-iconee {
   width: 15px;
- 
 }
 .icons {
   display: flex;
@@ -738,9 +691,7 @@ button {
   padding: 10px 10px;
   cursor: pointer;
   border: 1px solid black;
-
 }
-
 .icon:hover{
   background-color: #009178;
   box-shadow: 0px 0px 10px rgba(11, 0, 7, 0.64);
@@ -768,7 +719,6 @@ button {
   box-shadow: 0px 0px 10px rgba(11, 0, 7, 0.64);
  }
 /* 1 Footer */
-
 @keyframes rotate {
   0% {
       transform: rotate(0deg);
@@ -777,14 +727,14 @@ button {
       transform: rotate(360deg);
   }
 }
- /* filter: 
+ /* filter:
   blur(5px)
   brightness(150%)
-  contrast(200%) 
-  drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)) 
-  grayscale(100%) 
-  hue-rotate(90deg) 
-  invert(100%) 
-  opacity(50%) 
-  saturate(200%) 
+  contrast(200%)
+  drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5))
+  grayscale(100%)
+  hue-rotate(90deg)
+  invert(100%)
+  opacity(50%)
+  saturate(200%)
   sepia(100%) */
