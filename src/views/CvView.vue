@@ -623,44 +623,92 @@
     <!-- 1 facts  -->
     <!-- 0 timeline -->
     <h2 class="timeline-head">Education & Experience</h2>
-    <section class="timeline" id="experience">
-      <div class="timeline-item">
-        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-        <div class="timeline-content">
-          <h3>Bachelor in Computer Science</h3>
-          <span>Helwan University</span>
-          <span class="timeline-date">Sep 2019 - Jul 2023</span>
-          <p>Studied core programming, data structures, and modern web development techniques.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-        <div class="timeline-content">
-          <h3>Web Development Professional Track</h3>
-          <span>Udacity</span>
-          <span class="timeline-date">Jan 2022 - Apr 2022</span>
-          <p>Studied modern web development techniques and frontend practices.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-        <div class="timeline-content">
-          <h3>Minders Workshops</h3>
-          <span>Minders</span>
-          <span class="timeline-date">Aug 2021 - Oct 2021</span>
-          <p>Completed workshops focused on responsive web design.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
-        <div class="timeline-content">
-          <h3>Data Collector</h3>
-          <span>StatsBomb Company</span>
-          <span class="timeline-date">Mar 2022 - Sep 2022</span>
-          <p>Gathered data from freeze-frame images using a desktop application.</p>
-        </div>
-      </div>
-    </section>
+<section class="timeline" id="experience">
+    <!-- Education -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Bachelor’s in Computer Science</h3>
+      <span>Helwan University, Cairo</span>
+      <span class="timeline-date">Sep 2019 - Jul 2023</span>
+      <p>Major in Front-End Design, Minor in Software Development. Studied core programming, data structures, and modern web technologies.</p>
+    </div>
+  </div>
+    <!-- Job: Dream Design Egypt -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Front-end Developer</h3>
+      <span>Dream Design Egypt (Remote)</span>
+      <span class="timeline-date">Nov 2024 – May 2025</span>
+<p>
+  Developed responsive UIs from Figma using Vue.js, Tailwind CSS, and Metronic, with focus on performance and code quality.
+</p>
+    </div>
+  </div>
+  <!-- Job: StatsBomb -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Football Data Collector</h3>
+      <span>StatsBomb</span>
+      <span class="timeline-date">Mar 2022 – Sep 2022</span>
+<p>
+  Recorded live football events with high accuracy using specialized tools, applying game knowledge under remote, high-pressure conditions.
+</p>
+    </div>
+  </div>
+  <!-- English Certificate -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>EF SET English Certificate (C1)</h3>
+      <span>EF SET</span>
+      <span class="timeline-date">Issued: Jun 2025</span>
+      <p>Achieved a score of 74/100 – C1 Advanced level in English proficiency.</p>
+    </div>
+  </div>
+    <!-- Soft Skills Course -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Discover and Upgrade Your Skills</h3>
+      <span>Tower w Gayer</span>
+      <span class="timeline-date">Jul 2023</span>
+      <p>Completed soft skills training including communication, critical thinking, and adaptability in tech environments.</p>
+    </div>
+  </div>
+  <!-- Udacity Professional Track -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Web Development Professional Track</h3>
+      <span>Udacity</span>
+      <span class="timeline-date">Jan 2022 - Apr 2022</span>
+      <p>Covered advanced JavaScript, Agile methodologies, Node.js, and essential freelancing skills.</p>
+    </div>
+  </div>
+  <!-- Udacity Challenger Track -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Web Development Challenger Track</h3>
+      <span>Udacity</span>
+      <span class="timeline-date">Jan 2022</span>
+      <p>Learned the basics of HTML, CSS, and JavaScript to build responsive websites.</p>
+    </div>
+  </div>
+  <!-- Minders Workshops -->
+  <div class="timeline-item">
+    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+    <div class="timeline-content">
+      <h3>Minders’21 Workshops</h3>
+      <span>Minders</span>
+      <span class="timeline-date">Aug 2021 - Oct 2021</span>
+      <p>Hands-on workshops focused on creating responsive web designs using modern layout systems.</p>
+    </div>
+  </div>
+</section>
     <!-- 1 timeline -->
     <!-- 0 certifcate  -->
     <section class="certifcate">
