@@ -449,7 +449,7 @@
                       clip-rule="evenodd" fill-rule="evenodd"></path>
                   </svg> Ability to work on multiple projects per month</li>
               </ul>
-              <p class="plan-price">EGP 8,000 /mo</p>
+              <p class="plan-price">EGP 5,000 /mo</p>
             </div>
           </div>
         </div>
