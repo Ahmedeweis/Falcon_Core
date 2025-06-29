@@ -397,7 +397,7 @@
                       clip-rule="evenodd" fill-rule="evenodd"></path>
                   </svg> 50% payment required before starting work</li>
               </ul>
-              <p class="plan-price">EGP 100 /hour</p>
+              <p class="plan-price">EGP 50 /hour</p>
             </div>
             <!-- Standard Plan -->
             <div class="pricing-card standard">
@@ -423,7 +423,7 @@
                       clip-rule="evenodd" fill-rule="evenodd"></path>
                   </svg>35% payment required</li>
               </ul>
-              <p class="plan-price">EGP 5k ~ 10k /project</p>
+              <p class="plan-price">EGP 1k ~ 5k /project</p>
             </div>
             <!-- Premium Plan -->
             <div class="pricing-card premium">
@@ -449,7 +449,7 @@
                       clip-rule="evenodd" fill-rule="evenodd"></path>
                   </svg> Ability to work on multiple projects per month</li>
               </ul>
-              <p class="plan-price">EGP 13,000 /mo</p>
+              <p class="plan-price">EGP 8,000 /mo</p>
             </div>
           </div>
         </div>
