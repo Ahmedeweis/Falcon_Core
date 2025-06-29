@@ -545,11 +545,15 @@
           <div class="col">
             <div class="min-col">
               <img class="icon2-m" />
-              <h2>Data Base</h2>
+              <h2>Others</h2>
             </div>
             <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/postgress.png" />
               <h3>Postgres</h3>
+            </div>
+            <div class="min-col">
+              <img class="icon2-m" src="../assets/img/skills/github-color.png" />
+              <h3>Git Hub</h3>
             </div>
           </div>
         </div>
