@@ -214,6 +214,7 @@
       </div>
     </div>
     <div class="gallery" id="gallery">
+        <SearchCo/>
       <div class="container">
       <a
   v-for="(project, index) in mainProjects"
@@ -914,6 +915,7 @@
           <div class="fr-d">F.design</div>
           <div>©  {{ currentYear }} All Rights Reserved | Design by Ahmed Eweis</div>
           <div>Privacy Policy . Terms and Conditions</div>
+          <router-link to="/test">Test Gimini</router-link>
         </div>
       </div>
     </footer>
@@ -923,6 +925,7 @@
 </template>
 <script>
 import ScrollToTop from '@/components/ScrollToTop.vue';
+import SearchCo from '@/components/SearchCo.vue';
 export default {
   name: 'FalconeCore',
   data() {
@@ -1172,6 +1175,7 @@ export default {
   },
   components: {
     ScrollToTop,
+    SearchCo,
   },
   computed: {
     innerWidth() {
