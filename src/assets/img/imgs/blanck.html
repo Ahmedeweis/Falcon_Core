@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid 3x3 صور</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #0f172a, #1e293b, #334155);
+            color: #f0f0f0;
+            height: 100vh;
+            /* لون النص المقترح */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 150px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 أعمدة */
+            gap: 10px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            /* يجعل الصورة أفقية */
+            object-fit: cover;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center"> </h2>
+    <div class="grid">
+        <img src="gallery-26.png" alt="صورة 1">
+        <img src="gallery-01.png" alt="صورة 1">
+        <img src="gallery-25.png" alt="صورة 1">
+        <img src="gallery-22.png" alt="صورة 1">
+        <img src="gallery-16.png" alt="صورة 1">
+        <img src="gallery-04.png" alt="صورة 1">
+        <img src="gallery-03.png" alt="صورة 1">
+        <img src="gallery-05.png" alt="صورة 1">
+        <img src="gallery-08.png" alt="صورة 1">
+    </div>
+</body>
+</html>

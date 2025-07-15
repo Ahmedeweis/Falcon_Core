@@ -20,7 +20,7 @@
       <div class="game-search-input-wrapper">
         <input
           type="text"
-          placeholder="أكتب اسم المشروع  "
+          placeholder="Write name of prject here  "
           class="game-search-input"
         />
         <div class="game-search-input-icon">
@@ -31,7 +31,7 @@
       </div>
       <!-- زر البحث -->
       <button class="game-search-button">
-        بحث
+        Search
       </button>
     </div>
   </div>
