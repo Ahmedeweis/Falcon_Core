@@ -4,8 +4,8 @@
       <!-- القائمة المنسدلة للتصنيفات -->
       <div class="game-search-select-wrapper">
         <select class="game-search-select">
-          <option disabled selected>النوع</option>
-          <option>الكل</option>
+          <option disabled selected>Type</option>
+          <option>All</option>
           <option>HTML</option>
           <option>Vue</option>
           <option>Tailwint</option>
@@ -114,7 +114,7 @@
   width: 100%;
   outline: none;
   border: none;
-  text-align: right;
+  text-align: left;
   margin-bottom: 0 !important;
 }
 @media (min-width: 768px) {
@@ -125,7 +125,7 @@
 /* Search icon in input */
 .game-search-input-icon {
   position: absolute;
-  left: 0.75rem;
+  right: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
   color: white;
