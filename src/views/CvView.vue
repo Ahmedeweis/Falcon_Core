@@ -113,7 +113,7 @@
     <section class="make" aria-labelledby="intro-heading">
       <div class="container">
         <div class="left">
-          <h1 id="intro-heading">Front-End Developer</h1>
+          <h1 id="intro-heading" style="  font-family: 'lora' !important;">Front-End Developer</h1>
           <p>
             Hardworking professional skilled in <strong>Vue.js</strong>. Passionate about secure,
             optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful
@@ -131,27 +131,50 @@
           </div>
         </div>
         <div class="right">
-          <div class="photo-container">
-            <img src="../assets/img/3.jpg" alt="Ahmed Eweis profile photo" class="profile-photo" />
-            <div class="orbit" aria-label="Social media links">
-              <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank" rel="noopener"
-                aria-label="Instagram">
-                <img src="../assets/img/icon1.png" alt="Instagram icon" />
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.eweiis@gmail.com" class="social-icon"
-                target="_blank" rel="noopener" aria-label="Send email">
-                <img src="../assets/img/icon2.png" alt="Email icon" />
-              </a>
-              <a href="https://github.com/Ahmedeweis" class="social-icon" target="_blank" rel="noopener"
-                aria-label="GitHub Profile">
-                <img src="../assets/img/icon3.png" alt="GitHub icon" />
-              </a>
-              <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank" rel="noopener"
-                aria-label="LinkedIn Profile">
-                <img src="../assets/img/icon4.png" alt="LinkedIn icon" />
-              </a>
-            </div>
-          </div>
+<div class="photo-container">
+  <img src="../assets/img/3.jpg" alt="Ahmed Eweis profile photo" class="profile-photo" />
+  <div class="glass-card">
+  <div class="top">
+<div class="telegram-arrow-icon">
+  <!-- شكل سهم تيليجرام -->
+<img src="../assets/img/paper.png" alt="Telegram Arrow Icon" class="telegram-arrow" style="width: 16px;"/>
+</div>
+    <div class="title">Conversion Rate</div>
+  </div>
+  <div class="value">9.73%</div>
+</div>
+  <div class="glass-cardII">
+  <div class="top">
+<div class="telegram-arrow-icon">
+  <!-- شكل سهم تيليجرام -->
+<img src="../assets/img/fan.png" alt="Telegram Arrow Icon" class="telegram-arrow" style="width: 23px;"/>
+</div>
+    <div class="title">Todays Visitors</div>
+  </div>
+  <div class="value">17,640</div>
+</div>
+  <!-- ظل داخلي من الأسفل -->
+  <div class="photo-shadow"></div>
+  <div class="orbit" aria-label="Social media links">
+    <!-- الأيقونات تفضل زي ما هي -->
+    <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank" rel="noopener"
+      aria-label="Instagram">
+      <img src="../assets/img/icon1.png" alt="Instagram icon" />
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.eweiis@gmail.com" class="social-icon"
+      target="_blank" rel="noopener" aria-label="Send email">
+      <img src="../assets/img/icon2.png" alt="Email icon" />
+    </a>
+    <a href="https://github.com/Ahmedeweis" class="social-icon" target="_blank" rel="noopener"
+      aria-label="GitHub Profile">
+      <img src="../assets/img/icon3.png" alt="GitHub icon" />
+    </a>
+    <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank" rel="noopener"
+      aria-label="LinkedIn Profile">
+      <img src="../assets/img/icon4.png" alt="LinkedIn icon" />
+    </a>
+  </div>
+</div>
         </div>
       </div>
     </section>
@@ -627,7 +650,7 @@
     </section>
     <!-- 1 facts  -->
     <!-- 0 timeline -->
-    <h2 class="timeline-head">Education & Experience</h2>
+    <h2 class="timeline-head"><span  class="timeline-head" style="color: black;">Education</span>  & Experience</h2>
 <section class="timeline" id="experience">
     <!-- Education -->
   <div class="timeline-item">
@@ -769,8 +792,8 @@
             </div>
             <!-- Arrows -->
             <div class="arrows">
-              <span class="arrow left spano" @click="previousTestimonial">&#8592;</span>
-              <span class="arrow right spano" @click="nextTestimonial">&#8594;</span>
+              <span class="arrow left spano" @click="previousTestimonial" style="font-family: sans-serif;">&#8592;</span>
+              <span class="arrow right spano" @click="nextTestimonial" style="font-family: sans-serif;">&#8594;</span>
             </div>
           </div>
           <!-- Right Avatars -->

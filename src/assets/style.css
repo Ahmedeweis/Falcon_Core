@@ -3,7 +3,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'inter',sans-serif;
 }
 :root {
     /* 0 colors */
@@ -48,10 +48,15 @@
     width: 30px;
 }
 html {
-    scroll-behavior: smooth;
+      scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 body {
-    font-family: 'Cairo', sans-serif;
+    /* font-family: 'inter','Cairo', sans-serif; */
+      scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 a {
     text-decoration: none;
@@ -581,7 +586,7 @@ button:hover{
     overflow: hidden;
     flex-direction: column;
     text-align: start;
-    padding: 20px;
+    padding: 20px 0;
     /* align-items: baseline; */
 }
 @media (max-width: 767px) {
@@ -596,11 +601,92 @@ button:hover{
     align-items: center;
     position: relative;
     width: 62%;
+      position: relative;
+}
+.glass-card,
+.glass-cardII {
+  position: absolute;
+  bottom: 172px;
+  left: -48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px;
+  gap: 0px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  font-family: sans-serif;
+  z-index: 999;
+}
+.glass-cardII {
+    bottom: 50px;
+    left: -48px;
+}
+.glass-card .top,
+.glass-cardII .top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.glass-card .icon,
+.glass-cardII .icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+.glass-card .title,
+.glass-cardII .title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.glass-card .value ,
+.glass-cardII .value {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'lora';
+}
+.telegram-arrow-icon,
+.telegram-arrow-iconII {
+  width: 30px;
+  height: 30px;
+  background-color: #2A6B3F;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.telegram-arrow-icon svg ,
+.telegram-arrow-iconII svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
 .profile-photo {
     width: 100%;
-    border: 5px solid #333;
+    /* border: 5px solid white; */
     z-index: 998;
+    border-radius: 16px;
+  z-index: 1;
+  display: block;
+}
+.photo-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  border-radius: 8px;
+  background:linear-gradient(to top, rgb(0 0 0), transparent);
+  z-index: 2; /* فوق الصورة لكن تحت الأيقونات */
+  pointer-events: none; /* عشان ميبقاش clickable */
 }
 .orbit {
     position: absolute;
