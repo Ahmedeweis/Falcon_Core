@@ -230,32 +230,39 @@
     </section>
     <!-- 1 jops  -->
     <!-- 0 Gallery -->
-    <div class="container" id="Projects">
+    <div class="container" id="Projects" >
       <div class="head-projects">
-        <h2 class="main-title">Projects</h2>
+<h2 class="main-title">
+  Projects <span style="color: black;">({{ totalProjects }})</span>
+</h2>
         <button @click="showo">View All</button>
       </div>
     </div>
     <div class="gallery" id="gallery">
         <SearchCo/>
-      <div class="container">
-      <a
+      <div class="container" style="margin-top: 30px;">
+<a
   v-for="(project, index) in mainProjects"
   :key="index"
   :href="project.link"
-  :style="project.title === 'Orahep' ? 'background-color: #FFF7ED;' : ''"
   class="box"
   target="_blank"
 >
-          <div class="infoo">
-            <!-- <div class="bozo">  {{index +1}}</div> -->
-            <h2>{{ project.title }}</h2>
-            <h2>{{ project.stars }} <img src="../assets/img/star.png" class="icon2" /></h2>
-          </div>
-          <div class="image">
-            <img :src="project.img" alt />
-          </div>
-        </a>
+  <div class="image">
+    <img :src="project.img" alt />
+  </div>
+  <div class="infoo">
+    <h2 class="title">{{ project.title }}</h2>
+      <span
+        class="tag"
+        v-for="(tag, i) in project.Tages"
+        :key="i"
+        :style="tagStyles[tag] || {}"
+      >
+        {{ tag }}
+      </span>
+  </div>
+</a>
         <span class="box curser" @click="showoo">
           <div class="infoo">
             <h2></h2>
@@ -270,17 +277,28 @@
     </div>
     <div class="gallery" v-if="shows === '1'">
       <div class="container">
-        <a v-for="(project, index) in extraProjects" :key="'extra-' + index" :href="project.link" class="box"
-          target="_blank">
-          <div class="infoo">
-            <!-- <div class="bozo">  {{index +6}}</div> -->
-            <h2>{{ project.title }}</h2>
-            <h2>{{ project.stars }} <img src="../assets/img/star.png" class="icon2" /></h2>
-          </div>
-          <div class="image">
-            <img :src="project.img" alt />
-          </div>
-        </a>
+  <a
+    v-for="(project, index) in extraProjects"
+    :key="'extra-' + index"
+    :href="project.link"
+    class="box"
+    target="_blank"
+  >
+    <div class="image">
+      <img :src="project.img" alt />
+    </div>
+    <div class="infoo">
+      <h2 class="title">{{ project.title }}</h2>
+      <span
+        class="tag"
+        v-for="(tag, i) in project.Tages"
+        :key="i"
+        :style="tagStyles[tag] || {}"
+      >
+        {{ tag }}
+      </span>
+    </div>
+  </a>
       </div>
     </div>
     <!-- 1 Gallery -->
@@ -555,7 +573,7 @@
             </div>
               <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/tailwind.png" />
-              <h3>Tailwint</h3>
+              <h3>Tailwind</h3>
             </div>
                         <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/nodejs.png" />
@@ -625,7 +643,7 @@
       <div class="container">
         <div class="fact">
           <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
-          <h2 class="number">30</h2>
+          <h2 class="number">{{ totalProjects }}</h2>
           <h3>Projects Completed</h3>
         </div>
         <div class="fact">
@@ -953,6 +971,10 @@ export default {
   name: 'FalconeCore',
   data() {
     return {
+      defaultTagStyle: {
+        backgroundColor: "#333",
+        color: "#fff"
+      },
       currentYear: new Date().getFullYear(),
       shows: "0",
       images: [
@@ -1027,172 +1049,211 @@ export default {
     avatar: require("@/assets/img/avatars/300-22.jpg"),
   },
 ],
+        // Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']
       mainProjects: [
-                {
+        {
           title: 'Spider Man',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-27.png', import.meta.url).href,
-          link: '/SPidy/index.html'
+          link: '/SPidy/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Orahep',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-26.png', import.meta.url).href,
-          link: '/tailwind_project/src/index.html'
+          link: '/tailwind_project/src/index.html',
+          Tages: ['HTML', 'Tailwind','JavaScript','Figma','Responsive']
         },
         {
           title: 'IN Desgin',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-25.png', import.meta.url).href,
-          link: '/in-design/index.html'
+          link: '/in-design/index.html',
+          Tages: ['HTML', 'CSS','JavaScript','Responsive']
         },
         {
           title: 'Fashoin',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-01.png', import.meta.url).href,
-          link: '/fash/index.html'
+          link: '/fash/index.html',
+          Tages: ['HTML', 'CSS','JavaScript']
         },
         {
           title: 'Tumpas',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-04.png', import.meta.url).href,
-          link: 'furniture/index.html'
+          link: 'furniture/index.html',
+          Tages: ['HTML', 'CSS','Responsive']
         },
       ],
       extraProjects: [
-                {
+        {
           title: 'Aqar Bot',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-02.png', import.meta.url).href,
-          link: 'aqart/index.html'
+          link: 'aqart/index.html',
+           Tages: ['HTML', 'CSS', 'JavaScript', 'Figma','Responsive']
         },
         {
           title: 'Scale',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-03.png', import.meta.url).href,
-          link: '/Scale/asset.html'
+          link: '/Scale/asset.html',
+          Tages: ['HTML', 'CSS', 'JavaScript','Responsive']
         },
                 {
           title: 'Author Identification',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-12.png', import.meta.url).href,
-          link: '/Author_Identifcation/index.html'
+          link: '/Author_Identifcation/index.html',
+          Tages: ['HTML', 'CSS','Vue','Api Connects','Responsive' ]
         },
         {
           title: 'Mashrouk',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-23.png', import.meta.url).href,
-          link: 'https://mashrouk-apis-eight.vercel.app/MoreLinks'
+          link: 'https://mashrouk-apis-eight.vercel.app/MoreLinks',
+          Tages: ['HTML', 'CSS', 'Vue','Api Connects', 'Responsive']
         },
         {
           title: 'Tatweer',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-24.png', import.meta.url).href,
-          link: '/Tatweer/html/land.html'
+          link: '/Tatweer/html/land.html',
+          Tages: ['HTML', 'CSS', 'JavaScript', 'Responsive']
         },
         {
           title: 'Kasper',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-22.png', import.meta.url).href,
-          link: '/Kasper/temp2.html'
+          link: '/Kasper/temp2.html',
+          Tages: ['HTML', 'CSS', 'JavaScript','Responsive']
         },
         {
           title: 'Leon',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-16.png', import.meta.url).href,
-          link: '/Leon/index.html'
+          link: '/Leon/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Land Matcher',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-13.png', import.meta.url).href,
-          link: '/land-matcher/index.html'
+          link: '/land-matcher/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'IA Research',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-15.png', import.meta.url).href,
-          link: '/research-gate-page/index.html'
+          link: '/research-gate-page/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Color',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-14.png', import.meta.url).href,
-          link: '/Light-Online/index.html'
+          link: '/Light-Online/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Tourist FlyFly',
           stars: 9,
           img: new URL('../assets/img/imgs/gallery-11.png', import.meta.url).href,
-          link: '/FlyFly/index.html'
+          link: '/FlyFly/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Electrcity',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-10.png', import.meta.url).href,
-          link: '/electricity-power/asset.html'
+          link: '/electricity-power/asset.html',
+          Tages: ['HTML', 'CSS','Responsive']
         },
         {
           title: 'Company',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-09.png', import.meta.url).href,
-          link: '/Construction-Company/index.html'
+          link: '/Construction-Company/index.html',
+          Tages: ['HTML', 'CSS','Responsive']
         },
         {
           title: 'Lava',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-07.png', import.meta.url).href,
-          link: '/Lava/index.html'
+          link: '/Lava/index.html',
+          Tages: ['HTML', 'CSS', 'Responsive']
         },
         {
           title: 'Corpo Link',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-05.png', import.meta.url).href,
-          link: '/Corpo-link/index.html'
+          link: '/Corpo-link/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Mallory',
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-06.png', import.meta.url).href,
-          link: '/Mallory/index.html'
+          link: '/Mallory/index.html',
+          Tages: ['HTML', 'CSS', 'Responsive']
         },
         {
           title: 'Resturent',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-18.png', import.meta.url).href,
-          link: '/luch/index.html'
+          link: '/luch/index.html',
+          Tages: ['HTML', 'CSS', 'Not complete' ]
         },
         {
           title: 'E-commerce',
           stars: 6,
           img: new URL('../assets/img/imgs/gallery-17.png', import.meta.url).href,
-          link: '/E-Commerce/index.html'
+          link: '/E-Commerce/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Logo Generation',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-19.png', import.meta.url).href,
-          link: '/Logo-generator/index.html'
+          link: '/Logo-generator/index.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'My Web site',
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-21.png', import.meta.url).href,
-          link: '/My-Website/my_web_site.html'
+          link: '/My-Website/my_web_site.html',
+          Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive']
         },
         {
           title: 'AI Movies',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-08.png', import.meta.url).href,
-          link: '/AI/main_Series_page/main.html'
+          link: '/AI/main_Series_page/main.html',
+          Tages: ['HTML', 'CSS']
         },
         {
           title: 'Masafat',
           stars: 7,
           img: new URL('../assets/img/imgs/gallery-20.png', import.meta.url).href,
-          link: '/Masafat/index.html'
+          link: '/Masafat/index.html',
+          Tages: ['HTML', 'CSS']
         }
       ],
+tagStyles: {
+  HTML: { backgroundColor: "rgba(239, 68, 68, 0.15)", color: "#DC2626" },         // أحمر فاتح
+  CSS: { backgroundColor: "rgba(59, 130, 246, 0.15)", color: "#2563EB" },        // أزرق فاتح
+  JavaScript: { backgroundColor: "rgba(234, 179, 8, 0.2)", color: "#CA8A04" },   // أصفر ذهبي
+  Vue: { backgroundColor: "rgba(34, 197, 94, 0.15)", color: "#15803D" },         // أخضر فاتح
+  Tailwind: { backgroundColor: "rgba(6, 182, 212, 0.15)", color: "#0891B2" },    // سماوي
+  Responsive: { backgroundColor: "rgba(107, 114, 128, 0.15)", color: "#374151" },// رمادي
+  Figma: { backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#BE185D" },      // وردي/قرمزي
+  "Api Connects": { backgroundColor: "rgba(168, 85, 247, 0.15)", color: "#7E22CE" }, // بنفسجي
+  "Not complete": { backgroundColor: "black", color: "white" } // رمادي
+},
       currentTestimonialIndex: 0,
     };
   },
@@ -1203,6 +1264,9 @@ export default {
   computed: {
     innerWidth() {
       return this.images.length * this.slideWidth;
+    },
+        totalProjects() {
+      return this.mainProjects.length + this.extraProjects.length;
     },
     visibleSlides() {
       return Math.floor(this.$refs.slider.offsetWidth / this.slideWidth);

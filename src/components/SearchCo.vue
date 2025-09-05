@@ -7,8 +7,13 @@
           <option disabled selected>Type</option>
           <option>All</option>
           <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
           <option>Vue</option>
           <option>Tailwint</option>
+          <option>Responsive</option>
+          <option>Figma</option>
+          <option>Api Connects</option>
         </select>
         <div class="game-search-select-icon">
           <svg class="game-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
