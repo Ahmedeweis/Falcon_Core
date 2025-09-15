@@ -230,77 +230,111 @@
     </section>
     <!-- 1 jops  -->
     <!-- 0 Gallery -->
-    <div class="container" id="Projects" >
+  <div class="container" id="Projects">
       <div class="head-projects">
-<h2 class="main-title">
-  Projects <span style="color: black;">({{ totalProjects }})</span>
-</h2>
-        <button @click="showo">View All</button>
+        <h2 class="main-title">
+          Projects <span style="color: black;">({{ filteredProjectsCount }})</span>
+        </h2>
+        <button v-if="selectedTag === 'All' && shows === '0'" @click="showoo">
+          View All
+        </button>
+        <button v-if="shows === '1'" @click="showoo">
+          View Less
+        </button>
+      </div>
+  </div>
+  <div class="gallery" id="gallery">
+    <div class="game-search-wrapper">
+      <div class="game-search-container">
+        <div class="game-search-select-wrapper">
+          <select class="game-search-select" v-model="selectedTag">
+            <option disabled selected value="Type">Type</option>
+            <option value="All">All</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Vue">Vue</option>
+            <option value="Tailwind">Tailwind</option>
+            <option value="Responsive">Responsive</option>
+            <option value="Figma">Figma</option>
+            <option value="Api Connects">Api Connects</option>
+          </select>
+          <div class="game-search-select-icon">
+            <svg class="game-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="game-search-input-wrapper">
+          <input type="text" placeholder="Write name of prject here" class="game-search-input" />
+          <div class="game-search-input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="game-search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+          </div>
+        </div>
+        <button class="game-search-button">
+          Search
+        </button>
       </div>
     </div>
-    <div class="gallery" id="gallery">
-        <SearchCo/>
-      <div class="container" style="margin-top: 30px;">
-<a
-  v-for="(project, index) in mainProjects"
-  :key="index"
-  :href="project.link"
-  class="box"
-  target="_blank"
->
-  <div class="image">
-    <img :src="project.img" alt />
-  </div>
-  <div class="infoo">
-    <h2 class="title">{{ project.title }}</h2>
-      <span
-        class="tag"
-        v-for="(tag, i) in project.Tages"
-        :key="i"
-        :style="tagStyles[tag] || {}"
+    <div class="container" style="margin-top: 30px;">
+      <a
+        v-for="(project, index) in filteredMainProjects"
+        :key="index"
+        :href="project.link"
+        class="box"
+        target="_blank"
       >
-        {{ tag }}
-      </span>
-  </div>
-</a>
-        <span class="box curser" @click="showoo">
-          <div class="infoo">
-            <h2></h2>
-            <h2></h2>
-          </div>
+        <div class="image">
+          <img :src="project.img" alt />
+        </div>
+        <div class="infoo">
+          <h2 class="title">{{ project.title }}</h2>
+          <span
+            class="tag"
+            v-for="(tag, i) in project.Tages"
+            :key="i"
+            :style="tagStyles[tag] || {}"
+          >
+            {{ tag }}
+          </span>
+        </div>
+      </a>
+        <span class="box curser" v-if="selectedTag === 'All' && filteredProjectsCount < totalProjects" @click="showoo">
           <div class="image flexe">
-            <h1>+21 More</h1>
-            <button>View</button>
+            <h1>+{{ totalProjects - filteredProjectsCount }} More</h1>
+            <button>{{ shows === '0' ? 'View All' : 'View Less' }}</button>
           </div>
         </span>
-      </div>
     </div>
     <div class="gallery" v-if="shows === '1'">
       <div class="container">
-  <a
-    v-for="(project, index) in extraProjects"
-    :key="'extra-' + index"
-    :href="project.link"
-    class="box"
-    target="_blank"
-  >
-    <div class="image">
-      <img :src="project.img" alt />
-    </div>
-    <div class="infoo">
-      <h2 class="title">{{ project.title }}</h2>
-      <span
-        class="tag"
-        v-for="(tag, i) in project.Tages"
-        :key="i"
-        :style="tagStyles[tag] || {}"
-      >
-        {{ tag }}
-      </span>
-    </div>
-  </a>
+        <a
+          v-for="(project, index) in filteredExtraProjects"
+          :key="'extra-' + index"
+          :href="project.link"
+          class="box"
+          target="_blank"
+        >
+          <div class="image">
+            <img :src="project.img" alt />
+          </div>
+          <div class="infoo">
+            <h2 class="title">{{ project.title }}</h2>
+            <span
+              class="tag"
+              v-for="(tag, i) in project.Tages"
+              :key="i"
+              :style="tagStyles[tag] || {}"
+            >
+              {{ tag }}
+            </span>
+          </div>
+        </a>
       </div>
     </div>
+  </div>
     <!-- 1 Gallery -->
     <!-- 0 Pricing -->
     <section class="pricing"  v-if="0">
@@ -966,11 +1000,12 @@
 </template>
 <script>
 import ScrollToTop from '@/components/ScrollToTop.vue';
-import SearchCo from '@/components/SearchCo.vue';
+// import SearchCo from '@/components/SearchCo.vue';
 export default {
   name: 'FalconeCore',
   data() {
     return {
+      selectedTag: 'All',
       defaultTagStyle: {
         backgroundColor: "#333",
         color: "#fff"
@@ -1226,7 +1261,7 @@ export default {
           stars: 8,
           img: new URL('../assets/img/imgs/gallery-21.png', import.meta.url).href,
           link: '/My-Website/my_web_site.html',
-          Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive']
+          Tages: ['HTML', 'CSS','Not complete' ]
         },
         {
           title: 'AI Movies',
@@ -1259,14 +1294,36 @@ tagStyles: {
   },
   components: {
     ScrollToTop,
-    SearchCo,
+    // SearchCo,
   },
   computed: {
+    filteredMainProjects() {
+      if (this.selectedTag === 'All' || this.selectedTag === 'Type') {
+        return this.mainProjects;
+      }
+      return this.mainProjects.filter(project => project.Tages.includes(this.selectedTag));
+    },
+    filteredExtraProjects() {
+      if (this.selectedTag === 'All' || this.selectedTag === 'Type') {
+        return this.extraProjects;
+      }
+      return this.extraProjects.filter(project => project.Tages.includes(this.selectedTag));
+    },
+filteredProjects() {
+      const projectsToFilter = this.shows === '0' ? this.mainProjects : [...this.mainProjects, ...this.extraProjects];
+      if (this.selectedTag === 'All' || this.selectedTag === 'Type') {
+        return projectsToFilter;
+      }
+      return projectsToFilter.filter(project => project.Tages.includes(this.selectedTag));
+    },
+    filteredProjectsCount() {
+      return this.filteredProjects.length;
+    },
+    totalProjects() {
+      return this.mainProjects.length + this.extraProjects.length;
+    },
     innerWidth() {
       return this.images.length * this.slideWidth;
-    },
-        totalProjects() {
-      return this.mainProjects.length + this.extraProjects.length;
     },
     visibleSlides() {
       return Math.floor(this.$refs.slider.offsetWidth / this.slideWidth);
@@ -1282,6 +1339,15 @@ tagStyles: {
 window.addEventListener("resize", this.updateSlideWidth);
   },
   methods: {
+    showoo() {
+      this.shows = this.shows === '1' ? '0' : '1';
+      // When toggling 'View All', reset the filter to 'All'
+      this.selectedTag = 'All';
+    },
+     handleTagChange(event) {
+      this.selectedTag = event.target.value;
+      this.shows = '0'; // Hide the extra projects when a filter is applied
+    },
     updateSlideWidth() {
   if (window.innerWidth <= 768) {
     this.slideWidth = this.$refs.slider.offsetWidth;
@@ -1340,9 +1406,6 @@ window.addEventListener("resize", this.updateSlideWidth);
         (this.currentTestimonialIndex - 1 + this.testimonials.length) %
         this.testimonials.length;
     },
-    showoo() {
-      this.shows = this.shows === '1' ? '0' : '1';
-    }
   }
 };
 </script>
@@ -1367,4 +1430,128 @@ window.addEventListener("resize", this.updateSlideWidth);
 }
 @import "@/assets/style.css";
 @import "@/assets/normalize.css";
+</style>
+<style scoped>
+/* Wrapper */
+.game-search-wrapper {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Container inside */
+.game-search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+  max-width: 768px;
+}
+@media (min-width: 768px) {
+  .game-search-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+/* Select wrapper */
+.game-search-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .game-search-select-wrapper {
+    width: 120px;
+  }
+}
+/* Select */
+.game-search-select {
+  appearance: none;
+  background-color: #1f2937; /* gray-800 */
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+@media (min-width: 768px) {
+  .game-search-select {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+/* Select arrow icon */
+.game-search-select-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: white;
+}
+/* Input wrapper */
+.game-search-input-wrapper {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+/* Input field */
+.game-search-input {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.8rem 0.75rem;
+  padding-right: 2.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+@media (min-width: 768px) {
+  .game-search-input {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+/* Search icon in input */
+.game-search-input-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+}
+/* Search button */
+.game-search-button {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+.game-search-button:hover {
+  background-color: white;
+  color: #1f2937;
+}
+@media (min-width: 768px) {
+  .game-search-button {
+    width: auto;
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}
+/* General icon style */
+.game-search-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top:5px;
+}
 </style>
