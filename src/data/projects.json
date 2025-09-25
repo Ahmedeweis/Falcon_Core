@@ -1,0 +1,382 @@
+{
+    "commenta": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "mainProjects": [
+        {
+            "title": "Old Games",
+            "stars": 9,
+            "img": "/imgs/gallery-30.png",
+            "link": "https://old-games-seven.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "At Schoole",
+            "stars": 9,
+            "img": "/imgs/gallery-29.png",
+            "link": "https://at-school-omega.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Jammat",
+            "stars": 9,
+            "img": "/imgs/gallery-28.png",
+            "link": "https://jamaat-gilt.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Figma",
+                "Api Connects",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Orahep",
+            "stars": 9,
+            "img": "/imgs/gallery-26.png",
+            "link": "/tailwind_project/src/index.html",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "JavaScript",
+                "Figma",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "IN Desgin",
+            "stars": 9,
+            "img": "/imgs/gallery-25.png",
+            "link": "/in-design/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive"
+            ]
+        }
+    ],
+    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "extraProjects": [
+        {
+            "title": "Fashoin",
+            "stars": 7,
+            "img": "/imgs/gallery-01.png",
+            "link": "/fash/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "Tumpas",
+            "stars": 7,
+            "img": "/imgs/gallery-04.png",
+            "link": "furniture/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Aqar Bot",
+            "stars": 9,
+            "img": "/imgs/gallery-02.png",
+            "link": "aqart/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Figma",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Scale",
+            "stars": 9,
+            "img": "/imgs/gallery-03.png",
+            "link": "/Scale/asset.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Spider Man",
+            "stars": 9,
+            "img": "/imgs/gallery-27.png",
+            "link": "/SPidy/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Author Identification",
+            "stars": 9,
+            "img": "/imgs/gallery-12.png",
+            "link": "/Author_Identifcation/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Vue",
+                "Api Connects",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Mashrouk",
+            "stars": 5,
+            "img": "/imgs/gallery-23.png",
+            "link": "https://mashrouk-apis-eight.vercel.app/MoreLinks",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Vue",
+                "Api Connects",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Tatweer",
+            "stars": 5,
+            "img": "/imgs/gallery-24.png",
+            "link": "/Tatweer/html/land.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Kasper",
+            "stars": 5,
+            "img": "/imgs/gallery-22.png",
+            "link": "/Kasper/temp2.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Leon",
+            "stars": 9,
+            "img": "/imgs/gallery-16.png",
+            "link": "/Leon/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Land Matcher",
+            "stars": 7,
+            "img": "/imgs/gallery-13.png",
+            "link": "/land-matcher/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "IA Research",
+            "stars": 6,
+            "img": "/imgs/gallery-15.png",
+            "link": "/research-gate-page/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Color",
+            "stars": 5,
+            "img": "/imgs/gallery-14.png",
+            "link": "/Light-Online/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Tourist FlyFly",
+            "stars": 9,
+            "img": "/imgs/gallery-11.png",
+            "link": "/FlyFly/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Electrcity",
+            "stars": 5,
+            "img": "/imgs/gallery-10.png",
+            "link": "/electricity-power/asset.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Company",
+            "stars": 7,
+            "img": "/imgs/gallery-09.png",
+            "link": "/Construction-Company/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Lava",
+            "stars": 7,
+            "img": "/imgs/gallery-07.png",
+            "link": "/Lava/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Corpo Link",
+            "stars": 5,
+            "img": "/imgs/gallery-05.png",
+            "link": "/Corpo-link/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Mallory",
+            "stars": 8,
+            "img": "/imgs/gallery-06.png",
+            "link": "/Mallory/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Resturent",
+            "stars": 6,
+            "img": "/imgs/gallery-18.png",
+            "link": "/luch/index.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "E-commerce",
+            "stars": 6,
+            "img": "/imgs/gallery-17.png",
+            "link": "/E-Commerce/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Logo Generation",
+            "stars": 7,
+            "img": "/imgs/gallery-19.png",
+            "link": "/Logo-generator/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "My Web site",
+            "stars": 8,
+            "img": "/imgs/gallery-21.png",
+            "link": "/My-Website/my_web_site.html",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "AI Movies",
+            "stars": 7,
+            "img": "/imgs/gallery-08.png",
+            "link": "/AI/main_Series_page/main.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Masafat",
+            "stars": 7,
+            "img": "/imgs/gallery-20.png",
+            "link": "/Masafat/index.html",
+            "Tages": [
+                "HTML",
+                "CSS"
+            ]
+        }
+    ],
+    "commento": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "subProjects": [
+        {
+            "title": "3ezna Shop",
+            "link": "/Sub/3ezna/index.html",
+            "img": "/imgs/sub/sub-gallery-02.png",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive",
+                "Deep Link"
+            ]
+        },
+        {
+            "title": "Barody",
+            "link": "/Sub/bar0dy/index.html",
+            "img": "/imgs/sub/sub-gallery-01.png",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive",
+                "Deep Link"
+            ]
+        },
+        {
+            "title": "Squad Game",
+            "link": "/Sub/Squad-game/index.html",
+            "img": "/imgs/sub/sub-gallery-03.png",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Responsive"
+            ]
+        }
+    ]
+}
