@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#001029" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:title" content="عزنا - متجر سعودي لمنتجات مميزة">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="اكتشف أفضل المنتجات المنزلية والإلكترونية من عزنا. جودة ممتازة وسعر ولا أروع.">
+    <meta property="og:image" content="https://3ezna.vercel.app/icons/up-logo.png">
+    <meta property="og:url" content="https://3ezna.vercel.app/">
+    <meta name="description"
+        content="اكتشف منتجات منزلية وإكسسوارات مميزة بجودة عالية وسعر رائع مع عزنا. خلاطات، فكس تركي، سجاد صلاة، والمزيد — كل اللي تحتاجه في مكان واحد.">
+    <link rel="icon" type="image/svg+xml" href="icons/up-logo.png" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <title>عزنا - متجر سعودي لمنتجات متنوعة ومميزة | أجهزة منزلية وأكثر</title>
+</head>
+
+<body>
+    <header style="height: 50px;">
+        <button id="dark-mode-toggle" class="dark-toggle-btn">
+            <img id="dark-mode-icon" src="icons/moon.png" width="25px" height="25px" alt="toggle icon">
+        </button>
+        <div class="menu-container">
+            <button id="menu-toggle" class="menu-button">☰</button>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="https://wa.me/201153161437" target="_blank" style="font-weight: bold; font-size: 18px;">قم
+                    بتصميم صحفة مشابهة
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="game-card">
+        <img id="hero-image" class="game-image" src="3eznaL.png" alt="Game Image" />
+        <div class="card-content">
+            <div class="card-header">
+                <div class="support-sec">
+                    <img src="csb.png" width="30px" class="support-img">
+                    <h2 class="game-title">صفحة خدمة العملاء</h2>
+                </div>
+                <p class="game-dis">يمكنك التواصل معنا عبر جميع قنوات التواصل الموضحة أدناه، سيقدم لك موظفونا الدعم
+                    الفوري والمساعدة
+                    المطلوبة.</p>
+            </div>
+            <div class="links-catch">
+                <div onclick="openInstagram()" target="_blank" class="game-date">
+                    <img src="icons/ins.png" alt="Game Icon"
+                        style="margin-left: -9px; width: 50px; height: 50px; vertical-align: middle;">
+                    <div class="backo"> انستيجرام</div>
+                </div>
+                <div onclick="openTikTok()" target="_blank" class="game-date">
+                    <img src="icons/chat.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo">تيك توك </div>
+                </div>
+                <div onclick="openTelegram()" target="_blank" class="game-date" style="border-bottom: 0;">
+                    <img src="icons/telegram.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo"> تليجرام</div>
+                </div>
+                <div onclick="openFacebook()" target="_blank" class="game-date">
+                    <img src="icons/facebook.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo">فيس بوك</div>
+                </div>
+                <div onclick="openX()" target="_blank" class="game-date">
+                    <img src="icons/twitter.png" alt="Game Icon" class="support-img"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo">تويتير</div>
+                </div>
+                <div onclick="openSnapchat()" target="_blank" class="game-date">
+                    <img src="icons/snapchat.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo"> سناب شات</div>
+                </div>
+                <div onclick="openYouTube().card-content" target="_blank" class="game-date">
+                    <img src="icons/youtube.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo">يوتيوب</div>
+                </div>
+                <div onclick="openWhatsAppChannel()" target="_blank" class="game-date">
+                    <img src="icons/telephone.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo">+966541855331</div>
+                </div>
+            </div>
+            <!-- <span class="game-type">Action</span> -->
+        </div>
+        <div onclick="openWhatsAppChannel()" target="_blank" class="game-date" style="background-color: transparent;">
+            <img src="icons/QR.png" alt="Game Icon"
+                style="border-radius: 6px; margin-left: -4px; width: 200px; vertical-align: middle;">
+        </div>
+    </div>
+    <div class="down-footer">
+        <!-- <div class="fr-d">F.design</div> -->
+        <div id="year"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
