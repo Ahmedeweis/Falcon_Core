@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#001029" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:title" content="Barody - روابط شخصية">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="كل لينكاتي الشخصية في مكان واحد. انستجرام، تيك توك، تليجرام، قناة الواتساب .">
+    <meta property="og:image" content="https://barody.vercel.app/ico.png">
+    <meta property="og:url" content="https://barody.vercel.app/">
+    <link rel="icon" type="image/svg+xml" href="ico.png" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Barody</title>
+</head>
+<body>
+    <header style="height: 50px;">
+        <button id="dark-mode-toggle" style="position: absolute; top: 20px; left: 20px; background: #1e1e1e; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 22px; cursor: pointer;">🌙</button>
+        <div class="menu-container">
+            <button id="menu-toggle" class="menu-button">☰</button>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="https://wa.me/201153161437" target="_blank" style="font-weight: bold; font-size: 18px;">صمم
+                    صفحة زي دي</a>
+            </div>
+        </div>
+        <nav>
+        </nav>
+    </header>
+    <div class="game-card">
+        <img class="game-image" src="3.jpg" alt="Game Image" />
+        <div class="card-content">
+            <div class="card-header">
+                <h2 class="game-title">@ bar0dy</h2>
+            </div>
+            <div class="links-catch">
+                <div onclick="openInstagram()" target="_blank" class="game-date">
+                    <img src="icons/icon1.png" alt="Game Icon"
+                        style="margin-left: -9px; width: 50px; height: 50px; vertical-align: middle;">
+                    <div class="backo"> انستيجرام</div>
+                </div>
+                <div onclick="openTikTok()" target="_blank" class="game-date">
+                    <img src="icons/chat.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo" style="background-color: #69C9D0; color: black; ">تيك توك </div>
+                </div>
+                <div onclick="openTelegram()" target="_blank" class="game-date" style="border-bottom: 0;">
+                    <img src="icons/telegram.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo"> تليجرام</div>
+                </div>
+                <div onclick="openWhatsAppChannel()" target="_blank" class="game-date">
+                    <img src="icons/telephone.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo" style="background-color: #65F0CD; color: black;">قناة الواتساب</div>
+                </div>
+                <!-- <div onclick="openFacebook()" target="_blank" class="game-date">
+                    <img src="facebook.png" alt="Game Icon"
+                        style="margin-left: -4px; width: 40px; height: 40px; vertical-align: middle;">
+                    <div class="backo">فيس بوك</div>
+                </div> -->
+            </div>
+            <!-- <span class="game-type">Action</span> -->
+        </div>
+    </div>
+    <div class="down-footer">
+        <!-- <div class="fr-d">F.design</div> -->
+        <div id="year"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
