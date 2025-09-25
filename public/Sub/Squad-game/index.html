@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="ico.png">
+    <meta name="theme-color" content="red" />
+    <title>Squad Game </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: url('background.jpg') center center / cover no-repeat;
+            direction: rtl;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            background-color: #1C1F19;
+            padding: 40px 30px;
+            border-radius: 20px;
+            max-width: 95%;
+            justify-content: center;
+        }
+
+        .shape-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .triangle {
+            width: 100%;
+            height: 100%;
+        }
+
+        .square,
+        .circle {
+            width: 90px;
+            height: 90px;
+            background-color: transparent;
+            border: 8px solid white;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .orbiter {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            padding: 8px;
+            background-color: #FF51FF;
+            border-radius: 50%;
+            border: 10px solid #1C1F19;
+            box-sizing: border-box;
+        }
+
+        .triangle-container .orbiter {
+            top: 50%;
+            left: 50%;
+            animation: orbitTriangle 3s ease-in-out infinite;
+            transform: translate(-50%, -50%);
+            border: 16px solid #1C1F19;
+        }
+
+        .square-container .orbiter {
+            top: 0;
+            left: 0;
+            animation: orbitSquare 3s ease-in-out infinite;
+            border: 16px solid #1C1F19;
+        }
+
+        .circle-container .orbiter {
+            border: 16px solid #1C1F19;
+        }
+
+        .circle-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            transform: translate(-50%, -50%);
+            animation: orbitCircle 4s linear infinite;
+            transform-origin: center;
+        }
+
+        .circle-wrapper .orbiter {
+            transform: translate(0, -55px);
+            animation: none;
+        }
+
+        @keyframes orbitTriangle {
+            0% {
+                transform: translate(-30px, -60px);
+            }
+
+            33.33% {
+                transform: translate(30px, 20px);
+            }
+
+            66.67% {
+                transform: translate(-60px, 30px);
+            }
+
+            100% {
+                transform: translate(-30px, -60px);
+            }
+        }
+
+        @keyframes orbitSquare {
+            0% {
+                transform: translate(-15px, -15px);
+            }
+
+            25% {
+                transform: translate(75px, -15px);
+            }
+
+            50% {
+                transform: translate(75px, 75px);
+            }
+
+            75% {
+                transform: translate(-15px, 75px);
+            }
+
+            100% {
+                transform: translate(-15px, -15px);
+            }
+        }
+
+        @keyframes orbitCircle {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ✅ العد التنازلي */
+        #countdown {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 9999;
+            background: #1C1F19;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            padding: 20px 30px;
+            min-width: 250px;
+            animation: fadeIn 1s ease-in;
+            color: white;
+        }
+
+        .countdown-block {
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 5px;
+        }
+
+        .countdown-number {
+            font-size: 56px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #ff51ff, #925eff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .countdown-time {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 12px;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px;
+            border-radius: 12px;
+            min-width: 60px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .time-box .num {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            font-family: monospace;
+        }
+
+        .time-box .unit {
+            font-size: 12px;
+            color: #bbb;
+            margin-top: 4px;
+        }
+
+        .sep {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                gap: 50px;
+                padding: 40px;
+                width: 200px;
+            }
+
+            .shape-container {
+                width: 80px;
+                height: 80px;
+            }
+
+            .square,
+            .circle {
+                width: 70px;
+                height: 70px;
+                border-width: 6px;
+                top: 4px;
+                left: 4px;
+            }
+
+            .orbiter {
+                width: 12px;
+                height: 12px;
+                padding: 6px;
+                border-width: 8px;
+            }
+
+            .circle-wrapper .orbiter {
+                transform: translate(0, -45px);
+            }
+
+            #countdown {
+                width: 80%;
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            .countdown-number {
+                font-size: 42px;
+            }
+
+            .time-box {
+                min-width: 50px;
+                padding: 8px;
+            }
+
+            .time-box .num {
+                font-size: 20px;
+            }
+        }
+
+        .time-box .unit {
+            font-size: 13px;
+            color: #ccc;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="countdown">
+        <div class="countdown-block">
+            <div class="label" style="color: #C658FF; font-size: 20px ; font-weight: bold;">Time Since Release</div>
+            <div id="days" class="countdown-number"></div>
+        </div>
+        <div id="time" class="countdown-time">
+            <div class="time-box">
+                <div class="num" id="hours">--</div>
+                <div class="unit">Hours</div>
+            </div>
+            <div class="sep">:</div>
+            <div class="time-box">
+                <div class="num" id="minutes">--</div>
+                <div class="unit">Minutes</div>
+            </div>
+            <div class="sep">:</div>
+            <div class="time-box">
+                <div class="num" id="seconds">--</div>
+                <div class="unit">Seconds</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 100px;">
+        <!-- مثلث -->
+        <div class="shape-container triangle-container">
+            <svg class="triangle" viewBox="0 0 120 120" preserveAspectRatio="xMidYMid meet">
+                <polygon points="60,10 110,110 10,110" fill="none" stroke="white" stroke-width="10" />
+            </svg>
+            <div class="orbiter"></div>
+        </div>
+        <!-- مربع -->
+        <div class="shape-container square-container">
+            <div class="square"></div>
+            <div class="orbiter"></div>
+        </div>
+        <!-- دائرة -->
+        <div class="shape-container circle-container">
+            <div class="circle"></div>
+            <div class="circle-wrapper">
+                <div class="orbiter"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const targetDate = new Date("2025-06-27T09:00:00+02:00").getTime();
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = now - targetDate; // عكس العد التنازلي - نحسب الوقت اللي عدى
+            if (distance <= 0) {
+                document.getElementById("countdown").innerHTML = "Just Released!";
+                return;
+            }
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+
+</html>
