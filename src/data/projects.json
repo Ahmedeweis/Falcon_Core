@@ -340,6 +340,32 @@
                 "HTML",
                 "CSS"
             ]
+        },
+        {
+            "title": "Screen Master",
+            "stars": 10,
+            "img": "/imgs/gallery-31.png",
+            "link": "https://srceenmaster.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Api Connects",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Deep Doc",
+            "stars": 10,
+            "img": "/imgs/gallery-32.png",
+            "link": "https://deep-doc-ui.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Api Connects",
+                "Not complete"
+            ]
         }
     ],
     "commento": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
