@@ -383,6 +383,18 @@
             ]
         },
         {
+            "title": "ُEWeis",
+            "link": "https://Eweis.vercel.app/",
+            "img": "/imgs/sub/sub-gallery-33.png",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive",
+                "Deep Link"
+            ]
+        },
+        {
             "title": "Barody",
             "link": "/Sub/bar0dy/index.html",
             "img": "/imgs/sub/sub-gallery-01.png",
