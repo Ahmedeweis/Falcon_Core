@@ -729,6 +729,22 @@ button:hover {
     font-family: 'lora';
 }
 
+@media (max-width: 640px) {
+
+    .glass-card,
+    .glass-cardII {
+        display: none !important;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .glass-card,
+    .glass-cardII {
+        display: none !important;
+    }
+}
+
 .telegram-arrow-icon,
 .telegram-arrow-iconII {
     width: 30px;
