@@ -121,8 +121,7 @@
           </p>
           <span>With 2+ years of experience</span>
           <div class="hot-buttons">
-            <a class="cotact-me" href="Ahmed_Mahmoud_Frontend_CV.pdf" target="_blank"
-              title="Download CV in PDF format">
+            <a class="cotact-me" href="Ahmed_Mahmoud_Frontend_CV.pdf" target="_blank" title="Download CV in PDF format">
               Download CV
             </a>
             <a class="cotact-me" href="#Projects" title="See my project portfolio">
@@ -131,50 +130,52 @@
           </div>
         </div>
         <div class="right">
-<div class="photo-container">
-  <img src="../assets/img/3.jpg" alt="Ahmed Eweis profile photo" class="profile-photo" />
-  <div class="glass-card">
-  <div class="top">
-<div class="telegram-arrow-icon">
-  <!-- شكل سهم تيليجرام -->
-<img src="../assets/img/paper.png" alt="Telegram Arrow Icon" class="telegram-arrow" style="width: 16px;"/>
-</div>
-    <div class="title">Conversion Rate</div>
-  </div>
-  <div class="value">9.73%</div>
-</div>
-  <div class="glass-cardII">
-  <div class="top">
-<div class="telegram-arrow-icon">
-  <!-- شكل سهم تيليجرام -->
-<img src="../assets/img/fan.png" alt="Telegram Arrow Icon" class="telegram-arrow" style="width: 23px;"/>
-</div>
-    <div class="title">Todays Visitors</div>
-  </div>
-  <div class="value">17,640</div>
-</div>
-  <!-- ظل داخلي من الأسفل -->
-  <div class="photo-shadow"></div>
-  <div class="orbit" aria-label="Social media links">
-    <!-- الأيقونات تفضل زي ما هي -->
-    <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank" rel="noopener"
-      aria-label="Instagram">
-      <img src="../assets/img/icon1.png" alt="Instagram icon" />
-    </a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.eweiis@gmail.com" class="social-icon"
-      target="_blank" rel="noopener" aria-label="Send email">
-      <img src="../assets/img/icon2.png" alt="Email icon" />
-    </a>
-    <a href="https://github.com/Ahmedeweis" class="social-icon" target="_blank" rel="noopener"
-      aria-label="GitHub Profile">
-      <img src="../assets/img/icon3.png" alt="GitHub icon" />
-    </a>
-    <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank" rel="noopener"
-      aria-label="LinkedIn Profile">
-      <img src="../assets/img/icon4.png" alt="LinkedIn icon" />
-    </a>
-  </div>
-</div>
+          <div class="photo-container">
+            <img src="../assets/img/3.jpg" alt="Ahmed Eweis profile photo" class="profile-photo" />
+            <div class="glass-card">
+              <div class="top">
+                <div class="telegram-arrow-icon">
+                  <!-- شكل سهم تيليجرام -->
+                  <img src="../assets/img/paper.png" alt="Telegram Arrow Icon" class="telegram-arrow"
+                    style="width: 16px;" />
+                </div>
+                <div class="title">Conversion Rate</div>
+              </div>
+              <div class="value">9.73%</div>
+            </div>
+            <div class="glass-cardII">
+              <div class="top">
+                <div class="telegram-arrow-icon">
+                  <!-- شكل سهم تيليجرام -->
+                  <img src="../assets/img/fan.png" alt="Telegram Arrow Icon" class="telegram-arrow"
+                    style="width: 23px;" />
+                </div>
+                <div class="title">Todays Visitors</div>
+              </div>
+              <div class="value">17,640</div>
+            </div>
+            <!-- ظل داخلي من الأسفل -->
+            <div class="photo-shadow"></div>
+            <div class="orbit" aria-label="Social media links">
+              <!-- الأيقونات تفضل زي ما هي -->
+              <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank" rel="noopener"
+                aria-label="Instagram">
+                <img src="../assets/img/icon1.png" alt="Instagram icon" />
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.eweiis@gmail.com" class="social-icon"
+                target="_blank" rel="noopener" aria-label="Send email">
+                <img src="../assets/img/icon2.png" alt="Email icon" />
+              </a>
+              <a href="https://github.com/Ahmedeweis" class="social-icon" target="_blank" rel="noopener"
+                aria-label="GitHub Profile">
+                <img src="../assets/img/icon3.png" alt="GitHub icon" />
+              </a>
+              <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank" rel="noopener"
+                aria-label="LinkedIn Profile">
+                <img src="../assets/img/icon4.png" alt="LinkedIn icon" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -230,7 +231,7 @@
     </section>
     <!-- 1 jops  -->
     <!-- 0 Gallery -->
-  <div class="container" id="Projects">
+    <div class="container" id="Projects">
       <div class="head-projects">
         <h2 class="main-title">
           Projects <span style="color: black;">({{ filteredProjectsCount }})</span>
@@ -242,137 +243,109 @@
           View Less
         </button>
       </div>
-  </div>
-  <div class="gallery" id="gallery">
-    <div class="game-search-wrapper">
-      <div class="game-search-container">
-        <div class="game-search-select-wrapper">
-          <select class="game-search-select" v-model="selectedTag">
-            <option disabled selected value="Type">Type</option>
-            <option value="All">All</option>
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="Vue">Vue</option>
-            <option value="Tailwind">Tailwind</option>
-            <option value="Responsive">Responsive</option>
-            <option value="Figma">Figma</option>
-            <option value="Api Connects">Api Connects</option>
-          </select>
-          <div class="game-search-select-icon">
-            <svg class="game-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </div>
-        </div>
-        <div class="game-search-input-wrapper">
-          <input type="text" placeholder="Write name of prject here" class="game-search-input" />
-          <div class="game-search-input-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="game-search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
-            </svg>
-          </div>
-        </div>
-        <button class="game-search-button">
-          Search
-        </button>
-      </div>
     </div>
-    <div class="container" style="margin-top: 30px;">
-      <a
-        v-for="(project, index) in filteredMainProjects"
-        :key="index"
-        :href="project.link"
-        class="box"
-        target="_blank"
-      >
-        <div class="image">
-        <img :src="project.img" :alt="project.title" />
+    <div class="gallery" id="gallery">
+      <div class="game-search-wrapper">
+        <div class="game-search-container">
+          <div class="game-search-select-wrapper">
+            <select class="game-search-select" v-model="selectedTag">
+              <option disabled selected value="Type">Type</option>
+              <option value="All">All</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Vue">Vue</option>
+              <option value="Tailwind">Tailwind</option>
+              <option value="Responsive">Responsive</option>
+              <option value="Figma">Figma</option>
+              <option value="Api Connects">Api Connects</option>
+            </select>
+            <div class="game-search-select-icon">
+              <svg class="game-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="game-search-input-wrapper">
+            <input type="text" placeholder="Write name of prject here" class="game-search-input" />
+            <div class="game-search-input-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="game-search-icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+              </svg>
+            </div>
+          </div>
+          <button class="game-search-button">
+            Search
+          </button>
         </div>
-        <div class="infoo">
-          <h2 class="title">{{ project.title }}</h2>
-          <span
-            class="tag"
-            v-for="(tag, i) in project.Tages"
-            :key="i"
-            :style="tagStyles[tag] || {}"
-          >
-            {{ tag }}
-          </span>
-        </div>
-      </a>
+      </div>
+      <div class="container" style="margin-top: 30px;">
+        <a v-for="(project, index) in filteredMainProjects" :key="index" :href="project.link" class="box"
+          target="_blank">
+          <div class="image">
+            <img :src="project.img" :alt="project.title" />
+          </div>
+          <div class="infoo">
+            <h2 class="title">{{ project.title }}</h2>
+            <span class="tag" v-for="(tag, i) in project.Tages" :key="i" :style="tagStyles[tag] || {}">
+              {{ tag }}
+            </span>
+          </div>
+        </a>
         <span class="box curser" v-if="selectedTag === 'All' && filteredProjectsCount < totalProjects" @click="showoo">
           <div class="image flexe">
             <h1>+{{ totalProjects - filteredProjectsCount }} More</h1>
             <button>{{ shows === '0' ? 'View All' : 'View Less' }}</button>
           </div>
         </span>
+      </div>
+      <div class="gallery" v-if="shows === '1'">
+        <div class="container">
+          <a v-for="(project, index) in filteredExtraProjects" :key="'extra-' + index" :href="project.link" class="box"
+            target="_blank">
+            <div class="image">
+              <img :src="project.img" alt />
+            </div>
+            <div class="infoo">
+              <h2 class="title">{{ project.title }}</h2>
+              <span class="tag" v-for="(tag, i) in project.Tages" :key="i" :style="tagStyles[tag] || {}">
+                {{ tag }}
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="gallery" v-if="shows === '1'">
-      <div class="container">
-        <a
-          v-for="(project, index) in filteredExtraProjects"
-          :key="'extra-' + index"
-          :href="project.link"
-          class="box"
-          target="_blank"
-        >
+    <!-- 1 Gallery -->
+    <!-- 2 Sub Projects -->
+    <div class="container" id="SubProjects">
+      <div class="head-projects">
+        <h2 class="main-title">
+          Mini Projects <span style="color: black;">({{ subProjects.length }})</span>
+        </h2>
+      </div>
+    </div>
+    <div class="gallery" id="sub-gallery">
+      <div class="container" style="margin-top: 30px;">
+        <a v-for="(project, index) in subProjects" :key="'sub-' + index" :href="project.link" class="box"
+          target="_blank">
           <div class="image">
-            <img :src="project.img" alt />
+            <img :src="project.img" :alt="project.title" />
           </div>
           <div class="infoo">
             <h2 class="title">{{ project.title }}</h2>
-            <span
-              class="tag"
-              v-for="(tag, i) in project.Tages"
-              :key="i"
-              :style="tagStyles[tag] || {}"
-            >
+            <span class="tag" v-for="(tag, i) in project.Tages" :key="i" :style="tagStyles[tag] || {}">
               {{ tag }}
             </span>
           </div>
         </a>
       </div>
     </div>
-  </div>
-    <!-- 1 Gallery -->
-     <!-- 2 Sub Projects -->
-<div class="container" id="SubProjects" >
-  <div class="head-projects">
-    <h2 class="main-title">
-      Mini Projects <span style="color: black;">({{ subProjects.length }})</span>
-    </h2>
-  </div>
-</div>
-<div class="gallery" id="sub-gallery">
-  <div class="container" style="margin-top: 30px;">
-    <a
-      v-for="(project, index) in subProjects"
-      :key="'sub-' + index"
-      :href="project.link"
-      class="box"
-      target="_blank"
-    >
-      <div class="image">
-        <img :src="project.img" :alt="project.title" />
-      </div>
-      <div class="infoo">
-        <h2 class="title">{{ project.title }}</h2>
-        <span
-          class="tag"
-          v-for="(tag, i) in project.Tages"
-          :key="i"
-          :style="tagStyles[tag] || {}"
-        >
-          {{ tag }}
-        </span>
-      </div>
-    </a>
-  </div>
-</div>
-<!-- End Sub Projects -->
+    <!-- End Sub Projects -->
     <!-- 0 Pricing -->
-    <section class="pricing"  v-if="0">
+    <section class="pricing" v-if="0">
       <div class="container">
         <h1 class="upper" style="text-align: center;">Pricing Plan</h1>
         <h2>Pricing options that meet your</h2>
@@ -636,15 +609,15 @@
               <img class="icon2-m" />
               <h3>Php</h3>
             </div> -->
-                         <div class="min-col">
+            <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/vue.png" />
               <h3>Vue Js</h3>
             </div>
-              <div class="min-col">
+            <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/tailwind.png" />
               <h3>Tailwind</h3>
             </div>
-                        <div class="min-col">
+            <div class="min-col">
               <img class="icon2-m" src="../assets/img/skills/nodejs.png" />
               <h3>Node Js</h3>
             </div>
@@ -671,7 +644,7 @@
       </div>
     </section>
     <!-- 1 Lang  -->
-         <!-- 0 about me  -->
+    <!-- 0 about me  -->
     <section class="about-me" id="About" aria-labelledby="about-heading">
       <div class="container">
         <div class="about-me-info">
@@ -737,97 +710,101 @@
     </section>
     <!-- 1 facts  -->
     <!-- 0 timeline -->
-    <h2 class="timeline-head"><span  class="timeline-head" style="color: black;">Education</span>  & Experience</h2>
-<section class="timeline" id="experience">
-    <!-- Education -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Bachelor’s in Computer Science</h3>
-      <span>Helwan University, Cairo</span>
-      <span class="timeline-date">Sep 2019 - Jul 2023</span>
-      <p>Major in Front-End Design, Minor in Software Development. Studied core programming, data structures, and modern web technologies.</p>
-    </div>
-  </div>
-    <!-- Job: Dream Design Egypt -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Front-end Developer</h3>
-      <span>Dream Design Egypt (Remote)</span>
-      <span class="timeline-date">Nov 2024 – May 2025</span>
-<p>
-  Developed responsive UIs from Figma using Vue.js, Tailwind CSS, and Metronic, with focus on performance and code quality.
-</p>
-    </div>
-  </div>
-  <!-- Job: StatsBomb -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Football Data Collector</h3>
-      <span>StatsBomb</span>
-      <span class="timeline-date">Mar 2022 – Sep 2022</span>
-<p>
-  Recorded live football events with high accuracy using specialized tools, applying game knowledge under remote, high-pressure conditions.
-</p>
-    </div>
-  </div>
-  <!-- English Certificate -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>EF SET English Certificate (C1)</h3>
-      <span>EF SET</span>
-      <span class="timeline-date">Issued: Jun 2025</span>
-      <p>Achieved a score of 74/100 – C1 Advanced level in English proficiency.</p>
-    </div>
-  </div>
-    <!-- Soft Skills Course -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Discover and Upgrade Your Skills</h3>
-      <span>Tower w Gayer</span>
-      <span class="timeline-date">Jul 2023</span>
-      <p>Completed soft skills training including communication, critical thinking, and adaptability in tech environments.</p>
-    </div>
-  </div>
-  <!-- Udacity Professional Track -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Web Development Professional Track</h3>
-      <span>Udacity</span>
-      <span class="timeline-date">Jan 2022 - Apr 2022</span>
-      <p>Covered advanced JavaScript, Agile methodologies, Node.js, and essential freelancing skills.</p>
-    </div>
-  </div>
-  <!-- Udacity Challenger Track -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Web Development Challenger Track</h3>
-      <span>Udacity</span>
-      <span class="timeline-date">Jan 2022</span>
-      <p>Learned the basics of HTML, CSS, and JavaScript to build responsive websites.</p>
-    </div>
-  </div>
-  <!-- Minders Workshops -->
-  <div class="timeline-item">
-    <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
-    <div class="timeline-content">
-      <h3>Minders’21 Workshops</h3>
-      <span>Minders</span>
-      <span class="timeline-date">Aug 2021 - Oct 2021</span>
-      <p>Hands-on workshops focused on creating responsive web designs using modern layout systems.</p>
-    </div>
-  </div>
-</section>
+    <h2 class="timeline-head"><span class="timeline-head" style="color: black;">Education</span> & Experience</h2>
+    <section class="timeline" id="experience">
+      <!-- Education -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Bachelor’s in Computer Science</h3>
+          <span>Helwan University, Cairo</span>
+          <span class="timeline-date">Sep 2019 - Jul 2023</span>
+          <p>Major in Front-End Design, Minor in Software Development. Studied core programming, data structures, and
+            modern web technologies.</p>
+        </div>
+      </div>
+      <!-- Job: Dream Design Egypt -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Front-end Developer</h3>
+          <span>Dream Design Egypt (Remote)</span>
+          <span class="timeline-date">Nov 2024 – May 2025</span>
+          <p>
+            Developed responsive UIs from Figma using Vue.js, Tailwind CSS, and Metronic, with focus on performance and
+            code quality.
+          </p>
+        </div>
+      </div>
+      <!-- Job: StatsBomb -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Football Data Collector</h3>
+          <span>StatsBomb</span>
+          <span class="timeline-date">Mar 2022 – Sep 2022</span>
+          <p>
+            Recorded live football events with high accuracy using specialized tools, applying game knowledge under
+            remote, high-pressure conditions.
+          </p>
+        </div>
+      </div>
+      <!-- English Certificate -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>EF SET English Certificate (C1)</h3>
+          <span>EF SET</span>
+          <span class="timeline-date">Issued: Jun 2025</span>
+          <p>Achieved a score of 74/100 – C1 Advanced level in English proficiency.</p>
+        </div>
+      </div>
+      <!-- Soft Skills Course -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Discover and Upgrade Your Skills</h3>
+          <span>Tower w Gayer</span>
+          <span class="timeline-date">Jul 2023</span>
+          <p>Completed soft skills training including communication, critical thinking, and adaptability in tech
+            environments.</p>
+        </div>
+      </div>
+      <!-- Udacity Professional Track -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Web Development Professional Track</h3>
+          <span>Udacity</span>
+          <span class="timeline-date">Jan 2022 - Apr 2022</span>
+          <p>Covered advanced JavaScript, Agile methodologies, Node.js, and essential freelancing skills.</p>
+        </div>
+      </div>
+      <!-- Udacity Challenger Track -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Web Development Challenger Track</h3>
+          <span>Udacity</span>
+          <span class="timeline-date">Jan 2022</span>
+          <p>Learned the basics of HTML, CSS, and JavaScript to build responsive websites.</p>
+        </div>
+      </div>
+      <!-- Minders Workshops -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
+        <div class="timeline-content">
+          <h3>Minders’21 Workshops</h3>
+          <span>Minders</span>
+          <span class="timeline-date">Aug 2021 - Oct 2021</span>
+          <p>Hands-on workshops focused on creating responsive web designs using modern layout systems.</p>
+        </div>
+      </div>
+    </section>
     <!-- 1 timeline -->
     <!-- 0 certifcate  -->
     <section class="certifcate">
-      <div class="container" >
+      <div class="container">
         <div class="services-tilte">
           <span class="tit">Certifications</span>
           <h2 style="color: black;">Certified Skills <br>for a Digital World.</h2>
@@ -864,7 +841,7 @@
             </a>
           </div>
           <!-- Testimonial Container -->
-          <div class="testimonial-container" >
+          <div class="testimonial-container">
             <div class="testimonial">
               <img :src="currentTestimonial.avatar" alt="Profile" class="main-profile" />
               <p class="quote">
@@ -879,7 +856,8 @@
             </div>
             <!-- Arrows -->
             <div class="arrows">
-              <span class="arrow left spano" @click="previousTestimonial" style="font-family: sans-serif;">&#8592;</span>
+              <span class="arrow left spano" @click="previousTestimonial"
+                style="font-family: sans-serif;">&#8592;</span>
               <span class="arrow right spano" @click="nextTestimonial" style="font-family: sans-serif;">&#8594;</span>
             </div>
           </div>
@@ -920,7 +898,7 @@
               </h4>
               <ul class="socila-icons">
                 <li class="li-item">
-                  <a  target="blank" href="https://www.instagram.com/ahmed_eweis0/" class="youtube-link">
+                  <a target="blank" href="https://www.instagram.com/ahmed_eweis0/" class="youtube-link">
                     <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                       <path
                         d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
@@ -944,7 +922,9 @@
                   </a>
                 </li>
                 <li class="li-item">
-                  <a target="blank" href="https://api.whatsapp.com/send/?phone=201153161437&text&type=phone_number&app_absent=0" class="youtube-link">
+                  <a target="blank"
+                    href="https://api.whatsapp.com/send/?phone=201153161437&text&type=phone_number&app_absent=0"
+                    class="youtube-link">
                     <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                       <path
                         d="M380.9 97.1c-92.8-92.8-243.5-92.8-336.3 0-89.2 89.2-92.6 231.1-10.3 325.1L7.1 507.7c-9.3 9.3-2.7 25.1 10.4 25.1h.3l96.6-23.9c92 59.3 213.1 47.6 292.9-32.2 92.8-92.8 92.8-243.5 0-336.3zm-51.3 285c-6.5 18.2-37.5 33.5-52.1 34.4-13.3.8-30.8 1.6-98.2-30.6-82.2-38.3-135.6-132.4-139.8-138.6-4.1-6.2-33.5-44.5-33.5-84.7s21.3-59.7 30.4-68.1c6.7-6.4 17.9-9.2 28.5-6.1s71.2 32.9 83.2 38.1c11.2 5 18.7 8.3 20.8 13.8 2.6 6.7 2.6 15.4 1.8 19.6-4.8 23.2-16.2 39.4-31.1 52.3-5.2 4.5-11.3 12.1-16.2 16.2-5.4 4.4-10.9 9.1-4.7 18.2 6 9 26.6 43.7 57.1 70.8 39.4 34.4 72.8 45.3 82.7 50.1 8.1 4.1 18.1 3.6 24.1-2.2 7.5-6.4 16.7-21.9 26.3-32.2 6.6-7.2 15-8.1 24.8-5.3 9.8 2.8 61.8 29.1 72.4 34.3 10.6 5.2 17.7 7.9 20.3 12.5 2.5 4.6 2.5 26.6-3.7 44.8z" />
@@ -1004,8 +984,8 @@
           </div>
           <div class="photoos">
             <div>
-              <div class="backgrond" >
-                <a :href="mainProjects[0].link"  target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
+              <div class="backgrond">
+                <a :href="mainProjects[0].link" target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
               </div>
               <div class="backgrond">
                 <a :href="mainProjects[2].link" target="_blank"><img :src="mainProjects[2].img" class="icon2-L" /></a>
@@ -1023,7 +1003,7 @@
         </div>
         <div class="down-footer">
           <div class="fr-d">F.design</div>
-          <div>©  {{ currentYear }} All Rights Reserved | Design by Ahmed Eweis</div>
+          <div>© {{ currentYear }} All Rights Reserved | Design by Ahmed Eweis</div>
           <div>Privacy Policy . Terms and Conditions</div>
           <!-- <router-link to="/test">Test Gimini</router-link> -->
         </div>
@@ -1066,75 +1046,75 @@ export default {
       currentImage: "",
       isMoreVisible: false,
       testimonials: [
-  {
-    id: 1,
-    name: "Nada Abdelrahman",
-    details: "Working with the team was excellent. Their commitment to deadlines and the quality of work exceeded expectations. I highly recommend them.",
-    position: "Business Development Manager",
-    company: "Future Tech",
-    avatar: require("@/assets/img/avatars/300-14.jpg"),
-  },
-  {
-    id: 2,
-    name: "Noha Khaled",
-    details: "A highly professional team that truly understands client needs. They helped us launch our website perfectly and in record time.",
-    position: "Head of Marketing",
-    company: "EG Digital",
-    avatar: require("@/assets/img/avatars/300-27.jpg"),
-  },
-  {
-    id: 3,
-    name: "Norhan Samir",
-    details: "The team is smart and flexible. They worked with us step by step until the project was completed exactly as we envisioned.",
-    position: "Software Engineer",
-    company: "Smart Solutions",
-    avatar: require("@/assets/img/avatars/300-4.jpg"),
-  },
-  {
-    id: 4,
-    name: "Doaa Mostafa",
-    details: "Honestly, the service was excellent and technical support was very responsive. Truly respectful and understanding people.",
-    position: "Project Manager",
-    company: "Creative Line",
-    avatar: require("@/assets/img/avatars/300-6.jpg"),
-  },
-  {
-    id: 5,
-    name: "Karim El Husseiny",
-    details: "The final result was extremely professional, which helped us reach more customers and grow our business.",
-    position: "UI/UX Designer",
-    company: "Design Flow",
-    avatar: require("@/assets/img/avatars/300-9.jpg"),
-  },
-  {
-    id: 6,
-    name: "Yasmin Nabil",
-    details: "I collaborated with them on a digital marketing campaign, and the results were amazing. They understand the market well and know how to guide effectively.",
-    position: "Digital Marketing Specialist",
-    company: "Media Plus",
-    avatar: require("@/assets/img/avatars/300-20.jpg"),
-  },
-  {
-    id: 7,
-    name: "Omnia Tawfik",
-    details: "Highly committed team with truly innovative solutions. I’ve worked with them on multiple projects, and they impress me every time.",
-    position: "Technical Director",
-    company: "EG Coders",
-    avatar: require("@/assets/img/avatars/300-22.jpg"),
-  },
-],
-          /* Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete'] */
-tagStyles: {
-  HTML: { backgroundColor: "rgba(239, 68, 68, 0.15)", color: "#DC2626" },         // أحمر فاتح
-  CSS: { backgroundColor: "rgba(59, 130, 246, 0.15)", color: "#2563EB" },        // أزرق فاتح
-  JavaScript: { backgroundColor: "rgba(234, 179, 8, 0.2)", color: "#CA8A04" },   // أصفر ذهبي
-  Vue: { backgroundColor: "rgba(34, 197, 94, 0.15)", color: "#15803D" },         // أخضر فاتح
-  Tailwind: { backgroundColor: "rgba(6, 182, 212, 0.15)", color: "#0891B2" },    // سماوي
-  Responsive: { backgroundColor: "rgba(107, 114, 128, 0.15)", color: "#374151" },// رمادي
-  Figma: { backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#BE185D" },      // وردي/قرمزي
-  "Api Connects": { backgroundColor: "rgba(168, 85, 247, 0.15)", color: "#7E22CE" }, // بنفسجي
-  "Not complete": { backgroundColor: "black", color: "white" } // رمادي
-},
+        {
+          id: 1,
+          name: "Nada Abdelrahman",
+          details: "Working with the team was excellent. Their commitment to deadlines and the quality of work exceeded expectations. I highly recommend them.",
+          position: "Business Development Manager",
+          company: "Future Tech",
+          avatar: require("@/assets/img/avatars/300-14.jpg"),
+        },
+        {
+          id: 2,
+          name: "Noha Khaled",
+          details: "A highly professional team that truly understands client needs. They helped us launch our website perfectly and in record time.",
+          position: "Head of Marketing",
+          company: "EG Digital",
+          avatar: require("@/assets/img/avatars/300-27.jpg"),
+        },
+        {
+          id: 3,
+          name: "Norhan Samir",
+          details: "The team is smart and flexible. They worked with us step by step until the project was completed exactly as we envisioned.",
+          position: "Software Engineer",
+          company: "Smart Solutions",
+          avatar: require("@/assets/img/avatars/300-4.jpg"),
+        },
+        {
+          id: 4,
+          name: "Doaa Mostafa",
+          details: "Honestly, the service was excellent and technical support was very responsive. Truly respectful and understanding people.",
+          position: "Project Manager",
+          company: "Creative Line",
+          avatar: require("@/assets/img/avatars/300-6.jpg"),
+        },
+        {
+          id: 5,
+          name: "Karim El Husseiny",
+          details: "The final result was extremely professional, which helped us reach more customers and grow our business.",
+          position: "UI/UX Designer",
+          company: "Design Flow",
+          avatar: require("@/assets/img/avatars/300-9.jpg"),
+        },
+        {
+          id: 6,
+          name: "Yasmin Nabil",
+          details: "I collaborated with them on a digital marketing campaign, and the results were amazing. They understand the market well and know how to guide effectively.",
+          position: "Digital Marketing Specialist",
+          company: "Media Plus",
+          avatar: require("@/assets/img/avatars/300-20.jpg"),
+        },
+        {
+          id: 7,
+          name: "Omnia Tawfik",
+          details: "Highly committed team with truly innovative solutions. I’ve worked with them on multiple projects, and they impress me every time.",
+          position: "Technical Director",
+          company: "EG Coders",
+          avatar: require("@/assets/img/avatars/300-22.jpg"),
+        },
+      ],
+      /* Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete'] */
+      tagStyles: {
+        HTML: { backgroundColor: "rgba(239, 68, 68, 0.15)", color: "#DC2626" },         // أحمر فاتح
+        CSS: { backgroundColor: "rgba(59, 130, 246, 0.15)", color: "#2563EB" },        // أزرق فاتح
+        JavaScript: { backgroundColor: "rgba(234, 179, 8, 0.2)", color: "#CA8A04" },   // أصفر ذهبي
+        Vue: { backgroundColor: "rgba(34, 197, 94, 0.15)", color: "#15803D" },         // أخضر فاتح
+        Tailwind: { backgroundColor: "rgba(6, 182, 212, 0.15)", color: "#0891B2" },    // سماوي
+        Responsive: { backgroundColor: "rgba(107, 114, 128, 0.15)", color: "#374151" },// رمادي
+        Figma: { backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#BE185D" },      // وردي/قرمزي
+        "Api Connects": { backgroundColor: "rgba(168, 85, 247, 0.15)", color: "#7E22CE" }, // بنفسجي
+        "Not complete": { backgroundColor: "black", color: "white" } // رمادي
+      },
       currentTestimonialIndex: 0,
     };
   },
@@ -1155,7 +1135,7 @@ tagStyles: {
       }
       return this.extraProjects.filter(project => project.Tages.includes(this.selectedTag));
     },
-filteredProjects() {
+    filteredProjects() {
       const projectsToFilter = this.shows === '0' ? this.mainProjects : [...this.mainProjects, ...this.extraProjects];
       if (this.selectedTag === 'All' || this.selectedTag === 'Type') {
         return projectsToFilter;
@@ -1182,7 +1162,7 @@ filteredProjects() {
     window.addEventListener("resize", this.updateOffset);
     setInterval(this.showSlides, 3000); // Change slide every 5 seconds
     this.updateSlideWidth();
-window.addEventListener("resize", this.updateSlideWidth);
+    window.addEventListener("resize", this.updateSlideWidth);
   },
   methods: {
     showoo() {
@@ -1190,17 +1170,24 @@ window.addEventListener("resize", this.updateSlideWidth);
       // When toggling 'View All', reset the filter to 'All'
       this.selectedTag = 'All';
     },
-     handleTagChange(event) {
+    handleTagChange(event) {
       this.selectedTag = event.target.value;
       this.shows = '0'; // Hide the extra projects when a filter is applied
     },
+    removeEventListener() {
+      window.removeEventListener("resize", this.updateOffset);
+      window.removeEventListener("resize", this.updateSlideWidth);
+      this. clearInterval(this.showSlides);
+      this.isModalOpen = false;
+    }
+    ,
     updateSlideWidth() {
-  if (window.innerWidth <= 768) {
-    this.slideWidth = this.$refs.slider.offsetWidth;
-  } else {
-    this.slideWidth = 300;
-  }
-},
+      if (window.innerWidth <= 768) {
+        this.slideWidth = this.$refs.slider.offsetWidth;
+      } else {
+        this.slideWidth = 300;
+      }
+    },
     toggleMenu() {
       const naviList = document.getElementById("navi-list");
       naviList.classList.toggle("active");
@@ -1313,7 +1300,8 @@ window.addEventListener("resize", this.updateSlideWidth);
 /* Select */
 .game-search-select {
   appearance: none;
-  background-color: #1f2937; /* gray-800 */
+  background-color: #1f2937;
+  /* gray-800 */
   color: white;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
@@ -1398,6 +1386,6 @@ window.addEventListener("resize", this.updateSlideWidth);
 .game-search-icon {
   width: 1rem;
   height: 1rem;
-  margin-top:5px;
+  margin-top: 5px;
 }
 </style>

@@ -383,7 +383,18 @@
             ]
         },
         {
-            "title": "ُEWeis",
+            "title": "Tic Tac Toe",
+            "link": "https://tic-tak-toe-flame.vercel.app/",
+            "img": "/imgs/sub/sub-gallery-05.png",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "ُEweis",
             "link": "https://Eweis.vercel.app/",
             "img": "/imgs/sub/sub-gallery-04.png",
             "Tages": [
