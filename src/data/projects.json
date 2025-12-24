@@ -1,5 +1,5 @@
 {
-    "commenta": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "commenta": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "mainProjects": [
         {
             "title": "Old Games",
@@ -27,6 +27,20 @@
             ]
         },
         {
+            "title": "Journalist-game",
+            "stars": 9,
+            "img": "/imgs/gallery-34.png",
+            "link": "https://journalist-game0.vercel.app/game",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Tailwind",
+                "Vue",
+
+                "Responsive"
+            ]
+        },
+        {
             "title": "Jammat",
             "stars": 9,
             "img": "/imgs/gallery-28.png",
@@ -37,19 +51,6 @@
                 "Vue",
                 "Figma",
                 "Api Connects",
-                "Responsive"
-            ]
-        },
-        {
-            "title": "Orahep",
-            "stars": 9,
-            "img": "/imgs/gallery-26.png",
-            "link": "/tailwind_project/src/index.html",
-            "Tages": [
-                "HTML",
-                "Tailwind",
-                "JavaScript",
-                "Figma",
                 "Responsive"
             ]
         },
@@ -66,8 +67,34 @@
             ]
         }
     ],
-    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "extraProjects": [
+                {
+            "title": "Orahep",
+            "stars": 9,
+            "img": "/imgs/gallery-26.png",
+            "link": "/tailwind_project/src/index.html",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "JavaScript",
+                "Figma",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "GenetiQ",
+            "stars": 7,
+            "img": "/imgs/gallery-33.png",
+            "link": "https://health-system-sooty.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+
+                "Nuxt",
+                "Responsive"
+            ]
+        },
         {
             "title": "Fashoin",
             "stars": 7,

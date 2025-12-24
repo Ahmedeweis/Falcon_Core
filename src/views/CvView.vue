@@ -1111,7 +1111,9 @@ export default {
         Vue: { backgroundColor: "rgba(34, 197, 94, 0.15)", color: "#15803D" },         // أخضر فاتح
         Tailwind: { backgroundColor: "rgba(6, 182, 212, 0.15)", color: "#0891B2" },    // سماوي
         Responsive: { backgroundColor: "rgba(107, 114, 128, 0.15)", color: "#374151" },// رمادي
-        Figma: { backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#BE185D" },      // وردي/قرمزي
+        Figma: { backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#BE185D" },    // وردي/قرمزي
+        Nuxt: { backgroundColor: "rgba(0, 181, 155, 0.15)", color: "#00B59B" },
+
         "Api Connects": { backgroundColor: "rgba(168, 85, 247, 0.15)", color: "#7E22CE" }, // بنفسجي
         "Not complete": { backgroundColor: "black", color: "white" } // رمادي
       },
