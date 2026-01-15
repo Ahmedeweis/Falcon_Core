@@ -2,6 +2,18 @@
     "commenta": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "mainProjects": [
         {
+            "title": "Medtronic",
+            "stars": 9,
+            "img": "/imgs/gallery-35.png",
+            "link": "https://yogaa-five.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+            ]
+        },
+        {
             "title": "Old Games",
             "stars": 9,
             "img": "/imgs/gallery-30.png",
@@ -36,7 +48,6 @@
                 "CSS",
                 "Tailwind",
                 "Vue",
-
                 "Responsive"
             ]
         },
@@ -54,6 +65,9 @@
                 "Responsive"
             ]
         },
+    ],
+    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "extraProjects": [
         {
             "title": "IN Desgin",
             "stars": 9,
@@ -65,11 +79,8 @@
                 "JavaScript",
                 "Responsive"
             ]
-        }
-    ],
-    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
-    "extraProjects": [
-                {
+        },
+        {
             "title": "Orahep",
             "stars": 9,
             "img": "/imgs/gallery-26.png",
@@ -90,7 +101,6 @@
             "Tages": [
                 "HTML",
                 "Tailwind",
-
                 "Nuxt",
                 "Responsive"
             ]
