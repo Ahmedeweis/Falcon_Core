@@ -10,7 +10,7 @@
                 "HTML",
                 "Tailwind",
                 "Vue",
-                "Responsive",
+                "Responsive"
             ]
         },
         {
@@ -64,7 +64,7 @@
                 "Api Connects",
                 "Responsive"
             ]
-        },
+        }
     ],
     "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "extraProjects": [
