@@ -42,7 +42,7 @@
             "title": "Journalist-game",
             "stars": 9,
             "img": "/imgs/gallery-34.png",
-            "link": "https://journalist-game0.vercel.app/game",
+            "link": "https://journalist-game0.vercel.app/",
             "Tages": [
                 "HTML",
                 "CSS",
@@ -68,6 +68,31 @@
     ],
     "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "extraProjects": [
+        {
+            "title": "RemoteCore.Labs",
+            "stars": 10,
+            "img": "/imgs/gallery-37.png",
+            "link": "https://remote-core-laps.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Figma",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Twinverse Studio",
+            "stars": 8,
+            "img": "/imgs/gallery-36.png",
+            "link": "https://metro-seven-lime.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive"
+            ]
+        },
         {
             "title": "IN Desgin",
             "stars": 9,
