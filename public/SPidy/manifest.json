@@ -1,0 +1,22 @@
+{
+    "name": "Spider-Man Fan Site",
+    "short_name": "Spidy",
+    "description": "Discover the thrilling adventures of Spider-Man, from Homecoming to No Way Home.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#b91d47",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/people.webp",
+            "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "img/people.webp",
+            "sizes": "512x512",
+            "type": "image/webp"
+        }
+    ]
+}

@@ -1,196 +1,242 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="welcome to my weeb site">
-		<title>portpholio</title>
-		<style>
-			
-		</style>
-		<link rel="stylesheet" href="normalize css/normalize.css">
-		<link rel="stylesheet" href="my_web_site.css">
-		<script></script>
-	</head>
-	<body>
+<html lang="en">
 
-	<!-- Start Header -->
-		<div class="header">
-			<div class="container">
-				<div class="slider ">
-					<div class="intro">
-						<h2> web Designer &amp; Video Editor  </h2>
-						<button> Learn more </button>
-					</div>
-				</div>
-			</div>
-			<div class="navbar"> 
-				<div class="container"> 
-					<h2>we<span>sso</span></h2>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Skills</a></li>
-							<li><a href="#">Resume</a></li>
-							<li><a href="#">Testemonials</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Contect me</a></li>
-						</ul>
-				</div>
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio of a generic Web Designer and Video Editor">
+	<title>Wesso | Portfolio</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Styles -->
+	<link rel="stylesheet" href="normalize css/normalize.css">
+	<link rel="stylesheet" href="my_web_site.css">
+	<!-- Font Awesome for Icons (Optional but recommended) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+	<!-- Start Header / Navbar -->
+	<header class="header">
+		<div class="container navbar-container">
+			<h2 class="logo">we<span>sso</span></h2>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact" class="btn-primary">Contact Me</a></li>
+				</ul>
+			</nav>
 		</div>
-
+	</header>
 	<!-- End Header -->
 
-	<!-- start describtion -->
-		<div class="features ">
-			<div class="container">
-				<div class="feat">
-					<h2> value </h2>
-					<p> this my web site paragraph & this my web site paragraph & this my web site paragraph </p>
-				</div>
-				<div class="feat">
-					<h2> Goals </h2>
-					<p> this my web site paragraph & this my web site paragraph & this my web site paragraph</p>
-				</div>
-				<div class="feat">
-					<h2> Hobbies </h2>
-					<p> this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph  </p>
+	<!-- Start Hero -->
+	<section id="home" class="hero">
+		<div class="overlay"></div>
+		<div class="container hero-content">
+			<h1>Web Designer & <br><span>Video Editor</span></h1>
+			<p>Creating stunning digital experiences and visual storytelling.</p>
+			<div class="hero-buttons">
+				<a href="#about" class="btn-outline">Learn More</a>
+				<a href="#portfolio" class="btn-filled">View Work</a>
+			</div>
+		</div>
+	</section>
+	<!-- End Hero -->
+
+	<!-- Start Features -->
+	<section class="features section-padding">
+		<div class="container grid-3">
+			<div class="feat-card">
+				<i class="fas fa-gem icon"></i>
+				<h2>Values</h2>
+				<p>We believe in integrity, creativity, and delivering excellence in every pixel we craft.</p>
+			</div>
+			<div class="feat-card">
+				<i class="fas fa-bullseye icon"></i>
+				<h2>Goals</h2>
+				<p>To help brands visualize their potential and reach their audience through compelling design.</p>
+			</div>
+			<div class="feat-card">
+				<i class="fas fa-heart icon"></i>
+				<h2>Hobbies</h2>
+				<p>Passion for photography, exploring new tech, and continuous learning in the digital space.</p>
+			</div>
+		</div>
+	</section>
+	<!-- End Features -->
+
+	<!-- Start About Me -->
+	<section id="about" class="about-me section-padding">
+		<div class="container grid-2">
+			<div class="image-wrapper">
+				<img src="images/me.jpg" alt="Profile Picture">
+			</div>
+			<div class="info-content">
+				<h2 class="section-title">About Me</h2>
+				<p>I am a passionate creative professional dedicated to building digital products that look great and
+					work perfectly. With years of experience in web design and video editing, I turn ideas into reality.
+				</p>
+				<div class="hobbies-grid">
+					<div class="hobby-item"><i class="fas fa-paint-brush"></i> Web Design</div>
+					<div class="hobby-item"><i class="fas fa-pen-nib"></i> Graphic Design</div>
+					<div class="hobby-item"><i class="fas fa-bullhorn"></i> Online Marketing</div>
+					<div class="hobby-item"><i class="fas fa-search"></i> SEO</div>
 				</div>
 			</div>
 		</div>
-	<!-- End describtion -->
+	</section>
+	<!-- End About Me -->
 
-	<!-- start abuot me -->
-
-		<div class="about_me">
-			<div class="container">
-				<div class="image">
-					<img src="images/me.jpg" width="300" hieght="300">
-				</div>
-				<div class="info">
-					<h2> About me </h2>
-					<p> this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph &</p>
-					<div class="hobbies">
-						<div> web Design </div>
-						<div> Graphic Design </div>
-						<div> Online Markting </div>
-						<div> Seo </div>
+	<!-- Start My Skills -->
+	<section id="skills" class="my-skills section-padding bg-light">
+		<div class="container grid-2">
+			<div class="skills-text">
+				<h2 class="section-title">My Skills</h2>
+				<p>Proficient in a wide range of technologies and creative tools required to build modern web solutions
+					and engaging video content.</p>
+				<a href="#contact" class="btn-primary">Hire Me</a>
+			</div>
+			<div class="skills-progress">
+				<div class="skill-bar">
+					<span>HTML/CSS</span>
+					<div class="bar">
+						<div class="fill" style="width: 95%"></div>
 					</div>
 				</div>
-			
-		    </div>
-		</div>
-
-	<!-- End abuot me -->
-
-	<!-- start my skills -->
-
-		<div class="my_skills">
-			<div class="container">
-				<div class="skills">
-					<h2> my skills </h2>
-					<p>this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & </p>
-					<button> contact me </button>
+				<div class="skill-bar">
+					<span>JavaScript</span>
+					<div class="bar">
+						<div class="fill" style="width: 80%"></div>
+					</div>
 				</div>
-				<div class="progress">
-					progress
+				<div class="skill-bar">
+					<span>Video Editing (Premiere/After Effects)</span>
+					<div class="bar">
+						<div class="fill" style="width: 90%"></div>
+					</div>
+				</div>
+				<div class="skill-bar">
+					<span>UI/UX Design</span>
+					<div class="bar">
+						<div class="fill" style="width: 85%"></div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+	<!-- End My Skills -->
 
-	<!-- End my skills -->
-
-	<!-- start Resume -->
-
-	<div class="resume">
-		<div class="container">
-			<h2> Resume </h2>
-			<p> his my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & </p>
-			<button> Download Resume </button>
+	<!-- Start Resume -->
+	<section id="resume" class="resume section-padding">
+		<div class="container text-center">
+			<h2 class="section-title">Resume</h2>
+			<p>Check out my professional journey and educational background.</p>
+			<button class="btn-outline-dark">Download Resume <i class="fas fa-download"></i></button>
 		</div>
-	</div>
+	</section>
 	<!-- End Resume -->
 
-	<!-- start my education -->
-
-		<div class="my_education">
-			<div class="container">
-				<div class="main">
-					<h2> my education </h2>
-					<p>this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & </p>
+	<!-- Start My Education -->
+	<section class="education section-padding">
+		<div class="container grid-2">
+			<div class="edu-column">
+				<h3 class="column-title">My Education</h3>
+				<div class="timeline-item">
+					<h4>Computer Science Degree</h4>
+					<span>2018 - 2022</span>
+					<p>Learned the fundamentals of programming, algorithms, and software engineering.</p>
 				</div>
-				<div class="exp">
-					exp
-				</div>
-				<div class="clearfix">
-				<hr>
-
-				<div class="main">
-					<h2> work education </h2>
-					<p>this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & </p>
-				</div>
-				<div class="exp">
-					exp
+			</div>
+			<div class="edu-column">
+				<h3 class="column-title">Work Experience</h3>
+				<div class="timeline-item">
+					<h4>Senior Web Designer</h4>
+					<span>2022 - Present</span>
+					<p>Leading web design projects and coordinating with the development team.</p>
 				</div>
 			</div>
 		</div>
+	</section>
+	<!-- End My Education -->
 
-	<!-- End my education -->
-
-	<!-- start Testmionials -->
-		<div class="Testimonials   ">
-			<div class="container">
-				<p> his my web site paragraph & this my web site par</p>
-				<h3> wesso </h3>
+	<!-- Start Testimonials -->
+	<section id="testimonials" class="testimonials section-padding bg-light">
+		<div class="container text-center">
+			<div class="testimonial-card">
+				<p class="quote">"Wesso is a fantastic designer! He completely transformed our website and sales have
+					increased by 50%."</p>
+				<h3>- Ahmed Eweis, CEO</h3>
 			</div>
 		</div>
+	</section>
 	<!-- End Testimonials -->
 
-	<!-- start potfolio -->
-
-		<div class="Portfolio">
-			<div class="container">
-				<h2> potfolio </h2>
-				<p>this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & </p>
-				<div class="our_work">
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-					<div> <img src="images/photo.jpg"> </div>
-				</div>
+	<!-- Start Portfolio -->
+	<section id="portfolio" class="portfolio section-padding">
+		<div class="container">
+			<h2 class="section-title text-center">Portfolio</h2>
+			<p class="text-center section-desc">A selection of my recent works.</p>
+			<div class="gallery-grid">
+				<div class="gallery-item"><img src="images/photo.jpg" alt="Project 1"></div>
+				<div class="gallery-item"><img src="images/photo.jpg" alt="Project 2"></div>
+				<div class="gallery-item"><img src="images/photo.jpg" alt="Project 3"></div>
+				<div class="gallery-item"><img src="images/photo.jpg" alt="Project 4"></div>
+				<div class="gallery-item"><img src="images/photo.jpg" alt="Project 5"></div>
+				<div class="gallery-item"><img src="images/photo.jpg" alt="Project 6"></div>
 			</div>
 		</div>
+	</section>
+	<!-- End Portfolio -->
 
-	<!-- end potfolio -->
-
-	<!-- srart contact me -->
-
-		<div class="contact">
-			<div class="container">
-				<div class="infoo">
-					<h2> contact me </h2>
-					<p> this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & this my web site paragraph & </p>
+	<!-- Start Contact -->
+	<section id="contact" class="contact section-padding bg-dark">
+		<div class="container grid-2">
+			<div class="contact-info">
+				<h2 class="section-title text-white">Contact Me</h2>
+				<p class="text-gray">Feel free to reach out for collaborations or just a friendly hello.</p>
+				<div class="info-item">
+					<i class="fas fa-envelope"></i>
+					<span>email@example.com</span>
 				</div>
-				<div class="form">
-					form
+				<div class="info-item">
+					<i class="fas fa-phone"></i>
+					<span>+123 456 7890</span>
 				</div>
 			</div>
+			<div class="contact-form-wrapper">
+				<form class="contact-form">
+					<input type="text" placeholder="Your Name" required>
+					<input type="email" placeholder="Your Email" required>
+					<textarea placeholder="Your Message" rows="5" required></textarea>
+					<button type="submit" class="btn-primary full-width">Send Message</button>
+				</form>
+			</div>
 		</div>
+	</section>
+	<!-- End Contact -->
 
-	<!-- End contact me -->
-
-	<!-- start Footer -->
-	
-		<div class="footer">
-			copyright &copy; 2014 Focal
+	<!-- Start Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>Copyright &copy; 2026 Focal. All rights reserved.</p>
+			<div class="social-links">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+			</div>
 		</div>
-
+	</footer>
 	<!-- End Footer -->
 
-	</body>
+</body>
+
 </html>
