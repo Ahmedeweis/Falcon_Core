@@ -23,6 +23,7 @@
                 "Tailwind",
                 "Vue",
                 "Responsive",
+                "Api Connects",
                 "Not complete"
             ]
         },
@@ -428,10 +429,35 @@
                 "Api Connects",
                 "Not complete"
             ]
+        },
+        {
+            "title": "Astar",
+            "stars": 10,
+            "img": "/imgs/gallery-32.png",
+            "link": "https://astar-five.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
         }
     ],
     "commento": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "subProjects": [
+        {
+            "title": "Time Converter",
+            "stars": 9,
+            "img": "/imgs/gallery-39.png",
+            "link": "https://grim-soul.vercel.app/",
+            "Tages": [
+                "Vue",
+                "Tailwind",
+                "Responsive",
+                "Not complete"
+            ]
+        },
         {
             "title": "3zna Shop",
             "link": "/Sub/3zna/index.html",
