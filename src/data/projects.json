@@ -431,10 +431,88 @@
             ]
         },
         {
-            "title": "Astar",
+            "title": "AStar",
+            "stars": 1,
+            "img": "/imgs/gallery-40.png",
+            "link": "https://astar0.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "Glass Store",
+            "stars": 1,
+            "img": "/imgs/gallery-41.png",
+            "link": "https://astar-hynw.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "Gguarrent",
+            "stars": 1,
+            "img": "/imgs/gallery-42.png",
+            "link": "https://guarrent0.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "nuvica",
+            "stars": 1,
+            "img": "/imgs/gallery-43.png",
+            "link": "https://nuvica0.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "Super Mart",
+            "stars": 1,
+            "img": "/imgs/gallery-44.png",
+            "link": "https://super-mart-six.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "nahg",
             "stars": 10,
-            "img": "/imgs/gallery-32.png",
-            "link": "https://astar-five.vercel.app/",
+            "img": "/imgs/gallery-45.png",
+            "link": "https://nahg.com.sa/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "halal meat",
+            "stars": 1,
+            "img": "/imgs/gallery-46.png",
+            "link": "https://halal-meat-sable.vercel.app/",
             "Tages": [
                 "HTML",
                 "Tailwind",
