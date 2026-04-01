@@ -14,61 +14,31 @@
             ]
         },
         {
-            "title": "Old Games",
-            "stars": 9,
-            "img": "/imgs/gallery-30.png",
-            "link": "https://old-games-seven.vercel.app/",
+            "title": "Super Mart",
+            "stars": 1,
+            "img": "/imgs/gallery-44.png",
+            "link": "https://super-mart-six.vercel.app/",
             "Tages": [
                 "HTML",
                 "Tailwind",
                 "Vue",
                 "Responsive",
-                "Api Connects",
                 "Not complete"
             ]
         },
         {
-            "title": "At Schoole",
-            "stars": 9,
-            "img": "/imgs/gallery-29.png",
-            "link": "https://at-school-omega.vercel.app/",
+            "title": "nahg",
+            "stars": 10,
+            "img": "/imgs/gallery-45.png",
+            "link": "https://nahg.com.sa/",
             "Tages": [
                 "HTML",
                 "Tailwind",
                 "Vue",
-                "Responsive"
+                "Responsive",
+                "Not complete"
             ]
         },
-        {
-            "title": "Journalist-game",
-            "stars": 9,
-            "img": "/imgs/gallery-34.png",
-            "link": "https://journalist-game0.vercel.app/",
-            "Tages": [
-                "HTML",
-                "CSS",
-                "Tailwind",
-                "Vue",
-                "Responsive"
-            ]
-        },
-        {
-            "title": "Jammat",
-            "stars": 9,
-            "img": "/imgs/gallery-28.png",
-            "link": "https://jamaat-gilt.vercel.app/",
-            "Tages": [
-                "HTML",
-                "Tailwind",
-                "Vue",
-                "Figma",
-                "Api Connects",
-                "Responsive"
-            ]
-        }
-    ],
-    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
-    "extraProjects": [
         {
             "title": "RemoteCore.Labs",
             "stars": 10,
@@ -93,7 +63,10 @@
                 "Vue",
                 "Responsive"
             ]
-        },
+        }
+    ],
+    "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
+    "extraProjects": [
         {
             "title": "IN Desgin",
             "stars": 9,
@@ -103,6 +76,19 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Journalist-game",
+            "stars": 9,
+            "img": "/imgs/gallery-34.png",
+            "link": "https://journalist-game0.vercel.app/",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "Tailwind",
+                "Vue",
                 "Responsive"
             ]
         },
@@ -175,6 +161,46 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Old Games",
+            "stars": 9,
+            "img": "/imgs/gallery-30.png",
+            "link": "https://old-games-seven.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive",
+                "Api Connects",
+                "Not complete"
+            ]
+        },
+        {
+            "title": "At Schoole",
+            "stars": 9,
+            "img": "/imgs/gallery-29.png",
+            "link": "https://at-school-omega.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive"
+            ]
+        },
+        {
+            "title": "Jammat",
+            "stars": 9,
+            "img": "/imgs/gallery-28.png",
+            "link": "https://jamaat-gilt.vercel.app/",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Figma",
+                "Api Connects",
                 "Responsive"
             ]
         },
@@ -474,32 +500,6 @@
             "stars": 1,
             "img": "/imgs/gallery-43.png",
             "link": "https://nuvica0.vercel.app/",
-            "Tages": [
-                "HTML",
-                "Tailwind",
-                "Vue",
-                "Responsive",
-                "Not complete"
-            ]
-        },
-        {
-            "title": "Super Mart",
-            "stars": 1,
-            "img": "/imgs/gallery-44.png",
-            "link": "https://super-mart-six.vercel.app/",
-            "Tages": [
-                "HTML",
-                "Tailwind",
-                "Vue",
-                "Responsive",
-                "Not complete"
-            ]
-        },
-        {
-            "title": "nahg",
-            "stars": 10,
-            "img": "/imgs/gallery-45.png",
-            "link": "https://nahg.com.sa/",
             "Tages": [
                 "HTML",
                 "Tailwind",
