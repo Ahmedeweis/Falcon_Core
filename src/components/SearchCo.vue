@@ -23,14 +23,12 @@
       </div>
       <!-- حقل البحث -->
       <div class="game-search-input-wrapper">
-        <input
-          type="text"
-          placeholder="Write name of prject here  "
-          class="game-search-input"
-        />
+        <input type="text" placeholder="Write name of prject here  " class="game-search-input" />
         <div class="game-search-input-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="game-search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="game-search-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
           </svg>
         </div>
       </div>
@@ -52,6 +50,7 @@
   display: flex;
   justify-content: center;
 }
+
 /* Container inside */
 .game-search-container {
   display: flex;
@@ -60,26 +59,31 @@
   width: 100%;
   max-width: 768px;
 }
+
 @media (min-width: 768px) {
   .game-search-container {
     flex-direction: row;
     align-items: center;
   }
 }
+
 /* Select wrapper */
 .game-search-select-wrapper {
   position: relative;
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .game-search-select-wrapper {
     width: 120px;
   }
 }
+
 /* Select */
 .game-search-select {
   appearance: none;
-  background-color: #1f2937; /* gray-800 */
+  background-color: #1f2937;
+  /* gray-800 */
   color: white;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
@@ -87,11 +91,13 @@
   outline: none;
   border: none;
 }
+
 @media (min-width: 768px) {
   .game-search-select {
     border-radius: 0.5rem 0 0 0.5rem;
   }
 }
+
 /* Select arrow icon */
 .game-search-select-icon {
   position: absolute;
@@ -103,30 +109,34 @@
   pointer-events: none;
   color: white;
 }
+
 /* Input wrapper */
 .game-search-input-wrapper {
   position: relative;
   flex: 1;
   width: 100%;
 }
+
 /* Input field */
 .game-search-input {
   background-color: #1f2937;
   color: white;
   padding: 0.8rem 0.75rem;
   padding-right: 2.5rem;
-  border-radius: 0.5rem;
+
   width: 100%;
   outline: none;
   border: none;
   text-align: left;
   margin-bottom: 0 !important;
 }
+
 @media (min-width: 768px) {
   .game-search-input {
     border-radius: 0 0.5rem 0.5rem 0;
   }
 }
+
 /* Search icon in input */
 .game-search-input-icon {
   position: absolute;
@@ -136,6 +146,7 @@
   color: white;
   pointer-events: none;
 }
+
 /* Search button */
 .game-search-button {
   background-color: #1f2937;
@@ -149,10 +160,12 @@
   border: none;
   text-align: center;
 }
+
 .game-search-button:hover {
   background-color: white;
   color: #1f2937;
 }
+
 @media (min-width: 768px) {
   .game-search-button {
     width: auto;
@@ -160,10 +173,11 @@
     margin-left: 0.5rem;
   }
 }
+
 /* General icon style */
 .game-search-icon {
   width: 1rem;
   height: 1rem;
-  margin-top:5px;
+  margin-top: 5px;
 }
 </style>

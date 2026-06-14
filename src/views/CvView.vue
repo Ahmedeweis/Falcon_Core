@@ -267,7 +267,16 @@
             </div>
           </div>
           <div class="game-search-input-wrapper">
-            <input type="text" placeholder="Write name of prject here" class="game-search-input" />
+            <input type="text" class="game-search-input" placeholder=" Write name of project here" style="
+    border: none; 
+    border-left: 2px solid #fff; 
+    border-top-right-radius: 8px; 
+    border-bottom-right-radius: 8px; 
+    outline: none; 
+    padding: .8rem 0.75rem;
+    background:#1F2937; 
+    color: #fff;
+  ">
             <div class="game-search-input-icon">
               <svg xmlns="http://www.w3.org/2000/svg" class="game-search-icon" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -556,22 +565,22 @@
           <div class="look-box">
             <div class="look-content">
               <span>Name</span>
-              <input type="text" class="look-field" name="name" required />
+              <input type="text" class="look-field" name="name" placeholder="e.g. Ahmed Mohamed" required />
             </div>
             <div class="look-content">
               <span>E-Mail</span>
-              <input type="email" class="look-field" name="email" required />
+              <input type="email" class="look-field" name="email" placeholder="e.g. yourname@email.com" required />
             </div>
             <div class="look-content">
               <span>Budget</span>
-              <input type="text" class="look-field" name="budget" required />
+              <input type="text" class="look-field" name="budget" placeholder="e.g. 500 EGP / $200" required />
             </div>
             <div class="look-content">
               <span>Subject</span>
-              <input type="text" class="look-field" name="subject" required />
+              <input type="text" class="look-field" name="subject" placeholder="e.g. Landing page design" required />
               <div>Not's</div>
             </div>
-            <textarea class="styled-textarea" name="message" placeholder="Enter your text here..." required></textarea>
+            <textarea class="styled-textarea" name="message" placeholder="Describe your project or idea in detail..." required></textarea>
           </div>
           <button type="submit" class="sen-btn">Send</button>
         </form>
@@ -1032,12 +1041,12 @@ export default {
       currentYear: new Date().getFullYear(),
       shows: "0",
       images: [
-        require("@/assets/certifcate/cer1.png"),
-        require("@/assets/certifcate/cer2.png"),
-        require("@/assets/certifcate/cer3.png"),
-        require("@/assets/certifcate/cer4.png"),
-        require("@/assets/certifcate/cer5.png"),
-        require("@/assets/certifcate/cer6.png")
+        new URL("@/assets/certifcate/cer1.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer2.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer3.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer4.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer5.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer6.png", import.meta.url).href
       ],
       currentIndex: 0,
       offset: 0,
@@ -1052,7 +1061,7 @@ export default {
           details: "Working with the team was excellent. Their commitment to deadlines and the quality of work exceeded expectations. I highly recommend them.",
           position: "Business Development Manager",
           company: "Future Tech",
-          avatar: require("@/assets/img/avatars/300-14.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-14.jpg", import.meta.url).href,
         },
         {
           id: 2,
@@ -1060,7 +1069,7 @@ export default {
           details: "A highly professional team that truly understands client needs. They helped us launch our website perfectly and in record time.",
           position: "Head of Marketing",
           company: "EG Digital",
-          avatar: require("@/assets/img/avatars/300-27.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-27.jpg", import.meta.url).href,
         },
         {
           id: 3,
@@ -1068,7 +1077,7 @@ export default {
           details: "The team is smart and flexible. They worked with us step by step until the project was completed exactly as we envisioned.",
           position: "Software Engineer",
           company: "Smart Solutions",
-          avatar: require("@/assets/img/avatars/300-4.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-4.jpg", import.meta.url).href,
         },
         {
           id: 4,
@@ -1076,7 +1085,7 @@ export default {
           details: "Honestly, the service was excellent and technical support was very responsive. Truly respectful and understanding people.",
           position: "Project Manager",
           company: "Creative Line",
-          avatar: require("@/assets/img/avatars/300-6.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-6.jpg", import.meta.url).href,
         },
         {
           id: 5,
@@ -1084,7 +1093,7 @@ export default {
           details: "The final result was extremely professional, which helped us reach more customers and grow our business.",
           position: "UI/UX Designer",
           company: "Design Flow",
-          avatar: require("@/assets/img/avatars/300-9.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-9.jpg", import.meta.url).href,
         },
         {
           id: 6,
@@ -1092,7 +1101,7 @@ export default {
           details: "I collaborated with them on a digital marketing campaign, and the results were amazing. They understand the market well and know how to guide effectively.",
           position: "Digital Marketing Specialist",
           company: "Media Plus",
-          avatar: require("@/assets/img/avatars/300-20.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-20.jpg", import.meta.url).href,
         },
         {
           id: 7,
@@ -1100,7 +1109,7 @@ export default {
           details: "Highly committed team with truly innovative solutions. I’ve worked with them on multiple projects, and they impress me every time.",
           position: "Technical Director",
           company: "EG Coders",
-          avatar: require("@/assets/img/avatars/300-22.jpg"),
+          avatar: new URL("@/assets/img/avatars/300-22.jpg", import.meta.url).href,
         },
       ],
       /* Tages: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete'] */
@@ -1179,7 +1188,7 @@ export default {
     removeEventListener() {
       window.removeEventListener("resize", this.updateOffset);
       window.removeEventListener("resize", this.updateSlideWidth);
-      this. clearInterval(this.showSlides);
+      this.clearInterval(this.showSlides);
       this.isModalOpen = false;
     }
     ,
@@ -1249,12 +1258,14 @@ export default {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
 .slide {
   margin: 0 10px;
   cursor: pointer;
   width: 295px;
   flex-shrink: 0;
 }
+
 @media (max-width: 768px) {
   .slide {
     /* width: 100% !important; */
@@ -1263,8 +1274,6 @@ export default {
     padding-left: 0;
   }
 }
-@import "@/assets/style.css";
-@import "@/assets/normalize.css";
 </style>
 <style scoped>
 /* Wrapper */
@@ -1275,47 +1284,58 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 /* Container inside */
 .game-search-container {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.5rem;
+  /* Gap on mobile */
   width: 100%;
   max-width: 768px;
 }
+
 @media (min-width: 768px) {
   .game-search-container {
     flex-direction: row;
     align-items: center;
+    gap: 0;
+    /* Unified on desktop */
   }
 }
+
 /* Select wrapper */
 .game-search-select-wrapper {
   position: relative;
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .game-search-select-wrapper {
     width: 120px;
   }
 }
+
 /* Select */
 .game-search-select {
   appearance: none;
   background-color: #1f2937;
-  /* gray-800 */
   color: white;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
+  /* Full radius on mobile */
   width: 100%;
   outline: none;
   border: none;
 }
+
 @media (min-width: 768px) {
   .game-search-select {
     border-radius: 0.5rem 0 0 0.5rem;
+    /* Left side only on desktop */
   }
 }
+
 /* Select arrow icon */
 .game-search-select-icon {
   position: absolute;
@@ -1327,30 +1347,33 @@ export default {
   pointer-events: none;
   color: white;
 }
+
 /* Input wrapper */
 .game-search-input-wrapper {
   position: relative;
   flex: 1;
   width: 100%;
 }
+
 /* Input field */
 .game-search-input {
   background-color: #1f2937;
   color: white;
   padding: 0.8rem 0.75rem;
   padding-right: 2.5rem;
-  border-radius: 0.5rem;
   width: 100%;
   outline: none;
   border: none;
   text-align: left;
   margin-bottom: 0 !important;
 }
-@media (min-width: 768px) {
-  .game-search-input {
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
+
+.game-search-input::placeholder {
+  color: #aaa;
 }
+
+
+
 /* Search icon in input */
 .game-search-input-icon {
   position: absolute;
@@ -1360,6 +1383,7 @@ export default {
   color: white;
   pointer-events: none;
 }
+
 /* Search button */
 .game-search-button {
   background-color: #1f2937;
@@ -1373,17 +1397,20 @@ export default {
   border: none;
   text-align: center;
 }
+
 .game-search-button:hover {
   background-color: white;
   color: #1f2937;
 }
+
 @media (min-width: 768px) {
   .game-search-button {
     width: auto;
     margin-top: 0;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
 }
+
 /* General icon style */
 .game-search-icon {
   width: 1rem;

@@ -1314,9 +1314,42 @@ input[type="email"] {
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #1F2937;
+    color: white;
+}
+
+/* Custom styles for inputs INSIDE .die-form only */
+.die-form input[type="text"],
+.die-form input[type="email"] {
+    margin-bottom: 20px;
+    background-color: rgb(218, 249, 231);
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
     border-radius: 8px;
     transition: border-color 0.3s, box-shadow 0.3s;
-    background-color: #DAF9E7;
+    color: #333;
+}
+
+.die-form input[type="text"]::placeholder,
+.die-form input[type="email"]::placeholder {
+    color: #888;
+}
+
+.die-form input[type="text"]:focus,
+.die-form input[type="email"]:focus {
+    border-color: #0ABF5E;
+    box-shadow: 0 0 5px rgba(10, 191, 94, 0.4);
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #aaa;
 }
 
 input[type="text"]:focus,
@@ -1334,17 +1367,25 @@ input[type="email"]:focus {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: #333;
-    background-color: #DAF9E7;
-    border: 1px solid #ccc;
+    background-color: rgb(218, 249, 231);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     resize: vertical;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.styled-textarea::placeholder {
+    color: #888;
 }
 
 .styled-textarea:focus {
-    border-color: #66afe9;
-    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    border-color: #0ABF5E;
+    box-shadow: 0 0 8px rgba(10, 191, 94, 0.4);
     outline: none;
 }
 
@@ -2485,7 +2526,7 @@ input[type="email"]:focus {
     color: white;
     padding: 0.8rem 0.75rem;
     padding-right: 2.5rem;
-    border-radius: 0.5rem;
+
     width: 100%;
     outline: none;
     border: none;
@@ -2493,11 +2534,7 @@ input[type="email"]:focus {
     margin-bottom: 0 !important;
 }
 
-@media (min-width: 768px) {
-    .game-search-input {
-        border-radius: 0 0.5rem 0.5rem 0;
-    }
-}
+
 
 /* Search icon in input */
 .game-search-input-icon {

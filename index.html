@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>brand_logo_transparent.png">
+  <link rel="icon" href="/brand_logo_transparent.png">
   <!-- icon of web site above -->
-  <!-- <link rel="icon" href="/brand_logo.png" type="image/png"> -->
-  <title>
-    <%= htmlWebpackPlugin.options.title %>
-  </title>
+  <title>Falcon Core</title>
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -22,11 +19,12 @@
 
 <body>
   <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+    <strong>We're sorry but Falcon Core doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
+  <script type="module" src="/src/main.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.26/bundled/lenis.min.js"></script>
 </body>
 

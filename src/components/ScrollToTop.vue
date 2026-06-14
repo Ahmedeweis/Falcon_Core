@@ -10,11 +10,13 @@
 </template>
 
 <script>
+import arrowImgSrc from '@/assets/img/right-arrow.png';
+
 export default {
   data() {
     return {
       showButton: false,
-      arrowImg: require('@/assets/img/right-arrow.png'),
+      arrowImg: arrowImgSrc,
     };
   },
   mounted() {
