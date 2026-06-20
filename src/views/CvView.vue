@@ -119,7 +119,7 @@
             optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful
             projects.
           </p>
-          <span>With 2+ years of experience</span>
+          <span  style="font-size:1.2em;">With 3+ years of experience</span>
           <div class="hot-buttons">
             <a class="cotact-me" href="Ahmed_Mahmoud_Frontend_CV.pdf" target="_blank" title="Download CV in PDF format">
               Download CV
@@ -139,9 +139,9 @@
                   <img src="../assets/img/paper.png" alt="Telegram Arrow Icon" class="telegram-arrow"
                     style="width: 16px;" />
                 </div>
-                <div class="title">Conversion Rate</div>
+                <div class="title">projects complete</div>
               </div>
-              <div class="value">9.73%</div>
+              <div class="value">{{ totalProjects }}</div>
             </div>
             <div class="glass-cardII">
               <div class="top">
@@ -150,9 +150,9 @@
                   <img src="../assets/img/fan.png" alt="Telegram Arrow Icon" class="telegram-arrow"
                     style="width: 23px;" />
                 </div>
-                <div class="title">Todays Visitors</div>
+                <div class="title">Certificates Earned</div>
               </div>
-              <div class="value">17,640</div>
+              <div class="value">11</div>
             </div>
             <!-- ظل داخلي من الأسفل -->
             <div class="photo-shadow"></div>
@@ -268,13 +268,13 @@
           </div>
           <div class="game-search-input-wrapper">
             <input type="text" class="game-search-input" placeholder=" Write name of project here" style="
-    border: none; 
-    border-left: 2px solid #fff; 
-    border-top-right-radius: 8px; 
-    border-bottom-right-radius: 8px; 
-    outline: none; 
+    border: none;
+    border-left: 2px solid #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
     padding: .8rem 0.75rem;
-    background:#1F2937; 
+    background:#1F2937;
     color: #fff;
   ">
             <div class="game-search-input-icon">
@@ -464,85 +464,119 @@
     <section class="pricing-2" id="pricing">
       <div class="container">
         <div class="pricing-section">
-          <h2 class="section-title">A Plan To Suit Your Needs</h2>
+          <div class="section-header">
+            <h2 class="section-title">A Plan To Suit Your Needs</h2>
+            <!-- Currency Switcher Dropdown -->
+            <div class="currency-dropdown">
+              <select
+                class="currency-select"
+                :value="currentCurrency"
+                @change="setCurrency($event.target.value)"
+              >
+                <option value="EGP">🇪🇬 EGP</option>
+                <option value="USD">🇺🇸 USD</option>
+                <option value="EUR">🇪🇺 EUR</option>
+                <option value="SAR">🇸🇦 SAR</option>
+              </select>
+            </div>
+          </div>
           <div class="pricing-cards">
-            <!-- Basic Plan -->
+            <!-- Hourly Plan -->
             <div class="pricing-card">
               <h3 class="plan-title">Hourly Plan</h3>
-              <p>small Task</p>
+              <p>Perfect for small tasks and quick fixes</p>
               <ul class="plan-features">
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> One hour free trial</li>
+                  </svg> One hour free consultation</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> Tasks start with a minimum of 1 hour</li>
+                  </svg> Minimum 2 hours booking</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> 50% payment required before starting work</li>
+                  </svg> 50% upfront payment</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> 7 days of free revisions</li>
               </ul>
-              <p class="plan-price">EGP 50 /hour</p>
+              <p class="plan-price">{{ formatPrice('hourly') }} /hour</p>
             </div>
-            <!-- Standard Plan -->
+            <!-- Project-Based Plan -->
             <div class="pricing-card standard">
+              <!-- <div class="popular-badge">Most Popular</div> -->
               <h3 class="plan-title">Project-Based Plan</h3>
-              <p>specific project</p>
+              <p>Complete solutions from start to finish</p>
               <ul class="plan-features">
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> Two weeks of support after project completion</li>
+                  </svg> 30 days of free support after launch</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> Pricing is based on the project's scope </li>
+                  </svg> Custom pricing based on scope</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg>35% payment required</li>
+                  </svg> 35% upfront payment</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Figma to Vue.js conversion</li>
               </ul>
-              <p class="plan-price">EGP 1k ~ 5k /project</p>
+              <p class="plan-price">{{ formatPrice('project') }} /project</p>
             </div>
-            <!-- Premium Plan -->
+            <!-- Full-Time Plan -->
             <div class="pricing-card premium">
               <h3 class="plan-title">Full-Time Plan</h3>
-              <p>open developer</p>
+              <p>Dedicated development for your business</p>
               <ul class="plan-features">
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> 160 hours (8 hours/day, 5 days/week)</li>
+                  </svg> 160 hours/month (8hrs/day, 5 days/week)</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> Weekly meetings to track progress</li>
+                  </svg> Weekly progress meetings</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
                     height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
                     <path fill="currentColor"
                       d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
                       clip-rule="evenodd" fill-rule="evenodd"></path>
-                  </svg> Ability to work on multiple projects per month</li>
+                  </svg> Multiple projects simultaneously</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Priority support & bug fixes</li>
               </ul>
-              <p class="plan-price">EGP 5,000 /mo</p>
+              <p class="plan-price">{{ formatPrice('fulltime') }} /mo</p>
             </div>
           </div>
         </div>
@@ -706,7 +740,7 @@
         <div class="fact">
           <img src="../assets/img/responsive.png" class="icon2-m"
             alt="Responsive icon representing years of experience" />
-          <h2 class="number">2</h2>
+          <h2 class="number">3</h2>
           <h3>Years of Experience</h3>
         </div>
         <div class="fact">
@@ -813,10 +847,10 @@
     <!-- 1 timeline -->
     <!-- 0 certifcate  -->
     <section class="certifcate">
-      <div class="container">
-        <div class="services-tilte">
+      <div>
+        <div class="services-tilte container">
           <span class="tit">Certifications</span>
-          <h2 style="color: black;">Certified Skills <br>for a Digital World.</h2>
+          <h2 style="color: black;">Certified Skills for a Digital World.</h2>
         </div>
         <div class="slider" ref="slider">
           <div class="slider-inner" :style="{ transform: `translateX(${offset}px)`, width: innerWidth + 'px' }">
@@ -831,7 +865,7 @@
       </div>
     </section>
     <!-- 1 certifcate -->
-    <!-- 0 Quats -->
+        <!-- 0 Quats -->
     <section class="talking" id="testimonials">
       <div class="container over">
         <h2>What People Talk</h2>
@@ -1054,6 +1088,40 @@ export default {
       isModalOpen: false,
       currentImage: "",
       isMoreVisible: false,
+      currentCurrency: 'EGP',
+      // Dedicated prices per currency (better for market fit)
+      prices: {
+        // السوق المحلي: أرقام ذكية ومألوفة للميزانيات المصرية
+        EGP: {
+          hourly: 250,
+          project: { min: 15000, max: 20000 },
+          fulltime: 25000
+        },
+        // السوق الدولي (USD): كسر حاجز الألفين دولار يسرّع قرار الشركات الأجنبية
+        USD: {
+          hourly: 25,
+          project: { min: 1200, max: 1500 },
+          fulltime: 2000
+        },
+        // السوق الأوروبي (EUR): متناسق نفسياً مع الجين المالي الأوروبي
+        EUR: {
+          hourly: 23,
+          project: { min: 1000, max: 1300 },
+          fulltime: 1800
+        },
+        // سوق الخليج (SAR): أرقام تبدو رسمية ومدروسة بدقة لشركات الخليج
+        SAR: {
+          hourly: 95,
+          project: { min: 3000, max: 5000 },
+          fulltime: 7500
+        }
+      },
+      currencySymbols: {
+        EGP: 'EGP',
+        USD: '$',
+        EUR: '€',
+        SAR: 'SAR'
+      },
       testimonials: [
         {
           id: 1,
@@ -1122,7 +1190,6 @@ export default {
         Responsive: { backgroundColor: "rgba(107, 114, 128, 0.15)", color: "#374151" },// رمادي
         Figma: { backgroundColor: "rgba(236, 72, 153, 0.15)", color: "#BE185D" },    // وردي/قرمزي
         Nuxt: { backgroundColor: "rgba(0, 181, 155, 0.15)", color: "#00B59B" },
-
         "Api Connects": { backgroundColor: "rgba(168, 85, 247, 0.15)", color: "#7E22CE" }, // بنفسجي
         "Not complete": { backgroundColor: "black", color: "white" } // رمادي
       },
@@ -1217,6 +1284,47 @@ export default {
     updateOffset() {
       this.offset = -this.currentIndex * this.slideWidth;
     },
+    setCurrency(currency) {
+      this.currentCurrency = currency;
+    },
+    formatPrice(plan) {
+      const price = this.prices[this.currentCurrency][plan];
+      const isFulltime = plan === 'fulltime';
+      // Helper function to format single number (K notation for >= 1000, except fulltime)
+      const formatNumber = (p) => {
+        if (isFulltime || p < 1000) {
+          return Math.round(p).toLocaleString();
+        }
+        return `${(p / 1000).toFixed(0)}k`;
+      };
+      // If it's a range - show single currency code with K notation
+      if (typeof price === 'object' && price.min && price.max) {
+        if (this.currentCurrency === 'EGP') {
+          return `${formatNumber(price.min)} ~ ${formatNumber(price.max)} EGP`;
+        } else if (this.currentCurrency === 'USD') {
+          return `$${formatNumber(price.min)} ~ $${formatNumber(price.max)}`;
+        } else if (this.currentCurrency === 'EUR') {
+          return `€${formatNumber(price.min)} ~ €${formatNumber(price.max)}`;
+        } else if (this.currentCurrency === 'SAR') {
+          return `${formatNumber(price.min)} ~ ${formatNumber(price.max)} SAR`;
+        }
+      }
+      // Helper function to format single price with currency
+      const formatSingle = (p) => {
+        if (this.currentCurrency === 'EGP') {
+          return `EGP ${formatNumber(p)}`;
+        } else if (this.currentCurrency === 'USD') {
+          return `$${formatNumber(p)}`;
+        } else if (this.currentCurrency === 'EUR') {
+          return `€${formatNumber(p)}`;
+        } else if (this.currentCurrency === 'SAR') {
+          return `SAR ${formatNumber(p)}`;
+        }
+        return p;
+      };
+      // If it's a single price
+      return formatSingle(price);
+    },
     openModal(image) {
       this.currentImage = image;
       this.isModalOpen = true;
@@ -1258,14 +1366,12 @@ export default {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
 .slide {
   margin: 0 10px;
   cursor: pointer;
   width: 295px;
   flex-shrink: 0;
 }
-
 @media (max-width: 768px) {
   .slide {
     /* width: 100% !important; */
@@ -1284,7 +1390,6 @@ export default {
   display: flex;
   justify-content: center;
 }
-
 /* Container inside */
 .game-search-container {
   display: flex;
@@ -1294,7 +1399,6 @@ export default {
   width: 100%;
   max-width: 768px;
 }
-
 @media (min-width: 768px) {
   .game-search-container {
     flex-direction: row;
@@ -1303,19 +1407,16 @@ export default {
     /* Unified on desktop */
   }
 }
-
 /* Select wrapper */
 .game-search-select-wrapper {
   position: relative;
   width: 100%;
 }
-
 @media (min-width: 768px) {
   .game-search-select-wrapper {
     width: 120px;
   }
 }
-
 /* Select */
 .game-search-select {
   appearance: none;
@@ -1328,14 +1429,12 @@ export default {
   outline: none;
   border: none;
 }
-
 @media (min-width: 768px) {
   .game-search-select {
     border-radius: 0.5rem 0 0 0.5rem;
     /* Left side only on desktop */
   }
 }
-
 /* Select arrow icon */
 .game-search-select-icon {
   position: absolute;
@@ -1347,14 +1446,12 @@ export default {
   pointer-events: none;
   color: white;
 }
-
 /* Input wrapper */
 .game-search-input-wrapper {
   position: relative;
   flex: 1;
   width: 100%;
 }
-
 /* Input field */
 .game-search-input {
   background-color: #1f2937;
@@ -1367,13 +1464,9 @@ export default {
   text-align: left;
   margin-bottom: 0 !important;
 }
-
 .game-search-input::placeholder {
   color: #aaa;
 }
-
-
-
 /* Search icon in input */
 .game-search-input-icon {
   position: absolute;
@@ -1383,7 +1476,6 @@ export default {
   color: white;
   pointer-events: none;
 }
-
 /* Search button */
 .game-search-button {
   background-color: #1f2937;
@@ -1397,12 +1489,10 @@ export default {
   border: none;
   text-align: center;
 }
-
 .game-search-button:hover {
   background-color: white;
   color: #1f2937;
 }
-
 @media (min-width: 768px) {
   .game-search-button {
     width: auto;
@@ -1410,7 +1500,6 @@ export default {
     margin-left: 1rem;
   }
 }
-
 /* General icon style */
 .game-search-icon {
   width: 1rem;

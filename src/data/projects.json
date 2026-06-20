@@ -24,8 +24,7 @@
                 "HTML",
                 "Tailwind",
                 "Vue",
-                "Responsive",
-                "Not complete"
+                "Responsive"
             ]
         },
         {
@@ -38,8 +37,7 @@
                 "HTML",
                 "Tailwind",
                 "Vue",
-                "Responsive",
-                "Not complete"
+                "Responsive"
             ]
         },
         {
@@ -57,13 +55,14 @@
             ]
         },
         {
-            "title": "Twinverse Studio",
-            "stars": 8,
-            "img": "/imgs/gallery-36.png",
-            "link": "https://metro-seven-lime.vercel.app/",
+            "title": "maw-care",
+            "stars": 9,
+            "img": "/imgs/gallery-47.png",
+            "link": "https://maw-care.vercel.app/",
             "year": "1-2020",
             "Tages": [
                 "HTML",
+                "CSS",
                 "Tailwind",
                 "Vue",
                 "Responsive"
@@ -86,14 +85,13 @@
             ]
         },
         {
-            "title": "maw-care",
-            "stars": 9,
-            "img": "/imgs/gallery-47.png",
-            "link": "https://maw-care.vercel.app/",
+            "title": "Twinverse Studio",
+            "stars": 8,
+            "img": "/imgs/gallery-36.png",
+            "link": "https://metro-seven-lime.vercel.app/",
             "year": "1-2020",
             "Tages": [
                 "HTML",
-                "CSS",
                 "Tailwind",
                 "Vue",
                 "Responsive"
@@ -621,22 +619,9 @@
             ]
         },
         {
-            "title": "ُEweis",
+            "title": "ُopen",
             "link": "https://Eweis.vercel.app/",
             "img": "/imgs/sub/sub-gallery-04.png",
-            "year": "1-2020",
-            "Tages": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Responsive",
-                "Deep Link"
-            ]
-        },
-        {
-            "title": "Barody",
-            "link": "/Sub/bar0dy/index.html",
-            "img": "/imgs/sub/sub-gallery-01.png",
             "year": "1-2020",
             "Tages": [
                 "HTML",
@@ -655,6 +640,19 @@
                 "HTML",
                 "CSS",
                 "Responsive"
+            ]
+        },
+        {
+            "title": "Barody",
+            "link": "/Sub/bar0dy/index.html",
+            "img": "/imgs/sub/sub-gallery-01.png",
+            "year": "1-2020",
+            "Tages": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive",
+                "Deep Link"
             ]
         }
     ]

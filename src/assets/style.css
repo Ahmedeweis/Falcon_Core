@@ -1787,12 +1787,48 @@ input[type="email"]:focus {
     text-align: center;
 }
 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 40px;
     color: #fff;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+.currency-dropdown {
+    position: relative;
+}
+
+.currency-select {
+    padding: 12px 24px;
+    background: white;
+    border-radius: 12px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322c55e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    padding-right: 48px;
+}
+
+.currency-select option {
+    background-color: #1D1032;
+    color: #fff;
 }
 
 .pricing-cards {
@@ -1897,6 +1933,16 @@ input[type="email"]:focus {
 }
 
 @media (max-width: 768px) {
+    .section-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
     .pricing-cards {
         flex-direction: column;
         align-items: center;
@@ -2034,8 +2080,6 @@ input[type="email"]:focus {
 .slider {
     overflow: hidden;
     position: relative;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     background: #fff;
     padding: 20px;
 }
@@ -2526,15 +2570,12 @@ input[type="email"]:focus {
     color: white;
     padding: 0.8rem 0.75rem;
     padding-right: 2.5rem;
-
     width: 100%;
     outline: none;
     border: none;
     text-align: left;
     margin-bottom: 0 !important;
 }
-
-
 
 /* Search icon in input */
 .game-search-input-icon {
