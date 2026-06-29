@@ -1093,20 +1093,20 @@ export default {
       prices: {
         // السوق المحلي: أرقام ذكية ومألوفة للميزانيات المصرية
         EGP: {
-          hourly: 250,
-          project: { min: 15000, max: 20000 },
-          fulltime: 25000
+          hourly: 200,
+          project: { min: 5000, max: 20000 },
+          fulltime: 12000
         },
         // السوق الدولي (USD): كسر حاجز الألفين دولار يسرّع قرار الشركات الأجنبية
         USD: {
           hourly: 25,
-          project: { min: 1200, max: 1500 },
+          project: { min: 500, max: 1500 },
           fulltime: 2000
         },
         // السوق الأوروبي (EUR): متناسق نفسياً مع الجين المالي الأوروبي
         EUR: {
           hourly: 23,
-          project: { min: 1000, max: 1300 },
+          project: { min: 1000, max: 2000 },
           fulltime: 1800
         },
         // سوق الخليج (SAR): أرقام تبدو رسمية ومدروسة بدقة لشركات الخليج

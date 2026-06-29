@@ -1,19 +1,22 @@
 {
     "commenta": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "mainProjects": [
+       
         {
-            "title": "Medtronic",
-            "stars": 9,
-            "img": "/imgs/gallery-35.png",
-            "link": "https://yogaa-five.vercel.app/",
+            "title": "nuvica",
+            "stars": 1,
+            "img": "/imgs/gallery-43.png",
+            "link": "https://nuvica0.vercel.app/",
             "year": "1-2020",
             "Tages": [
                 "HTML",
                 "Tailwind",
                 "Vue",
-                "Responsive"
+                "Responsive",
+                "Not complete"
             ]
         },
+
         {
             "title": "Super Mart",
             "stars": 1,
@@ -71,7 +74,20 @@
     ],
     "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "extraProjects": [
-        {
+ {
+            "title": "Medtronic",
+            "stars": 9,
+            "img": "/imgs/gallery-35.png",
+            "link": "https://yogaa-five.vercel.app/",
+            "year": "1-2020",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive"
+            ]
+        },        
+{
             "title": "IN Desgin",
             "stars": 9,
             "img": "/imgs/gallery-25.png",
@@ -549,20 +565,7 @@
                 "Not complete"
             ]
         },
-        {
-            "title": "nuvica",
-            "stars": 1,
-            "img": "/imgs/gallery-43.png",
-            "link": "https://nuvica0.vercel.app/",
-            "year": "1-2020",
-            "Tages": [
-                "HTML",
-                "Tailwind",
-                "Vue",
-                "Responsive",
-                "Not complete"
-            ]
-        },
+
         {
             "title": "halal meat",
             "stars": 1,
