@@ -3,10 +3,10 @@
     "mainProjects": [
        
         {
-            "title": "nuvica",
+            "title": "Guarrent",
             "stars": 1,
-            "img": "/imgs/gallery-43.png",
-            "link": "https://nuvica0.vercel.app/",
+            "img": "/imgs/gallery-42.png",
+            "link": "https://guarrent0.vercel.app/",
             "year": "1-2020",
             "Tages": [
                 "HTML",
@@ -551,11 +551,12 @@
                 "Not complete"
             ]
         },
+
         {
-            "title": "Gguarrent",
+            "title": "nuvica",
             "stars": 1,
-            "img": "/imgs/gallery-42.png",
-            "link": "https://guarrent0.vercel.app/",
+            "img": "/imgs/gallery-43.png",
+            "link": "https://nuvica0.vercel.app/",
             "year": "1-2020",
             "Tages": [
                 "HTML",
@@ -565,7 +566,6 @@
                 "Not complete"
             ]
         },
-
         {
             "title": "halal meat",
             "stars": 1,
