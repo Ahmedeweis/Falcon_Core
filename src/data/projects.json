@@ -2,6 +2,20 @@
     "commenta": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt', 'Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "mainProjects": [
         {
+            "title": "TV Time Clone",
+            "stars": 10,
+            "img": "/imgs/gallery-48.png",
+            "link": "https://www.youtube.com/watch?v=oBICh1VnBVU",
+            "year": "1-2020",
+            "Tages": [
+                "Tailwind",
+                "Vue",
+                "Api Connects",
+                "Tauri",
+                "Rust"
+            ]
+        },
+        {
             "title": "AStar",
             "stars": 1,
             "img": "/imgs/gallery-40.png",
@@ -42,19 +56,6 @@
             ]
         },
         {
-            "title": "nahg",
-            "stars": 10,
-            "img": "/imgs/gallery-45.png",
-            "link": "https://nahg.com.sa/",
-            "year": "1-2020",
-            "Tages": [
-                "HTML",
-                "Tailwind",
-                "Vue",
-                "Responsive"
-            ]
-        },
-        {
             "title": "maw-care",
             "stars": 9,
             "img": "/imgs/gallery-47.png",
@@ -71,6 +72,19 @@
     ],
     "commente": "Tages: ['HTML', 'CSS', 'JavaScript', 'Vue','Nuxt','Tailwind', 'Responsive', 'Figma', 'Api Connects', 'Not complete']",
     "extraProjects": [
+        {
+            "title": "nahg",
+            "stars": 10,
+            "img": "/imgs/gallery-45.png",
+            "link": "https://nahg.com.sa/",
+            "year": "1-2020",
+            "Tages": [
+                "HTML",
+                "Tailwind",
+                "Vue",
+                "Responsive"
+            ]
+        },
         {
             "title": "RemoteCore.Labs",
             "stars": 10,

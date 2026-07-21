@@ -1080,7 +1080,13 @@ export default {
         new URL("@/assets/certifcate/cer3.png", import.meta.url).href,
         new URL("@/assets/certifcate/cer4.png", import.meta.url).href,
         new URL("@/assets/certifcate/cer5.png", import.meta.url).href,
-        new URL("@/assets/certifcate/cer6.png", import.meta.url).href
+        // new URL("@/assets/certifcate/cer5.jpg", import.meta.url).href,
+        new URL("@/assets/certifcate/cer6.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer7.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer8.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer9.png", import.meta.url).href,
+        new URL("@/assets/certifcate/cer10.png", import.meta.url).href,
+        // new URL("@/assets/certifcate/Screenshot 2025-08-04 00-58-48.png", import.meta.url).href
       ],
       currentIndex: 0,
       offset: 0,
