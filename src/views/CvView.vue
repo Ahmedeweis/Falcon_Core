@@ -1058,15 +1058,27 @@
 </template>
 <script>
 import ScrollToTop from '@/components/ScrollToTop.vue';
-import projectsData from '@/data/projects.json'
+import projectsData from '@/data/projects.json';
 // import SearchCo from '@/components/SearchCo.vue';
+
+const imageModules = import.meta.glob('/imgs/**/*.webp', { eager: true, as: 'url' });
+
+const resolveImage = (imgPath) => {
+  if (imageModules[imgPath]) return imageModules[imgPath];
+  if (typeof imageModules === 'object') {
+    const key = Object.keys(imageModules).find(k => k.endsWith(imgPath.replace(/^\//, '')) || k === imgPath);
+    if (key) return imageModules[key];
+  }
+  return imgPath;
+};
+
 export default {
   name: 'FalconeCore',
   data() {
     return {
-      mainProjects: projectsData.mainProjects,
-      extraProjects: projectsData.extraProjects,
-      subProjects: projectsData.subProjects, // ✅ هنا ضفتها
+      mainProjects: projectsData.mainProjects.map(p => ({ ...p, img: resolveImage(p.img) })),
+      extraProjects: projectsData.extraProjects.map(p => ({ ...p, img: resolveImage(p.img) })),
+      subProjects: projectsData.subProjects.map(p => ({ ...p, img: resolveImage(p.img) })),
       selectedTag: 'All',
       defaultTagStyle: {
         backgroundColor: "#333",
